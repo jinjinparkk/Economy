@@ -6,11 +6,12 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass, field
-from typing import Literal
+from typing import Literal, TYPE_CHECKING
 
 import pandas as pd
 
-from src.fetch_market import MarketSnapshot
+if TYPE_CHECKING:
+    from src.fetch_market import MarketSnapshot
 
 logger = logging.getLogger(__name__)
 

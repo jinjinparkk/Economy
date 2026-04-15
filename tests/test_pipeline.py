@@ -82,9 +82,9 @@ class TestSaveDryRunSummary:
 # ── run_pipeline dry-run (전체 모킹) ────────────────────────────────
 class TestRunPipeline:
     @patch("src.main.fetch_macro_snapshot")
-    @patch("src.main.fetch_market_snapshot")
-    @patch("src.main.detect_movers")
-    @patch("src.main.fetch_news_for_stock")
+    @patch("src.fetch_market.fetch_market_snapshot")
+    @patch("src.detect_movers.detect_movers")
+    @patch("src.fetch_news.fetch_news_for_stock")
     def test_dry_run_no_llm_call(self, mock_news, mock_detect, mock_fetch, mock_macro, tmp_path):
         from src.fetch_market import MarketSnapshot
 
@@ -118,8 +118,8 @@ class TestRunPipeline:
         assert "macro" in data
 
     @patch("src.main.fetch_macro_snapshot")
-    @patch("src.main.fetch_market_snapshot")
-    @patch("src.main.detect_movers")
+    @patch("src.fetch_market.fetch_market_snapshot")
+    @patch("src.detect_movers.detect_movers")
     def test_no_movers_exits_early(self, mock_detect, mock_fetch, mock_macro, tmp_path):
         from src.fetch_market import MarketSnapshot
 
@@ -164,14 +164,14 @@ class TestSaveContentPost:
 
 # ── run_pipeline with content posts ────────────────────────────────
 class TestRunPipelineWithContentPosts:
-    @patch("src.main.generate_quant_insight")
-    @patch("src.main.generate_sector_report")
-    @patch("src.main.generate_daily_market")
-    @patch("src.main.generate_article")
-    @patch("src.main.compute_outlook")
-    @patch("src.main.fetch_news_for_stock")
-    @patch("src.main.detect_movers")
-    @patch("src.main.fetch_market_snapshot")
+    @patch("src.content_generator.generate_quant_insight")
+    @patch("src.content_generator.generate_sector_report")
+    @patch("src.content_generator.generate_daily_market")
+    @patch("src.analyzer.generate_article")
+    @patch("src.predictor.compute_outlook")
+    @patch("src.fetch_news.fetch_news_for_stock")
+    @patch("src.detect_movers.detect_movers")
+    @patch("src.fetch_market.fetch_market_snapshot")
     @patch("src.main.fetch_macro_snapshot")
     def test_content_posts_saved(
         self, mock_macro, mock_fetch, mock_detect, mock_news,
@@ -229,14 +229,14 @@ class TestRunPipelineWithContentPosts:
         assert any("섹터리포트" in f for f in md_files)
         assert any("퀀트인사이트" in f for f in md_files)
 
-    @patch("src.main.generate_quant_insight")
-    @patch("src.main.generate_sector_report")
-    @patch("src.main.generate_daily_market")
-    @patch("src.main.generate_article")
-    @patch("src.main.compute_outlook")
-    @patch("src.main.fetch_news_for_stock")
-    @patch("src.main.detect_movers")
-    @patch("src.main.fetch_market_snapshot")
+    @patch("src.content_generator.generate_quant_insight")
+    @patch("src.content_generator.generate_sector_report")
+    @patch("src.content_generator.generate_daily_market")
+    @patch("src.analyzer.generate_article")
+    @patch("src.predictor.compute_outlook")
+    @patch("src.fetch_news.fetch_news_for_stock")
+    @patch("src.detect_movers.detect_movers")
+    @patch("src.fetch_market.fetch_market_snapshot")
     @patch("src.main.fetch_macro_snapshot")
     def test_content_generators_called(
         self, mock_macro, mock_fetch, mock_detect, mock_news,
@@ -288,9 +288,9 @@ class TestRunPipelineWithContentPosts:
         mock_quant.assert_called_once()
 
     @patch("src.main.fetch_macro_snapshot")
-    @patch("src.main.fetch_market_snapshot")
-    @patch("src.main.detect_movers")
-    @patch("src.main.fetch_news_for_stock")
+    @patch("src.fetch_market.fetch_market_snapshot")
+    @patch("src.detect_movers.detect_movers")
+    @patch("src.fetch_news.fetch_news_for_stock")
     def test_dry_run_skips_content_generation(
         self, mock_news, mock_detect, mock_fetch, mock_macro, tmp_path
     ):
@@ -324,7 +324,7 @@ class TestRunPipelineWithContentPosts:
 
 # ── run_pre_market_pipeline ────────────────────────────────────────
 class TestRunPreMarketPipeline:
-    @patch("src.main.generate_pre_market")
+    @patch("src.content_generator.generate_pre_market")
     @patch("src.main.fetch_macro_snapshot")
     def test_pre_market_saves_briefing(self, mock_macro, mock_gen, tmp_path):
         mock_macro.return_value = _macro()
@@ -351,7 +351,7 @@ class TestRunPreMarketPipeline:
         content = md_files[0].read_text(encoding="utf-8")
         assert "프리마켓 브리핑 제목" in content
 
-    @patch("src.main.generate_pre_market")
+    @patch("src.content_generator.generate_pre_market")
     @patch("src.main.fetch_macro_snapshot")
     def test_pre_market_calls_generate(self, mock_macro, mock_gen, tmp_path):
         mock_macro.return_value = _macro()

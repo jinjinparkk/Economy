@@ -25,20 +25,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from src.analyzer import Article, generate_article
 from src.config import Config
-from src.content_generator import (
-    generate_daily_market,
-    generate_sector_report,
-    generate_quant_insight,
-    generate_pre_market,
-)
 from src.content_post import ContentPost
-from src.detect_movers import Mover, MoverReport, detect_movers
 from src.fetch_macro import MacroSnapshot, fetch_macro_snapshot
-from src.fetch_market import fetch_market_snapshot
-from src.fetch_news import NewsItem, fetch_news_for_stock
-from src.predictor import OutlookData, compute_outlook
 
 logger = logging.getLogger(__name__)
 
@@ -178,6 +167,18 @@ def run_pipeline(
     only_surges: bool = False,
 ) -> None:
     """전체 파이프라인 실행."""
+    # 포스트마켓 전용 모듈 (FinanceDataReader, scikit-learn 필요)
+    from src.analyzer import Article, generate_article
+    from src.content_generator import (
+        generate_daily_market,
+        generate_sector_report,
+        generate_quant_insight,
+    )
+    from src.detect_movers import Mover, MoverReport, detect_movers
+    from src.fetch_market import fetch_market_snapshot
+    from src.fetch_news import NewsItem, fetch_news_for_stock
+    from src.predictor import OutlookData, compute_outlook
+
     started = time.time()
     cfg = Config.load()
 
@@ -470,6 +471,8 @@ def _fetch_us_market_news() -> list[str]:
 
 def run_pre_market_pipeline() -> None:
     """프리마켓 브리핑 파이프라인. 미국 증시 마감 후 실행."""
+    from src.content_generator import generate_pre_market
+
     started = time.time()
     cfg = Config.load()
 

@@ -9,8 +9,18 @@ import logging
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 
-import FinanceDataReader as fdr
 import pandas as pd
+
+# FinanceDataReader가 없으면 yfinance fallback 사용
+try:
+    import FinanceDataReader as fdr
+    _USE_FDR = True
+except ImportError:
+    _USE_FDR = False
+    try:
+        import yfinance as yf
+    except ImportError:
+        yf = None  # type: ignore[assignment]
 
 logger = logging.getLogger(__name__)
 
@@ -179,45 +189,84 @@ _FX_OPTIONAL = {
     "DXY": ("달러인덱스", "DX-Y.NYB"),
 }
 
+# FDR 코드 → yfinance 티커 매핑 (FDR 미설치 시 fallback용)
+_FDR_TO_YF: dict[str, str] = {
+    "US500": "^GSPC",
+    "IXIC": "^IXIC",
+    "DJI": "^DJI",
+    "SOXX": "SOXX",
+    "USD/KRW": "USDKRW=X",
+    "DX-Y.NYB": "DX-Y.NYB",
+    "CL=F": "CL=F",
+    "GC=F": "GC=F",
+    "VIX": "^VIX",
+    "US10YT": "^TNX",
+    "US2YT": "^IRX",
+}
+
+
+def _df_to_indicator(
+    key: str, display_name: str, code: str, df: pd.DataFrame,
+) -> MacroIndicator | None:
+    """DataFrame → MacroIndicator 변환 (FDR/yfinance 공통)."""
+    if df.empty or len(df) < 2:
+        logger.warning("macro %s (%s): insufficient data", key, code)
+        return None
+
+    latest = df.iloc[-1]
+    prev = df.iloc[-2]
+    close = float(latest["Close"])
+    prev_close = float(prev["Close"])
+
+    # NaN 체크 (DXY 등 일부 지표에서 발생)
+    if close != close or prev_close != prev_close:
+        logger.warning("macro %s (%s): NaN value detected", key, code)
+        return None
+
+    close = round(close, 2)
+    prev_close = round(prev_close, 2)
+    change = round(close - prev_close, 2)
+    change_pct = round((change / prev_close * 100), 2) if prev_close else 0.0
+
+    return MacroIndicator(
+        name=display_name,
+        code=code,
+        close=close,
+        prev_close=prev_close,
+        change=change,
+        change_pct=change_pct,
+        date=str(df.index[-1].date()),
+    )
+
 
 def _fetch_indicator(
     key: str, display_name: str, fdr_code: str, days: int = 15
 ) -> MacroIndicator | None:
-    """FDR에서 지표를 가져와 MacroIndicator로 변환."""
+    """지표를 가져와 MacroIndicator로 변환. FDR 우선, 없으면 yfinance."""
     end = datetime.now().date()
     start = end - timedelta(days=days)
+
+    if _USE_FDR:
+        try:
+            df = fdr.DataReader(fdr_code, start, end)
+            return _df_to_indicator(key, display_name, fdr_code, df)
+        except Exception as exc:
+            logger.error("macro %s (%s) FDR failed: %s", key, fdr_code, exc)
+            return None
+
+    # yfinance fallback
+    if yf is None:
+        logger.error("macro %s: neither FinanceDataReader nor yfinance available", key)
+        return None
+    yf_code = _FDR_TO_YF.get(fdr_code, fdr_code)
     try:
-        df = fdr.DataReader(fdr_code, start, end)
-        if df.empty or len(df) < 2:
-            logger.warning("macro %s (%s): insufficient data", key, fdr_code)
-            return None
-
-        latest = df.iloc[-1]
-        prev = df.iloc[-2]
-        close = float(latest["Close"])
-        prev_close = float(prev["Close"])
-
-        # NaN 체크 (DXY 등 일부 지표에서 발생)
-        if close != close or prev_close != prev_close:
-            logger.warning("macro %s (%s): NaN value detected", key, fdr_code)
-            return None
-
-        close = round(close, 2)
-        prev_close = round(prev_close, 2)
-        change = round(close - prev_close, 2)
-        change_pct = round((change / prev_close * 100), 2) if prev_close else 0.0
-
-        return MacroIndicator(
-            name=display_name,
-            code=fdr_code,
-            close=close,
-            prev_close=prev_close,
-            change=change,
-            change_pct=change_pct,
-            date=str(df.index[-1].date()),
-        )
+        df = yf.download(yf_code, start=str(start), end=str(end),
+                         progress=False, auto_adjust=False)
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = df.columns.get_level_values(0)
+        return _df_to_indicator(key, display_name, fdr_code, df)
     except Exception as exc:
-        logger.error("macro %s (%s) failed: %s", key, fdr_code, exc)
+        logger.error("macro %s (%s → yf:%s) failed: %s", key, fdr_code, yf_code, exc)
         return None
 
 
