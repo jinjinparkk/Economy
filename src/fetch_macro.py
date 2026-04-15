@@ -1,0 +1,320 @@
+"""거시경제·해외 증시 데이터 수집 모듈.
+
+전일 미국 3대 지수, 환율, 유가, VIX, 미국채 10년물, 반도체 지수를 가져온다.
+한국 장 시작 전(08:00 KST) 시점에 전일 미국 장 마감 데이터가 반영된다.
+"""
+from __future__ import annotations
+
+import logging
+from dataclasses import dataclass, field
+from datetime import datetime, timedelta
+
+import FinanceDataReader as fdr
+import pandas as pd
+
+logger = logging.getLogger(__name__)
+
+
+@dataclass
+class MacroIndicator:
+    """개별 거시경제 지표."""
+
+    name: str           # 표시 이름 (예: "S&P 500")
+    code: str           # FDR 코드
+    close: float
+    prev_close: float
+    change: float
+    change_pct: float
+    date: str           # YYYY-MM-DD
+
+    def __str__(self) -> str:
+        return f"{self.name}: {self.close:,.2f} ({self.change_pct:+.2f}%)"
+
+
+@dataclass
+class MacroSnapshot:
+    """거시경제 전체 스냅샷."""
+
+    us_indices: dict[str, MacroIndicator] = field(default_factory=dict)
+    fx: dict[str, MacroIndicator] = field(default_factory=dict)
+    commodities: dict[str, MacroIndicator] = field(default_factory=dict)
+    volatility: dict[str, MacroIndicator] = field(default_factory=dict)
+    bonds: dict[str, MacroIndicator] = field(default_factory=dict)
+
+    @property
+    def all_indicators(self) -> dict[str, MacroIndicator]:
+        return {**self.us_indices, **self.fx, **self.commodities,
+                **self.volatility, **self.bonds}
+
+    @property
+    def yield_spread(self) -> float | None:
+        """10Y - 2Y 수익률 스프레드 (양수=정상, 음수=역전)."""
+        us10y = self.bonds.get("US10Y")
+        us2y = self.bonds.get("US2Y")
+        if us10y and us2y:
+            return round(us10y.close - us2y.close, 3)
+        return None
+
+    @property
+    def market_regime(self) -> str:
+        """VIX 기반 시장 체제 판단."""
+        vix = self.volatility.get("VIX")
+        if vix is None:
+            return "판단불가"
+        v = vix.close
+        if v < 15:
+            return "안정"
+        elif v < 20:
+            return "보통"
+        elif v < 30:
+            return "불안"
+        else:
+            return "공포"
+
+    def to_narrative(self) -> str:
+        """LLM 컨텍스트용 한국어 거시경제 '돈의 흐름' 내러티브."""
+        parts: list[str] = []
+
+        sp = self.us_indices.get("SP500")
+        nq = self.us_indices.get("NASDAQ")
+        if sp and nq:
+            direction = "상승" if sp.change_pct > 0 else "하락"
+            parts.append(f"전일 미국 증시는 S&P500 {sp.change_pct:+.2f}%, "
+                         f"나스닥 {nq.change_pct:+.2f}%로 {direction} 마감.")
+
+        soxx = self.us_indices.get("SOXX")
+        if soxx:
+            parts.append(f"필라델피아 반도체지수 {soxx.change_pct:+.2f}%.")
+
+        regime = self.market_regime
+        vix = self.volatility.get("VIX")
+        if vix:
+            parts.append(f"VIX {vix.close:.1f} ({regime} 구간).")
+
+        spread = self.yield_spread
+        if spread is not None:
+            if spread < 0:
+                parts.append(f"장단기 금리차 {spread:.3f}%p (역전 — 경기침체 경고 신호).")
+            elif spread < 0.5:
+                parts.append(f"장단기 금리차 {spread:.3f}%p (축소 — 긴축 우려 잔존).")
+            else:
+                parts.append(f"장단기 금리차 {spread:.3f}%p (정상 범위).")
+
+        fx = self.fx.get("USDKRW")
+        if fx and not (fx.change_pct != fx.change_pct):  # NaN check
+            direction = "약세" if fx.change_pct > 0 else "강세"
+            parts.append(f"원/달러 {fx.close:,.2f}원 ({fx.change_pct:+.2f}%, 원화 {direction}).")
+
+        gold = self.commodities.get("GOLD")
+        if gold:
+            parts.append(f"금 {gold.close:,.2f}달러 ({gold.change_pct:+.2f}%).")
+
+        dxy = self.fx.get("DXY")
+        if dxy and not (dxy.change_pct != dxy.change_pct):  # NaN check
+            parts.append(f"달러인덱스 {dxy.close:.2f} ({dxy.change_pct:+.2f}%).")
+
+        # 돈의 흐름 해석
+        if vix and gold:
+            if vix.change_pct > 5 and gold.change_pct > 1:
+                parts.append("VIX 급등 + 금 강세 → 안전자산 선호(Risk-Off) 흐름.")
+            elif vix.change_pct < -5 and gold.change_pct < -1:
+                parts.append("VIX 급락 + 금 약세 → 위험자산 선호(Risk-On) 흐름.")
+
+        return " ".join(parts)
+
+    def to_summary_dict(self) -> dict[str, dict]:
+        """LLM 프롬프트용 요약 딕셔너리."""
+        result = {}
+        for key, ind in self.all_indicators.items():
+            result[ind.name] = {
+                "Close": ind.close,
+                "ChangePct": ind.change_pct,
+                "Change": ind.change,
+            }
+        if self.yield_spread is not None:
+            result["_yield_spread"] = self.yield_spread
+        result["_market_regime"] = self.market_regime
+        return result
+
+    def is_empty(self) -> bool:
+        return not any([self.us_indices, self.fx, self.commodities,
+                        self.volatility, self.bonds])
+
+
+# ── 수집 대상 정의 ──────────────────────────────────────────────────
+_US_INDICES = {
+    "SP500": ("S&P 500", "US500"),
+    "NASDAQ": ("NASDAQ", "IXIC"),
+    "DOW": ("다우존스", "DJI"),
+}
+
+_FX = {
+    "USDKRW": ("원/달러", "USD/KRW"),
+}
+
+_COMMODITIES = {
+    "WTI": ("WTI유", "CL=F"),
+    "GOLD": ("금", "GC=F"),
+}
+
+_VOLATILITY = {
+    "VIX": ("VIX", "VIX"),
+}
+
+_BONDS = {
+    "US10Y": ("미국채10Y", "US10YT"),
+}
+
+# US2YT는 FDR/Yahoo에서 404 발생 가능 — 실패 시 yield_spread=None으로 graceful 처리
+_BONDS_OPTIONAL = {
+    "US2Y": ("미국채2Y", "US2YT"),
+}
+
+_SEMI = {
+    "SOXX": ("필라델피아반도체", "SOXX"),
+}
+
+# DX-Y.NYB는 NaN 반환 가능 — 실패 시 내러티브에서 제외
+_FX_OPTIONAL = {
+    "DXY": ("달러인덱스", "DX-Y.NYB"),
+}
+
+
+def _fetch_indicator(
+    key: str, display_name: str, fdr_code: str, days: int = 15
+) -> MacroIndicator | None:
+    """FDR에서 지표를 가져와 MacroIndicator로 변환."""
+    end = datetime.now().date()
+    start = end - timedelta(days=days)
+    try:
+        df = fdr.DataReader(fdr_code, start, end)
+        if df.empty or len(df) < 2:
+            logger.warning("macro %s (%s): insufficient data", key, fdr_code)
+            return None
+
+        latest = df.iloc[-1]
+        prev = df.iloc[-2]
+        close = float(latest["Close"])
+        prev_close = float(prev["Close"])
+
+        # NaN 체크 (DXY 등 일부 지표에서 발생)
+        if close != close or prev_close != prev_close:
+            logger.warning("macro %s (%s): NaN value detected", key, fdr_code)
+            return None
+
+        close = round(close, 2)
+        prev_close = round(prev_close, 2)
+        change = round(close - prev_close, 2)
+        change_pct = round((change / prev_close * 100), 2) if prev_close else 0.0
+
+        return MacroIndicator(
+            name=display_name,
+            code=fdr_code,
+            close=close,
+            prev_close=prev_close,
+            change=change,
+            change_pct=change_pct,
+            date=str(df.index[-1].date()),
+        )
+    except Exception as exc:
+        logger.error("macro %s (%s) failed: %s", key, fdr_code, exc)
+        return None
+
+
+def fetch_macro_snapshot() -> MacroSnapshot:
+    """거시경제 전체 스냅샷을 수집한다."""
+    snap = MacroSnapshot()
+
+    # 미국 3대 지수
+    for key, (name, code) in _US_INDICES.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.us_indices[key] = ind
+            logger.info("  %s", ind)
+
+    # 반도체 지수 (미국 지수 카테고리에 포함)
+    for key, (name, code) in _SEMI.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.us_indices[key] = ind
+            logger.info("  %s", ind)
+
+    # 환율
+    for key, (name, code) in _FX.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.fx[key] = ind
+            logger.info("  %s", ind)
+
+    # 달러인덱스 (선택적 — NaN 반환 시 건너뜀)
+    for key, (name, code) in _FX_OPTIONAL.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.fx[key] = ind
+            logger.info("  %s", ind)
+
+    # 원자재
+    for key, (name, code) in _COMMODITIES.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.commodities[key] = ind
+            logger.info("  %s", ind)
+
+    # 변동성
+    for key, (name, code) in _VOLATILITY.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.volatility[key] = ind
+            logger.info("  %s", ind)
+
+    # 채권
+    for key, (name, code) in _BONDS.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.bonds[key] = ind
+            logger.info("  %s", ind)
+
+    # 채권 선택적 (US2Y 등 — 실패 시 건너뜀)
+    for key, (name, code) in _BONDS_OPTIONAL.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.bonds[key] = ind
+            logger.info("  %s", ind)
+
+    total = len(snap.all_indicators)
+    logger.info("macro snapshot: %d indicators fetched", total)
+    return snap
+
+
+if __name__ == "__main__":
+    import sys
+
+    for stream in (sys.stdout, sys.stderr):
+        if stream.encoding and stream.encoding.lower() != "utf-8":
+            try:
+                stream.reconfigure(encoding="utf-8")
+            except Exception:
+                pass
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
+
+    snap = fetch_macro_snapshot()
+
+    print(f"\n{'='*60}")
+    print("거시경제 스냅샷")
+    print(f"{'='*60}")
+
+    sections = [
+        ("미국 증시", snap.us_indices),
+        ("환율", snap.fx),
+        ("원자재", snap.commodities),
+        ("변동성", snap.volatility),
+        ("채권", snap.bonds),
+    ]
+    for title, indicators in sections:
+        if indicators:
+            print(f"\n[{title}]")
+            for ind in indicators.values():
+                print(f"  {ind}")

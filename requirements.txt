@@ -1,0 +1,9 @@
+FinanceDataReader>=0.9.90
+pandas>=2.0.0
+numpy>=1.24.0
+google-genai>=1.0.0
+anthropic>=0.83.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+scikit-learn>=1.4.0
+markdown>=3.5.0
