@@ -269,12 +269,13 @@ py -3 -m pytest tests/ -v    # 259/259 PASS
 
 ## 스케줄 운영
 
-| 시각 | 파이프라인 | 명령 |
-|---|---|---|
-| **05:50 KST** | 프리마켓 브리핑 | `py -3 -m src.main --pre-market` |
-| **15:40 KST** | 장 마감 분석 | `py -3 -m src.main --top 3` |
+| 시각 | 파이프라인 | 명령 | 실행 환경 |
+|---|---|---|---|
+| **05:50 KST** | 프리마켓 브리핑 | `py -3 -m src.main --pre-market` | GitHub Actions (자동) |
+| **15:40 KST** | 장 마감 분석 | `py -3 -m src.main --top 3` | Windows 작업 스케줄러 |
 
-Windows 작업 스케줄러 또는 cron으로 등록.
+프리마켓 브리핑은 **GitHub Actions**로 매일 자동 실행 (`.github/workflows/pre-market.yml`).
+장 마감 분석은 Windows 작업 스케줄러 또는 cron으로 등록.
 
 ---
 
@@ -286,7 +287,7 @@ Windows 작업 스케줄러 또는 cron으로 등록.
 - [x] 4단계: 멀티 콘텐츠 (데일리시황 / 섹터리포트 / 퀀트인사이트)
 - [x] 5단계: WordPress 자동 발행 (draft)
 - [x] 6단계: 프리마켓 브리핑 (미국 증시 → 한국 영향 예측)
-- [ ] 7단계: 매일 자동 실행 (Windows 작업 스케줄러)
+- [x] 7단계: 매일 자동 실행 (GitHub Actions — 프리마켓 05:50 KST)
 - [ ] 8단계: 차트 이미지 첨부 (matplotlib/plotly)
 - [ ] 9단계: 스레드 분석 (3일 연속 급등 종목 추적)
 
