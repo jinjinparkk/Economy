@@ -1,0 +1,31 @@
+name: Pre-Market Briefing
+
+on:
+  schedule:
+    # 매일 KST 05:50 = UTC 20:50 (전날)
+    - cron: '50 20 * * *'
+  workflow_dispatch: # 수동 실행 버튼
+
+jobs:
+  pre-market:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pre-market pipeline
+        env:
+          LLM_PROVIDER: gemini
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WP_ACCESS_TOKEN: ${{ secrets.WP_ACCESS_TOKEN }}
+          WP_SITE_ID: ${{ secrets.WP_SITE_ID }}
+          WP_AUTO_PUBLISH: 'true'
+          OUTPUT_DIR: ./output
+          TIMEZONE: Asia/Seoul
+        run: python -m src.main --pre-market
