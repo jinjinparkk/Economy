@@ -657,6 +657,7 @@ def build_pre_market_prompt(
     macro_narrative: Optional[str] = None,
     market_regime: Optional[str] = None,
     yield_spread: Optional[float | str] = None,
+    us_news: Optional[list[str]] = None,
     trade_date: str = "",
 ) -> str:
     """프리마켓 브리핑 사용자 프롬프트를 조립한다."""
@@ -688,11 +689,17 @@ def build_pre_market_prompt(
         parts.append(macro_narrative)
         parts.append("")
 
+    if us_news:
+        parts.append("## 미국 증시 주요 뉴스 (등락 원인)")
+        for headline in us_news:
+            parts.append(f"- {headline}")
+        parts.append("")
+
     parts.extend([
         "## 작성 지침",
         f"- {trade_date} 일자 프리마켓 브리핑을 작성하세요.",
         "- 한국 시간 기준 오늘의 한국 시장 프리뷰를 작성합니다.",
-        "- 위 미국 증시/매크로 데이터를 바탕으로 한국 시장에 미칠 영향을 분석하세요.",
+        "- 위 뉴스와 매크로 데이터를 바탕으로 미국 증시 등락 원인을 분석하고, 한국 시장에 미칠 영향을 예측하세요.",
         "- 제목은 '제목: <제목>' 형식으로 첫 줄에 주세요.",
         "- 본문은 마크다운 H2/H3 구조를 사용하세요.",
         "- 본문 최하단에 면책 문구를 반드시 포함하세요.",
@@ -707,6 +714,7 @@ def generate_pre_market(
     macro_narrative: Optional[str] = None,
     market_regime: Optional[str] = None,
     yield_spread: Optional[float | str] = None,
+    us_news: Optional[list[str]] = None,
     trade_date: str,
     config: Config,
 ) -> ContentPost:
@@ -716,6 +724,7 @@ def generate_pre_market(
         macro_narrative=macro_narrative,
         market_regime=market_regime,
         yield_spread=yield_spread,
+        us_news=us_news,
         trade_date=trade_date,
     )
 

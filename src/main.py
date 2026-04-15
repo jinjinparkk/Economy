@@ -451,6 +451,23 @@ def run_pipeline(
     logger.info("=" * 60)
 
 
+def _fetch_us_market_news() -> list[str]:
+    """미국 증시 관련 뉴스 헤드라인을 수집한다."""
+    from src.fetch_news import _fetch_via_google_rss
+
+    queries = ["미국 증시", "나스닥 뉴욕증시", "월가 Fed"]
+    seen_titles: set[str] = set()
+    headlines: list[str] = []
+    for q in queries:
+        items = _fetch_via_google_rss(q, display=5)
+        for item in items:
+            if item.title not in seen_titles:
+                seen_titles.add(item.title)
+                tag = f"[{item.press}]" if item.press != "unknown" else ""
+                headlines.append(f"{tag} {item.title}".strip())
+    return headlines[:10]
+
+
 def run_pre_market_pipeline() -> None:
     """프리마켓 브리핑 파이프라인. 미국 증시 마감 후 실행."""
     started = time.time()
@@ -461,12 +478,17 @@ def run_pre_market_pipeline() -> None:
     logger.info("=" * 60)
 
     # 1) 거시경제 수집 (미국 지표)
-    logger.info("[STEP 1/3] fetching macro snapshot...")
+    logger.info("[STEP 1/4] fetching macro snapshot...")
     macro = fetch_macro_snapshot()
     logger.info("macro: %d indicators", len(macro.all_indicators))
 
-    # 2) 프리마켓 브리핑 생성
-    logger.info("[STEP 2/3] generating pre-market briefing via %s...", cfg.llm_provider)
+    # 2) 미국 증시 뉴스 수집
+    logger.info("[STEP 2/4] fetching US market news...")
+    us_news = _fetch_us_market_news()
+    logger.info("us news: %d headlines", len(us_news))
+
+    # 3) 프리마켓 브리핑 생성
+    logger.info("[STEP 3/4] generating pre-market briefing via %s...", cfg.llm_provider)
     key_ok = (
         (cfg.llm_provider == "gemini" and cfg.gemini_api_key)
         or (cfg.llm_provider == "claude" and cfg.anthropic_api_key)
@@ -478,20 +500,40 @@ def run_pre_market_pipeline() -> None:
 
     today_str = datetime.now().strftime("%Y-%m-%d")
 
-    post = generate_pre_market(
-        macro_summary=macro.to_summary_dict() if not macro.is_empty() else None,
-        macro_narrative=macro.to_narrative() if not macro.is_empty() else None,
-        market_regime=macro.market_regime,
-        yield_spread=macro.yield_spread,
-        trade_date=today_str,
-        config=cfg,
-    )
-    logger.info("  [OK] %s", post.title[:60])
-    if post.warnings:
-        logger.warning("  warnings: %s", post.warnings)
+    post = None
+    for attempt in range(3):
+        try:
+            post = generate_pre_market(
+                macro_summary=macro.to_summary_dict() if not macro.is_empty() else None,
+                macro_narrative=macro.to_narrative() if not macro.is_empty() else None,
+                market_regime=macro.market_regime,
+                yield_spread=macro.yield_spread,
+                us_news=us_news if us_news else None,
+                trade_date=today_str,
+                config=cfg,
+            )
+            logger.info("  [OK] %s", post.title[:60])
+            if post.warnings:
+                logger.warning("  warnings: %s", post.warnings)
+            break
+        except Exception as exc:
+            msg = str(exc).lower()
+            is_rate = "429" in msg or "rate" in msg or "quota" in msg or "resource_exhausted" in msg
+            if is_rate and attempt < 2:
+                wait = 30.0 * (attempt + 1)
+                logger.warning("  [RATE LIMIT] retrying in %.0fs (attempt %d/3)", wait, attempt + 1)
+                time.sleep(wait)
+                continue
+            else:
+                logger.error("  [FAIL] pre-market generation: %s", str(exc)[:200])
+                return
 
-    # 3) 저장 + WordPress 발행
-    logger.info("[STEP 3/3] saving pre-market briefing...")
+    if post is None:
+        logger.error("  [FAIL] pre-market generation failed after retries")
+        return
+
+    # 4) 저장 + WordPress 발행
+    logger.info("[STEP 4/4] saving pre-market briefing...")
     path = _save_content_post(post, cfg.output_dir, today_str)
     logger.info("  saved: %s", path.name)
 
