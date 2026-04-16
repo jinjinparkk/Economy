@@ -19,6 +19,9 @@ _CONTENT_LABELS: dict[str, str] = {
     "sector_report": "섹터리포트",
     "quant_insight": "퀀트인사이트",
     "pre_market": "프리마켓브리핑",
+    "weekly_report": "주간리포트",
+    "monthly_report": "월간리포트",
+    "yearly_report": "연간리포트",
 }
 
 

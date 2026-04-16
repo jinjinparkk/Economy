@@ -23,6 +23,15 @@ logger = logging.getLogger(__name__)
 
 _WP_API_BASE = "https://public-api.wordpress.com/rest/v1.1"
 
+# 본문 내 제목 크기 축소 (WP 기본 테마 대비 ~10px 작게).
+# 글 제목(post title)은 테마 CSS로 결정되어 여기서 건드리지 않음.
+_HEADING_STYLES: dict[str, str] = {
+    "h1": "font-size:20px;margin-top:1.2em;margin-bottom:0.6em;",
+    "h2": "font-size:16px;margin-top:1em;margin-bottom:0.5em;",
+    "h3": "font-size:15px;margin-top:0.8em;margin-bottom:0.4em;",
+    "h4": "font-size:14px;margin-top:0.7em;margin-bottom:0.3em;",
+}
+
 
 @dataclass
 class PublishResult:
@@ -34,11 +43,14 @@ class PublishResult:
 
 
 def _md_to_html(body: str) -> str:
-    """마크다운 본문을 HTML로 변환한다."""
-    return markdown.markdown(
+    """마크다운 본문을 HTML로 변환하고 제목 태그에 축소된 font-size를 주입한다."""
+    html = markdown.markdown(
         body,
         extensions=["tables", "fenced_code"],
     )
+    for tag, style in _HEADING_STYLES.items():
+        html = html.replace(f"<{tag}>", f'<{tag} style="{style}">')
+    return html
 
 
 def _build_tags(article: Article) -> list[str]:

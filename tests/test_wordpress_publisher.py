@@ -61,8 +61,10 @@ def _config(tmp_path, token="test-token", site_id="12345", auto_publish=True):
 class TestMdToHtml:
     def test_header_conversion(self):
         html = _md_to_html("## 제목")
-        assert "<h2>" in html
-        assert "제목" in html
+        # h2 태그에 font-size 인라인 스타일이 주입됨
+        assert "<h2 style=" in html
+        assert "font-size:16px" in html
+        assert "제목</h2>" in html
 
     def test_bold_conversion(self):
         html = _md_to_html("**강조**")
@@ -217,7 +219,7 @@ class TestPublishToWordpress:
         publish_to_wordpress(_article(), "2026-04-15", cfg)
 
         payload = mock_post.call_args[1]["json"]
-        assert "<h2>" in payload["content"]
+        assert "<h2 style=" in payload["content"]
         assert "<strong>" in payload["content"]
 
     @patch("src.wordpress_publisher.requests.post")

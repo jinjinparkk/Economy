@@ -17,8 +17,18 @@ from src.content_generator import (
     generate_sector_report,
     generate_quant_insight,
     generate_pre_market,
+    generate_weekly_report,
+    generate_monthly_report,
+    generate_yearly_report,
+    _build_period_report_prompt,
     _dispatch_llm,
     _parse_content_response,
+)
+from src.fetch_history import (
+    PeriodSnapshot,
+    MacroPeriodReturn,
+    StockPeriodReturn,
+    SectorPeriodReturn,
 )
 from src.predictor import OutlookData, PatternStats, DirectionPrediction
 from src.technical import TechnicalIndicators
@@ -598,3 +608,402 @@ class TestGeneratePreMarket:
             config=_config(),
         )
         assert post.filename("2026-04-16") == "2026-04-16_프리마켓브리핑.md"
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# 프리마켓 브리핑 신규 섹션 테스트
+# ═══════════════════════════════════════════════════════════════════════
+
+class TestBuildPreMarketPromptEnhanced:
+    def test_prompt_includes_sectors(self):
+        sectors = {
+            "기술(XLK)": {"Close": 200.0, "ChangePct": 1.23},
+            "에너지(XLE)": {"Close": 90.0, "ChangePct": -1.50},
+        }
+        prompt = build_pre_market_prompt(
+            sectors=sectors,
+            trade_date="2026-04-16",
+        )
+        assert "섹터 ETF" in prompt
+        assert "기술(XLK)" in prompt
+        assert "+1.23%" in prompt
+        assert "최고" in prompt
+        assert "최저" in prompt
+
+    def test_prompt_includes_mega_caps(self):
+        mega_caps = {
+            "엔비디아(NVDA)": {"Close": 950.25, "ChangePct": 3.20},
+            "테슬라(TSLA)": {"Close": 245.80, "ChangePct": -1.50},
+        }
+        prompt = build_pre_market_prompt(
+            mega_caps=mega_caps,
+            trade_date="2026-04-16",
+        )
+        assert "Magnificent 7" in prompt
+        assert "엔비디아" in prompt
+        assert "Mag7 평균" in prompt
+
+    def test_prompt_includes_style_signals(self):
+        style_signals = {
+            "growth_value_ratio": 1.2,
+            "items": {
+                "나스닥100ETF": {"ChangePct": 1.5},
+                "가치ETF": {"ChangePct": 0.3},
+                "러셀2000": {"ChangePct": -0.2},
+            },
+        }
+        prompt = build_pre_market_prompt(
+            style_signals=style_signals,
+            trade_date="2026-04-16",
+        )
+        assert "성장 vs 가치" in prompt
+        assert "성장-가치 스프레드" in prompt
+        assert "성장주 우위" in prompt
+
+    def test_prompt_includes_asia(self):
+        asia = {
+            "닛케이225": {"Close": 38500.0, "ChangePct": 0.50},
+            "항셍": {"Close": 17200.0, "ChangePct": -0.30},
+        }
+        prompt = build_pre_market_prompt(
+            asia_indices=asia,
+            trade_date="2026-04-16",
+        )
+        assert "아시아 증시" in prompt
+        assert "닛케이225" in prompt
+        assert "항셍" in prompt
+
+    def test_prompt_includes_europe(self):
+        europe = {
+            "독일DAX": {"Close": 18200.0, "ChangePct": 0.20},
+        }
+        prompt = build_pre_market_prompt(
+            europe_indices=europe,
+            trade_date="2026-04-16",
+        )
+        assert "유럽 증시" in prompt
+        assert "독일DAX" in prompt
+
+    def test_prompt_includes_credit(self):
+        credit = {
+            "stress": "안정",
+            "items": {
+                "하이일드채권(HYG)": {"ChangePct": 0.10},
+                "미장기채20Y+(TLT)": {"ChangePct": -0.30},
+            },
+        }
+        prompt = build_pre_market_prompt(
+            credit_signals=credit,
+            trade_date="2026-04-16",
+        )
+        assert "신용 리스크" in prompt
+        assert "하이일드채권" in prompt
+        assert "신용 스트레스: 안정" in prompt
+
+    def test_prompt_includes_econ_calendar(self):
+        econ = ["FOMC 금리 결정 발표 예정", "미국 CPI 발표"]
+        prompt = build_pre_market_prompt(
+            econ_calendar=econ,
+            trade_date="2026-04-16",
+        )
+        assert "경제 이벤트" in prompt
+        assert "FOMC" in prompt
+
+    def test_prompt_all_none_graceful(self):
+        prompt = build_pre_market_prompt(
+            trade_date="2026-04-16",
+            sectors=None,
+            mega_caps=None,
+            style_signals=None,
+            asia_indices=None,
+            europe_indices=None,
+            credit_signals=None,
+            econ_calendar=None,
+        )
+        assert "프리마켓 브리핑" in prompt
+        assert "작성 지침" in prompt
+        # 데이터 섹션 헤더는 없어야 함 (작성 지침의 안내 문구는 존재 가능)
+        assert "## US 섹터 ETF 등락률" not in prompt
+        assert "## Magnificent 7" not in prompt
+        assert "## 아시아 증시" not in prompt
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_generate_with_new_params(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 프리마켓 브리핑 강화\n\n## 섹터 분석\n본문",
+            "gemini-2.0-flash",
+        )
+        post = generate_pre_market(
+            trade_date="2026-04-16",
+            config=_config(),
+            sectors={"기술": {"Close": 200.0, "ChangePct": 1.0}},
+            mega_caps={"엔비디아": {"Close": 950.0, "ChangePct": 3.0}},
+            asia_indices={"닛케이225": {"Close": 38500.0, "ChangePct": 0.5}},
+        )
+        assert isinstance(post, ContentPost)
+        assert post.content_type == "pre_market"
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# 주간/월간/연간 기간 리포트
+# ═══════════════════════════════════════════════════════════════════════
+
+
+def _sample_snapshot(period="weekly") -> PeriodSnapshot:
+    """테스트용 PeriodSnapshot."""
+    trading_days = {"weekly": 5, "monthly": 21, "yearly": 252}[period]
+    macro = {
+        "SP500": MacroPeriodReturn(
+            "S&P 500", "US500", 5000, 5100, 2.0, 5120, 4950, 1.5,
+            "2026-04-01", "2026-04-08",
+        ),
+        "VIX": MacroPeriodReturn(
+            "VIX", "VIX", 15, 14, -6.67, 16, 13.5, 0.9,
+            "2026-04-01", "2026-04-08",
+        ),
+    }
+    us_sectors = [
+        SectorPeriodReturn(f"섹터{i}", f"X{i}", "us_etf", float(i), i + 1)
+        for i in range(11)
+    ]
+    kr_sectors = [
+        SectorPeriodReturn(f"업종{i}", f"업종{i}", "kr_industry", float(i) * 0.5, i + 1)
+        for i in range(12)
+    ]
+    kospi_top = [
+        StockPeriodReturn("005930", "삼성전자", "KOSPI", "반도체",
+                          60000, 63000, 5.0, 1500.0, "2026-04-01", "2026-04-08"),
+    ]
+    kospi_bottom = [
+        StockPeriodReturn("000660", "SK하이닉스", "KOSPI", "반도체",
+                          150000, 140000, -6.67, 900.0, "2026-04-01", "2026-04-08"),
+    ]
+    kosdaq_top = [
+        StockPeriodReturn("247540", "에코프로비엠", "KOSDAQ", "2차전지",
+                          200000, 240000, 20.0, 500.0, "2026-04-01", "2026-04-08"),
+    ]
+    mag7 = [
+        StockPeriodReturn("NVDA", "엔비디아", "US", "Mag7",
+                          900, 1050, 16.67, 0, "2026-04-01", "2026-04-08"),
+    ]
+    return PeriodSnapshot(
+        period=period,
+        trading_days=trading_days,
+        start_date="2026-04-01",
+        end_date="2026-04-08",
+        macro_returns=macro,
+        us_sectors=us_sectors,
+        kr_sectors=kr_sectors,
+        kospi_top=kospi_top,
+        kospi_bottom=kospi_bottom,
+        kosdaq_top=kosdaq_top,
+        kosdaq_bottom=[],
+        mag7_returns=mag7,
+        news_headlines=["[한경] 주간 헤드라인", "[연합뉴스] 시장 동향"],
+    )
+
+
+class TestBuildPeriodReportPrompt:
+    def test_weekly_sections(self):
+        snap = _sample_snapshot("weekly")
+        prompt = _build_period_report_prompt(snap, trade_date="2026-04-08")
+        assert "2026-04-08" in prompt
+        assert "주간" in prompt
+        assert "분석 기간" in prompt
+        assert "글로벌 매크로 주간 수익률" in prompt
+        assert "S&P 500" in prompt
+        assert "US 섹터 ETF 주간 수익률" in prompt
+        assert "한국 업종 평균 주간 수익률" in prompt
+        assert "KOSPI 주간 상승 TOP" in prompt
+        assert "주요 뉴스 헤드라인" in prompt
+        # 주간은 Mag7 섹션 생략
+        assert "Mag7 주간 수익률" not in prompt
+
+    def test_monthly_includes_mag7(self):
+        snap = _sample_snapshot("monthly")
+        prompt = _build_period_report_prompt(snap, trade_date="2026-04-30")
+        assert "월간" in prompt
+        assert "Mag7 월간 수익률" in prompt
+        assert "엔비디아" in prompt
+
+    def test_yearly_includes_mag7(self):
+        snap = _sample_snapshot("yearly")
+        prompt = _build_period_report_prompt(snap, trade_date="2026-12-31")
+        assert "연간" in prompt
+        assert "Mag7 연간 수익률" in prompt
+
+    def test_large_sector_list_shows_top_bottom(self):
+        """섹터 ≥10개면 상위 5 / 하위 5 분리 표시."""
+        snap = _sample_snapshot("weekly")
+        prompt = _build_period_report_prompt(snap, trade_date="2026-04-08")
+        # us_sectors=11개 → 상위 5 / 하위 5
+        assert "### 상위 5" in prompt
+        assert "### 하위 5" in prompt
+
+    def test_small_sector_list_shows_all(self):
+        snap = _sample_snapshot("weekly")
+        snap.us_sectors = snap.us_sectors[:3]  # 3개만
+        snap.kr_sectors = snap.kr_sectors[:3]
+        prompt = _build_period_report_prompt(snap, trade_date="2026-04-08")
+        # 3개뿐이므로 상위/하위 5 분리 헤더 없음
+        # 본문에 전체 3개 포함
+        for s in snap.us_sectors:
+            assert s.name in prompt
+
+    def test_empty_snapshot(self):
+        snap = PeriodSnapshot(
+            period="weekly", trading_days=5,
+            start_date="", end_date="",
+        )
+        prompt = _build_period_report_prompt(snap, trade_date="2026-04-08")
+        assert "2026-04-08" in prompt
+        assert "작성 지침" in prompt
+
+
+class TestGenerateWeeklyReport:
+    @patch("src.content_generator._generate_with_gemini")
+    def test_returns_content_post(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 2026년 04월 08일 주간리포트 — KOSPI 반등\n\n## 금주 성과\n본문",
+            "gemini-2.0-flash",
+        )
+        post = generate_weekly_report(
+            snapshot=_sample_snapshot("weekly"),
+            trade_date="2026-04-08",
+            config=_config(),
+        )
+        assert isinstance(post, ContentPost)
+        assert post.content_type == "weekly_report"
+        assert post.model == "gemini-2.0-flash"
+        assert "주간리포트" in post.categories
+        assert "시장분석" in post.categories
+        assert "KOSPI" in post.tags
+
+    def test_period_mismatch_raises(self):
+        with pytest.raises(ValueError, match="Expected weekly"):
+            generate_weekly_report(
+                snapshot=_sample_snapshot("monthly"),
+                trade_date="2026-04-08",
+                config=_config(),
+            )
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_filename(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 주간 리포트\n\n본문",
+            "gemini-2.0-flash",
+        )
+        post = generate_weekly_report(
+            snapshot=_sample_snapshot("weekly"),
+            trade_date="2026-04-16",
+            config=_config(),
+        )
+        assert post.filename("2026-04-16") == "2026-04-16_주간리포트.md"
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_forbidden_word_detected(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 주간\n\n지금 사야 합니다",
+            "gemini-2.0-flash",
+        )
+        post = generate_weekly_report(
+            snapshot=_sample_snapshot("weekly"),
+            trade_date="2026-04-08",
+            config=_config(),
+        )
+        assert len(post.warnings) > 0
+
+
+class TestGenerateMonthlyReport:
+    @patch("src.content_generator._generate_with_gemini")
+    def test_returns_content_post(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 2026년 04월 월간리포트 — 월간 섹터 로테이션\n\n## 월간 성과\n본문",
+            "gemini-2.0-flash",
+        )
+        post = generate_monthly_report(
+            snapshot=_sample_snapshot("monthly"),
+            trade_date="2026-04-30",
+            config=_config(),
+        )
+        assert isinstance(post, ContentPost)
+        assert post.content_type == "monthly_report"
+        assert "월간리포트" in post.categories
+        assert "월간리포트" in post.tags
+
+    def test_period_mismatch_raises(self):
+        with pytest.raises(ValueError, match="Expected monthly"):
+            generate_monthly_report(
+                snapshot=_sample_snapshot("weekly"),
+                trade_date="2026-04-30",
+                config=_config(),
+            )
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_filename(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 월간 리포트\n\n본문",
+            "gemini-2.0-flash",
+        )
+        post = generate_monthly_report(
+            snapshot=_sample_snapshot("monthly"),
+            trade_date="2026-04-30",
+            config=_config(),
+        )
+        assert post.filename("2026-04-30") == "2026-04-30_월간리포트.md"
+
+
+class TestGenerateYearlyReport:
+    @patch("src.content_generator._generate_with_claude")
+    def test_returns_content_post_claude(self, mock_claude):
+        mock_claude.return_value = (
+            "제목: 2026년 연간리포트 — 올해 증시 결산\n\n## 연간 성과\n본문",
+            "claude-sonnet-4-6",
+        )
+        post = generate_yearly_report(
+            snapshot=_sample_snapshot("yearly"),
+            trade_date="2026-12-31",
+            config=_config("claude"),
+        )
+        assert isinstance(post, ContentPost)
+        assert post.content_type == "yearly_report"
+        assert post.model == "claude-sonnet-4-6"
+        assert "연간리포트" in post.categories
+        assert "연간결산" in post.tags
+
+    def test_period_mismatch_raises(self):
+        with pytest.raises(ValueError, match="Expected yearly"):
+            generate_yearly_report(
+                snapshot=_sample_snapshot("monthly"),
+                trade_date="2026-12-31",
+                config=_config(),
+            )
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_filename(self, mock_gemini):
+        mock_gemini.return_value = (
+            "제목: 연간 리포트\n\n본문",
+            "gemini-2.0-flash",
+        )
+        post = generate_yearly_report(
+            snapshot=_sample_snapshot("yearly"),
+            trade_date="2026-12-31",
+            config=_config(),
+        )
+        assert post.filename("2026-12-31") == "2026-12-31_연간리포트.md"
+
+
+class TestContentPostLabels:
+    """_CONTENT_LABELS 추가 엔트리 확인."""
+
+    def test_weekly_filename(self):
+        post = ContentPost("제목", "본문", "weekly_report", "m")
+        assert post.filename("2026-04-08") == "2026-04-08_주간리포트.md"
+
+    def test_monthly_filename(self):
+        post = ContentPost("제목", "본문", "monthly_report", "m")
+        assert post.filename("2026-04-30") == "2026-04-30_월간리포트.md"
+
+    def test_yearly_filename(self):
+        post = ContentPost("제목", "본문", "yearly_report", "m")
+        assert post.filename("2026-12-31") == "2026-12-31_연간리포트.md"

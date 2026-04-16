@@ -469,6 +469,23 @@ def _fetch_us_market_news() -> list[str]:
     return headlines[:10]
 
 
+def _fetch_econ_calendar_news() -> list[str]:
+    """오늘 예정된 경제 이벤트 뉴스 수집."""
+    from src.fetch_news import _fetch_via_google_rss
+
+    queries = ["오늘 경제지표 발표", "FOMC 금리", "미국 CPI 고용"]
+    seen_titles: set[str] = set()
+    headlines: list[str] = []
+    for q in queries:
+        items = _fetch_via_google_rss(q, display=3)
+        for item in items:
+            if item.title not in seen_titles:
+                seen_titles.add(item.title)
+                tag = f"[{item.press}]" if item.press != "unknown" else ""
+                headlines.append(f"{tag} {item.title}".strip())
+    return headlines[:5]
+
+
 def run_pre_market_pipeline() -> None:
     """프리마켓 브리핑 파이프라인. 미국 증시 마감 후 실행."""
     from src.content_generator import generate_pre_market
@@ -485,10 +502,12 @@ def run_pre_market_pipeline() -> None:
     macro = fetch_macro_snapshot()
     logger.info("macro: %d indicators", len(macro.all_indicators))
 
-    # 2) 미국 증시 뉴스 수집
-    logger.info("[STEP 2/4] fetching US market news...")
+    # 2) 미국 증시 뉴스 + 경제 캘린더 수집
+    logger.info("[STEP 2/4] fetching US market news + econ calendar...")
     us_news = _fetch_us_market_news()
-    logger.info("us news: %d headlines", len(us_news))
+    econ_news = _fetch_econ_calendar_news()
+    logger.info("us news: %d headlines, econ calendar: %d headlines",
+                len(us_news), len(econ_news))
 
     # 3) 프리마켓 브리핑 생성
     logger.info("[STEP 3/4] generating pre-market briefing via %s...", cfg.llm_provider)
@@ -503,6 +522,35 @@ def run_pre_market_pipeline() -> None:
 
     today_str = datetime.now().strftime("%Y-%m-%d")
 
+    # 새 데이터 변환
+    sectors_dict = {ind.name: {"Close": ind.close, "ChangePct": ind.change_pct}
+                    for ind in macro.sectors.values()} if macro.sectors else None
+
+    mega_dict = {ind.name: {"Close": ind.close, "ChangePct": ind.change_pct}
+                 for ind in macro.mega_caps.values()} if macro.mega_caps else None
+
+    style_dict = None
+    if macro.style:
+        style_dict = {
+            "growth_value_ratio": macro.growth_value_ratio,
+            "items": {ind.name: {"ChangePct": ind.change_pct}
+                      for ind in macro.style.values()},
+        }
+
+    asia_dict = {ind.name: {"Close": ind.close, "ChangePct": ind.change_pct}
+                 for ind in macro.asia.values()} if macro.asia else None
+
+    europe_dict = {ind.name: {"Close": ind.close, "ChangePct": ind.change_pct}
+                   for ind in macro.europe.values()} if macro.europe else None
+
+    credit_dict = None
+    if macro.credit:
+        credit_dict = {
+            "stress": macro.credit_stress,
+            "items": {ind.name: {"ChangePct": ind.change_pct}
+                      for ind in macro.credit.values()},
+        }
+
     post = None
     for attempt in range(3):
         try:
@@ -514,6 +562,13 @@ def run_pre_market_pipeline() -> None:
                 us_news=us_news if us_news else None,
                 trade_date=today_str,
                 config=cfg,
+                sectors=sectors_dict,
+                mega_caps=mega_dict,
+                style_signals=style_dict,
+                asia_indices=asia_dict,
+                europe_indices=europe_dict,
+                credit_signals=credit_dict,
+                econ_calendar=econ_news if econ_news else None,
             )
             logger.info("  [OK] %s", post.title[:60])
             if post.warnings:
@@ -553,6 +608,125 @@ def run_pre_market_pipeline() -> None:
     logger.info("=" * 60)
 
 
+def _run_period_pipeline(period: str) -> None:
+    """주간/월간/연간 공통 파이프라인.
+
+    4단계:
+      1) API 키 선체크
+      2) fetch_period_snapshot
+      3) LLM 생성 (rate-limit 3회 재시도 30s→60s)
+      4) 저장 + WP 발행
+    """
+    from src.fetch_history import fetch_period_snapshot
+    from src.content_generator import (
+        generate_weekly_report,
+        generate_monthly_report,
+        generate_yearly_report,
+    )
+
+    started = time.time()
+    cfg = Config.load()
+
+    label_map = {"weekly": "주간", "monthly": "월간", "yearly": "연간"}
+    label = label_map.get(period, period)
+    generators = {
+        "weekly": generate_weekly_report,
+        "monthly": generate_monthly_report,
+        "yearly": generate_yearly_report,
+    }
+    gen_fn = generators[period]
+
+    logger.info("=" * 60)
+    logger.info("%s REPORT PIPELINE START", label.upper())
+    logger.info("=" * 60)
+
+    # 1) API 키 선체크
+    key_ok = (
+        (cfg.llm_provider == "gemini" and cfg.gemini_api_key)
+        or (cfg.llm_provider == "claude" and cfg.anthropic_api_key)
+    )
+    if not key_ok:
+        logger.error("LLM API key not set for provider=%s — skipping %s report",
+                     cfg.llm_provider, label)
+        return
+
+    # 2) 스냅샷 수집
+    logger.info("[STEP 1/4] fetching %s snapshot...", label)
+    snapshot = fetch_period_snapshot(period)  # type: ignore[arg-type]
+    if snapshot.is_empty():
+        logger.warning("%s snapshot is empty — aborting", label)
+        return
+    logger.info("%s snapshot: macro=%d, us_sec=%d, kr_sec=%d, kospi_top=%d, kosdaq_top=%d, news=%d",
+                label, len(snapshot.macro_returns), len(snapshot.us_sectors),
+                len(snapshot.kr_sectors), len(snapshot.kospi_top),
+                len(snapshot.kosdaq_top), len(snapshot.news_headlines))
+
+    # 3) LLM 생성
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    logger.info("[STEP 2/4] generating %s report via %s...", label, cfg.llm_provider)
+
+    post: Optional[ContentPost] = None
+    for attempt in range(3):
+        try:
+            post = gen_fn(snapshot=snapshot, trade_date=today_str, config=cfg)
+            logger.info("  [OK] %s — %s", label, post.title[:60])
+            if post.warnings:
+                logger.warning("  warnings: %s", post.warnings)
+            break
+        except Exception as exc:
+            msg = str(exc).lower()
+            is_quota = "quota" in msg or "resource_exhausted" in msg
+            is_rate = "429" in msg or "rate" in msg
+            if is_quota:
+                logger.error("  [QUOTA EXHAUSTED] %s report — 일일 한도 소진", label)
+                return
+            if is_rate and attempt < 2:
+                wait = 30.0 * (attempt + 1)
+                logger.warning("  [RATE LIMIT] retrying in %.0fs (attempt %d/3)",
+                               wait, attempt + 1)
+                time.sleep(wait)
+                continue
+            logger.error("  [FAIL] %s report: %s", label, str(exc)[:200])
+            return
+
+    if post is None:
+        logger.error("  [FAIL] %s report failed after retries", label)
+        return
+
+    # 4) 저장 + WP 발행
+    logger.info("[STEP 3/4] saving %s report...", label)
+    path = _save_content_post(post, cfg.output_dir, today_str)
+    logger.info("  saved: %s", path.name)
+
+    if cfg.wp_auto_publish and cfg.wp_access_token and cfg.wp_site_id:
+        from src.wordpress_publisher import publish_content_post
+        logger.info("[STEP 4/4] publishing to WordPress.com as DRAFT...")
+        result = publish_content_post(post, today_str, cfg)
+        if result:
+            logger.info("  [WP] %s → %s", result.title[:40], result.url)
+
+    elapsed = time.time() - started
+    logger.info("=" * 60)
+    logger.info("%s REPORT PIPELINE DONE in %.1fs — %s",
+                label.upper(), elapsed, path.name)
+    logger.info("=" * 60)
+
+
+def run_weekly_pipeline() -> None:
+    """주간 리포트 파이프라인."""
+    _run_period_pipeline("weekly")
+
+
+def run_monthly_pipeline() -> None:
+    """월간 리포트 파이프라인."""
+    _run_period_pipeline("monthly")
+
+
+def run_yearly_pipeline() -> None:
+    """연간 리포트 파이프라인."""
+    _run_period_pipeline("yearly")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Stock daily blog pipeline")
     parser.add_argument("--top", type=int, default=3,
@@ -567,12 +741,24 @@ def main() -> None:
                         help="종목당 수집할 뉴스 개수 (default: 5)")
     parser.add_argument("--pre-market", action="store_true",
                         help="프리마켓 브리핑만 생성 (미국 증시 마감 후)")
+    parser.add_argument("--weekly", action="store_true",
+                        help="주간 리포트 생성 (5거래일)")
+    parser.add_argument("--monthly", action="store_true",
+                        help="월간 리포트 생성 (21거래일)")
+    parser.add_argument("--yearly", action="store_true",
+                        help="연간 리포트 생성 (252거래일)")
     args = parser.parse_args()
 
     _setup_logging()
 
     if args.pre_market:
         run_pre_market_pipeline()
+    elif args.weekly:
+        run_weekly_pipeline()
+    elif args.monthly:
+        run_monthly_pipeline()
+    elif args.yearly:
+        run_yearly_pipeline()
     else:
         run_pipeline(
             top_n=args.top,

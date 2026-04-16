@@ -18,6 +18,7 @@ from src.analyzer import (
 )
 from src.config import Config
 from src.content_post import ContentPost
+from src.fetch_history import PeriodSnapshot
 
 logger = logging.getLogger(__name__)
 
@@ -128,6 +129,116 @@ QUANT_INSIGHT_SYSTEM_PROMPT = """당신은 퀀트 리서처입니다.
 - 수치 중심의 객관적 서술
 - 통계적 해석에 집중"""
 
+WEEKLY_REPORT_SYSTEM_PROMPT = """당신은 한국 증시 주간 시장 분석 애널리스트입니다.
+최근 5거래일(Rolling) 데이터를 종합하여 "이번 주 시장은 어떻게 흘러왔고, 다음 주는 어떤 포인트를 관찰해야 하는가"를
+정리한 주간 리포트를 작성합니다.
+
+[핵심 프레임워크]
+금주 지수 성과 → 주간 섹터 로테이션(US·KR) → KOSPI/KOSDAQ 상·하위 종목 흐름 → 주요 이슈 → 다음 주 관전 포인트
+
+[글 구조]
+- 제목: "YYYY년 MM월 DD일 주간리포트 — 핵심 한 줄" 형식
+- 30초 요약: 3줄 불릿
+- 본문 H2/H3 구조:
+  1. 금주 지수 성과 — 미국 3대 지수, KOSPI/KOSDAQ, VIX, 원/달러, 금리 동향
+  2. 섹터 로테이션(주간) — US 섹터 ETF 상·하위, 한국 업종 평균 상·하위
+  3. 주간 상승 TOP / 하락 TOP — KOSPI·KOSDAQ 종목, 업종 맥락과 함께
+  4. 주요 이슈 — 이번 주 뉴스 헤드라인에서 관찰된 테마
+  5. 다음 주 관전 포인트 — 경제 캘린더, 실적, 정책 등
+- 하단에 면책 문구 고정
+- 분량: 약 2,000~3,000자
+
+[절대 원칙]
+1. 오직 제공된 데이터와 사실만 전달합니다.
+2. 투자 권유, 매수/매도 추천, 목표가 제시를 절대 하지 않습니다.
+3. 금지어: "추천", "매수하세요", "매도하세요", "사세요", "파세요", "목표가",
+   "손절", "익절", "몰빵", "필승", "보장", "지금 사야", "놓치지 마",
+   "대박", "떡상", "100% 확률", "틀림없이".
+4. 중립적·객관적 표현 사용: "~으로 관측된다", "~로 해석된다"
+5. 제공되지 않은 수치는 구체적 숫자 대신 서술형으로 표현합니다.
+6. 제목은 H1으로 시작하지 말고, 첫 줄에 '제목: <제목>' 형식으로 주세요.
+7. 본문 최하단에 면책 문구를 반드시 포함하세요.
+
+[톤앤매너]
+- 주간 시황 애널리스트 보고서 톤
+- 한 문장은 짧게, 숫자는 콤마 구분
+- 섹터 로테이션 관점에서 "돈의 이동"을 핵심 축으로 서술"""
+
+
+MONTHLY_REPORT_SYSTEM_PROMPT = """당신은 한국 증시 월간 전략가입니다.
+최근 21거래일(Rolling) 데이터를 바탕으로 "이번 달 거시 환경이 어떻게 변화했고,
+시장이 어느 국면에 들어섰는가"를 진단하는 월간 리포트를 작성합니다.
+
+[핵심 프레임워크]
+월간 지수 퍼포먼스 → 거시 트렌드 변화(금리·환율·원자재·신용) → 월간 섹터 로테이션 →
+KOSPI/KOSDAQ TOP 10·BOTTOM 10 → Mag7 월간 성과 → 다음 달 전망
+
+[글 구조]
+- 제목: "YYYY년 MM월 DD일 월간리포트 — 핵심 한 줄" 형식
+- 30초 요약: 3줄 불릿
+- 본문 H2/H3 구조:
+  1. 월간 지수 퍼포먼스 — 미국/한국 주요 지수 변동률·고가·저가·변동성
+  2. 거시 트렌드 변화 — 10Y-2Y 금리차, USDKRW, WTI·금, HYG(신용) 흐름
+  3. 월간 섹터 로테이션 — US ETF / 한국 업종별 평균 상·하위 5
+  4. 월간 상승 TOP 10 / 하락 TOP 10 — KOSPI·KOSDAQ 종목
+  5. Mag7 월간 성과 — 7개 종목별
+  6. 다음 달 전망 — 매크로 변곡점, 실적 시즌, 경제 이벤트
+- 하단에 면책 문구 고정
+- 분량: 약 2,500~3,500자
+
+[절대 원칙]
+1. 오직 제공된 데이터와 사실만 전달합니다.
+2. 투자 권유, 매수/매도 추천, 목표가 제시를 절대 하지 않습니다.
+3. 금지어: "추천", "매수하세요", "매도하세요", "사세요", "파세요", "목표가",
+   "손절", "익절", "몰빵", "필승", "보장", "지금 사야", "놓치지 마",
+   "대박", "떡상", "100% 확률", "틀림없이".
+4. 중립적·객관적 표현 사용
+5. 제공되지 않은 수치는 구체적 숫자 대신 서술형으로 표현합니다.
+6. 제목은 H1으로 시작하지 말고, 첫 줄에 '제목: <제목>' 형식으로 주세요.
+7. 본문 최하단에 면책 문구를 반드시 포함하세요.
+
+[톤앤매너]
+- 월간 전략 보고서 톤
+- 월간 체제 변화(Regime Change) 관점의 해석 중심"""
+
+
+YEARLY_REPORT_SYSTEM_PROMPT = """당신은 한국 증시 연간 결산 애널리스트입니다.
+최근 252거래일(Rolling) 데이터를 종합하여 "올해 시장의 흐름·변곡점·승자와 패자"를
+정리한 연간 리포트를 작성합니다.
+
+[핵심 프레임워크]
+연간 지수 성과 → 체제 변화(변곡점 해석) → 섹터 연간 승자·패자 →
+연간 TOP 10·BOTTOM 10 → Mag7 연간 성과 → 내년 주요 테마
+
+[글 구조]
+- 제목: "YYYY년 MM월 DD일 연간리포트 — 핵심 한 줄" 형식
+- 30초 요약: 3줄 불릿
+- 본문 H2/H3 구조:
+  1. 연간 지수 성과 — 미국/한국 주요 지수, VIX 체제, 변동성
+  2. 체제 변화 — 금리·환율·신용 변곡점 해석
+  3. 섹터 연간 승자/패자 — US ETF / 한국 업종별
+  4. 연간 상승 TOP 10 / 하락 TOP 10
+  5. Mag7 연간 성과
+  6. 내년 주요 테마 — 매크로·산업·정책 관점 관전 포인트
+- 하단에 면책 문구 고정
+- 분량: 약 3,500~5,000자
+
+[절대 원칙]
+1. 오직 제공된 데이터와 사실만 전달합니다.
+2. 투자 권유, 매수/매도 추천, 목표가 제시를 절대 하지 않습니다.
+3. 금지어: "추천", "매수하세요", "매도하세요", "사세요", "파세요", "목표가",
+   "손절", "익절", "몰빵", "필승", "보장", "지금 사야", "놓치지 마",
+   "대박", "떡상", "100% 확률", "틀림없이".
+4. 중립적·객관적 표현 사용
+5. 제공되지 않은 수치는 구체적 숫자 대신 서술형으로 표현합니다.
+6. 제목은 H1으로 시작하지 말고, 첫 줄에 '제목: <제목>' 형식으로 주세요.
+7. 본문 최하단에 면책 문구를 반드시 포함하세요.
+
+[톤앤매너]
+- 연간 결산 보고서 톤
+- 연간 장기 관점에서 구조적 변화를 읽어내는 서술"""
+
+
 PRE_MARKET_SYSTEM_PROMPT = """당신은 글로벌 매크로 전략가입니다.
 매일 미국 증시 마감 후 "오늘 한국 시장에 어떤 영향을 미칠 것인가"를 분석하는 프리마켓 브리핑을 작성합니다.
 한국 투자자가 장 시작 전(06:00~09:00) 읽고 하루를 준비할 수 있도록 합니다.
@@ -140,11 +251,13 @@ PRE_MARKET_SYSTEM_PROMPT = """당신은 글로벌 매크로 전략가입니다.
 - 제목: "YYYY년 MM월 DD일 프리마켓 브리핑 — 핵심 한 줄" 형식
 - 30초 요약: 3줄 불릿
 - 본문 H2/H3 구조:
-  1. 미국 증시 마감 요약 — S&P 500, NASDAQ, DOW, 반도체지수(SOXX) 방향과 등락폭
-  2. 글로벌 매크로 해석 — VIX(공포지수), 채권(금리차 10Y-2Y), 달러/원 환율, 원자재(금·유가) 흐름과 의미
-  3. 한국 시장 영향 예측 — KOSPI/KOSDAQ 예상 방향, 갭 상승/하락 가능성, 외국인 수급 영향
-  4. 주목할 섹터/테마 — 미국 흐름 기반 한국 수혜/피해 업종 (반도체, 2차전지, 조선, 바이오 등)
-  5. 오늘의 투자 전략 — 관찰 포인트, 주의 사항
+  1. 미국 증시 마감 요약 — 3대 지수 + SOXX + Mag7 핵심 종목
+  2. 섹터 로테이션 분석 — 11개 섹터 ETF 등락률 + 성장/가치 스프레드 + 소형주 동향
+  3. 글로벌 매크로 해석 — VIX, 채권(금리차), 환율, 원자재(금·유가·구리), 신용 스프레드
+  4. 글로벌 증시 동향 — 아시아(닛케이·항셍·상해) + 유럽(DAX·유로스톡스)
+  5. 한국 시장 영향 예측 — KOSPI/KOSDAQ 예상, 갭 방향, 외국인 수급
+  6. 주목할 섹터/테마 — 미국 섹터 흐름 → 한국 수혜/피해 업종 연결
+  7. 오늘의 투자 전략 — 경제 캘린더 이벤트 + 관찰 포인트
 - 하단에 면책 문구 고정
 
 [절대 원칙]
@@ -659,6 +772,14 @@ def build_pre_market_prompt(
     yield_spread: Optional[float | str] = None,
     us_news: Optional[list[str]] = None,
     trade_date: str = "",
+    # ── 신규 ──
+    sectors: Optional[dict] = None,
+    mega_caps: Optional[dict] = None,
+    style_signals: Optional[dict] = None,
+    asia_indices: Optional[dict] = None,
+    europe_indices: Optional[dict] = None,
+    credit_signals: Optional[dict] = None,
+    econ_calendar: Optional[list[str]] = None,
 ) -> str:
     """프리마켓 브리핑 사용자 프롬프트를 조립한다."""
     parts = [f"# {trade_date} 프리마켓 브리핑 분석 요청", ""]
@@ -689,10 +810,69 @@ def build_pre_market_prompt(
         parts.append(macro_narrative)
         parts.append("")
 
+    # ── 신규 섹션들 ──
+    if sectors:
+        parts.append("## US 섹터 ETF 등락률 (전일 마감)")
+        for name, data in sectors.items():
+            parts.append(f"- {name}: {data['ChangePct']:+.2f}%")
+        # 최고/최저 자동 계산
+        best = max(sectors.items(), key=lambda x: x[1]["ChangePct"])
+        worst = min(sectors.items(), key=lambda x: x[1]["ChangePct"])
+        parts.append(f"- **최고**: {best[0]}({best[1]['ChangePct']:+.2f}%) / "
+                     f"**최저**: {worst[0]}({worst[1]['ChangePct']:+.2f}%)")
+        parts.append("")
+
+    if mega_caps:
+        parts.append("## Magnificent 7 개별 종목")
+        for name, data in mega_caps.items():
+            parts.append(f"- {name}: {data['Close']:,.2f} ({data['ChangePct']:+.2f}%)")
+        avg_pct = sum(d["ChangePct"] for d in mega_caps.values()) / len(mega_caps)
+        parts.append(f"- **Mag7 평균**: {avg_pct:+.2f}%")
+        parts.append("")
+
+    if style_signals:
+        parts.append("## 성장 vs 가치 / 소형주")
+        items = style_signals.get("items", {})
+        for name, data in items.items():
+            parts.append(f"- {name}: {data['ChangePct']:+.2f}%")
+        gv = style_signals.get("growth_value_ratio")
+        if gv is not None:
+            label = "성장주 우위" if gv > 0 else "가치주 우위"
+            parts.append(f"- 성장-가치 스프레드: {gv:+.2f}%p → {label}")
+        parts.append("")
+
+    if asia_indices:
+        parts.append("## 아시아 증시 (전일 종가)")
+        for name, data in asia_indices.items():
+            parts.append(f"- {name}: {data['Close']:,.2f} ({data['ChangePct']:+.2f}%)")
+        parts.append("")
+
+    if europe_indices:
+        parts.append("## 유럽 증시 (전일 종가)")
+        for name, data in europe_indices.items():
+            parts.append(f"- {name}: {data['Close']:,.2f} ({data['ChangePct']:+.2f}%)")
+        parts.append("")
+
+    if credit_signals:
+        parts.append("## 신용 리스크 시그널")
+        items = credit_signals.get("items", {})
+        for name, data in items.items():
+            parts.append(f"- {name}: {data['ChangePct']:+.2f}%")
+        stress = credit_signals.get("stress")
+        if stress:
+            parts.append(f"- 신용 스트레스: {stress}")
+        parts.append("")
+
     if us_news:
         parts.append("## 미국 증시 주요 뉴스 (등락 원인)")
         for headline in us_news:
             parts.append(f"- {headline}")
+        parts.append("")
+
+    if econ_calendar:
+        parts.append("## 오늘 예정된 경제 이벤트")
+        for event in econ_calendar:
+            parts.append(f"- {event}")
         parts.append("")
 
     parts.extend([
@@ -700,6 +880,7 @@ def build_pre_market_prompt(
         f"- {trade_date} 일자 프리마켓 브리핑을 작성하세요.",
         "- 한국 시간 기준 오늘의 한국 시장 프리뷰를 작성합니다.",
         "- 위 뉴스와 매크로 데이터를 바탕으로 미국 증시 등락 원인을 분석하고, 한국 시장에 미칠 영향을 예측하세요.",
+        "- 섹터 ETF 등락률을 바탕으로 한국 수혜/피해 업종을 연결 분석하세요.",
         "- 제목은 '제목: <제목>' 형식으로 첫 줄에 주세요.",
         "- 본문은 마크다운 H2/H3 구조를 사용하세요.",
         "- 본문 최하단에 면책 문구를 반드시 포함하세요.",
@@ -717,6 +898,14 @@ def generate_pre_market(
     us_news: Optional[list[str]] = None,
     trade_date: str,
     config: Config,
+    # ── 신규 ──
+    sectors: Optional[dict] = None,
+    mega_caps: Optional[dict] = None,
+    style_signals: Optional[dict] = None,
+    asia_indices: Optional[dict] = None,
+    europe_indices: Optional[dict] = None,
+    credit_signals: Optional[dict] = None,
+    econ_calendar: Optional[list[str]] = None,
 ) -> ContentPost:
     """프리마켓 브리핑 콘텐츠를 생성한다."""
     user_prompt = build_pre_market_prompt(
@@ -726,6 +915,13 @@ def generate_pre_market(
         yield_spread=yield_spread,
         us_news=us_news,
         trade_date=trade_date,
+        sectors=sectors,
+        mega_caps=mega_caps,
+        style_signals=style_signals,
+        asia_indices=asia_indices,
+        europe_indices=europe_indices,
+        credit_signals=credit_signals,
+        econ_calendar=econ_calendar,
     )
 
     logger.info("generating pre-market briefing for %s", trade_date)
@@ -740,5 +936,214 @@ def generate_pre_market(
         model=model_name,
         tags=["프리마켓", "미국증시", "KOSPI전망", "거시경제"],
         categories=["프리마켓브리핑", "시장분석"],
+        warnings=warnings,
+    )
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# 기간 리포트 (주간 / 월간 / 연간) 공통 빌더 + 생성기
+# ═══════════════════════════════════════════════════════════════════════
+
+
+def _build_period_report_prompt(
+    snapshot: PeriodSnapshot,
+    *,
+    trade_date: str,
+) -> str:
+    """주간/월간/연간 리포트 공통 사용자 프롬프트 조립.
+
+    섹터 리스트가 10개 이상이면 상·하위 5개씩, 그보다 적으면 전체를 1회 표시.
+    Mag7은 주간이 아닌 경우에만 포함한다.
+    """
+    label = snapshot.label
+    parts = [f"# {trade_date} {label} 리포트 분석 요청", ""]
+
+    # 1. 분석 기간
+    parts.append(
+        f"## 분석 기간: {snapshot.start_date or 'N/A'} ~ "
+        f"{snapshot.end_date or 'N/A'} ({snapshot.trading_days}거래일)"
+    )
+    parts.append("")
+
+    # 2. 글로벌 매크로 기간 수익률
+    if snapshot.macro_returns:
+        parts.append(f"## 글로벌 매크로 {label} 수익률")
+        for key, mr in snapshot.macro_returns.items():
+            parts.append(
+                f"- {mr.name}: 누적 {mr.cumulative_return_pct:+.2f}%, "
+                f"고점 {mr.high:,.2f}, 저점 {mr.low:,.2f}, σ {mr.volatility:.2f}%"
+            )
+        parts.append("")
+
+    # 3. US 섹터 ETF
+    if snapshot.us_sectors:
+        parts.append(f"## US 섹터 ETF {label} 수익률")
+        if len(snapshot.us_sectors) >= 10:
+            parts.append(f"### 상위 5")
+            for s in snapshot.us_sectors[:5]:
+                parts.append(f"- {s.name}: {s.cumulative_return_pct:+.2f}% (rank {s.rank})")
+            parts.append(f"### 하위 5")
+            for s in snapshot.us_sectors[-5:]:
+                parts.append(f"- {s.name}: {s.cumulative_return_pct:+.2f}% (rank {s.rank})")
+        else:
+            for s in snapshot.us_sectors:
+                parts.append(f"- {s.name}: {s.cumulative_return_pct:+.2f}% (rank {s.rank})")
+        parts.append("")
+
+    # 4. 한국 업종 평균
+    if snapshot.kr_sectors:
+        parts.append(f"## 한국 업종 평균 {label} 수익률")
+        if len(snapshot.kr_sectors) >= 10:
+            parts.append(f"### 상위 5")
+            for s in snapshot.kr_sectors[:5]:
+                parts.append(f"- {s.name}: 평균 {s.cumulative_return_pct:+.2f}% (rank {s.rank})")
+            parts.append(f"### 하위 5")
+            for s in snapshot.kr_sectors[-5:]:
+                parts.append(f"- {s.name}: 평균 {s.cumulative_return_pct:+.2f}% (rank {s.rank})")
+        else:
+            for s in snapshot.kr_sectors:
+                parts.append(f"- {s.name}: 평균 {s.cumulative_return_pct:+.2f}% (rank {s.rank})")
+        parts.append("")
+
+    # 5. KOSPI/KOSDAQ TOP/BOTTOM
+    if snapshot.kospi_top:
+        parts.append(f"## KOSPI {label} 상승 TOP")
+        for s in snapshot.kospi_top:
+            parts.append(
+                f"- {s.name}({s.code}) {s.cumulative_return_pct:+.2f}% "
+                f"/ 평균거래대금 {s.avg_amount_eok:,.1f}억 / {s.industry or '미분류'}"
+            )
+        parts.append("")
+    if snapshot.kospi_bottom:
+        parts.append(f"## KOSPI {label} 하락 TOP")
+        for s in snapshot.kospi_bottom:
+            parts.append(
+                f"- {s.name}({s.code}) {s.cumulative_return_pct:+.2f}% "
+                f"/ 평균거래대금 {s.avg_amount_eok:,.1f}억 / {s.industry or '미분류'}"
+            )
+        parts.append("")
+    if snapshot.kosdaq_top:
+        parts.append(f"## KOSDAQ {label} 상승 TOP")
+        for s in snapshot.kosdaq_top:
+            parts.append(
+                f"- {s.name}({s.code}) {s.cumulative_return_pct:+.2f}% "
+                f"/ 평균거래대금 {s.avg_amount_eok:,.1f}억 / {s.industry or '미분류'}"
+            )
+        parts.append("")
+    if snapshot.kosdaq_bottom:
+        parts.append(f"## KOSDAQ {label} 하락 TOP")
+        for s in snapshot.kosdaq_bottom:
+            parts.append(
+                f"- {s.name}({s.code}) {s.cumulative_return_pct:+.2f}% "
+                f"/ 평균거래대금 {s.avg_amount_eok:,.1f}억 / {s.industry or '미분류'}"
+            )
+        parts.append("")
+
+    # 6. Mag7 — 주간은 생략
+    if snapshot.period != "weekly" and snapshot.mag7_returns:
+        parts.append(f"## Mag7 {label} 수익률")
+        for s in snapshot.mag7_returns:
+            parts.append(f"- {s.name}: {s.cumulative_return_pct:+.2f}%")
+        parts.append("")
+
+    # 7. 뉴스 헤드라인
+    if snapshot.news_headlines:
+        parts.append(f"## {label} 주요 뉴스 헤드라인")
+        for h in snapshot.news_headlines[:15]:
+            parts.append(f"- {h}")
+        parts.append("")
+
+    # 8. 작성 지침
+    parts.extend([
+        "## 작성 지침",
+        f"- {trade_date} 일자 기준 {label} 리포트를 작성하세요.",
+        "- 제목은 '제목: <제목>' 형식으로 첫 줄에 주세요.",
+        "- 본문은 마크다운 H2/H3 구조를 사용하세요.",
+        "- 본문 최하단에 면책 문구를 반드시 포함하세요.",
+        "- 제공된 수치 외에 다른 숫자를 사용하지 마세요.",
+    ])
+    return "\n".join(parts)
+
+
+def generate_weekly_report(
+    *,
+    snapshot: PeriodSnapshot,
+    trade_date: str,
+    config: Config,
+) -> ContentPost:
+    """주간 리포트 콘텐츠를 생성한다."""
+    if snapshot.period != "weekly":
+        raise ValueError(f"Expected weekly snapshot, got {snapshot.period}")
+
+    user_prompt = _build_period_report_prompt(snapshot, trade_date=trade_date)
+
+    logger.info("generating weekly report for %s", trade_date)
+    raw, model_name = _dispatch_llm(WEEKLY_REPORT_SYSTEM_PROMPT, user_prompt, config)
+    title, body = _parse_content_response(raw, trade_date, "주간리포트")
+    warnings = _check_forbidden(title + "\n" + body)
+
+    return ContentPost(
+        title=title,
+        body=body,
+        content_type="weekly_report",
+        model=model_name,
+        tags=["주간리포트", "KOSPI", "KOSDAQ", "주간전망"],
+        categories=["주간리포트", "시장분석"],
+        warnings=warnings,
+    )
+
+
+def generate_monthly_report(
+    *,
+    snapshot: PeriodSnapshot,
+    trade_date: str,
+    config: Config,
+) -> ContentPost:
+    """월간 리포트 콘텐츠를 생성한다."""
+    if snapshot.period != "monthly":
+        raise ValueError(f"Expected monthly snapshot, got {snapshot.period}")
+
+    user_prompt = _build_period_report_prompt(snapshot, trade_date=trade_date)
+
+    logger.info("generating monthly report for %s", trade_date)
+    raw, model_name = _dispatch_llm(MONTHLY_REPORT_SYSTEM_PROMPT, user_prompt, config)
+    title, body = _parse_content_response(raw, trade_date, "월간리포트")
+    warnings = _check_forbidden(title + "\n" + body)
+
+    return ContentPost(
+        title=title,
+        body=body,
+        content_type="monthly_report",
+        model=model_name,
+        tags=["월간리포트", "KOSPI", "KOSDAQ", "월간전망"],
+        categories=["월간리포트", "시장분석"],
+        warnings=warnings,
+    )
+
+
+def generate_yearly_report(
+    *,
+    snapshot: PeriodSnapshot,
+    trade_date: str,
+    config: Config,
+) -> ContentPost:
+    """연간 리포트 콘텐츠를 생성한다."""
+    if snapshot.period != "yearly":
+        raise ValueError(f"Expected yearly snapshot, got {snapshot.period}")
+
+    user_prompt = _build_period_report_prompt(snapshot, trade_date=trade_date)
+
+    logger.info("generating yearly report for %s", trade_date)
+    raw, model_name = _dispatch_llm(YEARLY_REPORT_SYSTEM_PROMPT, user_prompt, config)
+    title, body = _parse_content_response(raw, trade_date, "연간리포트")
+    warnings = _check_forbidden(title + "\n" + body)
+
+    return ContentPost(
+        title=title,
+        body=body,
+        content_type="yearly_report",
+        model=model_name,
+        tags=["연간리포트", "KOSPI", "KOSDAQ", "연간결산"],
+        categories=["연간리포트", "시장분석"],
         warnings=warnings,
     )
