@@ -50,11 +50,20 @@ class MacroSnapshot:
     commodities: dict[str, MacroIndicator] = field(default_factory=dict)
     volatility: dict[str, MacroIndicator] = field(default_factory=dict)
     bonds: dict[str, MacroIndicator] = field(default_factory=dict)
+    # ── 신규 카테고리 ──
+    sectors: dict[str, MacroIndicator] = field(default_factory=dict)
+    mega_caps: dict[str, MacroIndicator] = field(default_factory=dict)
+    style: dict[str, MacroIndicator] = field(default_factory=dict)
+    asia: dict[str, MacroIndicator] = field(default_factory=dict)
+    europe: dict[str, MacroIndicator] = field(default_factory=dict)
+    credit: dict[str, MacroIndicator] = field(default_factory=dict)
 
     @property
     def all_indicators(self) -> dict[str, MacroIndicator]:
         return {**self.us_indices, **self.fx, **self.commodities,
-                **self.volatility, **self.bonds}
+                **self.volatility, **self.bonds,
+                **self.sectors, **self.mega_caps, **self.style,
+                **self.asia, **self.europe, **self.credit}
 
     @property
     def yield_spread(self) -> float | None:
@@ -80,6 +89,46 @@ class MacroSnapshot:
             return "불안"
         else:
             return "공포"
+
+    @property
+    def sector_top_bottom(self) -> tuple[str, str] | None:
+        """섹터 ETF 중 최고/최저 등락률 섹터 반환."""
+        if not self.sectors:
+            return None
+        best = max(self.sectors.values(), key=lambda x: x.change_pct)
+        worst = min(self.sectors.values(), key=lambda x: x.change_pct)
+        return (f"{best.name}({best.change_pct:+.2f}%)",
+                f"{worst.name}({worst.change_pct:+.2f}%)")
+
+    @property
+    def growth_value_ratio(self) -> float | None:
+        """QQQ/VTV 등락률 차이. 양수=성장 우위, 음수=가치 우위."""
+        qqq = self.style.get("QQQ")
+        vtv = self.style.get("VTV")
+        if qqq and vtv:
+            return round(qqq.change_pct - vtv.change_pct, 2)
+        return None
+
+    @property
+    def credit_stress(self) -> str | None:
+        """HYG 등락률 기반 신용 스트레스 판단."""
+        hyg = self.credit.get("HYG")
+        if hyg is None:
+            return None
+        if hyg.change_pct < -1.0:
+            return "경고 (하이일드 급락)"
+        elif hyg.change_pct < -0.3:
+            return "주의"
+        else:
+            return "안정"
+
+    @property
+    def mag7_avg(self) -> float | None:
+        """Magnificent 7 평균 등락률."""
+        if not self.mega_caps:
+            return None
+        return round(sum(m.change_pct for m in self.mega_caps.values())
+                     / len(self.mega_caps), 2)
 
     def to_narrative(self) -> str:
         """LLM 컨텍스트용 한국어 거시경제 '돈의 흐름' 내러티브."""
@@ -130,6 +179,41 @@ class MacroSnapshot:
             elif vix.change_pct < -5 and gold.change_pct < -1:
                 parts.append("VIX 급락 + 금 약세 → 위험자산 선호(Risk-On) 흐름.")
 
+        # 섹터 로테이션
+        top_bottom = self.sector_top_bottom
+        if top_bottom:
+            parts.append(f"섹터: {top_bottom[0]} 주도, {top_bottom[1]} 약세.")
+
+        # 성장 vs 가치
+        gv = self.growth_value_ratio
+        if gv is not None:
+            label = "성장주 우위" if gv > 0 else "가치주 우위"
+            parts.append(f"QQQ-VTV 스프레드 {gv:+.2f}%p → {label}.")
+
+        # 신용 리스크
+        cs = self.credit_stress
+        if cs:
+            hyg = self.credit.get("HYG")
+            hyg_pct = f"{hyg.change_pct:+.2f}%" if hyg else ""
+            parts.append(f"HYG {hyg_pct} → 신용 스트레스 {cs}.")
+
+        # Mag7 평균
+        m7 = self.mag7_avg
+        if m7 is not None:
+            parts.append(f"Mag7 평균 {m7:+.2f}% → 대형 기술주 {'강세' if m7 > 0 else '약세'}.")
+
+        # 아시아
+        if self.asia:
+            asia_parts = [f"{ind.name} {ind.change_pct:+.2f}%"
+                          for ind in self.asia.values()]
+            parts.append(f"아시아: {', '.join(asia_parts)}.")
+
+        # 유럽
+        if self.europe:
+            eu_parts = [f"{ind.name} {ind.change_pct:+.2f}%"
+                        for ind in self.europe.values()]
+            parts.append(f"유럽: {', '.join(eu_parts)}.")
+
         return " ".join(parts)
 
     def to_summary_dict(self) -> dict[str, dict]:
@@ -144,11 +228,17 @@ class MacroSnapshot:
         if self.yield_spread is not None:
             result["_yield_spread"] = self.yield_spread
         result["_market_regime"] = self.market_regime
+        result["_sector_top_bottom"] = self.sector_top_bottom
+        result["_growth_value_ratio"] = self.growth_value_ratio
+        result["_credit_stress"] = self.credit_stress
+        result["_mag7_avg"] = self.mag7_avg
         return result
 
     def is_empty(self) -> bool:
         return not any([self.us_indices, self.fx, self.commodities,
-                        self.volatility, self.bonds])
+                        self.volatility, self.bonds,
+                        self.sectors, self.mega_caps, self.style,
+                        self.asia, self.europe, self.credit])
 
 
 # ── 수집 대상 정의 ──────────────────────────────────────────────────
@@ -189,6 +279,64 @@ _FX_OPTIONAL = {
     "DXY": ("달러인덱스", "DX-Y.NYB"),
 }
 
+# US 섹터 ETF (11개)
+_SECTORS = {
+    "XLK": ("기술", "XLK"),
+    "XLF": ("금융", "XLF"),
+    "XLE": ("에너지", "XLE"),
+    "XLV": ("헬스케어", "XLV"),
+    "XLI": ("산업재", "XLI"),
+    "XLC": ("커뮤니케이션", "XLC"),
+    "XLY": ("경기소비재", "XLY"),
+    "XLP": ("필수소비재", "XLP"),
+    "XLRE": ("부동산", "XLRE"),
+    "XLU": ("유틸리티", "XLU"),
+    "XLB": ("소재", "XLB"),
+}
+
+# Magnificent 7 + 한국 관련주
+_MEGA_CAPS = {
+    "NVDA": ("엔비디아", "NVDA"),
+    "AAPL": ("애플", "AAPL"),
+    "MSFT": ("마이크로소프트", "MSFT"),
+    "AMZN": ("아마존", "AMZN"),
+    "GOOG": ("알파벳", "GOOG"),
+    "META": ("메타", "META"),
+    "TSLA": ("테슬라", "TSLA"),
+}
+
+# 소형주 / 성장 vs 가치
+_STYLE = {
+    "IWM": ("러셀2000", "IWM"),
+    "QQQ": ("나스닥100ETF", "QQQ"),
+    "VTV": ("가치ETF", "VTV"),
+}
+
+# 아시아 지수 (전일 종가)
+_ASIA = {
+    "NIKKEI": ("닛케이225", "^N225"),
+    "HSI": ("항셍", "^HSI"),
+    "SSEC": ("상해종합", "000001.SS"),
+}
+
+# 유럽 지수 (전일 종가)
+_EUROPE = {
+    "DAX": ("독일DAX", "^GDAXI"),
+    "STOXX50": ("유로스톡스50", "^STOXX50E"),
+}
+
+# 추가 원자재
+_COMMODITIES_EXT = {
+    "COPPER": ("구리", "HG=F"),
+    "NATGAS": ("천연가스", "NG=F"),
+}
+
+# 신용/리스크 ETF
+_CREDIT = {
+    "HYG": ("하이일드채권", "HYG"),
+    "TLT": ("미장기채20Y+", "TLT"),
+}
+
 # FDR 코드 → yfinance 티커 매핑 (FDR 미설치 시 fallback용)
 _FDR_TO_YF: dict[str, str] = {
     "US500": "^GSPC",
@@ -202,6 +350,17 @@ _FDR_TO_YF: dict[str, str] = {
     "VIX": "^VIX",
     "US10YT": "^TNX",
     "US2YT": "^IRX",
+    # 아시아·유럽 지수 (yfinance 전용)
+    "^N225": "^N225",
+    "^HSI": "^HSI",
+    "000001.SS": "000001.SS",
+    "^GDAXI": "^GDAXI",
+    "^STOXX50E": "^STOXX50E",
+    # 추가 원자재·신용
+    "HG=F": "HG=F",
+    "NG=F": "NG=F",
+    "HYG": "HYG",
+    "TLT": "TLT",
 }
 
 
@@ -330,6 +489,55 @@ def fetch_macro_snapshot() -> MacroSnapshot:
             snap.bonds[key] = ind
             logger.info("  %s", ind)
 
+    # 섹터 ETF
+    for key, (name, code) in _SECTORS.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.sectors[key] = ind
+            logger.info("  %s", ind)
+
+    # Magnificent 7
+    for key, (name, code) in _MEGA_CAPS.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.mega_caps[key] = ind
+            logger.info("  %s", ind)
+
+    # 스타일 (소형주, 성장 vs 가치)
+    for key, (name, code) in _STYLE.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.style[key] = ind
+            logger.info("  %s", ind)
+
+    # 아시아 지수
+    for key, (name, code) in _ASIA.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.asia[key] = ind
+            logger.info("  %s", ind)
+
+    # 유럽 지수
+    for key, (name, code) in _EUROPE.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.europe[key] = ind
+            logger.info("  %s", ind)
+
+    # 추가 원자재 (기존 commodities에 합침)
+    for key, (name, code) in _COMMODITIES_EXT.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.commodities[key] = ind
+            logger.info("  %s", ind)
+
+    # 신용/리스크
+    for key, (name, code) in _CREDIT.items():
+        ind = _fetch_indicator(key, name, code)
+        if ind:
+            snap.credit[key] = ind
+            logger.info("  %s", ind)
+
     total = len(snap.all_indicators)
     logger.info("macro snapshot: %d indicators fetched", total)
     return snap
@@ -361,6 +569,12 @@ if __name__ == "__main__":
         ("원자재", snap.commodities),
         ("변동성", snap.volatility),
         ("채권", snap.bonds),
+        ("섹터 ETF", snap.sectors),
+        ("Mag7", snap.mega_caps),
+        ("스타일", snap.style),
+        ("아시아", snap.asia),
+        ("유럽", snap.europe),
+        ("신용", snap.credit),
     ]
     for title, indicators in sections:
         if indicators:

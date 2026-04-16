@@ -89,8 +89,8 @@ class TestFetchMacroSnapshot:
         mock_fetch.return_value = MacroIndicator("T", "T", 100, 99, 1, 1.01, "2026-04-08")
         snap = fetch_macro_snapshot()
         assert not snap.is_empty()
-        # 11개 지표 (SP500,NASDAQ,DOW,SOXX,USDKRW,DXY,WTI,GOLD,VIX,US10Y,US2Y)
-        assert len(snap.all_indicators) == 11
+        # 41개 지표 (기존 11 + 섹터11 + Mag7 + 스타일3 + 아시아3 + 유럽2 + 추가원자재2 + 신용2)
+        assert len(snap.all_indicators) == 41
 
     @patch("src.fetch_macro._fetch_indicator")
     def test_partial_failure(self, mock_fetch):
@@ -168,3 +168,114 @@ class TestMacroSnapshotDerived:
         assert "_yield_spread" in d
         assert "_market_regime" in d
         assert d["_market_regime"] == "불안"
+
+
+# ── 신규 파생 프로퍼티 테스트 ─────────────────────────────────────
+class TestMacroSnapshotNewProperties:
+    def test_sector_top_bottom(self):
+        snap = MacroSnapshot()
+        snap.sectors["XLK"] = MacroIndicator("기술", "XLK", 200, 196, 4, 2.04, "d")
+        snap.sectors["XLE"] = MacroIndicator("에너지", "XLE", 90, 92, -2, -2.17, "d")
+        result = snap.sector_top_bottom
+        assert result is not None
+        assert "기술" in result[0]
+        assert "+2.04%" in result[0]
+        assert "에너지" in result[1]
+        assert "-2.17%" in result[1]
+
+    def test_sector_top_bottom_empty(self):
+        snap = MacroSnapshot()
+        assert snap.sector_top_bottom is None
+
+    def test_growth_value_ratio_positive(self):
+        snap = MacroSnapshot()
+        snap.style["QQQ"] = MacroIndicator("나스닥100ETF", "QQQ", 500, 492, 8, 1.63, "d")
+        snap.style["VTV"] = MacroIndicator("가치ETF", "VTV", 160, 159.5, 0.5, 0.31, "d")
+        assert snap.growth_value_ratio == 1.32
+
+    def test_growth_value_ratio_negative(self):
+        snap = MacroSnapshot()
+        snap.style["QQQ"] = MacroIndicator("나스닥100ETF", "QQQ", 490, 492, -2, -0.41, "d")
+        snap.style["VTV"] = MacroIndicator("가치ETF", "VTV", 161, 159.5, 1.5, 0.94, "d")
+        assert snap.growth_value_ratio == -1.35
+
+    def test_growth_value_ratio_missing(self):
+        snap = MacroSnapshot()
+        assert snap.growth_value_ratio is None
+
+    def test_credit_stress_warning(self):
+        snap = MacroSnapshot()
+        snap.credit["HYG"] = MacroIndicator("하이일드채권", "HYG", 75, 76.2, -1.2, -1.57, "d")
+        assert snap.credit_stress == "경고 (하이일드 급락)"
+
+    def test_credit_stress_caution(self):
+        snap = MacroSnapshot()
+        snap.credit["HYG"] = MacroIndicator("하이일드채권", "HYG", 76, 76.3, -0.3, -0.39, "d")
+        assert snap.credit_stress == "주의"
+
+    def test_credit_stress_stable(self):
+        snap = MacroSnapshot()
+        snap.credit["HYG"] = MacroIndicator("하이일드채권", "HYG", 76, 75.9, 0.1, 0.13, "d")
+        assert snap.credit_stress == "안정"
+
+    def test_credit_stress_none(self):
+        snap = MacroSnapshot()
+        assert snap.credit_stress is None
+
+    def test_mag7_avg(self):
+        snap = MacroSnapshot()
+        snap.mega_caps["NVDA"] = MacroIndicator("엔비디아", "NVDA", 950, 920, 30, 3.26, "d")
+        snap.mega_caps["AAPL"] = MacroIndicator("애플", "AAPL", 200, 198, 2, 1.01, "d")
+        snap.mega_caps["TSLA"] = MacroIndicator("테슬라", "TSLA", 245, 250, -5, -2.0, "d")
+        expected = round((3.26 + 1.01 + (-2.0)) / 3, 2)
+        assert snap.mag7_avg == expected
+
+    def test_mag7_avg_empty(self):
+        snap = MacroSnapshot()
+        assert snap.mag7_avg is None
+
+    def test_all_indicators_includes_new(self):
+        snap = MacroSnapshot()
+        snap.sectors["XLK"] = MacroIndicator("기술", "XLK", 200, 196, 4, 2.04, "d")
+        snap.mega_caps["NVDA"] = MacroIndicator("엔비디아", "NVDA", 950, 920, 30, 3.26, "d")
+        snap.style["QQQ"] = MacroIndicator("나스닥100ETF", "QQQ", 500, 492, 8, 1.63, "d")
+        snap.asia["NIKKEI"] = MacroIndicator("닛케이225", "^N225", 38500, 38300, 200, 0.52, "d")
+        snap.europe["DAX"] = MacroIndicator("독일DAX", "^GDAXI", 18200, 18160, 40, 0.22, "d")
+        snap.credit["HYG"] = MacroIndicator("하이일드채권", "HYG", 76, 75.9, 0.1, 0.13, "d")
+        assert len(snap.all_indicators) == 6
+
+    def test_is_empty_with_new_fields(self):
+        snap = MacroSnapshot()
+        snap.sectors["XLK"] = MacroIndicator("기술", "XLK", 200, 196, 4, 2.04, "d")
+        assert not snap.is_empty()
+
+    def test_narrative_includes_sectors(self):
+        snap = MacroSnapshot()
+        snap.sectors["XLK"] = MacroIndicator("기술", "XLK", 200, 196, 4, 2.04, "d")
+        snap.sectors["XLE"] = MacroIndicator("에너지", "XLE", 90, 92, -2, -2.17, "d")
+        text = snap.to_narrative()
+        assert "섹터" in text
+        assert "기술" in text
+
+    def test_narrative_includes_asia(self):
+        snap = MacroSnapshot()
+        snap.asia["NIKKEI"] = MacroIndicator("닛케이225", "^N225", 38500, 38300, 200, 0.52, "d")
+        text = snap.to_narrative()
+        assert "아시아" in text
+        assert "닛케이" in text
+
+    def test_narrative_includes_mag7(self):
+        snap = MacroSnapshot()
+        snap.mega_caps["NVDA"] = MacroIndicator("엔비디아", "NVDA", 950, 920, 30, 3.26, "d")
+        text = snap.to_narrative()
+        assert "Mag7" in text
+
+    def test_to_summary_dict_includes_new_derived(self):
+        snap = MacroSnapshot()
+        snap.sectors["XLK"] = MacroIndicator("기술", "XLK", 200, 196, 4, 2.04, "d")
+        snap.sectors["XLE"] = MacroIndicator("에너지", "XLE", 90, 92, -2, -2.17, "d")
+        snap.credit["HYG"] = MacroIndicator("하이일드채권", "HYG", 76, 75.9, 0.1, 0.13, "d")
+        d = snap.to_summary_dict()
+        assert "_sector_top_bottom" in d
+        assert "_credit_stress" in d
+        assert d["_credit_stress"] == "안정"
