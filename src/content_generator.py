@@ -272,6 +272,13 @@ PRE_MARKET_SYSTEM_PROMPT = """당신은 글로벌 매크로 전략가입니다.
 7. 본문 최하단에 면책 문구를 반드시 포함하세요:
    "본 브리핑은 정보 제공 목적이며 투자 판단은 본인의 책임입니다."
 
+[추가 분석 지침]
+- 글로벌 이슈 트래커 데이터가 제공되면, 해당 이슈의 최신 동향과 한국 시장 영향을 분석하세요.
+- 이슈별 상승 예상/하락 예상 종목이 제공되면, 해당 종목명을 본문에 구체적으로 언급하세요.
+  예시: "SpaceX IPO 뉴스 활성화 -> 미래에셋벤처투자, 한화에어로스페이스 등 수혜 예상"
+- 테마주 연결 데이터가 제공되면, 해당 섹터의 한국 관련주를 언급하세요.
+- 경제 캘린더가 제공되면, 중요도(상/중/하)에 따라 당일 주요 이벤트를 정리하세요.
+
 [톤앤매너]
 - 전문적이지만 읽기 쉽게
 - 핵심 수치는 **굵은 글씨** 사용
@@ -779,7 +786,10 @@ def build_pre_market_prompt(
     asia_indices: Optional[dict] = None,
     europe_indices: Optional[dict] = None,
     credit_signals: Optional[dict] = None,
-    econ_calendar: Optional[list[str]] = None,
+    econ_calendar: Optional[list] = None,
+    # ── 인사이트 확장 ──
+    global_issues: Optional[list[dict]] = None,
+    theme_connections: Optional[list[dict]] = None,
 ) -> str:
     """프리마켓 브리핑 사용자 프롬프트를 조립한다."""
     parts = [f"# {trade_date} 프리마켓 브리핑 분석 요청", ""]
@@ -870,9 +880,54 @@ def build_pre_market_prompt(
         parts.append("")
 
     if econ_calendar:
-        parts.append("## 오늘 예정된 경제 이벤트")
+        parts.append("## 경제 캘린더")
         for event in econ_calendar:
-            parts.append(f"- {event}")
+            if isinstance(event, dict):
+                imp = event.get("importance", "하")
+                ev_name = event.get("event", "")
+                ev_time = event.get("time", "")
+                prev = event.get("previous", "")
+                cons = event.get("consensus", "")
+                time_str = f" {ev_time}" if ev_time else ""
+                detail = ""
+                if prev or cons:
+                    detail = f" (이전 {prev}" if prev else " ("
+                    if cons:
+                        detail += f", 예상 {cons})"
+                    else:
+                        detail += ")"
+                parts.append(f"- [{imp}]{time_str} {ev_name}{detail}")
+            else:
+                parts.append(f"- {event}")
+        parts.append("")
+
+    if global_issues:
+        parts.append("## 글로벌 이슈 트래커")
+        for issue in global_issues:
+            topic = issue.get("topic", "")
+            category = issue.get("category", "")
+            kr_impact = issue.get("kr_impact", "")
+            headlines = issue.get("headlines", [])
+            pos_stocks = issue.get("kr_stocks_positive", [])
+            neg_stocks = issue.get("kr_stocks_negative", [])
+            headline_summary = f'"{headlines[0]}" 외 {len(headlines)-1}건' if len(headlines) > 1 else f'"{headlines[0]}"' if headlines else "관련 뉴스 없음"
+            parts.append(f"- [{category}] {topic}: {headline_summary}")
+            parts.append(f"  → 영향: {kr_impact}")
+            if pos_stocks:
+                parts.append(f"  → 상승 예상: {', '.join(pos_stocks)}")
+            if neg_stocks:
+                parts.append(f"  → 하락 예상: {', '.join(neg_stocks)}")
+        parts.append("")
+
+    if theme_connections:
+        parts.append("## 테마주 연결 (매크로 → 한국)")
+        for conn in theme_connections:
+            trigger = conn.get("trigger", "")
+            theme = conn.get("theme", "")
+            direction = conn.get("direction", "")
+            kr_stocks = conn.get("kr_stocks", [])
+            stocks_str = ", ".join(kr_stocks[:5])
+            parts.append(f"- {trigger} ({theme}) → {direction}: {stocks_str}")
         parts.append("")
 
     parts.extend([
@@ -881,12 +936,227 @@ def build_pre_market_prompt(
         "- 한국 시간 기준 오늘의 한국 시장 프리뷰를 작성합니다.",
         "- 위 뉴스와 매크로 데이터를 바탕으로 미국 증시 등락 원인을 분석하고, 한국 시장에 미칠 영향을 예측하세요.",
         "- 섹터 ETF 등락률을 바탕으로 한국 수혜/피해 업종을 연결 분석하세요.",
+        "- 글로벌 이슈 트래커가 있으면 해당 이슈의 최신 동향과 한국 시장 영향을 분석하세요.",
+        "- 테마주 연결이 있으면 해당 섹터의 한국 관련주를 언급하세요.",
+        "- 경제 캘린더가 있으면 중요도(상/중/하)에 따라 당일 주요 이벤트를 정리하세요.",
         "- 제목은 '제목: <제목>' 형식으로 첫 줄에 주세요.",
         "- 본문은 마크다운 H2/H3 구조를 사용하세요.",
         "- 본문 최하단에 면책 문구를 반드시 포함하세요.",
         "- 제공된 수치 외에 다른 숫자를 사용하지 마세요.",
     ])
     return "\n".join(parts)
+
+
+def generate_pre_market_fallback(
+    *,
+    macro_summary: Optional[dict] = None,
+    macro_narrative: Optional[str] = None,
+    market_regime: Optional[str] = None,
+    yield_spread: Optional[float | str] = None,
+    us_news: Optional[list[str]] = None,
+    trade_date: str,
+    sectors: Optional[dict] = None,
+    mega_caps: Optional[dict] = None,
+    style_signals: Optional[dict] = None,
+    asia_indices: Optional[dict] = None,
+    europe_indices: Optional[dict] = None,
+    credit_signals: Optional[dict] = None,
+    econ_calendar: Optional[list] = None,
+    # ── 인사이트 확장 ──
+    global_issues: Optional[list[dict]] = None,
+    theme_connections: Optional[list[dict]] = None,
+) -> ContentPost:
+    """LLM 없이 수집된 데이터만으로 프리마켓 브리핑을 생성한다 (템플릿 기반 fallback)."""
+    parts: list[str] = []
+
+    # 제목
+    title = f"{trade_date} 프리마켓 브리핑 — 데이터 기반 자동 생성"
+
+    # 30초 요약
+    parts.append("## 30초 요약")
+    summary_bullets: list[str] = []
+    if macro_summary:
+        sp = macro_summary.get("S&P 500")
+        nq = macro_summary.get("NASDAQ")
+        if sp and nq:
+            direction = "상승" if sp["ChangePct"] > 0 else "하락"
+            summary_bullets.append(
+                f"미국 증시 S&P500 {sp['ChangePct']:+.2f}%, 나스닥 {nq['ChangePct']:+.2f}%로 {direction} 마감"
+            )
+    if market_regime:
+        summary_bullets.append(f"시장 체제(VIX 기반): **{market_regime}**")
+    if yield_spread is not None:
+        summary_bullets.append(f"장단기 금리차(10Y-2Y): **{yield_spread}%p**")
+    if not summary_bullets:
+        summary_bullets.append("수집된 주요 지표를 아래에서 확인하세요.")
+    for b in summary_bullets:
+        parts.append(f"- {b}")
+    parts.append("")
+
+    # 1. 미국 증시 마감 요약
+    if macro_summary:
+        parts.append("## 미국 증시 마감 요약")
+        for name, data in macro_summary.items():
+            if name.startswith("_"):
+                continue
+            val = data.get("Close")
+            pct = data.get("ChangePct")
+            if val is None or pct is None:
+                continue
+            if "10Y" in name or "2Y" in name:
+                parts.append(f"- {name}: **{val:.3f}%** ({pct:+.2f}%p)")
+            else:
+                parts.append(f"- {name}: **{val:,.2f}** ({pct:+.2f}%)")
+        parts.append("")
+
+    # 2. 섹터 로테이션
+    if sectors:
+        parts.append("## 섹터 로테이션 분석")
+        sorted_sectors = sorted(sectors.items(), key=lambda x: x[1]["ChangePct"], reverse=True)
+        for name, data in sorted_sectors:
+            parts.append(f"- {name}: {data['ChangePct']:+.2f}%")
+        best = sorted_sectors[0]
+        worst = sorted_sectors[-1]
+        parts.append(f"- **최고**: {best[0]}({best[1]['ChangePct']:+.2f}%) / "
+                     f"**최저**: {worst[0]}({worst[1]['ChangePct']:+.2f}%)")
+        parts.append("")
+
+    # 3. Mag7
+    if mega_caps:
+        parts.append("## Magnificent 7")
+        for name, data in mega_caps.items():
+            parts.append(f"- {name}: **{data['Close']:,.2f}** ({data['ChangePct']:+.2f}%)")
+        avg_pct = sum(d["ChangePct"] for d in mega_caps.values()) / len(mega_caps)
+        parts.append(f"- Mag7 평균: **{avg_pct:+.2f}%**")
+        parts.append("")
+
+    # 4. 매크로
+    parts.append("## 글로벌 매크로")
+    if market_regime:
+        parts.append(f"- VIX 기반 시장 체제: **{market_regime}**")
+    if yield_spread is not None:
+        parts.append(f"- 장단기 금리차(10Y-2Y): **{yield_spread}%p**")
+    if macro_narrative:
+        parts.append(f"- {macro_narrative}")
+    parts.append("")
+
+    # 5. 성장 vs 가치
+    if style_signals:
+        parts.append("## 성장 vs 가치 / 소형주")
+        items = style_signals.get("items", {})
+        for name, data in items.items():
+            parts.append(f"- {name}: {data['ChangePct']:+.2f}%")
+        gv = style_signals.get("growth_value_ratio")
+        if gv is not None:
+            label = "성장주 우위" if gv > 0 else "가치주 우위"
+            parts.append(f"- 성장-가치 스프레드: {gv:+.2f}%p → {label}")
+        parts.append("")
+
+    # 6. 아시아
+    if asia_indices:
+        parts.append("## 아시아 증시")
+        for name, data in asia_indices.items():
+            parts.append(f"- {name}: **{data['Close']:,.2f}** ({data['ChangePct']:+.2f}%)")
+        parts.append("")
+
+    # 7. 유럽
+    if europe_indices:
+        parts.append("## 유럽 증시")
+        for name, data in europe_indices.items():
+            parts.append(f"- {name}: **{data['Close']:,.2f}** ({data['ChangePct']:+.2f}%)")
+        parts.append("")
+
+    # 8. 신용 리스크
+    if credit_signals:
+        parts.append("## 신용 리스크")
+        items = credit_signals.get("items", {})
+        for name, data in items.items():
+            parts.append(f"- {name}: {data['ChangePct']:+.2f}%")
+        stress = credit_signals.get("stress")
+        if stress:
+            parts.append(f"- 신용 스트레스: **{stress}**")
+        parts.append("")
+
+    # 9. 뉴스
+    if us_news:
+        parts.append("## 미국 증시 주요 뉴스")
+        for headline in us_news:
+            parts.append(f"- {headline}")
+        parts.append("")
+
+    # 10. 경제 캘린더
+    if econ_calendar:
+        parts.append("## 경제 캘린더")
+        for event in econ_calendar:
+            if isinstance(event, dict):
+                imp = event.get("importance", "하")
+                ev_name = event.get("event", "")
+                ev_time = event.get("time", "")
+                prev = event.get("previous", "")
+                cons = event.get("consensus", "")
+                time_str = f" {ev_time}" if ev_time else ""
+                detail = ""
+                if prev or cons:
+                    detail = f" (이전 {prev}" if prev else " ("
+                    if cons:
+                        detail += f", 예상 {cons})"
+                    else:
+                        detail += ")"
+                parts.append(f"- [{imp}]{time_str} {ev_name}{detail}")
+            else:
+                parts.append(f"- {event}")
+        parts.append("")
+
+    # 11. 글로벌 이슈 트래커 + 한국 종목 예측
+    if global_issues:
+        parts.append("## 글로벌 이슈 트래커")
+        for issue in global_issues:
+            topic = issue.get("topic", "")
+            category = issue.get("category", "")
+            kr_impact = issue.get("kr_impact", "")
+            headlines = issue.get("headlines", [])
+            pos_stocks = issue.get("kr_stocks_positive", [])
+            neg_stocks = issue.get("kr_stocks_negative", [])
+            parts.append(f"### [{category}] {topic}")
+            for h in headlines:
+                parts.append(f"- {h}")
+            parts.append(f"- **한국 영향**: {kr_impact}")
+            if pos_stocks:
+                parts.append(f"- **상승 예상 종목**: {', '.join(pos_stocks)}")
+            if neg_stocks:
+                parts.append(f"- **하락 예상 종목**: {', '.join(neg_stocks)}")
+            parts.append("")
+
+    # 12. 테마주 연결
+    if theme_connections:
+        parts.append("## 테마주 연결 (매크로 → 한국)")
+        for conn in theme_connections:
+            trigger = conn.get("trigger", "")
+            theme = conn.get("theme", "")
+            direction = conn.get("direction", "")
+            kr_sectors = conn.get("kr_sectors", [])
+            kr_stocks = conn.get("kr_stocks", [])
+            sectors_str = ", ".join(kr_sectors)
+            stocks_str = ", ".join(kr_stocks[:5])
+            parts.append(f"- **{trigger}** ({theme}) → {direction}: {stocks_str} ({sectors_str})")
+        parts.append("")
+
+    # 면책 문구
+    parts.append("---")
+    parts.append("*본 브리핑은 LLM 분석 없이 수집된 데이터를 기반으로 자동 생성되었습니다. "
+                 "정보 제공 목적이며 투자 판단은 본인의 책임입니다.*")
+
+    body = "\n".join(parts)
+
+    return ContentPost(
+        title=title,
+        body=body,
+        content_type="pre_market",
+        model="template-fallback",
+        tags=["프리마켓", "미국증시", "KOSPI전망", "거시경제", "자동생성"],
+        categories=["프리마켓브리핑", "시장분석"],
+        warnings=["LLM 분석 없이 템플릿 기반으로 생성됨"],
+    )
 
 
 def generate_pre_market(
@@ -905,7 +1175,10 @@ def generate_pre_market(
     asia_indices: Optional[dict] = None,
     europe_indices: Optional[dict] = None,
     credit_signals: Optional[dict] = None,
-    econ_calendar: Optional[list[str]] = None,
+    econ_calendar: Optional[list] = None,
+    # ── 인사이트 확장 ──
+    global_issues: Optional[list[dict]] = None,
+    theme_connections: Optional[list[dict]] = None,
 ) -> ContentPost:
     """프리마켓 브리핑 콘텐츠를 생성한다."""
     user_prompt = build_pre_market_prompt(
@@ -922,6 +1195,8 @@ def generate_pre_market(
         europe_indices=europe_indices,
         credit_signals=credit_signals,
         econ_calendar=econ_calendar,
+        global_issues=global_issues,
+        theme_connections=theme_connections,
     )
 
     logger.info("generating pre-market briefing for %s", trade_date)

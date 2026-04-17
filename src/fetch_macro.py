@@ -11,16 +11,18 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 
-# FinanceDataReader가 없으면 yfinance fallback 사용
+# FinanceDataReader / yfinance 독립 import — FDR 설치 환경에서도 yfinance fallback 가능
 try:
     import FinanceDataReader as fdr
     _USE_FDR = True
 except ImportError:
+    fdr = None  # type: ignore[assignment]
     _USE_FDR = False
-    try:
-        import yfinance as yf
-    except ImportError:
-        yf = None  # type: ignore[assignment]
+
+try:
+    import yfinance as yf
+except ImportError:
+    yf = None  # type: ignore[assignment]
 
 logger = logging.getLogger(__name__)
 
@@ -349,7 +351,7 @@ _FDR_TO_YF: dict[str, str] = {
     "GC=F": "GC=F",
     "VIX": "^VIX",
     "US10YT": "^TNX",
-    "US2YT": "^IRX",
+    "US2YT": "2YY=F",
     # 아시아·유럽 지수 (yfinance 전용)
     "^N225": "^N225",
     "^HSI": "^HSI",
@@ -398,24 +400,11 @@ def _df_to_indicator(
     )
 
 
-def _fetch_indicator(
-    key: str, display_name: str, fdr_code: str, days: int = 15
+def _fetch_via_yfinance(
+    key: str, display_name: str, fdr_code: str, start, end,
 ) -> MacroIndicator | None:
-    """지표를 가져와 MacroIndicator로 변환. FDR 우선, 없으면 yfinance."""
-    end = datetime.now().date()
-    start = end - timedelta(days=days)
-
-    if _USE_FDR:
-        try:
-            df = fdr.DataReader(fdr_code, start, end)
-            return _df_to_indicator(key, display_name, fdr_code, df)
-        except Exception as exc:
-            logger.error("macro %s (%s) FDR failed: %s", key, fdr_code, exc)
-            return None
-
-    # yfinance fallback
+    """yfinance를 사용하여 지표를 가져온다."""
     if yf is None:
-        logger.error("macro %s: neither FinanceDataReader nor yfinance available", key)
         return None
     yf_code = _FDR_TO_YF.get(fdr_code, fdr_code)
     try:
@@ -425,8 +414,40 @@ def _fetch_indicator(
             df.columns = df.columns.get_level_values(0)
         return _df_to_indicator(key, display_name, fdr_code, df)
     except Exception as exc:
-        logger.error("macro %s (%s → yf:%s) failed: %s", key, fdr_code, yf_code, exc)
+        logger.warning("macro %s (%s → yf:%s) failed: %s", key, fdr_code, yf_code, exc)
         return None
+
+
+def _fetch_indicator(
+    key: str, display_name: str, fdr_code: str, days: int = 15
+) -> MacroIndicator | None:
+    """지표를 가져와 MacroIndicator로 변환. FDR 우선, 실패/NaN 시 yfinance fallback."""
+    end = datetime.now().date()
+    start = end - timedelta(days=days)
+
+    # 1) FDR 시도
+    if _USE_FDR:
+        try:
+            df = fdr.DataReader(fdr_code, start, end)
+            result = _df_to_indicator(key, display_name, fdr_code, df)
+            if result is not None:
+                return result
+            # FDR이 NaN/빈 데이터 → yfinance fallback
+            logger.warning("macro %s (%s) FDR returned empty/NaN, trying yfinance...", key, fdr_code)
+        except Exception as exc:
+            logger.warning("macro %s (%s) FDR failed: %s, trying yfinance...", key, fdr_code, exc)
+
+    # 2) yfinance fallback
+    result = _fetch_via_yfinance(key, display_name, fdr_code, start, end)
+    if result is not None:
+        return result
+
+    # 양쪽 모두 실패
+    if yf is None and not _USE_FDR:
+        logger.error("macro %s: neither FinanceDataReader nor yfinance available", key)
+    else:
+        logger.warning("macro %s (%s): both FDR and yfinance failed", key, fdr_code)
+    return None
 
 
 def fetch_macro_snapshot() -> MacroSnapshot:
@@ -510,9 +531,9 @@ def fetch_macro_snapshot() -> MacroSnapshot:
             snap.style[key] = ind
             logger.info("  %s", ind)
 
-    # 아시아 지수
+    # 아시아 지수 (중국 시장 데이터 누락 빈도가 높아 days=30으로 확장)
     for key, (name, code) in _ASIA.items():
-        ind = _fetch_indicator(key, name, code)
+        ind = _fetch_indicator(key, name, code, days=30)
         if ind:
             snap.asia[key] = ind
             logger.info("  %s", ind)

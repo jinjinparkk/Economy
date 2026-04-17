@@ -488,7 +488,7 @@ def _fetch_econ_calendar_news() -> list[str]:
 
 def run_pre_market_pipeline() -> None:
     """프리마켓 브리핑 파이프라인. 미국 증시 마감 후 실행."""
-    from src.content_generator import generate_pre_market
+    from src.content_generator import generate_pre_market, generate_pre_market_fallback
 
     started = time.time()
     cfg = Config.load()
@@ -502,24 +502,28 @@ def run_pre_market_pipeline() -> None:
     macro = fetch_macro_snapshot()
     logger.info("macro: %d indicators", len(macro.all_indicators))
 
-    # 2) 미국 증시 뉴스 + 경제 캘린더 수집
-    logger.info("[STEP 2/4] fetching US market news + econ calendar...")
+    # 2) 미국 증시 뉴스 수집
+    logger.info("[STEP 2/4] fetching US market news...")
     us_news = _fetch_us_market_news()
-    econ_news = _fetch_econ_calendar_news()
-    logger.info("us news: %d headlines, econ calendar: %d headlines",
-                len(us_news), len(econ_news))
+    logger.info("us news: %d headlines", len(us_news))
+
+    # 2b) 글로벌 이슈 트래커
+    from src.fetch_insight import fetch_global_issues, detect_theme_connections, fetch_econ_calendar
+    logger.info("[STEP 2b] fetching global issues...")
+    global_issues = fetch_global_issues()
+    logger.info("global issues: %d active", len(global_issues))
+
+    # 2c) 테마주 연결 분석
+    logger.info("[STEP 2c] detecting theme connections...")
+    theme_connections = detect_theme_connections(macro)
+    logger.info("theme connections: %d activated", len(theme_connections))
+
+    # 2d) 경제 캘린더 (기존 _fetch_econ_calendar_news 대체)
+    logger.info("[STEP 2d] fetching econ calendar...")
+    econ_events = fetch_econ_calendar()
+    logger.info("econ calendar: %d events", len(econ_events))
 
     # 3) 프리마켓 브리핑 생성
-    logger.info("[STEP 3/4] generating pre-market briefing via %s...", cfg.llm_provider)
-    key_ok = (
-        (cfg.llm_provider == "gemini" and cfg.gemini_api_key)
-        or (cfg.llm_provider == "claude" and cfg.anthropic_api_key)
-    )
-    if not key_ok:
-        logger.error("LLM API key not set for provider=%s — cannot generate briefing",
-                     cfg.llm_provider)
-        return
-
     today_str = datetime.now().strftime("%Y-%m-%d")
 
     # 새 데이터 변환
@@ -551,44 +555,69 @@ def run_pre_market_pipeline() -> None:
                       for ind in macro.credit.values()},
         }
 
-    post = None
-    for attempt in range(3):
-        try:
-            post = generate_pre_market(
-                macro_summary=macro.to_summary_dict() if not macro.is_empty() else None,
-                macro_narrative=macro.to_narrative() if not macro.is_empty() else None,
-                market_regime=macro.market_regime,
-                yield_spread=macro.yield_spread,
-                us_news=us_news if us_news else None,
-                trade_date=today_str,
-                config=cfg,
-                sectors=sectors_dict,
-                mega_caps=mega_dict,
-                style_signals=style_dict,
-                asia_indices=asia_dict,
-                europe_indices=europe_dict,
-                credit_signals=credit_dict,
-                econ_calendar=econ_news if econ_news else None,
-            )
-            logger.info("  [OK] %s", post.title[:60])
-            if post.warnings:
-                logger.warning("  warnings: %s", post.warnings)
-            break
-        except Exception as exc:
-            msg = str(exc).lower()
-            is_rate = "429" in msg or "rate" in msg or "quota" in msg or "resource_exhausted" in msg
-            if is_rate and attempt < 2:
-                wait = 30.0 * (attempt + 1)
-                logger.warning("  [RATE LIMIT] retrying in %.0fs (attempt %d/3)", wait, attempt + 1)
-                time.sleep(wait)
-                continue
-            else:
-                logger.error("  [FAIL] pre-market generation: %s", str(exc)[:200])
-                return
+    # 신규 데이터 변환
+    issues_data = [issue.to_dict() for issue in global_issues] if global_issues else None
+    themes_data = [conn.to_dict() for conn in theme_connections] if theme_connections else None
+    econ_data = [ev.to_dict() for ev in econ_events] if econ_events else None
 
+    # LLM 생성에 필요한 공통 kwargs
+    _briefing_kwargs = dict(
+        macro_summary=macro.to_summary_dict() if not macro.is_empty() else None,
+        macro_narrative=macro.to_narrative() if not macro.is_empty() else None,
+        market_regime=macro.market_regime,
+        yield_spread=macro.yield_spread,
+        us_news=us_news if us_news else None,
+        trade_date=today_str,
+        sectors=sectors_dict,
+        mega_caps=mega_dict,
+        style_signals=style_dict,
+        asia_indices=asia_dict,
+        europe_indices=europe_dict,
+        credit_signals=credit_dict,
+        econ_calendar=econ_data,
+        global_issues=issues_data,
+        theme_connections=themes_data,
+    )
+
+    # API 키 확인
+    key_ok = (
+        (cfg.llm_provider == "gemini" and cfg.gemini_api_key)
+        or (cfg.llm_provider == "claude" and cfg.anthropic_api_key)
+    )
+
+    post = None
+    if key_ok:
+        logger.info("[STEP 3/4] generating pre-market briefing via %s...", cfg.llm_provider)
+        for attempt in range(3):
+            try:
+                post = generate_pre_market(
+                    **_briefing_kwargs,
+                    config=cfg,
+                )
+                logger.info("  [OK] %s", post.title[:60])
+                if post.warnings:
+                    logger.warning("  warnings: %s", post.warnings)
+                break
+            except Exception as exc:
+                msg = str(exc).lower()
+                is_rate = "429" in msg or "rate" in msg or "quota" in msg or "resource_exhausted" in msg
+                if is_rate and attempt < 2:
+                    wait = 30.0 * (attempt + 1)
+                    logger.warning("  [RATE LIMIT] retrying in %.0fs (attempt %d/3)", wait, attempt + 1)
+                    time.sleep(wait)
+                    continue
+                else:
+                    logger.error("  [FAIL] pre-market LLM generation: %s", str(exc)[:200])
+                    break
+    else:
+        logger.warning("LLM API key not set for provider=%s — will use template fallback",
+                       cfg.llm_provider)
+
+    # LLM 실패 시 템플릿 기반 fallback
     if post is None:
-        logger.error("  [FAIL] pre-market generation failed after retries")
-        return
+        logger.warning("[STEP 3/4] LLM unavailable or failed — generating template-based fallback...")
+        post = generate_pre_market_fallback(**_briefing_kwargs)
+        logger.info("  [FALLBACK] %s", post.title[:60])
 
     # 4) 저장 + WordPress 발행
     logger.info("[STEP 4/4] saving pre-market briefing...")
