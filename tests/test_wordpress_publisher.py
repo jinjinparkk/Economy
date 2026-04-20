@@ -63,7 +63,7 @@ class TestMdToHtml:
         html = _md_to_html("## 제목")
         # h2 태그에 font-size 인라인 스타일이 주입됨
         assert "<h2 style=" in html
-        assert "font-size:16px" in html
+        assert "font-size:15px" in html
         assert "제목</h2>" in html
 
     def test_bold_conversion(self):

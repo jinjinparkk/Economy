@@ -160,8 +160,14 @@ def fetch_ohlcv_history(code: str, days: int = 30) -> pd.DataFrame:
     return df
 
 
+_industry_map_cache: dict[str, str] | None = None
+
+
 def _fetch_industry_map() -> dict[str, str]:
-    """KRX-DESC에서 종목코드 → 업종 매핑을 가져온다."""
+    """KRX-DESC에서 종목코드 → 업종 매핑을 가져온다 (세션 내 캐싱)."""
+    global _industry_map_cache
+    if _industry_map_cache is not None:
+        return _industry_map_cache
     try:
         desc = fdr.StockListing("KRX-DESC")
         mapping = {}
@@ -171,6 +177,7 @@ def _fetch_industry_map() -> dict[str, str]:
             if code and industry and industry != "nan":
                 mapping[code] = industry
         logger.info("industry map: %d entries loaded", len(mapping))
+        _industry_map_cache = mapping
         return mapping
     except Exception as exc:
         logger.warning("failed to load KRX-DESC: %s", exc)

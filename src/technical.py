@@ -20,6 +20,15 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
+# ── RSI 기준값 ──
+RSI_EXTREME_OVERBOUGHT = 80
+RSI_OVERBOUGHT = 70
+RSI_OVERSOLD = 30
+RSI_EXTREME_OVERSOLD = 20
+
+# ── 거래량 폭증 배수 ──
+VOLUME_SURGE_MULTIPLIER = 3.0
+
 
 @dataclass
 class TechnicalIndicators:
@@ -43,18 +52,50 @@ class TechnicalIndicators:
     signal_summary: str | None = None   # 기술적 지표 종합 해석
 
 
+def rsi_series(closes: pd.Series, period: int = 14) -> pd.Series:
+    """Wilder RSI 전체 시리즈를 반환한다 (predictor 등 외부 모듈용)."""
+    delta = closes.diff()
+    gain = delta.clip(lower=0)
+    loss = (-delta.clip(upper=0))
+    avg_gain = gain.ewm(alpha=1 / period, min_periods=period, adjust=False).mean()
+    avg_loss = loss.ewm(alpha=1 / period, min_periods=period, adjust=False).mean()
+    rs = avg_gain / avg_loss.replace(0, np.nan)
+    return 100 - (100 / (1 + rs))
+
+
+def macd_series(
+    closes: pd.Series, fast: int = 12, slow: int = 26, signal: int = 9,
+) -> tuple[pd.Series, pd.Series, pd.Series]:
+    """MACD 라인, 시그널, 히스토그램 전체 시리즈를 반환한다."""
+    ema_fast = closes.ewm(span=fast, adjust=False).mean()
+    ema_slow = closes.ewm(span=slow, adjust=False).mean()
+    macd_line = ema_fast - ema_slow
+    signal_line = macd_line.ewm(span=signal, adjust=False).mean()
+    histogram = macd_line - signal_line
+    return macd_line, signal_line, histogram
+
+
+def bb_pct_series(
+    closes: pd.Series, period: int = 20, num_std: float = 2.0,
+) -> pd.Series:
+    """볼린저밴드 %B 시리즈를 반환한다 (0~1, 상단돌파 시 >1)."""
+    ma = closes.rolling(period).mean()
+    std = closes.rolling(period).std(ddof=0)
+    upper = ma + num_std * std
+    lower = ma - num_std * std
+    width = upper - lower
+    return (closes - lower) / width.replace(0, np.nan)
+
+
 def _calc_rsi(closes: pd.Series, period: int = 14) -> float | None:
-    """Wilder RSI (EMA 기반)."""
+    """Wilder RSI (EMA 기반) — 마지막 값만 반환."""
     if len(closes) < period + 1:
         return None
     delta = closes.diff()
     gain = delta.clip(lower=0)
     loss = (-delta.clip(upper=0))
-
-    # Wilder EMA: alpha = 1/period
     avg_gain = gain.ewm(alpha=1 / period, min_periods=period, adjust=False).mean()
     avg_loss = loss.ewm(alpha=1 / period, min_periods=period, adjust=False).mean()
-
     last_gain = avg_gain.iloc[-1]
     last_loss = avg_loss.iloc[-1]
     if last_loss == 0:
@@ -69,18 +110,14 @@ def _calc_macd(
     slow: int = 26,
     signal: int = 9,
 ) -> tuple[float | None, float | None, float | None]:
-    """MACD 라인, 시그널, 히스토그램."""
+    """MACD 라인, 시그널, 히스토그램 — 마지막 값만 반환."""
     if len(closes) < slow + signal:
         return None, None, None
-    ema_fast = closes.ewm(span=fast, adjust=False).mean()
-    ema_slow = closes.ewm(span=slow, adjust=False).mean()
-    macd_line = ema_fast - ema_slow
-    signal_line = macd_line.ewm(span=signal, adjust=False).mean()
-    histogram = macd_line - signal_line
+    ml, sl, hist = macd_series(closes, fast, slow, signal)
     return (
-        round(float(macd_line.iloc[-1]), 4),
-        round(float(signal_line.iloc[-1]), 4),
-        round(float(histogram.iloc[-1]), 4),
+        round(float(ml.iloc[-1]), 4),
+        round(float(sl.iloc[-1]), 4),
+        round(float(hist.iloc[-1]), 4),
     )
 
 
@@ -200,13 +237,13 @@ def _generate_signal_summary(ti: TechnicalIndicators) -> str:
     signals: list[str] = []
 
     if ti.rsi_14 is not None:
-        if ti.rsi_14 >= 80:
+        if ti.rsi_14 >= RSI_EXTREME_OVERBOUGHT:
             signals.append("RSI 극과매수(단기 과열)")
-        elif ti.rsi_14 >= 70:
+        elif ti.rsi_14 >= RSI_OVERBOUGHT:
             signals.append("RSI 과매수 진입")
-        elif ti.rsi_14 <= 20:
+        elif ti.rsi_14 <= RSI_EXTREME_OVERSOLD:
             signals.append("RSI 극과매도(반등 가능성)")
-        elif ti.rsi_14 <= 30:
+        elif ti.rsi_14 <= RSI_OVERSOLD:
             signals.append("RSI 과매도 구간")
 
     if ti.rsi_divergence:
@@ -234,7 +271,7 @@ def _generate_signal_summary(ti: TechnicalIndicators) -> str:
         if ti.ma_trend in trend_map:
             signals.append(trend_map[ti.ma_trend])
 
-    if ti.volume_ratio and ti.volume_ratio >= 3.0:
+    if ti.volume_ratio and ti.volume_ratio >= VOLUME_SURGE_MULTIPLIER:
         signals.append(f"거래량 {ti.volume_ratio:.1f}배 폭증")
 
     if ti.obv_trend:

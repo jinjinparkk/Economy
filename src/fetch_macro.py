@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import logging
+import math
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 
@@ -76,6 +77,11 @@ class MacroSnapshot:
             return round(us10y.close - us2y.close, 3)
         return None
 
+    # VIX 기반 시장 체제 경계값
+    _VIX_STABLE = 15
+    _VIX_NORMAL = 20
+    _VIX_FEAR = 30
+
     @property
     def market_regime(self) -> str:
         """VIX 기반 시장 체제 판단."""
@@ -83,11 +89,11 @@ class MacroSnapshot:
         if vix is None:
             return "판단불가"
         v = vix.close
-        if v < 15:
+        if v < self._VIX_STABLE:
             return "안정"
-        elif v < 20:
+        elif v < self._VIX_NORMAL:
             return "보통"
-        elif v < 30:
+        elif v < self._VIX_FEAR:
             return "불안"
         else:
             return "공포"
@@ -162,7 +168,7 @@ class MacroSnapshot:
                 parts.append(f"장단기 금리차 {spread:.3f}%p (정상 범위).")
 
         fx = self.fx.get("USDKRW")
-        if fx and not (fx.change_pct != fx.change_pct):  # NaN check
+        if fx and not math.isnan(fx.change_pct):
             direction = "약세" if fx.change_pct > 0 else "강세"
             parts.append(f"원/달러 {fx.close:,.2f}원 ({fx.change_pct:+.2f}%, 원화 {direction}).")
 
@@ -380,7 +386,7 @@ def _df_to_indicator(
     prev_close = float(prev["Close"])
 
     # NaN 체크 (DXY 등 일부 지표에서 발생)
-    if close != close or prev_close != prev_close:
+    if math.isnan(close) or math.isnan(prev_close):
         logger.warning("macro %s (%s): NaN value detected", key, code)
         return None
 
@@ -450,114 +456,38 @@ def _fetch_indicator(
     return None
 
 
+def _fetch_group(
+    source: dict[str, tuple[str, str]],
+    target: dict[str, MacroIndicator],
+    days: int = 15,
+) -> None:
+    """지표 그룹을 일괄 수집하여 target dict에 저장한다."""
+    for key, (name, code) in source.items():
+        ind = _fetch_indicator(key, name, code, days=days)
+        if ind:
+            target[key] = ind
+            logger.info("  %s", ind)
+
+
 def fetch_macro_snapshot() -> MacroSnapshot:
     """거시경제 전체 스냅샷을 수집한다."""
     snap = MacroSnapshot()
 
-    # 미국 3대 지수
-    for key, (name, code) in _US_INDICES.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.us_indices[key] = ind
-            logger.info("  %s", ind)
-
-    # 반도체 지수 (미국 지수 카테고리에 포함)
-    for key, (name, code) in _SEMI.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.us_indices[key] = ind
-            logger.info("  %s", ind)
-
-    # 환율
-    for key, (name, code) in _FX.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.fx[key] = ind
-            logger.info("  %s", ind)
-
-    # 달러인덱스 (선택적 — NaN 반환 시 건너뜀)
-    for key, (name, code) in _FX_OPTIONAL.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.fx[key] = ind
-            logger.info("  %s", ind)
-
-    # 원자재
-    for key, (name, code) in _COMMODITIES.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.commodities[key] = ind
-            logger.info("  %s", ind)
-
-    # 변동성
-    for key, (name, code) in _VOLATILITY.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.volatility[key] = ind
-            logger.info("  %s", ind)
-
-    # 채권
-    for key, (name, code) in _BONDS.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.bonds[key] = ind
-            logger.info("  %s", ind)
-
-    # 채권 선택적 (US2Y 등 — 실패 시 건너뜀)
-    for key, (name, code) in _BONDS_OPTIONAL.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.bonds[key] = ind
-            logger.info("  %s", ind)
-
-    # 섹터 ETF
-    for key, (name, code) in _SECTORS.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.sectors[key] = ind
-            logger.info("  %s", ind)
-
-    # Magnificent 7
-    for key, (name, code) in _MEGA_CAPS.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.mega_caps[key] = ind
-            logger.info("  %s", ind)
-
-    # 스타일 (소형주, 성장 vs 가치)
-    for key, (name, code) in _STYLE.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.style[key] = ind
-            logger.info("  %s", ind)
-
-    # 아시아 지수 (중국 시장 데이터 누락 빈도가 높아 days=30으로 확장)
-    for key, (name, code) in _ASIA.items():
-        ind = _fetch_indicator(key, name, code, days=30)
-        if ind:
-            snap.asia[key] = ind
-            logger.info("  %s", ind)
-
-    # 유럽 지수
-    for key, (name, code) in _EUROPE.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.europe[key] = ind
-            logger.info("  %s", ind)
-
-    # 추가 원자재 (기존 commodities에 합침)
-    for key, (name, code) in _COMMODITIES_EXT.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.commodities[key] = ind
-            logger.info("  %s", ind)
-
-    # 신용/리스크
-    for key, (name, code) in _CREDIT.items():
-        ind = _fetch_indicator(key, name, code)
-        if ind:
-            snap.credit[key] = ind
-            logger.info("  %s", ind)
+    _fetch_group(_US_INDICES, snap.us_indices)
+    _fetch_group(_SEMI, snap.us_indices)
+    _fetch_group(_FX, snap.fx)
+    _fetch_group(_FX_OPTIONAL, snap.fx)
+    _fetch_group(_COMMODITIES, snap.commodities)
+    _fetch_group(_COMMODITIES_EXT, snap.commodities)
+    _fetch_group(_VOLATILITY, snap.volatility)
+    _fetch_group(_BONDS, snap.bonds)
+    _fetch_group(_BONDS_OPTIONAL, snap.bonds)
+    _fetch_group(_SECTORS, snap.sectors)
+    _fetch_group(_MEGA_CAPS, snap.mega_caps)
+    _fetch_group(_STYLE, snap.style)
+    _fetch_group(_ASIA, snap.asia, days=30)  # 중국 데이터 누락 빈도 높아 확장
+    _fetch_group(_EUROPE, snap.europe)
+    _fetch_group(_CREDIT, snap.credit)
 
     total = len(snap.all_indicators)
     logger.info("macro snapshot: %d indicators fetched", total)

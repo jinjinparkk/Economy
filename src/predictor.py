@@ -16,7 +16,10 @@ import numpy as np
 import pandas as pd
 
 from src.detect_movers import Mover
-from src.technical import TechnicalIndicators, compute_technical_from_df
+from src.technical import (
+    TechnicalIndicators, compute_technical_from_df,
+    rsi_series, macd_series, bb_pct_series,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -178,53 +181,30 @@ def predict_direction(
                      len(df) if df is not None else 0, min_rows)
         return None
 
-    closes = df["Close"].values
-    volumes = df["Volume"].values
+    close_series = df["Close"]
+    vol_series = df["Volume"]
 
-    # 피처 계산
+    # 피처 계산 — technical.py의 공용 시리즈 함수 재사용
     features_list = []
     labels = []
     feature_names = ["RSI", "MACD_hist", "BB_pct", "Volume_ratio", "ChangePct"]
 
-    # RSI 계산 (rolling)
-    close_series = pd.Series(closes)
-    delta = close_series.diff()
-    gain = delta.clip(lower=0)
-    loss = (-delta.clip(upper=0))
-    avg_gain = gain.ewm(alpha=1 / 14, min_periods=14, adjust=False).mean()
-    avg_loss = loss.ewm(alpha=1 / 14, min_periods=14, adjust=False).mean()
-    rs = avg_gain / avg_loss.replace(0, np.nan)
-    rsi = 100 - (100 / (1 + rs))
+    rsi = rsi_series(close_series)
+    _, _, macd_hist = macd_series(close_series)
+    bb_pct = bb_pct_series(close_series)
 
-    # MACD histogram
-    ema12 = close_series.ewm(span=12, adjust=False).mean()
-    ema26 = close_series.ewm(span=26, adjust=False).mean()
-    macd_line = ema12 - ema26
-    signal_line = macd_line.ewm(span=9, adjust=False).mean()
-    macd_hist = macd_line - signal_line
-
-    # BB %B
-    ma20 = close_series.rolling(20).mean()
-    std20 = close_series.rolling(20).std(ddof=0)
-    bb_upper = ma20 + 2 * std20
-    bb_lower = ma20 - 2 * std20
-    bb_width = bb_upper - bb_lower
-    bb_pct = (close_series - bb_lower) / bb_width.replace(0, np.nan)
-
-    # Volume ratio
-    vol_series = pd.Series(volumes)
     vol_ma20 = vol_series.rolling(20).mean()
     vol_ratio = vol_series / vol_ma20.replace(0, np.nan)
 
-    # Change %
     change_pct = close_series.pct_change() * 100
 
     # 라벨: 익일 수익률 > 0 → 1, else → 0
     next_return = close_series.shift(-1) / close_series - 1
 
     # 유효한 행만 추출 (NaN 제거)
+    n_rows = len(close_series)
     start_idx = 60  # MA60 이후부터
-    for i in range(start_idx, len(closes) - 1):
+    for i in range(start_idx, n_rows - 1):
         if any(pd.isna([rsi.iloc[i], macd_hist.iloc[i], bb_pct.iloc[i],
                         vol_ratio.iloc[i], change_pct.iloc[i]])):
             continue
@@ -248,7 +228,7 @@ def predict_direction(
     X_train, y_train = X[:-1], y[:-1]
 
     # 마지막 유효 데이터로 현재 예측
-    last_row_idx = len(closes) - 1
+    last_row_idx = n_rows - 1
     current_features = []
     if not any(pd.isna([rsi.iloc[last_row_idx], macd_hist.iloc[last_row_idx],
                         bb_pct.iloc[last_row_idx], vol_ratio.iloc[last_row_idx],
