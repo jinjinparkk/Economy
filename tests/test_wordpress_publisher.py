@@ -54,6 +54,11 @@ def _config(tmp_path, token="test-token", site_id="12345", auto_publish=True):
         wp_access_token=token,
         wp_site_id=site_id,
         wp_auto_publish=auto_publish,
+        telegram_bot_token="",
+        telegram_channel_id="",
+        telegram_auto_post=False,
+        naver_access_token="",
+        naver_auto_publish=False,
     )
 
 

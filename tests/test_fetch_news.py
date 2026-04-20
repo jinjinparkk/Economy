@@ -174,6 +174,8 @@ class TestFetchNewsForStock:
             output_dir=__import__("pathlib").Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         items = fetch_news_for_stock("삼성전자", cfg)
         mock_google.assert_called_once()

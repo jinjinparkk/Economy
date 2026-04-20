@@ -177,6 +177,8 @@ class TestGenerateArticle:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         m = _mover(name="코위버", code="056360", change_pct=30.0)
         art = generate_article(m, [_news()], cfg, provider="gemini")
@@ -199,6 +201,8 @@ class TestGenerateArticle:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         art = generate_article(_mover(), [_news()], cfg, provider="claude")
         assert art.model == "claude-sonnet-4-6"
@@ -213,6 +217,8 @@ class TestGenerateArticle:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
             generate_article(_mover(), [], cfg, provider="gemini")
@@ -227,6 +233,8 @@ class TestGenerateArticle:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(ValueError, match="unknown"):
             generate_article(_mover(), [], cfg, provider="unknown")
@@ -246,6 +254,8 @@ class TestGenerateArticle:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         art = generate_article(_mover(), [], cfg, provider="gemini")
         assert len(art.warnings) >= 2  # 매수 추천, 목표가

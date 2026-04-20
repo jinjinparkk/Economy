@@ -235,6 +235,9 @@ class TestRunPipelineWithContentPosts:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_pipeline(top_n=1, dry_run=False)
@@ -295,6 +298,9 @@ class TestRunPipelineWithContentPosts:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_pipeline(top_n=1, dry_run=False)
@@ -358,6 +364,9 @@ class TestRunPreMarketPipeline:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_pre_market_pipeline()
@@ -384,6 +393,9 @@ class TestRunPreMarketPipeline:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_pre_market_pipeline()
@@ -407,6 +419,9 @@ class TestRunPreMarketPipeline:
             cfg.gemini_api_key = ""
             cfg.anthropic_api_key = ""
             cfg.wp_auto_publish = False
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_pre_market_pipeline()
@@ -493,6 +508,9 @@ class TestRunWeeklyPipeline:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_weekly_pipeline()
@@ -555,6 +573,9 @@ class TestRunWeeklyPipeline:
             cfg.wp_auto_publish = True
             cfg.wp_access_token = "token"
             cfg.wp_site_id = "123"
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_weekly_pipeline()
@@ -582,6 +603,9 @@ class TestRunMonthlyPipeline:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_monthly_pipeline()
@@ -645,6 +669,9 @@ class TestRunYearlyPipeline:
             cfg.wp_auto_publish = False
             cfg.wp_access_token = ""
             cfg.wp_site_id = ""
+            cfg.telegram_auto_post = False
+            cfg.telegram_bot_token = ""
+            cfg.telegram_channel_id = ""
             MockConfig.load.return_value = cfg
 
             run_yearly_pipeline()

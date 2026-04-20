@@ -8,3 +8,4 @@ python-dotenv>=1.0.0
 requests>=2.31.0
 scikit-learn>=1.4.0
 markdown>=3.5.0
+pykrx>=1.0.0

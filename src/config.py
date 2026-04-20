@@ -29,6 +29,11 @@ class Config:
     wp_access_token: str
     wp_site_id: str
     wp_auto_publish: bool
+    telegram_bot_token: str
+    telegram_channel_id: str
+    telegram_auto_post: bool
+    naver_access_token: str
+    naver_auto_publish: bool
 
     @classmethod
     def load(cls) -> "Config":
@@ -52,4 +57,9 @@ class Config:
             wp_access_token=os.getenv("WP_ACCESS_TOKEN", ""),
             wp_site_id=os.getenv("WP_SITE_ID", ""),
             wp_auto_publish=os.getenv("WP_AUTO_PUBLISH", "true").lower() in ("true", "1", "yes"),
+            telegram_bot_token=os.getenv("TELEGRAM_BOT_TOKEN", ""),
+            telegram_channel_id=os.getenv("TELEGRAM_CHANNEL_ID", ""),
+            telegram_auto_post=os.getenv("TELEGRAM_AUTO_POST", "false").lower() in ("true", "1", "yes"),
+            naver_access_token=os.getenv("NAVER_ACCESS_TOKEN", ""),
+            naver_auto_publish=os.getenv("NAVER_AUTO_PUBLISH", "false").lower() in ("true", "1", "yes"),
         )

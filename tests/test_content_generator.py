@@ -52,6 +52,11 @@ def _config(provider="gemini"):
         wp_access_token="",
         wp_site_id="",
         wp_auto_publish=False,
+        telegram_bot_token="",
+        telegram_channel_id="",
+        telegram_auto_post=False,
+        naver_access_token="",
+        naver_auto_publish=False,
     )
 
 
@@ -352,6 +357,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(ValueError, match="unknown"):
             _dispatch_llm("sys", "user", cfg)
@@ -363,6 +370,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
             _dispatch_llm("sys", "user", cfg)
@@ -374,6 +383,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(RuntimeError, match="ANTHROPIC_API_KEY"):
             _dispatch_llm("sys", "user", cfg)
@@ -391,6 +402,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         raw, model = _dispatch_llm("sys", "user", cfg)
         assert model == "claude-sonnet-4-6"
@@ -408,6 +421,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(RuntimeError, match="429"):
             _dispatch_llm("sys", "user", cfg)
@@ -423,6 +438,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         with pytest.raises(RuntimeError, match="invalid API key"):
             _dispatch_llm("sys", "user", cfg)
@@ -440,6 +457,8 @@ class TestDispatchLlm:
             output_dir=pathlib.Path("."), timezone="Asia/Seoul",
             mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
             wp_access_token="", wp_site_id="", wp_auto_publish=False,
+            telegram_bot_token="", telegram_channel_id="", telegram_auto_post=False,
+            naver_access_token="", naver_auto_publish=False,
         )
         raw, model = _dispatch_llm("sys", "user", cfg)
         assert model == "gemini-2.0-flash"

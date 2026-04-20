@@ -204,6 +204,33 @@ def run_pipeline(
     logger.info("market breadth: %d up / %d down (%.1f%% up ratio)",
                 breadth["total_up"], breadth["total_down"], breadth["up_ratio"])
 
+    # 2b) 수급 데이터
+    from src.fetch_flow import fetch_flow_snapshot
+    logger.info("[STEP 2b] fetching investor flow...")
+    trade_date_str = str(snapshot.trade_date)
+    flow = fetch_flow_snapshot(trade_date_str)
+    if flow:
+        logger.info("flow: KOSPI foreign %+.0f억",
+                     flow.kospi_flow.foreign_net / 1e8)
+    else:
+        logger.info("flow: skipped (pykrx unavailable or failed)")
+
+    # 2c) 실적 시즌 트래커
+    from src.fetch_earnings import fetch_earnings_snapshot
+    logger.info("[STEP 2c] fetching earnings calendar...")
+    earnings = fetch_earnings_snapshot(cfg, trade_date_str)
+    if earnings:
+        logger.info("earnings: %d recent, %d upcoming",
+                     len(earnings.recent), len(earnings.upcoming))
+    else:
+        logger.info("earnings: skipped (DART key missing or failed)")
+
+    # 2d) Fear & Greed 지수
+    from src.sentiment import compute_sentiment
+    logger.info("[STEP 2d] computing sentiment index...")
+    sentiment = compute_sentiment(macro, snapshot, output_dir=cfg.output_dir)
+    logger.info("sentiment: %.1f (%s)", sentiment.score, sentiment.label)
+
     # 3) 급등/급락 탐지
     logger.info("[STEP 3/7] detecting movers...")
     report = detect_movers(snapshot, threshold_pct=threshold_pct, top_n=top_n)
@@ -357,6 +384,16 @@ def run_pipeline(
         key = m.industry or "미분류"
         plunges_by_sector.setdefault(key, []).append(f"{m.name} {m.change_pct:+.1f}%")
 
+    # 새 데이터 dict 변환
+    flow_dict = flow.to_dict() if flow else {}
+    earnings_dict = earnings.to_dict() if earnings else {}
+    sentiment_dict = sentiment.to_dict()
+
+    # 적중률 통계
+    from src.accuracy import compute_accuracy_stats
+    accuracy_stats = compute_accuracy_stats(cfg.output_dir)
+    accuracy_dict = accuracy_stats.to_dict()
+
     content_generators = [
         ("데일리시황", generate_daily_market, dict(
             macro_summary=macro_summary,
@@ -368,6 +405,9 @@ def run_pipeline(
             plunges_summary=plunges_summary,
             trade_date=report.trade_date,
             config=cfg,
+            flow=flow_dict,
+            earnings=earnings_dict,
+            sentiment=sentiment_dict,
         )),
         ("섹터리포트", generate_sector_report, dict(
             sector_breadth=sector_data,
@@ -377,11 +417,14 @@ def run_pipeline(
             plunges_by_sector=plunges_by_sector,
             trade_date=report.trade_date,
             config=cfg,
+            flow=flow_dict,
         )),
         ("퀀트인사이트", generate_quant_insight, dict(
             outlook_map=outlook_map,
             trade_date=report.trade_date,
             config=cfg,
+            sentiment=sentiment_dict,
+            accuracy=accuracy_dict,
         )),
     ]
 
@@ -434,16 +477,69 @@ def run_pipeline(
         if post.warnings:
             logger.warning("    warnings: %s", post.warnings)
 
-    # 7b) WordPress 발행
+    # 7a) 시그널 적중률 트래킹
+    from src.accuracy import (
+        DailyPrediction, save_predictions, evaluate_predictions,
+    )
+    # 현재 예측 저장
+    new_preds: list[DailyPrediction] = []
+    for code, outlook in outlook_map.items():
+        if outlook.prediction and outlook.prediction.direction != "중립":
+            mover_match = [m for m in targets if m.code == code]
+            name = mover_match[0].name if mover_match else code
+            new_preds.append(DailyPrediction(
+                date=report.trade_date,
+                code=code,
+                name=name,
+                direction=outlook.prediction.direction,
+                confidence=outlook.prediction.confidence,
+                signal_summary=outlook.technical.signal_summary if outlook.technical else "",
+            ))
+    if new_preds:
+        save_predictions(new_preds, cfg.output_dir)
+        logger.info("  saved %d predictions for accuracy tracking", len(new_preds))
+
+    # 전일 예측 평가 (현재 종목들의 실제 등락률)
+    actual_changes: dict[str, float] = {}
+    all_stocks = snapshot.all_stocks()
+    if not all_stocks.empty and "Code" in all_stocks.columns and "ChangeRatio" in all_stocks.columns:
+        for _, row in all_stocks.iterrows():
+            actual_changes[str(row["Code"])] = float(row["ChangeRatio"])
+    if actual_changes:
+        eval_count = evaluate_predictions(cfg.output_dir, report.trade_date, actual_changes)
+        if eval_count > 0:
+            logger.info("  evaluated %d prior predictions", eval_count)
+
+    # 7b) WordPress 발행 (단일 통합 포스트)
     if cfg.wp_auto_publish and cfg.wp_access_token and cfg.wp_site_id:
-        from src.wordpress_publisher import publish_articles, publish_content_posts
+        from src.wordpress_publisher import publish_daily_digest
         logger.info("[STEP 7b] publishing to WordPress.com as DRAFT...")
-        wp_results = publish_articles(articles, report.trade_date, cfg)
-        for r in wp_results:
-            logger.info("  [WP] %s → %s", r.title[:40], r.url)
-        wp_content_results = publish_content_posts(content_posts, report.trade_date, cfg)
-        for r in wp_content_results:
-            logger.info("  [WP] %s → %s", r.title[:40], r.url)
+        wp_result = publish_daily_digest(articles, content_posts, report.trade_date, cfg)
+        if wp_result:
+            logger.info("  [WP] %s → %s", wp_result.title[:40], wp_result.url)
+
+    # 7b-2) 네이버 블로그 발행 (단일 통합 포스트)
+    if cfg.naver_auto_publish and cfg.naver_access_token:
+        from src.naver_publisher import publish_daily_digest_to_naver
+        logger.info("[STEP 7b-2] publishing to Naver Blog...")
+        nv_result = publish_daily_digest_to_naver(articles, content_posts, report.trade_date, cfg)
+        if nv_result:
+            logger.info("  [NAVER] %s → %s", nv_result.title[:40], nv_result.url)
+
+    # 7c) 텔레그램 발송 (단일 다이제스트 메시지)
+    if cfg.telegram_auto_post and cfg.telegram_bot_token and cfg.telegram_channel_id:
+        from src.telegram_publisher import publish_daily_digest_to_telegram
+        logger.info("[STEP 7c] posting to Telegram channel...")
+        tg_result = publish_daily_digest_to_telegram(articles, content_posts, report.trade_date, cfg)
+        if tg_result:
+            logger.info("  [TG] daily digest → msg_id=%s", tg_result.post_id)
+
+    # 7d) 커뮤니티 홍보 텍스트 생성
+    from src.promo_writer import generate_promo_text
+    logger.info("[STEP 7d] generating promo text...")
+    promo_path = generate_promo_text(articles, report.trade_date, cfg)
+    if promo_path:
+        logger.info("  [PROMO] %s", promo_path.name)
 
     elapsed = time.time() - started
     logger.info("=" * 60)
@@ -560,6 +656,32 @@ def run_pre_market_pipeline() -> None:
     themes_data = [conn.to_dict() for conn in theme_connections] if theme_connections else None
     econ_data = [ev.to_dict() for ev in econ_events] if econ_events else None
 
+    # 2e) 수급 / 심리 / 실적 데이터
+    from src.fetch_flow import fetch_flow_snapshot
+    from src.fetch_earnings import fetch_earnings_snapshot
+    from src.sentiment import compute_sentiment
+    from src.fetch_market import MarketSnapshot as _MS
+    import pandas as _pd
+
+    logger.info("[STEP 2e] fetching flow, earnings, sentiment for pre-market...")
+    # 전일 trade_date 추정 (프리마켓은 한국 새벽이므로 전날이 최근 거래일)
+    from datetime import timedelta as _td
+    _yesterday = (datetime.now() - _td(days=1)).strftime("%Y-%m-%d")
+    flow = fetch_flow_snapshot(_yesterday)
+    flow_dict = flow.to_dict() if flow else {}
+    earnings = fetch_earnings_snapshot(cfg, today_str)
+    earnings_dict = earnings.to_dict() if earnings else {}
+    # 프리마켓에서는 MarketSnapshot이 없으므로 sentiment는 macro만으로 간이 계산
+    # → 빈 snapshot 대용
+    _dummy_snap = _MS(
+        trade_date=datetime.now().date(),
+        kospi=_pd.DataFrame(),
+        kosdaq=_pd.DataFrame(),
+        indices={},
+    )
+    sentiment = compute_sentiment(macro, _dummy_snap)
+    sentiment_dict = sentiment.to_dict()
+
     # LLM 생성에 필요한 공통 kwargs
     _briefing_kwargs = dict(
         macro_summary=macro.to_summary_dict() if not macro.is_empty() else None,
@@ -577,6 +699,9 @@ def run_pre_market_pipeline() -> None:
         econ_calendar=econ_data,
         global_issues=issues_data,
         theme_connections=themes_data,
+        flow=flow_dict,
+        earnings=earnings_dict,
+        sentiment=sentiment_dict,
     )
 
     # API 키 확인 (primary 또는 fallback 중 하나라도 있으면 시도)
@@ -626,6 +751,22 @@ def run_pre_market_pipeline() -> None:
         result = publish_content_post(post, today_str, cfg)
         if result:
             logger.info("  [WP] %s → %s", result.title[:40], result.url)
+
+    # 4a-2) 네이버 블로그 발행
+    if cfg.naver_auto_publish and cfg.naver_access_token:
+        from src.naver_publisher import publish_content_post_to_naver
+        logger.info("  publishing to Naver Blog...")
+        nv_result = publish_content_post_to_naver(post, today_str, cfg)
+        if nv_result:
+            logger.info("  [NAVER] %s → %s", nv_result.title[:40], nv_result.url)
+
+    # 4b) 텔레그램 발송
+    if cfg.telegram_auto_post and cfg.telegram_bot_token and cfg.telegram_channel_id:
+        from src.telegram_publisher import publish_content_post_to_telegram
+        logger.info("  posting to Telegram channel...")
+        tg_result = publish_content_post_to_telegram(post, today_str, cfg)
+        if tg_result:
+            logger.info("  [TG] %s → msg_id=%s", tg_result.title[:40], tg_result.post_id)
 
     elapsed = time.time() - started
     logger.info("=" * 60)
@@ -729,6 +870,22 @@ def _run_period_pipeline(period: str) -> None:
         result = publish_content_post(post, today_str, cfg)
         if result:
             logger.info("  [WP] %s → %s", result.title[:40], result.url)
+
+    # 네이버 블로그 발행
+    if cfg.naver_auto_publish and cfg.naver_access_token:
+        from src.naver_publisher import publish_content_post_to_naver
+        logger.info("  publishing to Naver Blog...")
+        nv_result = publish_content_post_to_naver(post, today_str, cfg)
+        if nv_result:
+            logger.info("  [NAVER] %s → %s", nv_result.title[:40], nv_result.url)
+
+    # 텔레그램 발송
+    if cfg.telegram_auto_post and cfg.telegram_bot_token and cfg.telegram_channel_id:
+        from src.telegram_publisher import publish_content_post_to_telegram
+        logger.info("  posting to Telegram channel...")
+        tg_result = publish_content_post_to_telegram(post, today_str, cfg)
+        if tg_result:
+            logger.info("  [TG] %s → msg_id=%s", tg_result.title[:40], tg_result.post_id)
 
     elapsed = time.time() - started
     logger.info("=" * 60)

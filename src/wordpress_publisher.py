@@ -217,7 +217,7 @@ def publish_to_wordpress(
     payload = {
         "title": article.title,
         "content": html_content,
-        "status": "draft",
+        "status": "publish",
         "tags": ",".join(tags),
         "categories": ",".join(categories),
         "format": "standard",
@@ -289,7 +289,7 @@ def publish_content_post(
     payload = {
         "title": post.title,
         "content": html_content,
-        "status": "draft",
+        "status": "publish",
         "tags": ",".join(post.tags),
         "categories": ",".join(post.categories),
         "format": "standard",
@@ -329,3 +329,129 @@ def publish_content_posts(
         if result:
             results.append(result)
     return results
+
+
+# ── 일일 통합 포스트 ─────────────────────────────────────────────────
+
+
+def _build_daily_digest_body(
+    articles: list[Article],
+    content_posts: list[ContentPost],
+) -> str:
+    """articles + content_posts를 하나의 마크다운 본문으로 합친다."""
+    parts: list[str] = []
+
+    surges = [a for a in articles if a.mover.change_pct > 0]
+    plunges = [a for a in articles if a.mover.change_pct <= 0]
+
+    if surges:
+        parts.append("## 오늘의 급등주")
+        parts.append("")
+        for a in surges:
+            m = a.mover
+            parts.append(f"### {m.name} (+{m.change_pct:.1f}%)")
+            parts.append("")
+            parts.append(a.body)
+            parts.append("")
+            parts.append("---")
+            parts.append("")
+
+    if plunges:
+        parts.append("## 오늘의 급락주")
+        parts.append("")
+        for a in plunges:
+            m = a.mover
+            parts.append(f"### {m.name} ({m.change_pct:.1f}%)")
+            parts.append("")
+            parts.append(a.body)
+            parts.append("")
+            parts.append("---")
+            parts.append("")
+
+    for post in content_posts:
+        # 제목에서 날짜 부분 제거
+        short_title = post.title
+        if "—" in short_title:
+            short_title = short_title.split("—", 1)[1].strip()
+        elif "–" in short_title:
+            short_title = short_title.split("–", 1)[1].strip()
+        parts.append(f"## {short_title}")
+        parts.append("")
+        parts.append(post.body)
+        parts.append("")
+        parts.append("---")
+        parts.append("")
+
+    return "\n".join(parts)
+
+
+def publish_daily_digest(
+    articles: list[Article],
+    content_posts: list[ContentPost],
+    trade_date: str,
+    config: Config,
+) -> Optional[PublishResult]:
+    """모든 articles + content_posts를 하나의 통합 포스트로 발행한다."""
+    if not config.wp_access_token or not config.wp_site_id:
+        return None
+
+    digest_key = f"{trade_date}_digest"
+    posted = _load_posted(config.output_dir)
+    if digest_key in posted:
+        logger.info("  [WP] already posted digest: %s (post_id=%s)",
+                     digest_key, posted[digest_key].get("post_id"))
+        return None
+
+    # 날짜 포맷
+    parts_date = trade_date.split("-")
+    date_str = f"{parts_date[0]}년 {parts_date[1]}월 {parts_date[2]}일"
+    title = f"{date_str} 증시 리포트 — 오늘의 급등주·급락주 정리"
+
+    body = _build_daily_digest_body(articles, content_posts)
+    html_content = _md_to_html(body)
+
+    # 태그 & 카테고리
+    tags = ["주식", "증시분석", "급등", "급락", "데일리리포트"]
+    for a in articles:
+        tags.append(a.mover.name)
+    categories = ["데일리리포트", "종목분석"]
+
+    url = f"{_WP_API_BASE}/sites/{config.wp_site_id}/posts/new"
+    headers = {
+        "Authorization": f"Bearer {config.wp_access_token}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "title": title,
+        "content": html_content,
+        "status": "publish",
+        "tags": ",".join(tags),
+        "categories": ",".join(categories),
+        "format": "standard",
+    }
+
+    try:
+        resp = requests.post(url, headers=headers, json=payload, timeout=60)
+        resp.raise_for_status()
+    except requests.RequestException as exc:
+        logger.error("  [WP] failed to publish digest: %s", str(exc)[:200])
+        return None
+
+    data = resp.json()
+    post_id = data.get("ID", 0)
+    post_url = data.get("URL", "")
+
+    # 다이제스트 + 개별 파일 모두 posted 기록 (중복 발행 방지)
+    posted[digest_key] = {"post_id": post_id, "url": post_url, "title": title}
+    for a in articles:
+        posted[a.filename(trade_date)] = {"post_id": post_id, "url": post_url, "title": a.title}
+    for p in content_posts:
+        posted[p.filename(trade_date)] = {"post_id": post_id, "url": post_url, "title": p.title}
+    _save_posted(config.output_dir, posted)
+
+    return PublishResult(
+        post_id=post_id,
+        url=post_url,
+        title=title,
+        status="draft",
+    )
