@@ -396,8 +396,8 @@ class TestRunPreMarketPipeline:
         assert call_kwargs["macro_narrative"] is not None
 
     @patch("src.main.fetch_macro_snapshot")
-    def test_pre_market_no_api_key_exits(self, mock_macro, tmp_path):
-        """API 키 없으면 LLM 호출 없이 종료."""
+    def test_pre_market_no_api_key_uses_fallback(self, mock_macro, tmp_path):
+        """API 키 없으면 LLM 없이 템플릿 fallback으로 파일 생성."""
         mock_macro.return_value = _macro()
 
         with patch("src.main.Config") as MockConfig:
@@ -411,9 +411,11 @@ class TestRunPreMarketPipeline:
 
             run_pre_market_pipeline()
 
-        # 파일이 생성되지 않아야 함
+        # 템플릿 fallback으로 파일이 생성되어야 함
         md_files = list(tmp_path.glob("*.md"))
-        assert len(md_files) == 0
+        assert len(md_files) == 1
+        content = md_files[0].read_text(encoding="utf-8")
+        assert "프리마켓 브리핑" in content
 
 
 # ── 주간/월간/연간 파이프라인 헬퍼 ────────────────────────────────────

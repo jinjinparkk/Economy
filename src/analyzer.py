@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 
 # 모델명 — 공급자별 기본 모델
 # gemini-2.0-flash: 무료 tier 분당 15건 (2.5-flash는 분당 5건으로 너무 빡빡)
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.5-flash"
 CLAUDE_MODEL = "claude-sonnet-4-6"
 
 # 절대 포함되면 안 되는 단어 (후처리 검증용)

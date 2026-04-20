@@ -579,14 +579,11 @@ def run_pre_market_pipeline() -> None:
         theme_connections=themes_data,
     )
 
-    # API 키 확인
-    key_ok = (
-        (cfg.llm_provider == "gemini" and cfg.gemini_api_key)
-        or (cfg.llm_provider == "claude" and cfg.anthropic_api_key)
-    )
+    # API 키 확인 (primary 또는 fallback 중 하나라도 있으면 시도)
+    any_key = cfg.gemini_api_key or cfg.anthropic_api_key
 
     post = None
-    if key_ok:
+    if any_key:
         logger.info("[STEP 3/4] generating pre-market briefing via %s...", cfg.llm_provider)
         for attempt in range(3):
             try:
@@ -594,7 +591,7 @@ def run_pre_market_pipeline() -> None:
                     **_briefing_kwargs,
                     config=cfg,
                 )
-                logger.info("  [OK] %s", post.title[:60])
+                logger.info("  [OK] %s (model: %s)", post.title[:60], post.model)
                 if post.warnings:
                     logger.warning("  warnings: %s", post.warnings)
                 break
@@ -602,7 +599,7 @@ def run_pre_market_pipeline() -> None:
                 msg = str(exc).lower()
                 is_rate = "429" in msg or "rate" in msg or "quota" in msg or "resource_exhausted" in msg
                 if is_rate and attempt < 2:
-                    wait = 30.0 * (attempt + 1)
+                    wait = 15.0 * (attempt + 1)
                     logger.warning("  [RATE LIMIT] retrying in %.0fs (attempt %d/3)", wait, attempt + 1)
                     time.sleep(wait)
                     continue
@@ -610,8 +607,7 @@ def run_pre_market_pipeline() -> None:
                     logger.error("  [FAIL] pre-market LLM generation: %s", str(exc)[:200])
                     break
     else:
-        logger.warning("LLM API key not set for provider=%s — will use template fallback",
-                       cfg.llm_provider)
+        logger.warning("No LLM API key set — will use template fallback")
 
     # LLM 실패 시 템플릿 기반 fallback
     if post is None:

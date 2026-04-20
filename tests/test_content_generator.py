@@ -378,6 +378,72 @@ class TestDispatchLlm:
         with pytest.raises(RuntimeError, match="ANTHROPIC_API_KEY"):
             _dispatch_llm("sys", "user", cfg)
 
+    @patch("src.content_generator._generate_with_claude")
+    @patch("src.content_generator._generate_with_gemini")
+    def test_gemini_429_falls_back_to_claude(self, mock_gemini, mock_claude):
+        """Gemini 429 시 Claude로 자동 전환."""
+        mock_gemini.side_effect = RuntimeError("429 RESOURCE_EXHAUSTED")
+        mock_claude.return_value = ("텍스트", "claude-sonnet-4-6")
+        cfg = Config(
+            llm_provider="gemini",
+            anthropic_api_key="fake-claude-key", gemini_api_key="fake-gemini-key",
+            naver_client_id="", naver_client_secret="", dart_api_key="",
+            output_dir=pathlib.Path("."), timezone="Asia/Seoul",
+            mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
+            wp_access_token="", wp_site_id="", wp_auto_publish=False,
+        )
+        raw, model = _dispatch_llm("sys", "user", cfg)
+        assert model == "claude-sonnet-4-6"
+        mock_gemini.assert_called_once()
+        mock_claude.assert_called_once()
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_gemini_429_no_claude_key_raises(self, mock_gemini):
+        """Gemini 429이고 Claude 키 없으면 에러 전파."""
+        mock_gemini.side_effect = RuntimeError("429 RESOURCE_EXHAUSTED")
+        cfg = Config(
+            llm_provider="gemini",
+            anthropic_api_key="", gemini_api_key="fake-gemini-key",
+            naver_client_id="", naver_client_secret="", dart_api_key="",
+            output_dir=pathlib.Path("."), timezone="Asia/Seoul",
+            mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
+            wp_access_token="", wp_site_id="", wp_auto_publish=False,
+        )
+        with pytest.raises(RuntimeError, match="429"):
+            _dispatch_llm("sys", "user", cfg)
+
+    @patch("src.content_generator._generate_with_gemini")
+    def test_non_429_error_no_fallback(self, mock_gemini):
+        """429가 아닌 에러는 fallback 없이 그대로 전파."""
+        mock_gemini.side_effect = RuntimeError("invalid API key")
+        cfg = Config(
+            llm_provider="gemini",
+            anthropic_api_key="fake-claude-key", gemini_api_key="fake-gemini-key",
+            naver_client_id="", naver_client_secret="", dart_api_key="",
+            output_dir=pathlib.Path("."), timezone="Asia/Seoul",
+            mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
+            wp_access_token="", wp_site_id="", wp_auto_publish=False,
+        )
+        with pytest.raises(RuntimeError, match="invalid API key"):
+            _dispatch_llm("sys", "user", cfg)
+
+    @patch("src.content_generator._generate_with_gemini")
+    @patch("src.content_generator._generate_with_claude")
+    def test_claude_429_falls_back_to_gemini(self, mock_claude, mock_gemini):
+        """Claude 429 시 Gemini로 자동 전환."""
+        mock_claude.side_effect = RuntimeError("rate limit exceeded 429")
+        mock_gemini.return_value = ("텍스트", "gemini-2.0-flash")
+        cfg = Config(
+            llm_provider="claude",
+            anthropic_api_key="fake-claude-key", gemini_api_key="fake-gemini-key",
+            naver_client_id="", naver_client_secret="", dart_api_key="",
+            output_dir=pathlib.Path("."), timezone="Asia/Seoul",
+            mover_threshold_pct=5.0, volume_surge_multiplier=3.0, top_n_movers=5,
+            wp_access_token="", wp_site_id="", wp_auto_publish=False,
+        )
+        raw, model = _dispatch_llm("sys", "user", cfg)
+        assert model == "gemini-2.0-flash"
+
 
 # ═══════════════════════════════════════════════════════════════════════
 # _parse_content_response 테스트
@@ -706,7 +772,7 @@ class TestBuildPreMarketPromptEnhanced:
             econ_calendar=econ,
             trade_date="2026-04-16",
         )
-        assert "경제 이벤트" in prompt
+        assert "경제 캘린더" in prompt
         assert "FOMC" in prompt
 
     def test_prompt_all_none_graceful(self):

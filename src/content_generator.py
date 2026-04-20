@@ -298,10 +298,45 @@ def _dispatch_llm(
 ) -> tuple[str, str]:
     """config.llm_provider에 따라 Gemini/Claude를 호출한다.
 
+    Primary provider가 429/quota 에러 시 secondary provider로 자동 전환한다.
+    - gemini → claude (ANTHROPIC_API_KEY 있을 때)
+    - claude → gemini (GEMINI_API_KEY 있을 때)
+
     Returns:
         (raw_text, model_name)
     """
     provider = config.llm_provider.lower()
+
+    # 1차: primary provider 시도
+    try:
+        return _call_provider(provider, system_prompt, user_prompt, config)
+    except Exception as primary_exc:
+        msg = str(primary_exc).lower()
+        is_rate = "429" in msg or "rate" in msg or "quota" in msg or "resource_exhausted" in msg
+        if not is_rate:
+            raise  # 429가 아니면 그대로 raise
+
+        # 2차: secondary provider fallback
+        fallback = "claude" if provider == "gemini" else "gemini"
+        fallback_key_ok = (
+            (fallback == "gemini" and config.gemini_api_key)
+            or (fallback == "claude" and config.anthropic_api_key)
+        )
+        if fallback_key_ok:
+            logger.warning("[LLM FALLBACK] %s → %s (rate limit)", provider, fallback)
+            return _call_provider(fallback, system_prompt, user_prompt, config)
+
+        # fallback도 불가능하면 원래 에러 re-raise
+        raise
+
+
+def _call_provider(
+    provider: str,
+    system_prompt: str,
+    user_prompt: str,
+    config: Config,
+) -> tuple[str, str]:
+    """단일 provider 호출."""
     if provider == "gemini":
         if not config.gemini_api_key:
             raise RuntimeError("GEMINI_API_KEY not set")
@@ -947,6 +982,56 @@ def build_pre_market_prompt(
     return "\n".join(parts)
 
 
+def _build_fallback_title(
+    trade_date: str,
+    macro_summary: Optional[dict],
+    sectors: Optional[dict],
+    theme_connections: Optional[list[dict]],
+) -> str:
+    """데이터에서 핵심 포인트를 뽑아 눈길을 끄는 제목을 생성한다."""
+    highlights: list[str] = []
+
+    if macro_summary:
+        sp = macro_summary.get("S&P 500")
+        nq = macro_summary.get("NASDAQ")
+        # 큰 변동(±1.5%) 강조
+        if sp and abs(sp["ChangePct"]) >= 1.5:
+            direction = "급등" if sp["ChangePct"] > 0 else "급락"
+            highlights.append(f"S&P500 {direction}")
+        elif nq and abs(nq["ChangePct"]) >= 1.5:
+            direction = "급등" if nq["ChangePct"] > 0 else "급락"
+            highlights.append(f"나스닥 {direction}")
+        elif sp:
+            direction = "상승" if sp["ChangePct"] > 0 else "하락"
+            highlights.append(f"미국 증시 {direction}")
+
+        # 눈에 띄는 지표 (±3% 이상)
+        for name in ("WTI유", "금", "VIX"):
+            ind = macro_summary.get(name)
+            if ind and abs(ind["ChangePct"]) >= 3:
+                direction = "급등" if ind["ChangePct"] > 0 else "급락"
+                highlights.append(f"{name} {direction}")
+
+    # 테마 연결에서 키워드
+    if theme_connections and not highlights:
+        first = theme_connections[0]
+        highlights.append(first.get("theme", ""))
+
+    # 섹터 최고/최저
+    if sectors and len(highlights) < 2:
+        sorted_s = sorted(sectors.items(), key=lambda x: x[1]["ChangePct"], reverse=True)
+        best_name, best_data = sorted_s[0]
+        worst_name, worst_data = sorted_s[-1]
+        if best_data["ChangePct"] >= 2.0:
+            highlights.append(f"{best_name} 강세")
+        elif worst_data["ChangePct"] <= -2.0:
+            highlights.append(f"{worst_name} 약세")
+
+    if highlights:
+        return f"{trade_date} 프리마켓 브리핑 — {', '.join(highlights[:3])}"
+    return f"{trade_date} 프리마켓 브리핑 — 글로벌 시장 동향 총정리"
+
+
 def generate_pre_market_fallback(
     *,
     macro_summary: Optional[dict] = None,
@@ -969,8 +1054,8 @@ def generate_pre_market_fallback(
     """LLM 없이 수집된 데이터만으로 프리마켓 브리핑을 생성한다 (템플릿 기반 fallback)."""
     parts: list[str] = []
 
-    # 제목
-    title = f"{trade_date} 프리마켓 브리핑 — 데이터 기반 자동 생성"
+    # 제목 — 데이터에서 핵심 키워드 추출
+    title = _build_fallback_title(trade_date, macro_summary, sectors, theme_connections)
 
     # 30초 요약
     parts.append("## 30초 요약")
@@ -1143,7 +1228,7 @@ def generate_pre_market_fallback(
 
     # 면책 문구
     parts.append("---")
-    parts.append("*본 브리핑은 LLM 분석 없이 수집된 데이터를 기반으로 자동 생성되었습니다. "
+    parts.append("*본 브리핑은 데이터를 기반으로 자동 생성되었습니다. "
                  "정보 제공 목적이며 투자 판단은 본인의 책임입니다.*")
 
     body = "\n".join(parts)
