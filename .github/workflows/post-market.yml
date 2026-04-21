@@ -8,7 +8,7 @@ on:
 
 jobs:
   post-market:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -36,6 +36,7 @@ jobs:
         run: python -m src.main --top 3
 
       - name: Commit output to repo
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
