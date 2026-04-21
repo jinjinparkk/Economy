@@ -5,3 +5,5 @@ requests>=2.31.0
 markdown>=3.5.0
 python-dotenv>=1.0.0
 yfinance>=0.2.0
+FinanceDataReader>=0.9.90
+pykrx>=1.0.0
