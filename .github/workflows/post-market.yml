@@ -2,8 +2,8 @@ name: Post-Market Analysis
 
 on:
   schedule:
-    # 매일 KST 15:50 = UTC 06:50
-    - cron: '50 6 * * *'
+    # 매일 KST 15:50 = UTC 06:50 (월~금)
+    - cron: '50 6 * * 1-5'
   workflow_dispatch: # 수동 실행 버튼
 
 jobs:
