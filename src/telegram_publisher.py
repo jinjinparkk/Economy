@@ -347,6 +347,8 @@ def _build_digest_message(
     content_posts: list[ContentPost],
     trade_date: str,
     output_dir: Path,
+    index_summary: Optional[dict] = None,
+    breadth: Optional[dict] = None,
 ) -> str:
     """articles + content_posts를 하나의 텔레그램 메시지로 합친다."""
     # 날짜 포맷: 2026-04-20 → 2026년 04월 20일
@@ -354,6 +356,24 @@ def _build_digest_message(
     date_str = f"{parts_date[0]}년 {parts_date[1]}월 {parts_date[2]}일"
 
     parts: list[str] = [f"📊 <b>{date_str} 증시 리포트</b>", ""]
+
+    # 한국 시장 요약
+    if index_summary:
+        for name in ("KOSPI", "KOSDAQ"):
+            info = index_summary.get(name)
+            if not info:
+                continue
+            close = info.get("Close", 0)
+            pct = info.get("ChangePct", 0)
+            arrow = "📈" if pct >= 0 else "📉"
+            sign = "+" if pct >= 0 else ""
+            parts.append(f"{arrow} {name} {close:,.2f} ({sign}{pct:.2f}%)")
+        if breadth:
+            up = breadth.get("total_up", 0)
+            down = breadth.get("total_down", 0)
+            ratio = breadth.get("up_ratio", 0)
+            parts.append(f"상승 {up:,} | 하락 {down:,} | 상승비율 {ratio:.1f}%")
+        parts.append("")
 
     surges = [a for a in articles if a.mover.change_pct > 0]
     plunges = [a for a in articles if a.mover.change_pct <= 0]
@@ -409,6 +429,8 @@ def publish_daily_digest_to_telegram(
     content_posts: list[ContentPost],
     trade_date: str,
     config: Config,
+    index_summary: Optional[dict] = None,
+    breadth: Optional[dict] = None,
 ) -> Optional[PublishResult]:
     """모든 articles + content_posts를 하나의 다이제스트 메시지로 발송한다."""
     if not config.telegram_bot_token or not config.telegram_channel_id:
@@ -421,7 +443,10 @@ def publish_daily_digest_to_telegram(
                      digest_key, posted[digest_key].get("msg_id"))
         return None
 
-    message = _build_digest_message(articles, content_posts, trade_date, config.output_dir)
+    message = _build_digest_message(
+        articles, content_posts, trade_date, config.output_dir,
+        index_summary=index_summary, breadth=breadth,
+    )
 
     url = f"{_TG_API_BASE}/bot{config.telegram_bot_token}/sendMessage"
     payload = {

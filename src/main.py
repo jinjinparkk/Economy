@@ -530,7 +530,10 @@ def run_pipeline(
     if cfg.telegram_auto_post and cfg.telegram_bot_token and cfg.telegram_channel_id:
         from src.telegram_publisher import publish_daily_digest_to_telegram
         logger.info("[STEP 7c] posting to Telegram channel...")
-        tg_result = publish_daily_digest_to_telegram(articles, content_posts, report.trade_date, cfg)
+        tg_result = publish_daily_digest_to_telegram(
+            articles, content_posts, report.trade_date, cfg,
+            index_summary=index_summary, breadth=breadth,
+        )
         if tg_result:
             logger.info("  [TG] daily digest → msg_id=%s", tg_result.post_id)
 
