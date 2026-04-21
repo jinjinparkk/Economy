@@ -9,8 +9,12 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from typing import Literal
 
-import FinanceDataReader as fdr
 import pandas as pd
+
+try:
+    import FinanceDataReader as fdr
+except ImportError:
+    fdr = None  # type: ignore[assignment]
 
 logger = logging.getLogger(__name__)
 
@@ -103,6 +107,8 @@ def fetch_stock_listing(market: Market) -> pd.DataFrame:
         DataFrame with columns: Code, Name, Close, Open, High, Low,
         Changes, ChangeRatio, Volume, Amount, Marcap
     """
+    if fdr is None:
+        raise ImportError("FinanceDataReader is required for fetch_stock_listing")
     logger.info("fetching stock listing: market=%s", market)
     raw = fdr.StockListing(market)
     df = _normalize_listing(raw)
