@@ -156,7 +156,6 @@ class TestPublishToWordpress:
             "ID": 42,
             "URL": "https://example.wordpress.com/?p=42",
         }
-        mock_resp.raise_for_status = MagicMock()
         mock_post.return_value = mock_resp
 
         cfg = _config(tmp_path)
@@ -180,7 +179,7 @@ class TestPublishToWordpress:
         call_args = mock_post.call_args
         assert "/posts/new" in call_args[0][0]
         payload = call_args[1]["json"]
-        assert payload["status"] == "draft"
+        assert payload["status"] == "publish"
         assert payload["title"] == art.title
 
     @patch("src.wordpress_publisher.requests.post")
@@ -216,8 +215,8 @@ class TestPublishToWordpress:
     def test_html_content_sent(self, mock_post, tmp_path):
         """본문이 HTML로 변환되어 전송되는지 확인."""
         mock_resp = MagicMock()
+        mock_resp.status_code = 200
         mock_resp.json.return_value = {"ID": 1, "URL": "https://x.com/?p=1"}
-        mock_resp.raise_for_status = MagicMock()
         mock_post.return_value = mock_resp
 
         cfg = _config(tmp_path)
@@ -231,8 +230,8 @@ class TestPublishToWordpress:
     def test_tags_and_categories_sent(self, mock_post, tmp_path):
         """태그와 카테고리가 전송되는지 확인."""
         mock_resp = MagicMock()
+        mock_resp.status_code = 200
         mock_resp.json.return_value = {"ID": 1, "URL": "https://x.com/?p=1"}
-        mock_resp.raise_for_status = MagicMock()
         mock_post.return_value = mock_resp
 
         cfg = _config(tmp_path)
@@ -249,8 +248,8 @@ class TestPublishArticles:
     @patch("src.wordpress_publisher.requests.post")
     def test_publishes_multiple(self, mock_post, tmp_path):
         mock_resp = MagicMock()
+        mock_resp.status_code = 200
         mock_resp.json.return_value = {"ID": 1, "URL": "https://x.com/?p=1"}
-        mock_resp.raise_for_status = MagicMock()
         mock_post.return_value = mock_resp
 
         cfg = _config(tmp_path)
@@ -279,8 +278,8 @@ class TestPublishArticles:
             if call_count == 1:
                 raise req.RequestException("timeout")
             resp = MagicMock()
+            resp.status_code = 200
             resp.json.return_value = {"ID": 2, "URL": "https://x.com/?p=2"}
-            resp.raise_for_status = MagicMock()
             return resp
 
         mock_post.side_effect = side_effect
@@ -317,8 +316,8 @@ class TestPublishContentPost:
     @patch("src.wordpress_publisher.requests.post")
     def test_successful_publish(self, mock_post, tmp_path):
         mock_resp = MagicMock()
+        mock_resp.status_code = 200
         mock_resp.json.return_value = {"ID": 100, "URL": "https://x.com/?p=100"}
-        mock_resp.raise_for_status = MagicMock()
         mock_post.return_value = mock_resp
 
         cfg = _config(tmp_path)
@@ -361,8 +360,8 @@ class TestPublishContentPosts:
     @patch("src.wordpress_publisher.requests.post")
     def test_publishes_multiple(self, mock_post, tmp_path):
         mock_resp = MagicMock()
+        mock_resp.status_code = 200
         mock_resp.json.return_value = {"ID": 1, "URL": "https://x.com/?p=1"}
-        mock_resp.raise_for_status = MagicMock()
         mock_post.return_value = mock_resp
 
         cfg = _config(tmp_path)

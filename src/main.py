@@ -24,12 +24,20 @@ import time
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 from src.config import Config
 from src.content_post import ContentPost
 from src.fetch_macro import MacroSnapshot, fetch_macro_snapshot
 
 logger = logging.getLogger(__name__)
+
+_KST = ZoneInfo("Asia/Seoul")
+
+
+def _now_kst() -> datetime:
+    """현재 시각을 KST(Asia/Seoul)로 반환한다."""
+    return datetime.now(tz=_KST)
 
 
 def _setup_logging() -> None:
@@ -623,7 +631,7 @@ def run_pre_market_pipeline() -> None:
     logger.info("econ calendar: %d events", len(econ_events))
 
     # 3) 프리마켓 브리핑 생성
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = _now_kst().strftime("%Y-%m-%d")
 
     # 새 데이터 변환
     sectors_dict = {ind.name: {"Close": ind.close, "ChangePct": ind.change_pct}
@@ -669,7 +677,7 @@ def run_pre_market_pipeline() -> None:
     logger.info("[STEP 2e] fetching flow, earnings, sentiment for pre-market...")
     # 전일 trade_date 추정 (프리마켓은 한국 새벽이므로 전날이 최근 거래일)
     from datetime import timedelta as _td
-    _yesterday = (datetime.now() - _td(days=1)).strftime("%Y-%m-%d")
+    _yesterday = (_now_kst() - _td(days=1)).strftime("%Y-%m-%d")
     flow = fetch_flow_snapshot(_yesterday)
     flow_dict = flow.to_dict() if flow else {}
     earnings = fetch_earnings_snapshot(cfg, today_str)
@@ -831,7 +839,7 @@ def _run_period_pipeline(period: str) -> None:
                 len(snapshot.kosdaq_top), len(snapshot.news_headlines))
 
     # 3) LLM 생성
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = _now_kst().strftime("%Y-%m-%d")
     logger.info("[STEP 2/4] generating %s report via %s...", label, cfg.llm_provider)
 
     post: Optional[ContentPost] = None

@@ -225,7 +225,10 @@ def publish_to_wordpress(
 
     try:
         resp = requests.post(url, headers=headers, json=payload, timeout=30)
-        resp.raise_for_status()
+        if resp.status_code != 200:
+            logger.error("  [WP] failed to publish '%s': HTTP %d — %s",
+                         article.title[:40], resp.status_code, resp.text[:300])
+            return None
     except requests.RequestException as exc:
         logger.error("  [WP] failed to publish '%s': %s", article.title[:40], str(exc)[:200])
         return None
@@ -297,7 +300,10 @@ def publish_content_post(
 
     try:
         resp = requests.post(url, headers=headers, json=payload, timeout=30)
-        resp.raise_for_status()
+        if resp.status_code != 200:
+            logger.error("  [WP] failed to publish '%s': HTTP %d — %s",
+                         post.title[:40], resp.status_code, resp.text[:300])
+            return None
     except requests.RequestException as exc:
         logger.error("  [WP] failed to publish '%s': %s", post.title[:40], str(exc)[:200])
         return None
@@ -432,7 +438,10 @@ def publish_daily_digest(
 
     try:
         resp = requests.post(url, headers=headers, json=payload, timeout=60)
-        resp.raise_for_status()
+        if resp.status_code != 200:
+            logger.error("  [WP] failed to publish digest: HTTP %d — %s",
+                         resp.status_code, resp.text[:300])
+            return None
     except requests.RequestException as exc:
         logger.error("  [WP] failed to publish digest: %s", str(exc)[:200])
         return None
