@@ -1,0 +1,482 @@
+{
+  "trade_date": "2026-05-06",
+  "macro": {
+    "S&P 500": {
+      "close": 7259.22,
+      "change_pct": 0.81,
+      "date": "2026-05-05"
+    },
+    "NASDAQ": {
+      "close": 25326.13,
+      "change_pct": 1.03,
+      "date": "2026-05-05"
+    },
+    "다우존스": {
+      "close": 49298.25,
+      "change_pct": 0.73,
+      "date": "2026-05-05"
+    },
+    "필라델피아반도체": {
+      "close": 482.73,
+      "change_pct": 4.47,
+      "date": "2026-05-05"
+    },
+    "달러인덱스": {
+      "close": 98.48,
+      "change_pct": 0.01,
+      "date": "2026-05-05"
+    },
+    "WTI유": {
+      "close": 102.27,
+      "change_pct": -3.9,
+      "date": "2026-05-05"
+    },
+    "금": {
+      "close": 4555.8,
+      "change_pct": 0.8,
+      "date": "2026-05-05"
+    },
+    "구리": {
+      "close": 5.94,
+      "change_pct": 2.41,
+      "date": "2026-05-05"
+    },
+    "천연가스": {
+      "close": 2.79,
+      "change_pct": -2.79,
+      "date": "2026-05-05"
+    },
+    "VIX": {
+      "close": 17.38,
+      "change_pct": -4.98,
+      "date": "2026-05-05"
+    },
+    "미국채10Y": {
+      "close": 4.42,
+      "change_pct": -0.67,
+      "date": "2026-05-05"
+    },
+    "미국채2Y": {
+      "close": 3.8,
+      "change_pct": 0.0,
+      "date": "2026-05-05"
+    },
+    "기술": {
+      "close": 165.63,
+      "change_pct": 2.21,
+      "date": "2026-05-05"
+    },
+    "금융": {
+      "close": 51.59,
+      "change_pct": 0.02,
+      "date": "2026-05-05"
+    },
+    "에너지": {
+      "close": 59.45,
+      "change_pct": 0.1,
+      "date": "2026-05-05"
+    },
+    "헬스케어": {
+      "close": 145.3,
+      "change_pct": 0.39,
+      "date": "2026-05-05"
+    },
+    "산업재": {
+      "close": 172.41,
+      "change_pct": 0.84,
+      "date": "2026-05-05"
+    },
+    "커뮤니케이션": {
+      "close": 115.63,
+      "change_pct": -0.4,
+      "date": "2026-05-05"
+    },
+    "경기소비재": {
+      "close": 118.07,
+      "change_pct": 0.3,
+      "date": "2026-05-05"
+    },
+    "필수소비재": {
+      "close": 84.06,
+      "change_pct": 0.62,
+      "date": "2026-05-05"
+    },
+    "부동산": {
+      "close": 44.17,
+      "change_pct": 0.2,
+      "date": "2026-05-05"
+    },
+    "유틸리티": {
+      "close": 46.37,
+      "change_pct": 0.0,
+      "date": "2026-05-05"
+    },
+    "소재": {
+      "close": 51.53,
+      "change_pct": 1.74,
+      "date": "2026-05-05"
+    },
+    "엔비디아": {
+      "close": 196.5,
+      "change_pct": -1.0,
+      "date": "2026-05-05"
+    },
+    "애플": {
+      "close": 284.18,
+      "change_pct": 2.66,
+      "date": "2026-05-05"
+    },
+    "마이크로소프트": {
+      "close": 411.38,
+      "change_pct": -0.54,
+      "date": "2026-05-05"
+    },
+    "아마존": {
+      "close": 273.55,
+      "change_pct": 0.55,
+      "date": "2026-05-05"
+    },
+    "알파벳": {
+      "close": 384.27,
+      "change_pct": 1.22,
+      "date": "2026-05-05"
+    },
+    "메타": {
+      "close": 604.96,
+      "change_pct": -0.89,
+      "date": "2026-05-05"
+    },
+    "테슬라": {
+      "close": 389.37,
+      "change_pct": -0.8,
+      "date": "2026-05-05"
+    },
+    "러셀2000": {
+      "close": 282.56,
+      "change_pct": 1.68,
+      "date": "2026-05-05"
+    },
+    "나스닥100ETF": {
+      "close": 681.61,
+      "change_pct": 1.3,
+      "date": "2026-05-05"
+    },
+    "가치ETF": {
+      "close": 206.52,
+      "change_pct": 0.91,
+      "date": "2026-05-05"
+    },
+    "닛케이225": {
+      "close": 59513.12,
+      "change_pct": 0.38,
+      "date": "2026-05-01"
+    },
+    "항셍": {
+      "close": 25898.61,
+      "change_pct": -0.76,
+      "date": "2026-05-05"
+    },
+    "상해종합": {
+      "close": 4112.16,
+      "change_pct": 0.11,
+      "date": "2026-04-30"
+    },
+    "독일DAX": {
+      "close": 24401.7,
+      "change_pct": 1.71,
+      "date": "2026-05-05"
+    },
+    "유로스톡스50": {
+      "close": 5869.63,
+      "change_pct": 1.84,
+      "date": "2026-05-05"
+    },
+    "하이일드채권": {
+      "close": 79.92,
+      "change_pct": 0.15,
+      "date": "2026-05-05"
+    },
+    "미장기채20Y+": {
+      "close": 85.43,
+      "change_pct": 0.55,
+      "date": "2026-05-05"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.62,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.81%, 나스닥 +1.03%로 상승 마감. 필라델피아 반도체지수 +4.47%. VIX 17.4 (보통 구간). 장단기 금리차 0.620%p (정상 범위). 금 4,555.80달러 (+0.80%). 달러인덱스 98.48 (+0.01%). 섹터: 기술(+2.21%) 주도, 커뮤니케이션(-0.40%) 약세. QQQ-VTV 스프레드 +0.39%p → 성장주 우위. HYG +0.15% → 신용 스트레스 안정. Mag7 평균 +0.17% → 대형 기술주 강세. 아시아: 닛케이225 +0.38%, 항셍 -0.76%, 상해종합 +0.11%. 유럽: 독일DAX +1.71%, 유로스톡스50 +1.84%.",
+  "market_breadth": {
+    "total_up": 626,
+    "total_down": 1870,
+    "total_unchanged": 275,
+    "total": 2771,
+    "up_ratio": 22.6
+  },
+  "surges": [
+    {
+      "code": "011790",
+      "name": "SKC",
+      "market": "KOSPI",
+      "industry": "기타 화학제품 제조업",
+      "move_type": "surge",
+      "close": 161200.0,
+      "change_pct": 30.0,
+      "relative_strength": 23.55,
+      "amount_eok": 3784.089532,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "SKC, 10분기 만에 상각전 '흑자'…유리기판으로 반등 가속",
+        "SKC·HB테크놀러지 등 유리기판株 상승...AI 반도체 핵심 부상",
+        "[급등락주 짚어보기] 코스피, ‘7천피 시대’…SKC·유안타증권 상한가",
+        "[단독] SKC, '취득가 4511억' 정읍 동박공장 폐쇄한다 [넘버스]",
+        "유리기판 경쟁 심화…SKC, 고객 확보 총력"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 78.84,
+          "macd": 10242.7016,
+          "macd_signal": 6649.7133,
+          "macd_histogram": 3592.9883,
+          "bb_upper": 143942.22,
+          "bb_middle": 112185.0,
+          "bb_lower": 80427.78,
+          "bb_position": "상단돌파",
+          "ma_5": 130120.0,
+          "ma_20": 112185.0,
+          "ma_60": 102075.5,
+          "ma_trend": "정배열",
+          "volume_ratio": 3.41,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 3.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "038060",
+      "name": "루멘스",
+      "market": "KOSDAQ",
+      "industry": "반도체 제조업",
+      "move_type": "surge",
+      "close": 1586.0,
+      "change_pct": 30.0,
+      "relative_strength": 30.29,
+      "amount_eok": 185.26426005,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "루멘스, +11.15% VI 발동 - 조선비즈",
+        "루멘스 투자분석 2026. 05. 05",
+        "특징주, 루멘스-마이크로 LED 테마 상승세에 5.34% ↑",
+        "TV 넘어 자동차로… 루멘스, 마이크로 LED 상용화로 실적 반등 노린다",
+        "루멘스, +30.00% 상한가 - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 68.1,
+          "macd": 132.7842,
+          "macd_signal": 134.33,
+          "macd_histogram": -1.5458,
+          "bb_upper": 1785.5,
+          "bb_middle": 1177.9,
+          "bb_lower": 570.3,
+          "bb_position": "중립",
+          "ma_5": 1257.2,
+          "ma_20": 1177.9,
+          "ma_60": 860.05,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.67,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 6,
+          "avg_return_1d": 5.41,
+          "avg_return_5d": 1.12,
+          "positive_rate_1d": 40.0,
+          "positive_rate_5d": 40.0
+        }
+      }
+    },
+    {
+      "code": "049120",
+      "name": "파인디앤씨",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 4420.0,
+      "change_pct": 30.0,
+      "relative_strength": 30.29,
+      "amount_eok": 23.0580155,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "파인디앤씨, +30.00% 상한가 - 조선비즈",
+        "파인디앤씨 주가 상한가, 주권매매거래 정지 해제",
+        "파인디앤씨, 액면병합 주권 변경상장으로 매매거래정지 해제",
+        "파인디앤씨, 6일 주권매매거래 정지 해제",
+        "파인디앤씨, 액면병합 주권 상장→매매거래 정상화"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 75.62,
+          "macd": 145.9151,
+          "macd_signal": 103.5635,
+          "macd_histogram": 42.3516,
+          "bb_upper": 4023.95,
+          "bb_middle": 3481.0,
+          "bb_lower": 2938.05,
+          "bb_position": "상단돌파",
+          "ma_5": 3604.0,
+          "ma_20": 3481.0,
+          "ma_60": 3092.58,
+          "ma_trend": "정배열",
+          "volume_ratio": 3.8,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 3.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "338220",
+      "name": "뷰노",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 13770.0,
+      "change_pct": -20.17,
+      "relative_strength": -19.88,
+      "amount_eok": 93.7887574,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "뷰노, AI 의료기기의 美 FDA 인증 획득 실패에 '급락'",
+        "뷰노, ‘심정지예측 AI’ FDA 시판허가 “거절”",
+        "FDA '동등성 인증' 못 받은 뷰노…\"재신청 예정\"",
+        "뷰노 “FDA, ‘뷰노메드 딥카스’ 동등성 증빙 불충분 결정…재허가 신청할 것”",
+        "뷰노, ‘AI로 지키는 모든 생명의 순간’ 심포지엄"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 28.67,
+          "macd": 30.4365,
+          "macd_signal": 353.1367,
+          "macd_histogram": -322.7002,
+          "bb_upper": 21160.39,
+          "bb_middle": 17859.5,
+          "bb_lower": 14558.61,
+          "bb_position": "하단이탈",
+          "ma_5": 17844.0,
+          "ma_20": 17859.5,
+          "ma_60": 17866.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 5.81,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 5.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "035890",
+      "name": "서희건설",
+      "market": "KOSDAQ",
+      "industry": "건물 건설업",
+      "move_type": "plunge",
+      "close": 2675.0,
+      "change_pct": -20.15,
+      "relative_strength": -19.86,
+      "amount_eok": 411.26515416,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "서희건설, -4.33% VI 발동 - 조선비즈",
+        "서희건설 5년, 기다림의 값을 치르다",
+        "서희건설, 상폐냐 생존이냐…운명의 카운트다운",
+        "20대 건설사서만 3300여 명 퇴직…사면초가 건설업계",
+        "'상장폐지' 넘긴 서희건설, 실적 급락·경영 리스크에 '가시방석' 여전"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 17.11,
+          "macd": -32.6422,
+          "macd_signal": -4.6145,
+          "macd_histogram": -28.0277,
+          "bb_upper": 3422.54,
+          "bb_middle": 3181.25,
+          "bb_lower": 2939.96,
+          "bb_position": "하단이탈",
+          "ma_5": 3125.0,
+          "ma_20": 3181.25,
+          "ma_60": 3193.75,
+          "ma_trend": "역배열",
+          "volume_ratio": 0.03,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "900300",
+      "name": "오가닉티코스메틱",
+      "market": "KOSDAQ",
+      "industry": "기타 금융업",
+      "move_type": "plunge",
+      "close": 169.0,
+      "change_pct": -17.56,
+      "relative_strength": -17.27,
+      "amount_eok": 99.97133297,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "오가닉티코스메틱, -9.27% VI 발동 - 조선비즈",
+        "오가닉티코스메틱 투자분석 2026. 05. 03",
+        "오가닉티코스메틱, 보통주 50대 1 주식병합 결정",
+        "오가닉티코스메틱, 263억 규모 운동화 공급계약",
+        "오가닉티코스메틱, 인도네시아 기업에 263억 운동화 공급계약 체결"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 50.45,
+          "macd": 22.8896,
+          "macd_signal": 20.1023,
+          "macd_histogram": 2.7873,
+          "bb_upper": 257.27,
+          "bb_middle": 165.15,
+          "bb_lower": 73.03,
+          "bb_position": "중립",
+          "ma_5": 214.8,
+          "ma_20": 165.15,
+          "ma_60": 136.97,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.0,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
