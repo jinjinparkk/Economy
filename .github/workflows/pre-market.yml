@@ -1,9 +1,9 @@
 name: Pre-Market Briefing
 
 on:
-  schedule:
-    # 매일 KST 05:50 = UTC 20:50 (전날) — 주말 포함
-    - cron: '50 20 * * *'
+  # schedule:
+  #   # 매일 KST 05:50 = UTC 20:50 (전날) — 주말 포함
+  #   - cron: '50 20 * * *'
   workflow_dispatch:
 
 jobs:
