@@ -1,9 +1,9 @@
 name: Post-Market Analysis
 
 on:
-  # schedule:
-  #   # 평일 KST 15:50 = UTC 06:50 (월~금)
-  #   - cron: '50 6 * * 1-5'
+  schedule:
+    # 평일 KST 15:50 = UTC 06:50 (월~금)
+    - cron: '50 6 * * 1-5'
   workflow_dispatch:
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
           NAVER_AUTO_PUBLISH: 'true'
           OUTPUT_DIR: ./output
           TIMEZONE: Asia/Seoul
-        run: python -m src.main --top 3
+        run: python -m src.main --top 3 --dry-run
 
       - name: Commit output to repo
         run: |

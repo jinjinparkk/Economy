@@ -593,7 +593,7 @@ def _fetch_econ_calendar_news() -> list[str]:
     return headlines[:5]
 
 
-def run_pre_market_pipeline() -> None:
+def run_pre_market_pipeline(dry_run: bool = False) -> None:
     """프리마켓 브리핑 파이프라인. 미국 증시 마감 후 실행."""
     from src.content_generator import generate_pre_market, generate_pre_market_fallback
 
@@ -601,7 +601,7 @@ def run_pre_market_pipeline() -> None:
     cfg = Config.load()
 
     logger.info("=" * 60)
-    logger.info("PRE-MARKET BRIEFING PIPELINE START")
+    logger.info("PRE-MARKET BRIEFING PIPELINE START (dry_run=%s)", dry_run)
     logger.info("=" * 60)
 
     # 1) 거시경제 수집 (미국 지표)
@@ -714,6 +714,37 @@ def run_pre_market_pipeline() -> None:
         earnings=earnings_dict,
         sentiment=sentiment_dict,
     )
+
+    # dry-run: 수집 데이터만 JSON 저장 후 종료
+    if dry_run:
+        logger.info("[DRY-RUN] saving pre-market data as JSON...")
+        cfg.output_dir.mkdir(parents=True, exist_ok=True)
+        path = cfg.output_dir / f"{today_str}_프리마켓_dry_run.json"
+        dry_data = {
+            "trade_date": today_str,
+            "macro": _briefing_kwargs["macro_summary"],
+            "macro_narrative": _briefing_kwargs["macro_narrative"],
+            "market_regime": macro.market_regime,
+            "yield_spread": macro.yield_spread,
+            "us_news": us_news,
+            "sectors": sectors_dict,
+            "mega_caps": mega_dict,
+            "style_signals": style_dict,
+            "asia_indices": asia_dict,
+            "europe_indices": europe_dict,
+            "credit_signals": credit_dict,
+            "econ_calendar": econ_data,
+            "global_issues": issues_data,
+            "theme_connections": themes_data,
+            "flow": flow_dict,
+            "earnings": earnings_dict,
+            "sentiment": sentiment_dict,
+        }
+        path.write_text(json.dumps(dry_data, ensure_ascii=False, indent=2), encoding="utf-8")
+        elapsed = time.time() - started
+        logger.info("[DRY-RUN] saved: %s", path.name)
+        logger.info("PRE-MARKET DRY-RUN DONE in %.1fs", elapsed)
+        return
 
     # API 키 확인 (primary 또는 fallback 중 하나라도 있으면 시도)
     any_key = cfg.gemini_api_key or cfg.anthropic_api_key
@@ -945,7 +976,7 @@ def main() -> None:
     _setup_logging()
 
     if args.pre_market:
-        run_pre_market_pipeline()
+        run_pre_market_pipeline(dry_run=args.dry_run)
     elif args.weekly:
         run_weekly_pipeline()
     elif args.monthly:
