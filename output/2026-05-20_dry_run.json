@@ -1,0 +1,446 @@
+{
+  "trade_date": "2026-05-20",
+  "macro": {
+    "S&P 500": {
+      "close": 7353.61,
+      "change_pct": -0.67,
+      "date": "2026-05-19"
+    },
+    "NASDAQ": {
+      "close": 25870.71,
+      "change_pct": -0.84,
+      "date": "2026-05-19"
+    },
+    "다우존스": {
+      "close": 49363.88,
+      "change_pct": -0.65,
+      "date": "2026-05-19"
+    },
+    "필라델피아반도체": {
+      "close": 496.74,
+      "change_pct": 0.18,
+      "date": "2026-05-19"
+    },
+    "달러인덱스": {
+      "close": 99.3,
+      "change_pct": 0.33,
+      "date": "2026-05-19"
+    },
+    "WTI유": {
+      "close": 107.77,
+      "change_pct": -0.82,
+      "date": "2026-05-19"
+    },
+    "금": {
+      "close": 4506.3,
+      "change_pct": -1.01,
+      "date": "2026-05-19"
+    },
+    "구리": {
+      "close": 6.16,
+      "change_pct": -1.75,
+      "date": "2026-05-19"
+    },
+    "천연가스": {
+      "close": 3.11,
+      "change_pct": 2.98,
+      "date": "2026-05-19"
+    },
+    "VIX": {
+      "close": 18.06,
+      "change_pct": 1.35,
+      "date": "2026-05-19"
+    },
+    "미국채10Y": {
+      "close": 4.67,
+      "change_pct": 1.08,
+      "date": "2026-05-19"
+    },
+    "미국채2Y": {
+      "close": 3.82,
+      "change_pct": 0.0,
+      "date": "2026-05-19"
+    },
+    "기술": {
+      "close": 173.24,
+      "change_pct": -0.64,
+      "date": "2026-05-19"
+    },
+    "금융": {
+      "close": 51.1,
+      "change_pct": -1.24,
+      "date": "2026-05-19"
+    },
+    "에너지": {
+      "close": 61.29,
+      "change_pct": 1.17,
+      "date": "2026-05-19"
+    },
+    "헬스케어": {
+      "close": 147.32,
+      "change_pct": 1.1,
+      "date": "2026-05-19"
+    },
+    "산업재": {
+      "close": 168.74,
+      "change_pct": -1.18,
+      "date": "2026-05-19"
+    },
+    "커뮤니케이션": {
+      "close": 115.85,
+      "change_pct": -0.97,
+      "date": "2026-05-19"
+    },
+    "경기소비재": {
+      "close": 115.03,
+      "change_pct": -1.11,
+      "date": "2026-05-19"
+    },
+    "필수소비재": {
+      "close": 86.09,
+      "change_pct": 0.22,
+      "date": "2026-05-19"
+    },
+    "부동산": {
+      "close": 43.94,
+      "change_pct": 0.43,
+      "date": "2026-05-19"
+    },
+    "유틸리티": {
+      "close": 44.34,
+      "change_pct": 0.91,
+      "date": "2026-05-19"
+    },
+    "소재": {
+      "close": 49.04,
+      "change_pct": -2.35,
+      "date": "2026-05-19"
+    },
+    "엔비디아": {
+      "close": 220.61,
+      "change_pct": -0.77,
+      "date": "2026-05-19"
+    },
+    "애플": {
+      "close": 298.97,
+      "change_pct": 0.38,
+      "date": "2026-05-19"
+    },
+    "마이크로소프트": {
+      "close": 417.42,
+      "change_pct": -1.44,
+      "date": "2026-05-19"
+    },
+    "아마존": {
+      "close": 259.34,
+      "change_pct": -2.08,
+      "date": "2026-05-19"
+    },
+    "알파벳": {
+      "close": 384.9,
+      "change_pct": -2.09,
+      "date": "2026-05-19"
+    },
+    "메타": {
+      "close": 602.61,
+      "change_pct": -1.41,
+      "date": "2026-05-19"
+    },
+    "테슬라": {
+      "close": 404.11,
+      "change_pct": -1.43,
+      "date": "2026-05-19"
+    },
+    "러셀2000": {
+      "close": 273.0,
+      "change_pct": -1.08,
+      "date": "2026-05-19"
+    },
+    "나스닥100ETF": {
+      "close": 701.53,
+      "change_pct": -0.62,
+      "date": "2026-05-19"
+    },
+    "가치ETF": {
+      "close": 207.08,
+      "change_pct": -0.14,
+      "date": "2026-05-19"
+    },
+    "닛케이225": {
+      "close": 59804.41,
+      "change_pct": -1.23,
+      "date": "2026-05-20"
+    },
+    "항셍": {
+      "close": 25797.85,
+      "change_pct": 0.48,
+      "date": "2026-05-19"
+    },
+    "상해종합": {
+      "close": 4169.54,
+      "change_pct": 0.92,
+      "date": "2026-05-19"
+    },
+    "독일DAX": {
+      "close": 24400.65,
+      "change_pct": 0.38,
+      "date": "2026-05-19"
+    },
+    "유로스톡스50": {
+      "close": 5851.16,
+      "change_pct": 0.04,
+      "date": "2026-05-19"
+    },
+    "하이일드채권": {
+      "close": 79.35,
+      "change_pct": -0.24,
+      "date": "2026-05-19"
+    },
+    "미장기채20Y+": {
+      "close": 83.02,
+      "change_pct": -0.65,
+      "date": "2026-05-19"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.85,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.67%, 나스닥 -0.84%로 하락 마감. 필라델피아 반도체지수 +0.18%. VIX 18.1 (보통 구간). 장단기 금리차 0.850%p (정상 범위). 금 4,506.30달러 (-1.01%). 달러인덱스 99.30 (+0.33%). 섹터: 에너지(+1.17%) 주도, 소재(-2.35%) 약세. QQQ-VTV 스프레드 -0.48%p → 가치주 우위. HYG -0.24% → 신용 스트레스 안정. Mag7 평균 -1.26% → 대형 기술주 약세. 아시아: 닛케이225 -1.23%, 항셍 +0.48%, 상해종합 +0.92%. 유럽: 독일DAX +0.38%, 유로스톡스50 +0.04%.",
+  "market_breadth": {
+    "total_up": 347,
+    "total_down": 2218,
+    "total_unchanged": 205,
+    "total": 2770,
+    "up_ratio": 12.5
+  },
+  "surges": [
+    {
+      "code": "477850",
+      "name": "마키나락스",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 60000.0,
+      "change_pct": 300.0,
+      "relative_strength": 302.61,
+      "amount_eok": 341.9472,
+      "hints": [
+        "상한가",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 마키나락스, 코스닥 상장 첫날 '따따블'(종합)",
+        "[급등락주 짚어보기] 전력 인프라 및 신규 상장주 주목…광전자·마키나락스 등 '上'",
+        "'K팔란티어' 마키나락스 오늘 출격…14조원 흥행 이어갈까 [종목+]",
+        "마키나락스(477850)",
+        "마키나락스 공모가 4배 직행…피지컬AI 후속주도 주목"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "066980",
+      "name": "한성크린텍",
+      "market": "KOSDAQ",
+      "industry": "건축기술, 엔지니어링 및 관련 기술 서비스업",
+      "move_type": "surge",
+      "close": 1890.0,
+      "change_pct": 29.99,
+      "relative_strength": 32.6,
+      "amount_eok": 260.7592336,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[특징주] ‘삼전·하닉 수주 러브콜’…한성크린텍, 상한가 - 조선비즈",
+        "[특징주] 한성크린텍, 삼전·하닉 등 대규모 수주 및 실적 턴어라운드 기대감에 상한가",
+        "[모닝 리포트] \"한성크린텍, 삼성·SK 수주 러브콜 지속…역대급 수주잔고 확보\"",
+        "[이격도과열 종목] 한성크린텍 성문전자 티웨이홀딩스 아이진 녹십자엠에스 진원생명과학에 올라탈까"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 66.45,
+          "macd": 30.0047,
+          "macd_signal": 19.4861,
+          "macd_histogram": 10.5186,
+          "bb_upper": 1750.02,
+          "bb_middle": 1549.45,
+          "bb_lower": 1348.88,
+          "bb_position": "상단돌파",
+          "ma_5": 1561.6,
+          "ma_20": 1549.45,
+          "ma_60": 1450.72,
+          "ma_trend": "정배열",
+          "volume_ratio": 6.66,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 6.7배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "225430",
+      "name": "케이엠제약",
+      "market": "KOSDAQ",
+      "industry": "기타 화학제품 제조업",
+      "move_type": "surge",
+      "close": 3035.0,
+      "change_pct": 29.98,
+      "relative_strength": 32.59,
+      "amount_eok": 11.31739242,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "케이엠제약-한울바이오와 마우스 워시 개발 MOU",
+        "케이엠제약, 베트남 시장 공략 ‘뽀로로 치약’ 공급 확대",
+        "[상한가 종목] 광전자-성문전자 이어 마키나락스-케이엠제약 등 마감",
+        "케이엠제약, 한울바이오와 MPC 구강케어 제품개발 착수"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 61.89,
+          "macd": -39.1479,
+          "macd_signal": -70.8906,
+          "macd_histogram": 31.7427,
+          "bb_upper": 2824.35,
+          "bb_middle": 2595.0,
+          "bb_lower": 2365.65,
+          "bb_position": "상단돌파",
+          "ma_5": 2625.0,
+          "ma_20": 2595.0,
+          "ma_60": 2676.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 6.59,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 6.6배 폭증 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 8,
+          "avg_return_1d": -1.62,
+          "avg_return_5d": -4.99,
+          "positive_rate_1d": 28.6,
+          "positive_rate_5d": 28.6
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "288180",
+      "name": "케이피항공산업",
+      "market": "KOSDAQ",
+      "industry": "항공기,우주선 및 부품 제조업",
+      "move_type": "plunge",
+      "close": 30700.0,
+      "change_pct": -29.99,
+      "relative_strength": -27.38,
+      "amount_eok": 1500.0322265,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "케이피항공산업, 상한가 이튿날 25% 폭락…우주항공株 약세[핫종목]",
+        "우주항공·방산주 ‘케이피항공산업’ 코스닥 상장, 상한가 칠까",
+        "[특징주] 케이피항공산업, 코스닥 입성 하루만에 ‘上→下’",
+        "[특징주] 케이피항공산업, 합병 상장 첫날 '上'"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "092220",
+      "name": "KEC",
+      "market": "KOSPI",
+      "industry": "반도체 제조업",
+      "move_type": "plunge",
+      "close": 6440.0,
+      "change_pct": -29.92,
+      "relative_strength": -29.06,
+      "amount_eok": 411.2124517,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[한국전자홀딩스·KEC] ①동전주 상폐 회피 속 EB 발행과 이상한 주가",
+        "KEC 투자분석 2026. 04. 16",
+        "KEC, 가전부터 자동차까지… 비메모리 반도체 공급망 핵심 부상",
+        "황창섭 부회장, KEC 주식 전량 매도",
+        "엔비디아 800V 전송 소식에 와이엠텍·KEC 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 29.85,
+          "macd": 190.6492,
+          "macd_signal": 419.0306,
+          "macd_histogram": -228.3815,
+          "bb_upper": 10427.22,
+          "bb_middle": 8897.75,
+          "bb_lower": 7368.28,
+          "bb_position": "하단이탈",
+          "ma_5": 8640.0,
+          "ma_20": 8897.75,
+          "ma_60": 7752.67,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.24,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "006200",
+      "name": "한국전자홀딩스",
+      "market": "KOSPI",
+      "industry": "기타 금융업",
+      "move_type": "plunge",
+      "close": 2950.0,
+      "change_pct": -26.34,
+      "relative_strength": -25.48,
+      "amount_eok": 14.43895752,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "하락률 상위 50선 - 코스피 - 조선비즈",
+        "[한국전자홀딩스·KEC] ②뛰는 이재명 정부 위 나는 곽정소, 손쉽게 정책 파훼",
+        "한국전자홀딩스 투자분석 2026. 04. 03",
+        "주요주주 주식회사 한국전자홀딩스., KEC 주식병합으로 주식 수 감소",
+        "한국전자홀딩스, 1분기 보고서 제출...교환사채 16억 원 교환 완료"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 20.61,
+          "macd": -104.8076,
+          "macd_signal": -36.4371,
+          "macd_histogram": -68.3705,
+          "bb_upper": 4517.88,
+          "bb_middle": 3989.25,
+          "bb_lower": 3460.62,
+          "bb_position": "하단이탈",
+          "ma_5": 3794.0,
+          "ma_20": 3989.25,
+          "ma_60": 4052.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.02,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
