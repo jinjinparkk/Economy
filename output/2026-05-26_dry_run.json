@@ -1,0 +1,477 @@
+{
+  "trade_date": "2026-05-26",
+  "macro": {
+    "S&P 500": {
+      "close": 7473.47,
+      "change_pct": 0.37,
+      "date": "2026-05-22"
+    },
+    "NASDAQ": {
+      "close": 26343.97,
+      "change_pct": 0.19,
+      "date": "2026-05-22"
+    },
+    "다우존스": {
+      "close": 50579.7,
+      "change_pct": 0.58,
+      "date": "2026-05-22"
+    },
+    "필라델피아반도체": {
+      "close": 537.33,
+      "change_pct": 2.41,
+      "date": "2026-05-22"
+    },
+    "WTI유": {
+      "close": 96.6,
+      "change_pct": 0.26,
+      "date": "2026-05-22"
+    },
+    "금": {
+      "close": 4521.0,
+      "change_pct": -0.41,
+      "date": "2026-05-22"
+    },
+    "구리": {
+      "close": 6.34,
+      "change_pct": 1.28,
+      "date": "2026-05-22"
+    },
+    "천연가스": {
+      "close": 2.91,
+      "change_pct": -3.64,
+      "date": "2026-05-22"
+    },
+    "VIX": {
+      "close": 16.59,
+      "change_pct": -0.66,
+      "date": "2026-05-25"
+    },
+    "미국채10Y": {
+      "close": 4.56,
+      "change_pct": -0.65,
+      "date": "2026-05-22"
+    },
+    "미국채2Y": {
+      "close": 3.82,
+      "change_pct": 0.0,
+      "date": "2026-05-22"
+    },
+    "기술": {
+      "close": 180.39,
+      "change_pct": 1.0,
+      "date": "2026-05-22"
+    },
+    "금융": {
+      "close": 51.94,
+      "change_pct": 0.41,
+      "date": "2026-05-22"
+    },
+    "에너지": {
+      "close": 59.49,
+      "change_pct": 0.61,
+      "date": "2026-05-22"
+    },
+    "헬스케어": {
+      "close": 149.89,
+      "change_pct": 1.17,
+      "date": "2026-05-22"
+    },
+    "산업재": {
+      "close": 171.77,
+      "change_pct": 0.73,
+      "date": "2026-05-22"
+    },
+    "커뮤니케이션": {
+      "close": 115.46,
+      "change_pct": -0.55,
+      "date": "2026-05-22"
+    },
+    "경기소비재": {
+      "close": 119.18,
+      "change_pct": 0.4,
+      "date": "2026-05-22"
+    },
+    "필수소비재": {
+      "close": 84.8,
+      "change_pct": 0.17,
+      "date": "2026-05-22"
+    },
+    "부동산": {
+      "close": 44.56,
+      "change_pct": 0.13,
+      "date": "2026-05-22"
+    },
+    "유틸리티": {
+      "close": 45.35,
+      "change_pct": 0.78,
+      "date": "2026-05-22"
+    },
+    "소재": {
+      "close": 50.29,
+      "change_pct": 0.54,
+      "date": "2026-05-22"
+    },
+    "엔비디아": {
+      "close": 215.33,
+      "change_pct": -1.9,
+      "date": "2026-05-22"
+    },
+    "애플": {
+      "close": 308.82,
+      "change_pct": 1.26,
+      "date": "2026-05-22"
+    },
+    "마이크로소프트": {
+      "close": 418.57,
+      "change_pct": -0.12,
+      "date": "2026-05-22"
+    },
+    "아마존": {
+      "close": 266.32,
+      "change_pct": -0.8,
+      "date": "2026-05-22"
+    },
+    "알파벳": {
+      "close": 379.38,
+      "change_pct": -1.07,
+      "date": "2026-05-22"
+    },
+    "메타": {
+      "close": 610.26,
+      "change_pct": 0.47,
+      "date": "2026-05-22"
+    },
+    "테슬라": {
+      "close": 426.01,
+      "change_pct": 1.95,
+      "date": "2026-05-22"
+    },
+    "러셀2000": {
+      "close": 285.12,
+      "change_pct": 0.93,
+      "date": "2026-05-22"
+    },
+    "나스닥100ETF": {
+      "close": 717.54,
+      "change_pct": 0.42,
+      "date": "2026-05-22"
+    },
+    "가치ETF": {
+      "close": 210.9,
+      "change_pct": 0.9,
+      "date": "2026-05-22"
+    },
+    "닛케이225": {
+      "close": 64996.09,
+      "change_pct": -0.25,
+      "date": "2026-05-26"
+    },
+    "항셍": {
+      "close": 25606.03,
+      "change_pct": 0.86,
+      "date": "2026-05-22"
+    },
+    "상해종합": {
+      "close": 4152.57,
+      "change_pct": 0.96,
+      "date": "2026-05-25"
+    },
+    "독일DAX": {
+      "close": 25389.1,
+      "change_pct": 2.01,
+      "date": "2026-05-25"
+    },
+    "유로스톡스50": {
+      "close": 6019.45,
+      "change_pct": 0.99,
+      "date": "2026-05-22"
+    },
+    "하이일드채권": {
+      "close": 79.91,
+      "change_pct": 0.01,
+      "date": "2026-05-22"
+    },
+    "미장기채20Y+": {
+      "close": 84.68,
+      "change_pct": 0.55,
+      "date": "2026-05-22"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.74,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.37%, 나스닥 +0.19%로 상승 마감. 필라델피아 반도체지수 +2.41%. VIX 16.6 (보통 구간). 장단기 금리차 0.740%p (정상 범위). 금 4,521.00달러 (-0.41%). 섹터: 헬스케어(+1.17%) 주도, 커뮤니케이션(-0.55%) 약세. QQQ-VTV 스프레드 -0.48%p → 가치주 우위. HYG +0.01% → 신용 스트레스 안정. Mag7 평균 -0.03% → 대형 기술주 약세. 아시아: 닛케이225 -0.25%, 항셍 +0.86%, 상해종합 +0.96%. 유럽: 독일DAX +2.01%, 유로스톡스50 +0.99%.",
+  "market_breadth": {
+    "total_up": 786,
+    "total_down": 1771,
+    "total_unchanged": 213,
+    "total": 2770,
+    "up_ratio": 28.4
+  },
+  "surges": [
+    {
+      "code": "001740",
+      "name": "SK네트웍스",
+      "market": "KOSPI",
+      "industry": "기타 전문 도매업",
+      "move_type": "surge",
+      "close": 10920.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.45,
+      "amount_eok": 6601.25564585,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] SK네트웍스, 업스테이지 투자 확대에 27% 급등…장중 52주 신고가",
+        "[특징주] SK네트웍스, “美 주파수 경매 앞두고 미국 5G 투자 확대” 수혜 기대감 ‘활활’",
+        "[급등락주 짚어보기] AI·양자컴퓨팅 관련주 상한가⋯SK네트웍스ㆍ삼화콘덴서 등 上",
+        "[속보] SK네트웍스 VI 발동, 주가 급등흐름…종가까지 추이 '이목'",
+        "[이격도과열 종목] SK네트웍스 삼화콘덴서 네이처셀 한켐 케이씨에스 엑스게이트 '펄펄끓네'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 80.9,
+          "macd": 928.8377,
+          "macd_signal": 641.0443,
+          "macd_histogram": 287.7934,
+          "bb_upper": 9789.39,
+          "bb_middle": 7149.0,
+          "bb_lower": 4508.61,
+          "bb_position": "상단돌파",
+          "ma_5": 8698.0,
+          "ma_20": 7149.0,
+          "ma_60": 5947.0,
+          "ma_trend": "정배열",
+          "volume_ratio": 4.4,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 4.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "001820",
+      "name": "삼화콘덴서",
+      "market": "KOSPI",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 132600.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.45,
+      "amount_eok": 2470.04912,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "하나증권 \"AI 서버용 MLCC 수요 확대 기대, 관련주 삼성전기 삼화콘덴서\"",
+        "[급등락주 짚어보기] AI·양자컴퓨팅 관련주 상한가⋯SK네트웍스ㆍ삼화콘덴서 등 上",
+        "삼화콘덴서 주가, 급등... 삼성전기 날자 쏠린 '매수세'",
+        "[장중수급포착] 삼화콘덴서, 기관 8일 연속 순매수행진... 주가 +24.22%",
+        "[투데이’s 특징주] 삼화콘덴서, AI향 MLCC 호황 기대감에 ‘상한가’ By 투데이코리아"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 87.68,
+          "macd": 9732.1253,
+          "macd_signal": 4265.9684,
+          "macd_histogram": 5466.1569,
+          "bb_upper": 104910.36,
+          "bb_middle": 72035.0,
+          "bb_lower": 39159.64,
+          "bb_position": "상단돌파",
+          "ma_5": 91120.0,
+          "ma_20": 72035.0,
+          "ma_60": 61419.17,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.94,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "007390",
+      "name": "네이처셀",
+      "market": "KOSDAQ",
+      "industry": "기초 의약물질 제조업",
+      "move_type": "surge",
+      "close": 29250.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.02,
+      "amount_eok": 23.27949,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 네이처셀, 미 FDA 허가 기대감에 상한가",
+        "[특징주] 네이처셀, 이틀 연속 상한가…줄기세포주 덩달아 오름세",
+        "[특징주] 네이처셀, 조인트스템 美 정식 허가 절차 본격화…이틀 연속 上",
+        "네이처셀 \"美 FDA 허가 신청 자격 획득\"…이틀 연속 '上'",
+        "[속보] 네이처셀 상한가 직행…VI만 6번 발동, 미국·이란 휴전 기대감 속 바이오주 들썩"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 77.08,
+          "macd": 726.4527,
+          "macd_signal": -28.6533,
+          "macd_histogram": 755.106,
+          "bb_upper": 24657.54,
+          "bb_middle": 19684.0,
+          "bb_lower": 14710.46,
+          "bb_position": "상단돌파",
+          "ma_5": 21222.0,
+          "ma_20": 19684.0,
+          "ma_60": 19217.83,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.23,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 11.01,
+          "avg_return_5d": 2.52,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 33.3
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "230980",
+      "name": "비유테크놀러지",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 14.0,
+      "change_pct": -93.89,
+      "relative_strength": -94.87,
+      "amount_eok": 15.62432075,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "상장폐지 앞둔 비유테크놀러지, 정리매매 첫날 '급락'",
+        "비유테크놀러지, -90.83% 상승폭 확대 - 조선비즈",
+        "'의견거절' 비유테크놀러지, 26일부터 상장폐지 정리매매... 7일간의 마지막 거래",
+        "비유테크놀러지, 상장폐지 따른 정리매매 개시로 주권매매거래정지 해제",
+        "비유테크놀러지, 내달 5일 상장폐지…이달 26일부터 정리매매"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 0.0,
+          "macd": -17.151,
+          "macd_signal": -3.4302,
+          "macd_histogram": -13.7208,
+          "bb_upper": 311.97,
+          "bb_middle": 218.25,
+          "bb_lower": 124.53,
+          "bb_position": "하단이탈",
+          "ma_5": 186.0,
+          "ma_20": 218.25,
+          "ma_60": 225.42,
+          "ma_trend": "역배열",
+          "volume_ratio": 20.0,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 20.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "419540",
+      "name": "비스토스",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "plunge",
+      "close": 3605.0,
+      "change_pct": -17.79,
+      "relative_strength": -18.77,
+      "amount_eok": 22.33627268,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "비스토스, 액면병합 주권 변경상장으로 주권매매거래정지 해제",
+        "씨유메디칼, 비스토스 인수…종합 의료기기社 지향",
+        "비스토스 26일 거래 재개 확정... 액면병합 마치고 증시 복귀",
+        "비스토스, 26일 주권매매거래 정지 해제",
+        "[생생한 주식쇼 생쇼] 비스토스 (419540)"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 17.48,
+          "macd": -52.7437,
+          "macd_signal": -10.7233,
+          "macd_histogram": -42.0203,
+          "bb_upper": 4671.29,
+          "bb_middle": 4326.0,
+          "bb_lower": 3980.71,
+          "bb_position": "하단이탈",
+          "ma_5": 4229.0,
+          "ma_20": 4326.0,
+          "ma_60": 4372.17,
+          "ma_trend": "역배열",
+          "volume_ratio": 14.1,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 14.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "072770",
+      "name": "멤레이비티",
+      "market": "KOSDAQ",
+      "industry": "컴퓨터 프로그래밍, 시스템 통합 및 관리업",
+      "move_type": "plunge",
+      "close": 1083.0,
+      "change_pct": -17.71,
+      "relative_strength": -18.69,
+      "amount_eok": 17.30485309,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "멤레이비티, -9.42% VI 발동 - 조선비즈",
+        "멤레이비티 22일 거래 재개, 액면병합 후 변경상장 완료로 시장 복귀",
+        "멤레이비티 투자분석 2026. 05. 22",
+        "[체크!코스닥] ’신사업’ 내세운 멤레이비티, 실상은 자금난에 ’허덕’ By MoneyS",
+        "멤레이비티, 22일 주권매매거래 정지 해제"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 13.2,
+          "macd": -54.2509,
+          "macd_signal": -34.6005,
+          "macd_histogram": -19.6504,
+          "bb_upper": 1540.69,
+          "bb_middle": 1392.45,
+          "bb_lower": 1244.21,
+          "bb_position": "하단이탈",
+          "ma_5": 1328.2,
+          "ma_20": 1392.45,
+          "ma_60": 1491.95,
+          "ma_trend": "역배열",
+          "volume_ratio": 11.22,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 11.2배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
