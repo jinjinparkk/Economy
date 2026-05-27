@@ -1,0 +1,488 @@
+{
+  "trade_date": "2026-05-27",
+  "macro": {
+    "S&P 500": {
+      "close": 7519.12,
+      "change_pct": 0.61,
+      "date": "2026-05-26"
+    },
+    "NASDAQ": {
+      "close": 26656.18,
+      "change_pct": 1.19,
+      "date": "2026-05-26"
+    },
+    "다우존스": {
+      "close": 50461.68,
+      "change_pct": -0.23,
+      "date": "2026-05-26"
+    },
+    "필라델피아반도체": {
+      "close": 570.09,
+      "change_pct": 6.1,
+      "date": "2026-05-26"
+    },
+    "달러인덱스": {
+      "close": 99.15,
+      "change_pct": -0.17,
+      "date": "2026-05-26"
+    },
+    "WTI유": {
+      "close": 93.89,
+      "change_pct": -2.81,
+      "date": "2026-05-26"
+    },
+    "금": {
+      "close": 4500.4,
+      "change_pct": -0.46,
+      "date": "2026-05-26"
+    },
+    "구리": {
+      "close": 6.36,
+      "change_pct": 0.32,
+      "date": "2026-05-26"
+    },
+    "천연가스": {
+      "close": 2.89,
+      "change_pct": -0.69,
+      "date": "2026-05-26"
+    },
+    "VIX": {
+      "close": 17.01,
+      "change_pct": 2.53,
+      "date": "2026-05-26"
+    },
+    "미국채10Y": {
+      "close": 4.49,
+      "change_pct": -1.54,
+      "date": "2026-05-26"
+    },
+    "미국채2Y": {
+      "close": 3.82,
+      "change_pct": 0.0,
+      "date": "2026-05-26"
+    },
+    "기술": {
+      "close": 185.14,
+      "change_pct": 2.63,
+      "date": "2026-05-26"
+    },
+    "금융": {
+      "close": 51.85,
+      "change_pct": -0.17,
+      "date": "2026-05-26"
+    },
+    "에너지": {
+      "close": 57.85,
+      "change_pct": -2.76,
+      "date": "2026-05-26"
+    },
+    "헬스케어": {
+      "close": 148.51,
+      "change_pct": -0.92,
+      "date": "2026-05-26"
+    },
+    "산업재": {
+      "close": 174.3,
+      "change_pct": 1.47,
+      "date": "2026-05-26"
+    },
+    "커뮤니케이션": {
+      "close": 115.55,
+      "change_pct": 0.08,
+      "date": "2026-05-26"
+    },
+    "경기소비재": {
+      "close": 119.45,
+      "change_pct": 0.23,
+      "date": "2026-05-26"
+    },
+    "필수소비재": {
+      "close": 83.63,
+      "change_pct": -1.38,
+      "date": "2026-05-26"
+    },
+    "부동산": {
+      "close": 44.71,
+      "change_pct": 0.34,
+      "date": "2026-05-26"
+    },
+    "유틸리티": {
+      "close": 45.33,
+      "change_pct": -0.04,
+      "date": "2026-05-26"
+    },
+    "소재": {
+      "close": 50.99,
+      "change_pct": 1.39,
+      "date": "2026-05-26"
+    },
+    "엔비디아": {
+      "close": 214.86,
+      "change_pct": -0.22,
+      "date": "2026-05-26"
+    },
+    "애플": {
+      "close": 308.33,
+      "change_pct": -0.16,
+      "date": "2026-05-26"
+    },
+    "마이크로소프트": {
+      "close": 416.03,
+      "change_pct": -0.61,
+      "date": "2026-05-26"
+    },
+    "아마존": {
+      "close": 265.29,
+      "change_pct": -0.39,
+      "date": "2026-05-26"
+    },
+    "알파벳": {
+      "close": 384.84,
+      "change_pct": 1.44,
+      "date": "2026-05-26"
+    },
+    "메타": {
+      "close": 612.34,
+      "change_pct": 0.34,
+      "date": "2026-05-26"
+    },
+    "테슬라": {
+      "close": 433.59,
+      "change_pct": 1.78,
+      "date": "2026-05-26"
+    },
+    "러셀2000": {
+      "close": 290.51,
+      "change_pct": 1.89,
+      "date": "2026-05-26"
+    },
+    "나스닥100ETF": {
+      "close": 730.28,
+      "change_pct": 1.78,
+      "date": "2026-05-26"
+    },
+    "가치ETF": {
+      "close": 212.13,
+      "change_pct": 0.58,
+      "date": "2026-05-26"
+    },
+    "닛케이225": {
+      "close": 64999.41,
+      "change_pct": 0.01,
+      "date": "2026-05-27"
+    },
+    "항셍": {
+      "close": 25599.45,
+      "change_pct": -0.03,
+      "date": "2026-05-26"
+    },
+    "상해종합": {
+      "close": 4145.37,
+      "change_pct": -0.17,
+      "date": "2026-05-26"
+    },
+    "독일DAX": {
+      "close": 25184.89,
+      "change_pct": -0.8,
+      "date": "2026-05-26"
+    },
+    "유로스톡스50": {
+      "close": 6064.15,
+      "change_pct": 0.74,
+      "date": "2026-05-26"
+    },
+    "하이일드채권": {
+      "close": 80.18,
+      "change_pct": 0.34,
+      "date": "2026-05-26"
+    },
+    "미장기채20Y+": {
+      "close": 85.1,
+      "change_pct": 0.5,
+      "date": "2026-05-26"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.67,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.61%, 나스닥 +1.19%로 상승 마감. 필라델피아 반도체지수 +6.10%. VIX 17.0 (보통 구간). 장단기 금리차 0.670%p (정상 범위). 금 4,500.40달러 (-0.46%). 달러인덱스 99.15 (-0.17%). 섹터: 기술(+2.63%) 주도, 에너지(-2.76%) 약세. QQQ-VTV 스프레드 +1.20%p → 성장주 우위. HYG +0.34% → 신용 스트레스 안정. Mag7 평균 +0.31% → 대형 기술주 강세. 아시아: 닛케이225 +0.01%, 항셍 -0.03%, 상해종합 -0.17%. 유럽: 독일DAX -0.80%, 유로스톡스50 +0.74%.",
+  "market_breadth": {
+    "total_up": 267,
+    "total_down": 2333,
+    "total_unchanged": 170,
+    "total": 2770,
+    "up_ratio": 9.6
+  },
+  "surges": [
+    {
+      "code": "347850",
+      "name": "디앤디파마텍",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "surge",
+      "close": 98800.0,
+      "change_pct": 30.0,
+      "relative_strength": 33.36,
+      "amount_eok": 3256.019868,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "디앤디파마텍 \"MASH 신약, 2상서 간 섬유화 개선\"",
+        "[급등락주 짚어보기] 삼성SDS·디앤디파마텍 상한가⋯AI 인프라·바이오株 강세",
+        "EASL 개막…디앤디파마텍·한미약품·올릭스 MASH 모멘텀 부각",
+        "디앤디파마텍, 'GLP/GCG' MASH 2상 48주 \"탑라인 공개\"",
+        "디앤디파마텍, MASH 치료제 ‘DD01’…2상서 간생검 지표 개선 확인"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 72.91,
+          "macd": 44.8213,
+          "macd_signal": -2275.0929,
+          "macd_histogram": 2319.9141,
+          "bb_upper": 88986.84,
+          "bb_middle": 71775.0,
+          "bb_lower": 54563.16,
+          "bb_position": "상단돌파",
+          "ma_5": 72800.0,
+          "ma_20": 71775.0,
+          "ma_60": 75753.33,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.79,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 5.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "091970",
+      "name": "나노캠텍",
+      "market": "KOSDAQ",
+      "industry": "플라스틱제품 제조업",
+      "move_type": "surge",
+      "close": 4920.0,
+      "change_pct": 29.99,
+      "relative_strength": 33.35,
+      "amount_eok": 37.2487857,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "나노캠텍, 172억 현금 확보…\"AI·로봇 중심 사업 재편 속도\"",
+        "나노캠텍 최대주주 엘에스케이디비, 나노캠텍 주식등의 수 1334만3586주 감소…총 지분율 39.28%",
+        "나노캠텍, 캔버스엔 지분 처분으로 172억 유동성 확보…\"신사업 속도\" - 머니투데이",
+        "나노캠텍, 주식 병합 후 첫거래일 '상한가' 직행",
+        "[이격도과열 종목] 디앤디파마텍 나노캠텍 삼성공조 코아스템켐온 포톤 조이웍스앤코에 올라타라"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 84.22,
+          "macd": 191.0709,
+          "macd_signal": 136.1943,
+          "macd_histogram": 54.8766,
+          "bb_upper": 4353.94,
+          "bb_middle": 3810.25,
+          "bb_lower": 3266.56,
+          "bb_position": "상단돌파",
+          "ma_5": 4012.0,
+          "ma_20": 3810.25,
+          "ma_60": 3419.92,
+          "ma_trend": "정배열",
+          "volume_ratio": 7.25,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 7.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 7,
+          "avg_return_1d": -8.87,
+          "avg_return_5d": -5.0,
+          "positive_rate_1d": 0.0,
+          "positive_rate_5d": 33.3
+        }
+      }
+    },
+    {
+      "code": "006660",
+      "name": "삼성공조",
+      "market": "KOSPI",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "surge",
+      "close": 15520.0,
+      "change_pct": 29.98,
+      "relative_strength": 27.73,
+      "amount_eok": 209.0890963,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[이격도과열 종목] 디앤디파마텍 나노캠텍 삼성공조 코아스템켐온 포톤 조이웍스앤코에 올라타라",
+        "삼성공조, +29.98% 상한가 - 조선비즈",
+        "삼성공조 주가, 상한가 직행",
+        "삼성공조 투자분석 2026. 05. 08",
+        "삼성공조, +16.92% VI 발동 - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 69.65,
+          "macd": 81.3799,
+          "macd_signal": 6.3421,
+          "macd_histogram": 75.0378,
+          "bb_upper": 14897.64,
+          "bb_middle": 12895.0,
+          "bb_lower": 10892.36,
+          "bb_position": "상단돌파",
+          "ma_5": 12484.0,
+          "ma_20": 12895.0,
+          "ma_60": 12256.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.0,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.0배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "032580",
+      "name": "피델릭스",
+      "market": "KOSDAQ",
+      "industry": "반도체 제조업",
+      "move_type": "plunge",
+      "close": 6280.0,
+      "change_pct": -25.77,
+      "relative_strength": -22.41,
+      "amount_eok": 1046.25594705,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "LG이노텍·삼성전기 ‘황제주’ 등극에 코스닥 소부장 ‘낙수효과’",
+        "피델릭스 투자분석 2026. 05. 22",
+        "[이격도과열 종목] 피델릭스 삼화콘덴서 미래산업 광진실업 빛과전자 더 내달린다",
+        "피델릭스, +10.75% 상승폭 확대 - 조선비즈",
+        "에이팩트, 피델릭스와 메모리 패키지 테스트 장기공급계약"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 69.39,
+          "macd": 1549.4774,
+          "macd_signal": 1061.3605,
+          "macd_histogram": 488.117,
+          "bb_upper": 8201.82,
+          "bb_middle": 3499.05,
+          "bb_lower": -1203.72,
+          "bb_position": "중립",
+          "ma_5": 6944.0,
+          "ma_20": 3499.05,
+          "ma_60": 1889.08,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.93,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "288180",
+      "name": "케이피항공산업",
+      "market": "KOSDAQ",
+      "industry": "항공기,우주선 및 부품 제조업",
+      "move_type": "plunge",
+      "close": 20350.0,
+      "change_pct": -19.41,
+      "relative_strength": -16.05,
+      "amount_eok": 253.914552,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "케이피항공산업, -9.90% VI 발동 - 조선비즈",
+        "케이피항공산업 주주 스페이스프로, 케이피항공산업 지분율 9.02%로 확대",
+        "우주항공·방산주 ‘케이피항공산업’ 코스닥 상장, 상한가 칠까",
+        "[특징주] 케이피항공산업, 합병 상장 첫날 '上'",
+        "케이피항공산업, 상한가 이튿날 25% 폭락…우주항공株 약세[핫종목]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 25980.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    },
+    {
+      "code": "418550",
+      "name": "제이오",
+      "market": "KOSDAQ",
+      "industry": "건축기술, 엔지니어링 및 관련 기술 서비스업",
+      "move_type": "plunge",
+      "close": 7750.0,
+      "change_pct": -19.19,
+      "relative_strength": -15.83,
+      "amount_eok": 195.8651691,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "제이오, -9.49% VI 발동 - 조선비즈",
+        "박종호 부사장, 제이오 주식 5000주 매도",
+        "제이오 투자분석 2026. 05. 03",
+        "제이오, '벽 하나' CNT 공급 개시...단기 매출 효과는 '미미'",
+        "제이오, 30년 플랜트 공력에 이차전지 소재 입혀 '퀀텀 점프'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 32.07,
+          "macd": -366.6574,
+          "macd_signal": 16.3013,
+          "macd_histogram": -382.9587,
+          "bb_upper": 13092.93,
+          "bb_middle": 10690.5,
+          "bb_lower": 8288.07,
+          "bb_position": "하단이탈",
+          "ma_5": 9178.0,
+          "ma_20": 10690.5,
+          "ma_60": 9356.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.77,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 4.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
