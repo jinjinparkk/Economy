@@ -1,0 +1,489 @@
+{
+  "trade_date": "2026-05-28",
+  "macro": {
+    "S&P 500": {
+      "close": 7520.36,
+      "change_pct": 0.02,
+      "date": "2026-05-27"
+    },
+    "NASDAQ": {
+      "close": 26674.73,
+      "change_pct": 0.07,
+      "date": "2026-05-27"
+    },
+    "다우존스": {
+      "close": 50644.28,
+      "change_pct": 0.36,
+      "date": "2026-05-27"
+    },
+    "필라델피아반도체": {
+      "close": 563.98,
+      "change_pct": -1.07,
+      "date": "2026-05-27"
+    },
+    "달러인덱스": {
+      "close": 99.21,
+      "change_pct": 0.04,
+      "date": "2026-05-27"
+    },
+    "WTI유": {
+      "close": 88.68,
+      "change_pct": -5.55,
+      "date": "2026-05-27"
+    },
+    "금": {
+      "close": 4447.5,
+      "change_pct": -1.18,
+      "date": "2026-05-27"
+    },
+    "구리": {
+      "close": 6.3,
+      "change_pct": -0.94,
+      "date": "2026-05-27"
+    },
+    "천연가스": {
+      "close": 3.04,
+      "change_pct": 5.19,
+      "date": "2026-05-27"
+    },
+    "VIX": {
+      "close": 16.29,
+      "change_pct": -4.23,
+      "date": "2026-05-27"
+    },
+    "미국채10Y": {
+      "close": 4.48,
+      "change_pct": -0.22,
+      "date": "2026-05-27"
+    },
+    "미국채2Y": {
+      "close": 3.82,
+      "change_pct": 0.0,
+      "date": "2026-05-27"
+    },
+    "기술": {
+      "close": 184.43,
+      "change_pct": -0.38,
+      "date": "2026-05-27"
+    },
+    "금융": {
+      "close": 51.42,
+      "change_pct": -0.83,
+      "date": "2026-05-27"
+    },
+    "에너지": {
+      "close": 56.99,
+      "change_pct": -1.49,
+      "date": "2026-05-27"
+    },
+    "헬스케어": {
+      "close": 148.79,
+      "change_pct": 0.19,
+      "date": "2026-05-27"
+    },
+    "산업재": {
+      "close": 174.3,
+      "change_pct": 0.0,
+      "date": "2026-05-27"
+    },
+    "커뮤니케이션": {
+      "close": 116.26,
+      "change_pct": 0.61,
+      "date": "2026-05-27"
+    },
+    "경기소비재": {
+      "close": 121.55,
+      "change_pct": 1.76,
+      "date": "2026-05-27"
+    },
+    "필수소비재": {
+      "close": 84.58,
+      "change_pct": 1.14,
+      "date": "2026-05-27"
+    },
+    "부동산": {
+      "close": 44.63,
+      "change_pct": -0.18,
+      "date": "2026-05-27"
+    },
+    "유틸리티": {
+      "close": 45.14,
+      "change_pct": -0.42,
+      "date": "2026-05-27"
+    },
+    "소재": {
+      "close": 51.18,
+      "change_pct": 0.37,
+      "date": "2026-05-27"
+    },
+    "엔비디아": {
+      "close": 212.6,
+      "change_pct": -1.05,
+      "date": "2026-05-27"
+    },
+    "애플": {
+      "close": 310.85,
+      "change_pct": 0.82,
+      "date": "2026-05-27"
+    },
+    "마이크로소프트": {
+      "close": 412.67,
+      "change_pct": -0.81,
+      "date": "2026-05-27"
+    },
+    "아마존": {
+      "close": 271.85,
+      "change_pct": 2.47,
+      "date": "2026-05-27"
+    },
+    "알파벳": {
+      "close": 384.83,
+      "change_pct": -0.0,
+      "date": "2026-05-27"
+    },
+    "메타": {
+      "close": 635.26,
+      "change_pct": 3.74,
+      "date": "2026-05-27"
+    },
+    "테슬라": {
+      "close": 440.36,
+      "change_pct": 1.56,
+      "date": "2026-05-27"
+    },
+    "러셀2000": {
+      "close": 290.37,
+      "change_pct": -0.05,
+      "date": "2026-05-27"
+    },
+    "나스닥100ETF": {
+      "close": 729.45,
+      "change_pct": -0.11,
+      "date": "2026-05-27"
+    },
+    "가치ETF": {
+      "close": 211.87,
+      "change_pct": -0.12,
+      "date": "2026-05-27"
+    },
+    "닛케이225": {
+      "close": 64693.12,
+      "change_pct": -0.47,
+      "date": "2026-05-28"
+    },
+    "항셍": {
+      "close": 25328.23,
+      "change_pct": -1.06,
+      "date": "2026-05-27"
+    },
+    "상해종합": {
+      "close": 4093.73,
+      "change_pct": -1.25,
+      "date": "2026-05-27"
+    },
+    "독일DAX": {
+      "close": 25177.8,
+      "change_pct": -0.03,
+      "date": "2026-05-27"
+    },
+    "유로스톡스50": {
+      "close": 6070.54,
+      "change_pct": 0.11,
+      "date": "2026-05-27"
+    },
+    "하이일드채권": {
+      "close": 80.13,
+      "change_pct": -0.06,
+      "date": "2026-05-27"
+    },
+    "미장기채20Y+": {
+      "close": 85.3,
+      "change_pct": 0.24,
+      "date": "2026-05-27"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.66,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.02%, 나스닥 +0.07%로 상승 마감. 필라델피아 반도체지수 -1.07%. VIX 16.3 (보통 구간). 장단기 금리차 0.660%p (정상 범위). 금 4,447.50달러 (-1.18%). 달러인덱스 99.21 (+0.04%). 섹터: 경기소비재(+1.76%) 주도, 에너지(-1.49%) 약세. QQQ-VTV 스프레드 +0.01%p → 성장주 우위. HYG -0.06% → 신용 스트레스 안정. Mag7 평균 +0.96% → 대형 기술주 강세. 아시아: 닛케이225 -0.47%, 항셍 -1.06%, 상해종합 -1.25%. 유럽: 독일DAX -0.03%, 유로스톡스50 +0.11%.",
+  "market_breadth": {
+    "total_up": 590,
+    "total_down": 1972,
+    "total_unchanged": 208,
+    "total": 2770,
+    "up_ratio": 21.3
+  },
+  "surges": [
+    {
+      "code": "027040",
+      "name": "서울전자통신",
+      "market": "KOSDAQ",
+      "industry": "전동기, 발전기 및 전기 변환 · 공급 · 제어 장치 제조업",
+      "move_type": "surge",
+      "close": 3120.0,
+      "change_pct": 30.0,
+      "relative_strength": 32.54,
+      "amount_eok": 244.86066335,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 서울전자통신, 액면 병합 거래재개 첫날 상한가",
+        "서울전자통신, 이재현 경영지배인 선임...최대주주 변경 후 경영 안정화 총력",
+        "서울전자통신, 경영지배인 이재현 선임으로 경영 안정 도모",
+        "서울전자통신, 0.00% VI 발동 - 조선비즈",
+        "세라젬·LG이노텍 사로잡은 기술력…서울전자통신, 고부가 ODM 기업 변신 탄력"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 71.38,
+          "macd": 30.5611,
+          "macd_signal": -6.4193,
+          "macd_histogram": 36.9805,
+          "bb_upper": 2749.84,
+          "bb_middle": 2436.0,
+          "bb_lower": 2122.16,
+          "bb_position": "상단돌파",
+          "ma_5": 2544.0,
+          "ma_20": 2436.0,
+          "ma_60": 2319.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 18.22,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 18.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 3.65,
+          "avg_return_5d": -16.71,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 25.0
+        }
+      }
+    },
+    {
+      "code": "072770",
+      "name": "멤레이비티",
+      "market": "KOSDAQ",
+      "industry": "컴퓨터 프로그래밍, 시스템 통합 및 관리업",
+      "move_type": "surge",
+      "close": 1175.0,
+      "change_pct": 29.98,
+      "relative_strength": 32.52,
+      "amount_eok": 31.07969174,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "멤레이비티, +29.98% 상한가 - 조선비즈",
+        "[체크!코스닥] ’신사업’ 내세운 멤레이비티, 실상은 자금난에 ’허덕’ By MoneyS",
+        "멤레이비티, +10.29% VI 발동 - 조선비즈",
+        "멤레이비티 투자분석 2026. 05. 22",
+        "[만나봤더니] 정영종 멤레이 대표 \"바이트플래시, 혼자 외치는 기술 아니다\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 38.27,
+          "macd": -88.4493,
+          "macd_signal": -53.6098,
+          "macd_histogram": -34.8395,
+          "bb_upper": 1626.03,
+          "bb_middle": 1355.1,
+          "bb_lower": 1084.17,
+          "bb_position": "중립",
+          "ma_5": 1178.4,
+          "ma_20": 1355.1,
+          "ma_60": 1472.47,
+          "ma_trend": "역배열",
+          "volume_ratio": 10.06,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 10.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "073570",
+      "name": "리튬포어스",
+      "market": "KOSDAQ",
+      "industry": "그외 기타 제품 제조업",
+      "move_type": "surge",
+      "close": 3360.0,
+      "change_pct": 29.98,
+      "relative_strength": 32.52,
+      "amount_eok": 29.55747325,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 리튬포어스-리튬 테마 상승세에 15.66% ↑",
+        "모바일 액세서리 넘어 첨단으로…리튬포어스, 차세대 리튬 소재로 엔진 교체",
+        "[속보] 리튬포어스, 상한가 기염 장 초반 VI 발동 후 급등세 주목",
+        "리튬포어스, 화양그랜드파크지역주택조합에 62억원 대여기간 연장",
+        "리튬포어스, -6.37% VI 발동 - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 48.73,
+          "macd": -106.5429,
+          "macd_signal": 28.1188,
+          "macd_histogram": -134.6617,
+          "bb_upper": 4586.89,
+          "bb_middle": 3664.75,
+          "bb_lower": 2742.61,
+          "bb_position": "중립",
+          "ma_5": 2936.0,
+          "ma_20": 3664.75,
+          "ma_60": 3171.02,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.17,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 7,
+          "avg_return_1d": 3.9,
+          "avg_return_5d": 2.07,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 50.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "106240",
+      "name": "파인테크닉스",
+      "market": "KOSDAQ",
+      "industry": "전구 및 조명장치 제조업",
+      "move_type": "plunge",
+      "close": 1555.0,
+      "change_pct": -26.65,
+      "relative_strength": -24.11,
+      "amount_eok": 91.70872038,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "파인테크닉스, 차세대 사이버 보안시장 주목",
+        "파인테크닉스-유클리드소프트, 양자시대 차세대 보안사업 LOC",
+        "파인테크닉스, AI 보안기업 유클리드소프트 50억원 투자… 차세대 보안사업 진출",
+        "파인테크닉스, -6.93% VI 발동 - 조선비즈",
+        "파인테크닉스, 유클리드소프트와 LOC 체결"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 22.61,
+          "macd": -66.368,
+          "macd_signal": -25.8678,
+          "macd_histogram": -40.5002,
+          "bb_upper": 2426.99,
+          "bb_middle": 2138.25,
+          "bb_lower": 1849.51,
+          "bb_position": "하단이탈",
+          "ma_5": 2055.0,
+          "ma_20": 2138.25,
+          "ma_60": 2192.07,
+          "ma_trend": "역배열",
+          "volume_ratio": 10.18,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 10.2배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "061040",
+      "name": "알에프텍",
+      "market": "KOSDAQ",
+      "industry": "통신 및 방송 장비 제조업",
+      "move_type": "plunge",
+      "close": 7370.0,
+      "change_pct": -23.94,
+      "relative_strength": -21.4,
+      "amount_eok": 17.97722805,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "알에프텍 액면병합 마치고 28일 거래 재개...장 개시 전 시간외거래 주의",
+        "[저평가 리포트] 알에프텍, 바이오 털고 전장 사업…저PBR 탈출할까",
+        "알에프텍, 액면병합 변경상장→주권매매거래 재개",
+        "주요주주 알에프텍, 한주에이알티 지분율 16.71%로 감소",
+        "흑자 팔아 적자 사들인 오성첨단소재…경영권 프리미엄 논란 [알에프텍 인수 분석 ①]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 22.34,
+          "macd": -176.5235,
+          "macd_signal": -9.2463,
+          "macd_histogram": -167.2772,
+          "bb_upper": 10559.15,
+          "bb_middle": 9544.9,
+          "bb_lower": 8530.65,
+          "bb_position": "하단이탈",
+          "ma_5": 9226.0,
+          "ma_20": 9544.9,
+          "ma_60": 9314.65,
+          "ma_trend": "혼조",
+          "volume_ratio": 7.51,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 7.5배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "258790",
+      "name": "소프트캠프",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 6600.0,
+      "change_pct": -23.17,
+      "relative_strength": -20.63,
+      "amount_eok": 19.6129966,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "소프트캠프, RBI 기반 보안 접속 플랫폼 ‘실드웹’ 출시",
+        "소프트캠프, 클라우드 격리형 금융 보안 플랫폼 '실드웹' 출시",
+        "소프트캠프, RBI 플랫폼 ‘실드웹’ 출시…“금융권 플러그인 대체”",
+        "소프트캠프 28일 거래 재개, 액면병합 후 신주 변경상장 절차 마무리",
+        "소프트캠프, 액면병합 주권 변경상장으로 주권매매거래정지 해제"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.39,
+          "macd": -22.5432,
+          "macd_signal": 178.1222,
+          "macd_histogram": -200.6654,
+          "bb_upper": 9416.02,
+          "bb_middle": 8503.0,
+          "bb_lower": 7589.98,
+          "bb_position": "하단이탈",
+          "ma_5": 8192.0,
+          "ma_20": 8503.0,
+          "ma_60": 7500.67,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.59,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 4.6배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
