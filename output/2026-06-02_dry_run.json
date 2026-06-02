@@ -1,0 +1,476 @@
+{
+  "trade_date": "2026-06-02",
+  "macro": {
+    "S&P 500": {
+      "close": 7599.96,
+      "change_pct": 0.26,
+      "date": "2026-06-01"
+    },
+    "NASDAQ": {
+      "close": 27086.81,
+      "change_pct": 0.42,
+      "date": "2026-06-01"
+    },
+    "다우존스": {
+      "close": 51078.88,
+      "change_pct": 0.09,
+      "date": "2026-06-01"
+    },
+    "필라델피아반도체": {
+      "close": 571.93,
+      "change_pct": 0.5,
+      "date": "2026-06-01"
+    },
+    "달러인덱스": {
+      "close": 99.2,
+      "change_pct": 0.29,
+      "date": "2026-06-01"
+    },
+    "WTI유": {
+      "close": 92.16,
+      "change_pct": 5.49,
+      "date": "2026-06-01"
+    },
+    "금": {
+      "close": 4475.2,
+      "change_pct": -1.87,
+      "date": "2026-06-01"
+    },
+    "구리": {
+      "close": 6.52,
+      "change_pct": 2.52,
+      "date": "2026-06-01"
+    },
+    "천연가스": {
+      "close": 3.18,
+      "change_pct": -3.34,
+      "date": "2026-06-01"
+    },
+    "VIX": {
+      "close": 16.05,
+      "change_pct": 4.77,
+      "date": "2026-06-01"
+    },
+    "미국채10Y": {
+      "close": 4.47,
+      "change_pct": 0.45,
+      "date": "2026-06-01"
+    },
+    "미국채2Y": {
+      "close": 3.84,
+      "change_pct": -4.24,
+      "date": "2026-06-01"
+    },
+    "기술": {
+      "close": 195.76,
+      "change_pct": 2.48,
+      "date": "2026-06-01"
+    },
+    "금융": {
+      "close": 51.43,
+      "change_pct": -0.29,
+      "date": "2026-06-01"
+    },
+    "에너지": {
+      "close": 57.3,
+      "change_pct": 1.79,
+      "date": "2026-06-01"
+    },
+    "헬스케어": {
+      "close": 147.84,
+      "change_pct": -1.09,
+      "date": "2026-06-01"
+    },
+    "산업재": {
+      "close": 172.4,
+      "change_pct": -0.42,
+      "date": "2026-06-01"
+    },
+    "커뮤니케이션": {
+      "close": 115.61,
+      "change_pct": -0.07,
+      "date": "2026-06-01"
+    },
+    "경기소비재": {
+      "close": 118.19,
+      "change_pct": -2.22,
+      "date": "2026-06-01"
+    },
+    "필수소비재": {
+      "close": 82.03,
+      "change_pct": -1.06,
+      "date": "2026-06-01"
+    },
+    "부동산": {
+      "close": 43.27,
+      "change_pct": -1.64,
+      "date": "2026-06-01"
+    },
+    "유틸리티": {
+      "close": 43.1,
+      "change_pct": -2.97,
+      "date": "2026-06-01"
+    },
+    "소재": {
+      "close": 50.92,
+      "change_pct": -0.45,
+      "date": "2026-06-01"
+    },
+    "엔비디아": {
+      "close": 224.36,
+      "change_pct": 6.26,
+      "date": "2026-06-01"
+    },
+    "애플": {
+      "close": 306.31,
+      "change_pct": -1.84,
+      "date": "2026-06-01"
+    },
+    "마이크로소프트": {
+      "close": 460.52,
+      "change_pct": 2.28,
+      "date": "2026-06-01"
+    },
+    "아마존": {
+      "close": 261.26,
+      "change_pct": -3.47,
+      "date": "2026-06-01"
+    },
+    "알파벳": {
+      "close": 372.58,
+      "change_pct": -1.02,
+      "date": "2026-06-01"
+    },
+    "메타": {
+      "close": 600.47,
+      "change_pct": -5.07,
+      "date": "2026-06-01"
+    },
+    "테슬라": {
+      "close": 415.88,
+      "change_pct": -4.57,
+      "date": "2026-06-01"
+    },
+    "러셀2000": {
+      "close": 288.98,
+      "change_pct": -0.5,
+      "date": "2026-06-01"
+    },
+    "나스닥100ETF": {
+      "close": 742.74,
+      "change_pct": 0.6,
+      "date": "2026-06-01"
+    },
+    "가치ETF": {
+      "close": 211.42,
+      "change_pct": -0.2,
+      "date": "2026-06-01"
+    },
+    "닛케이225": {
+      "close": 66734.24,
+      "change_pct": -0.3,
+      "date": "2026-06-02"
+    },
+    "항셍": {
+      "close": 25398.18,
+      "change_pct": 0.86,
+      "date": "2026-06-01"
+    },
+    "상해종합": {
+      "close": 4057.74,
+      "change_pct": -0.27,
+      "date": "2026-06-01"
+    },
+    "독일DAX": {
+      "close": 25003.04,
+      "change_pct": -0.4,
+      "date": "2026-06-01"
+    },
+    "유로스톡스50": {
+      "close": 6034.95,
+      "change_pct": -0.26,
+      "date": "2026-06-01"
+    },
+    "하이일드채권": {
+      "close": 79.84,
+      "change_pct": -0.59,
+      "date": "2026-06-01"
+    },
+    "미장기채20Y+": {
+      "close": 85.47,
+      "change_pct": -0.34,
+      "date": "2026-06-01"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.63,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.26%, 나스닥 +0.42%로 상승 마감. 필라델피아 반도체지수 +0.50%. VIX 16.1 (보통 구간). 장단기 금리차 0.630%p (정상 범위). 금 4,475.20달러 (-1.87%). 달러인덱스 99.20 (+0.29%). 섹터: 기술(+2.48%) 주도, 유틸리티(-2.97%) 약세. QQQ-VTV 스프레드 +0.80%p → 성장주 우위. HYG -0.59% → 신용 스트레스 주의. Mag7 평균 -1.06% → 대형 기술주 약세. 아시아: 닛케이225 -0.30%, 항셍 +0.86%, 상해종합 -0.27%. 유럽: 독일DAX -0.40%, 유로스톡스50 -0.26%.",
+  "market_breadth": {
+    "total_up": 723,
+    "total_down": 1862,
+    "total_unchanged": 185,
+    "total": 2770,
+    "up_ratio": 26.1
+  },
+  "surges": [
+    {
+      "code": "068290",
+      "name": "삼성출판사",
+      "market": "KOSPI",
+      "industry": "서적, 잡지 및 기타 인쇄물 출판업",
+      "move_type": "surge",
+      "close": 7930.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.85,
+      "amount_eok": 12.29392945,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "삼성출판사, 상한가…10억 규모 자사주 취득 신탁계약 결정 - 머니투데이",
+        "[급등락주 짚어보기] 젠슨 황 로보틱스 발언에 로보스타 '上'…삼성출판사·비보존 제약도 급등",
+        "'핑크퐁 후폭풍' 삼성출판사, 결국 10억 카드 꺼냈다",
+        "'아기상어' 삼성출판사, 10억원 자사주 취득에 '上' [핫종목]",
+        "삼성출판사 깜짝 상한가, 이유는?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 52.35,
+          "macd": -506.7953,
+          "macd_signal": -505.606,
+          "macd_histogram": -1.1892,
+          "bb_upper": 8871.58,
+          "bb_middle": 7543.0,
+          "bb_lower": 6214.42,
+          "bb_position": "중립",
+          "ma_5": 6806.0,
+          "ma_20": 7543.0,
+          "ma_60": 8591.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.45,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 4.5배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "307930",
+      "name": "컴퍼니케이",
+      "market": "KOSDAQ",
+      "industry": "기타 금융업",
+      "move_type": "surge",
+      "close": 10400.0,
+      "change_pct": 30.0,
+      "relative_strength": 32.29,
+      "amount_eok": 122.0563198,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "컴퍼니케이, +9.88% VI 발동 - 조선비즈",
+        "컴퍼니케이 투자분석 2026. 06. 01",
+        "컴퍼니케이 뉴스페이스펀드, 우주기업 100% 투자…조기 소진 임박",
+        "컴퍼니케이, +30.00% 상한가 - 조선비즈",
+        "텐배거 기대 모락모락…컴퍼니K 업스테이지 투자"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 62.52,
+          "macd": 19.144,
+          "macd_signal": 9.8979,
+          "macd_histogram": 9.2461,
+          "bb_upper": 10371.28,
+          "bb_middle": 8971.0,
+          "bb_lower": 7570.72,
+          "bb_position": "상단돌파",
+          "ma_5": 8680.0,
+          "ma_20": 8971.0,
+          "ma_60": 8338.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.09,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 4.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "271830",
+      "name": "팸텍",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 1816.0,
+      "change_pct": 29.99,
+      "relative_strength": 32.28,
+      "amount_eok": 37.50020024,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "팸텍, 반도체 웨이퍼 로봇기업 인수 소식에 '상한가'",
+        "[특징주] 팸텍, 로봇기업 TIS 인수 소식에 2거래일 연속 상한가",
+        "[특징주] 팸텍, 산업 로봇 전문기업 티아이에스 인수에 연이틀 '上'",
+        "팸텍, 웨이퍼 로봇 기업 인수 소식에 '2연상'[특징주]",
+        "\"지능형 공장 붐 탔다\"…팸텍, 스마트 제조 공정 고도화 수혜주로 우뚝 |"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 67.78,
+          "macd": -38.4306,
+          "macd_signal": -69.6087,
+          "macd_histogram": 31.178,
+          "bb_upper": 1745.17,
+          "bb_middle": 1393.05,
+          "bb_lower": 1040.93,
+          "bb_position": "상단돌파",
+          "ma_5": 1334.0,
+          "ma_20": 1393.05,
+          "ma_60": 1505.3,
+          "ma_trend": "역배열",
+          "volume_ratio": 7.31,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 7.3배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "204210",
+      "name": "JK리버스톤리츠",
+      "market": "KOSPI",
+      "industry": "부동산 임대 및 공급업",
+      "move_type": "plunge",
+      "close": 695.0,
+      "change_pct": -65.85,
+      "relative_strength": -66.0,
+      "amount_eok": 22.36933115,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[특징주] JK리버스톤리츠, 정리매매 첫날 61% 급락 - 조선비즈",
+        "상폐 앞둔 JK리버스톤리츠, 정리매매 첫날 60%대 급락",
+        "상폐 확정된 이 리츠, 정리매매 폭락 걱정할 필요 없다?... 청산 가치가 시총보다 높아 - 조선비즈",
+        "거래소, JK리버스톤리츠 정리매매 재개"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 0.0,
+          "macd": -106.8946,
+          "macd_signal": -21.3789,
+          "macd_histogram": -85.5157,
+          "bb_upper": 2552.09,
+          "bb_middle": 1968.0,
+          "bb_lower": 1383.91,
+          "bb_position": "하단이탈",
+          "ma_5": 1767.0,
+          "ma_20": 1968.0,
+          "ma_60": 2012.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 20.0,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 20.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "900340",
+      "name": "윙입푸드",
+      "market": "KOSDAQ",
+      "industry": "기타 금융업",
+      "move_type": "plunge",
+      "close": 2080.0,
+      "change_pct": -29.97,
+      "relative_strength": -27.68,
+      "amount_eok": 14.15994572,
+      "hints": [
+        "하한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "윙입푸드, 0.00% VI 발동 - 조선비즈",
+        "윙입푸드, 주식병합 후 2일 거래 재개…장 개시 전 시간외매매는 미성립",
+        "윙입푸드, 주식병합 주권 변경상장→거래정지 해제",
+        "윙입푸드홀딩스, 주식병합 주권 변경상장으로 주권매매거래정지 해제",
+        "[시간외Y] 세니젠, 윙입푸드 '상한가'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 11.61,
+          "macd": -14.8055,
+          "macd_signal": 55.1646,
+          "macd_histogram": -69.97,
+          "bb_upper": 3313.44,
+          "bb_middle": 2925.5,
+          "bb_lower": 2537.56,
+          "bb_position": "하단이탈",
+          "ma_5": 2792.0,
+          "ma_20": 2925.5,
+          "ma_60": 2700.9,
+          "ma_trend": "혼조",
+          "volume_ratio": 15.45,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 15.4배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "219750",
+      "name": "한국비티비",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "plunge",
+      "close": 571.0,
+      "change_pct": -24.97,
+      "relative_strength": -22.68,
+      "amount_eok": 12.21558274,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "멈춰서는 한국비티비 거래창, 6월 4일부터 주식병합 따른 매매정지 돌입",
+        "지금 한국비티비에서 바로 구매 가능한 Eppendorf 재고 리스트 공개!",
+        "한국비티비, +29.86% 상한가 - 조선비즈",
+        "한국비티비, 주식병합으로 4일부터 매매거래 정지",
+        "저가주 변동성 속 불붙은 투자심리… 한국비티비, 거래량 폭증 상한가 안착"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 34.98,
+          "macd": -56.0353,
+          "macd_signal": -54.8024,
+          "macd_histogram": -1.2329,
+          "bb_upper": 833.21,
+          "bb_middle": 696.95,
+          "bb_lower": 560.69,
+          "bb_position": "하단근접",
+          "ma_5": 629.0,
+          "ma_20": 696.95,
+          "ma_60": 829.5,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.72,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 6.7배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
