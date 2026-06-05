@@ -1,0 +1,471 @@
+{
+  "trade_date": "2026-06-05",
+  "macro": {
+    "S&P 500": {
+      "close": 7584.31,
+      "change_pct": 0.41,
+      "date": "2026-06-04"
+    },
+    "NASDAQ": {
+      "close": 26830.96,
+      "change_pct": -0.09,
+      "date": "2026-06-04"
+    },
+    "다우존스": {
+      "close": 51561.93,
+      "change_pct": 1.73,
+      "date": "2026-06-04"
+    },
+    "필라델피아반도체": {
+      "close": 602.72,
+      "change_pct": -2.1,
+      "date": "2026-06-04"
+    },
+    "달러인덱스": {
+      "close": 99.41,
+      "change_pct": -0.12,
+      "date": "2026-06-04"
+    },
+    "WTI유": {
+      "close": 93.04,
+      "change_pct": -3.1,
+      "date": "2026-06-04"
+    },
+    "금": {
+      "close": 4475.8,
+      "change_pct": 0.88,
+      "date": "2026-06-04"
+    },
+    "구리": {
+      "close": 6.51,
+      "change_pct": 0.46,
+      "date": "2026-06-04"
+    },
+    "천연가스": {
+      "close": 3.34,
+      "change_pct": 4.05,
+      "date": "2026-06-04"
+    },
+    "VIX": {
+      "close": 15.4,
+      "change_pct": -4.11,
+      "date": "2026-06-04"
+    },
+    "미국채10Y": {
+      "close": 4.48,
+      "change_pct": -0.22,
+      "date": "2026-06-04"
+    },
+    "미국채2Y": {
+      "close": 3.84,
+      "change_pct": 0.0,
+      "date": "2026-06-04"
+    },
+    "기술": {
+      "close": 193.17,
+      "change_pct": -1.56,
+      "date": "2026-06-04"
+    },
+    "금융": {
+      "close": 52.19,
+      "change_pct": 2.59,
+      "date": "2026-06-04"
+    },
+    "에너지": {
+      "close": 58.75,
+      "change_pct": 0.07,
+      "date": "2026-06-04"
+    },
+    "헬스케어": {
+      "close": 152.08,
+      "change_pct": 3.07,
+      "date": "2026-06-04"
+    },
+    "산업재": {
+      "close": 176.16,
+      "change_pct": 1.21,
+      "date": "2026-06-04"
+    },
+    "경기소비재": {
+      "close": 117.26,
+      "change_pct": 0.45,
+      "date": "2026-06-04"
+    },
+    "필수소비재": {
+      "close": 82.04,
+      "change_pct": -0.15,
+      "date": "2026-06-04"
+    },
+    "유틸리티": {
+      "close": 43.94,
+      "change_pct": 0.53,
+      "date": "2026-06-04"
+    },
+    "소재": {
+      "close": 51.62,
+      "change_pct": -0.02,
+      "date": "2026-06-04"
+    },
+    "엔비디아": {
+      "close": 218.66,
+      "change_pct": 1.82,
+      "date": "2026-06-04"
+    },
+    "애플": {
+      "close": 311.23,
+      "change_pct": 0.31,
+      "date": "2026-06-04"
+    },
+    "마이크로소프트": {
+      "close": 428.05,
+      "change_pct": 0.17,
+      "date": "2026-06-04"
+    },
+    "아마존": {
+      "close": 253.79,
+      "change_pct": 1.51,
+      "date": "2026-06-04"
+    },
+    "테슬라": {
+      "close": 418.45,
+      "change_pct": -1.24,
+      "date": "2026-06-04"
+    },
+    "러셀2000": {
+      "close": 292.01,
+      "change_pct": 1.51,
+      "date": "2026-06-04"
+    },
+    "나스닥100ETF": {
+      "close": 740.61,
+      "change_pct": -0.48,
+      "date": "2026-06-04"
+    },
+    "가치ETF": {
+      "close": 214.94,
+      "change_pct": 0.77,
+      "date": "2026-06-04"
+    },
+    "닛케이225": {
+      "close": 66588.12,
+      "change_pct": -1.31,
+      "date": "2026-06-05"
+    },
+    "항셍": {
+      "close": 25253.4,
+      "change_pct": -1.48,
+      "date": "2026-06-04"
+    },
+    "상해종합": {
+      "close": 4057.78,
+      "change_pct": -0.64,
+      "date": "2026-06-04"
+    },
+    "독일DAX": {
+      "close": 24944.95,
+      "change_pct": 0.6,
+      "date": "2026-06-04"
+    },
+    "유로스톡스50": {
+      "close": 6103.33,
+      "change_pct": 0.82,
+      "date": "2026-06-04"
+    },
+    "하이일드채권": {
+      "close": 79.83,
+      "change_pct": 0.19,
+      "date": "2026-06-04"
+    },
+    "미장기채20Y+": {
+      "close": 85.5,
+      "change_pct": 0.22,
+      "date": "2026-06-04"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.64,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.41%, 나스닥 -0.09%로 상승 마감. 필라델피아 반도체지수 -2.10%. VIX 15.4 (보통 구간). 장단기 금리차 0.640%p (정상 범위). 금 4,475.80달러 (+0.88%). 달러인덱스 99.41 (-0.12%). 섹터: 헬스케어(+3.07%) 주도, 기술(-1.56%) 약세. QQQ-VTV 스프레드 -1.25%p → 가치주 우위. HYG +0.19% → 신용 스트레스 안정. Mag7 평균 +0.51% → 대형 기술주 강세. 아시아: 닛케이225 -1.31%, 항셍 -1.48%, 상해종합 -0.64%. 유럽: 독일DAX +0.60%, 유로스톡스50 +0.82%.",
+  "market_breadth": {
+    "total_up": 614,
+    "total_down": 1970,
+    "total_unchanged": 186,
+    "total": 2770,
+    "up_ratio": 22.2
+  },
+  "surges": [
+    {
+      "code": "459550",
+      "name": "알트",
+      "market": "KOSDAQ",
+      "industry": "통신 및 방송 장비 제조업",
+      "move_type": "surge",
+      "close": 1878.0,
+      "change_pct": 29.97,
+      "relative_strength": 34.47,
+      "amount_eok": 127.48260791,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[요즘세대 소비분석] ➃ 알트코인에 몰리는 청년들",
+        "주요 알트코인, 일주일 새 10% 넘게 급락…왜?",
+        "니어·월드·스텔라 급등에도…\"알트코인, 섣부른 저가 매수는 위험\" [강민승의 알트코인나우]",
+        "알트, 자사주 취득 신탁계약 체결 결정...30억 원 규모",
+        "알트, 주주가치 제고 위해 30억원 규모 자사주 신탁계약... 207만주 취득 예정"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 42.65,
+          "macd": -309.5103,
+          "macd_signal": -299.3566,
+          "macd_histogram": -10.1536,
+          "bb_upper": 2733.81,
+          "bb_middle": 1979.15,
+          "bb_lower": 1224.49,
+          "bb_position": "중립",
+          "ma_5": 1536.0,
+          "ma_20": 1979.15,
+          "ma_60": 2594.22,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.35,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 9.3배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "457370",
+      "name": "한켐",
+      "market": "KOSDAQ",
+      "industry": "기초 화학물질 제조업",
+      "move_type": "surge",
+      "close": 14670.0,
+      "change_pct": 29.94,
+      "relative_strength": 34.44,
+      "amount_eok": 1124.10695195,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "한켐, +29.94% 상한가 - 조선비즈",
+        "[특징주] 한켐·코칩·키스트론, 삼성전기 FC-BGA 5조 투자 전망에 ↑",
+        "[단독] 한켐, 옥천 신공장 가동... 'MLCC 소재' 증산 시동 건다",
+        "한켐, 옥천 신공장 가동 개시... MLCC·OLED 소재 증산 체제 본격화",
+        "상장사 한켐, MLCC 소재 증산 기대감 부각…옥천 공장 가동으로 성장판 확대"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 73.07,
+          "macd": 1013.2585,
+          "macd_signal": 584.9046,
+          "macd_histogram": 428.3539,
+          "bb_upper": 13725.63,
+          "bb_middle": 9934.5,
+          "bb_lower": 6143.37,
+          "bb_position": "상단돌파",
+          "ma_5": 12126.0,
+          "ma_20": 9934.5,
+          "ma_60": 9063.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 4.58,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 과매수 진입 / RSI 하락다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 4.6배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "066430",
+      "name": "아이로보틱스",
+      "market": "KOSDAQ",
+      "industry": "기타 전문 도매업",
+      "move_type": "surge",
+      "close": 3285.0,
+      "change_pct": 29.84,
+      "relative_strength": 34.34,
+      "amount_eok": 102.00524582,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "아이로보틱스, +29.84% 상한가 - 조선비즈",
+        "'초다수결의제' 막혔던 대영전자, 아이로보틱스와 화해 수순? : 네이버 블로그",
+        "아이로보틱스 주가, 6월 5일 3,285원 29.84% 상한가 마감",
+        "아이로보틱스, 질화규소 베어링 감속기 개발…휴머노이드 시장 공략 본격화",
+        "아이로보틱스, 질화규소 베어링 감속기 개발 소식에 24%↑[특징주]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 57.46,
+          "macd": 149.9224,
+          "macd_signal": 235.3361,
+          "macd_histogram": -85.4137,
+          "bb_upper": 4210.48,
+          "bb_middle": 3021.75,
+          "bb_lower": 1833.02,
+          "bb_position": "중립",
+          "ma_5": 2792.0,
+          "ma_20": 3021.75,
+          "ma_60": 2387.05,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.31,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 6.02,
+          "avg_return_5d": -2.62,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 25.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "476080",
+      "name": "M83",
+      "market": "KOSDAQ",
+      "industry": "영화, 비디오물, 방송프로그램 제작 및 배급업",
+      "move_type": "plunge",
+      "close": 5920.0,
+      "change_pct": -23.71,
+      "relative_strength": -19.21,
+      "amount_eok": 542.3737436,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "자회사의 네이버클라우드향 공급 호재…M83 3일째 급등[특징주]",
+        "M83, 0.00% VI 발동 - 조선비즈",
+        "M83 주가, 급등세... 이유는?",
+        "M83 자회사 피앤티링크, 네이버클라우드향 500억 규모 AI 서버 공급 개시 - 머니투데이",
+        "M83 子 피앤티링크, AI 인프라용 표준 서버 공급 개시"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 48.81,
+          "macd": -166.7997,
+          "macd_signal": -288.7218,
+          "macd_histogram": 121.9221,
+          "bb_upper": 7224.97,
+          "bb_middle": 5879.0,
+          "bb_lower": 4533.03,
+          "bb_position": "중립",
+          "ma_5": 5838.0,
+          "ma_20": 5879.0,
+          "ma_60": 6419.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 16.83,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 16.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "001740",
+      "name": "SK네트웍스",
+      "market": "KOSPI",
+      "industry": "기타 전문 도매업",
+      "move_type": "plunge",
+      "close": 10900.0,
+      "change_pct": -16.22,
+      "relative_strength": -10.68,
+      "amount_eok": 1038.4805239,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "‘체질 개선’ 끝낸 SK네트웍스, 이제 ‘AI 현금화’ 단계",
+        "SK네트웍스 '불기둥' 주가 왜?…'업스테이지' 지분가치 부각",
+        "[적중! 대박 예감] '엘앤씨바이오, SK네트웍스 ' 내일장 예감 좋은 대박 종목은? - 머니투데이",
+        "SK네트웍스, 성장 기대·수익 불확실성 교차하는 업스테이지 투자·나무엑스",
+        "SK네트웍스, AI 투자 조기 성과…지속가능성 주목"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 61.32,
+          "macd": 1593.6595,
+          "macd_signal": 1340.6122,
+          "macd_histogram": 253.0474,
+          "bb_upper": 13738.43,
+          "bb_middle": 9194.0,
+          "bb_lower": 4649.57,
+          "bb_position": "중립",
+          "ma_5": 11982.0,
+          "ma_20": 9194.0,
+          "ma_60": 6704.33,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.42,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "plunge",
+      "close": 210000.0,
+      "change_pct": -16.17,
+      "relative_strength": -11.67,
+      "amount_eok": 6197.382135,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "주성엔지니어링, 장중 28% 급등…25만2500원 신고가",
+        "주성엔지니어링 주가, 급등세... 왜?",
+        "‘불기둥’ 뿜고 숨고르기…희비 엇갈린 소부장株",
+        "[1% 초고수의 선택] ’주성엔지니어링’ 사고 ’한미반도체’ 팔았다 By EBN",
+        "04일 코스닥 시장 공매도 수량 상위 종목. HPSP, 주성엔지니어링 등 - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 58.49,
+          "macd": 26726.0139,
+          "macd_signal": 27118.9836,
+          "macd_histogram": -392.9697,
+          "bb_upper": 250240.65,
+          "bb_middle": 186560.0,
+          "bb_lower": 122879.35,
+          "bb_position": "중립",
+          "ma_5": 208580.0,
+          "ma_20": 186560.0,
+          "ma_60": 116491.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.87,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 하락다이버전스 / MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
