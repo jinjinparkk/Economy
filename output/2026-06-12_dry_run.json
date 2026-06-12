@@ -1,0 +1,479 @@
+{
+  "trade_date": "2026-06-12",
+  "macro": {
+    "S&P 500": {
+      "close": 7394.3,
+      "change_pct": 1.75,
+      "date": "2026-06-11"
+    },
+    "NASDAQ": {
+      "close": 25809.66,
+      "change_pct": 2.54,
+      "date": "2026-06-11"
+    },
+    "다우존스": {
+      "close": 50848.75,
+      "change_pct": 1.86,
+      "date": "2026-06-11"
+    },
+    "필라델피아반도체": {
+      "close": 586.93,
+      "change_pct": 8.39,
+      "date": "2026-06-11"
+    },
+    "달러인덱스": {
+      "close": 99.86,
+      "change_pct": -0.09,
+      "date": "2026-06-11"
+    },
+    "WTI유": {
+      "close": 87.71,
+      "change_pct": -2.58,
+      "date": "2026-06-11"
+    },
+    "금": {
+      "close": 4090.3,
+      "change_pct": -0.44,
+      "date": "2026-06-11"
+    },
+    "구리": {
+      "close": 6.26,
+      "change_pct": 0.16,
+      "date": "2026-06-11"
+    },
+    "천연가스": {
+      "close": 3.09,
+      "change_pct": -2.83,
+      "date": "2026-06-11"
+    },
+    "VIX": {
+      "close": 19.44,
+      "change_pct": -12.51,
+      "date": "2026-06-11"
+    },
+    "미국채10Y": {
+      "close": 4.46,
+      "change_pct": -1.76,
+      "date": "2026-06-11"
+    },
+    "미국채2Y": {
+      "close": 3.84,
+      "change_pct": 0.0,
+      "date": "2026-06-11"
+    },
+    "기술": {
+      "close": 183.21,
+      "change_pct": 3.73,
+      "date": "2026-06-11"
+    },
+    "금융": {
+      "close": 52.62,
+      "change_pct": 0.75,
+      "date": "2026-06-11"
+    },
+    "에너지": {
+      "close": 57.12,
+      "change_pct": -1.94,
+      "date": "2026-06-11"
+    },
+    "헬스케어": {
+      "close": 154.09,
+      "change_pct": 0.81,
+      "date": "2026-06-11"
+    },
+    "산업재": {
+      "close": 175.15,
+      "change_pct": 3.24,
+      "date": "2026-06-11"
+    },
+    "커뮤니케이션": {
+      "close": 112.12,
+      "change_pct": 1.0,
+      "date": "2026-06-11"
+    },
+    "경기소비재": {
+      "close": 116.3,
+      "change_pct": 2.48,
+      "date": "2026-06-11"
+    },
+    "필수소비재": {
+      "close": 85.27,
+      "change_pct": -0.26,
+      "date": "2026-06-11"
+    },
+    "부동산": {
+      "close": 44.92,
+      "change_pct": -0.16,
+      "date": "2026-06-11"
+    },
+    "유틸리티": {
+      "close": 44.05,
+      "change_pct": 0.11,
+      "date": "2026-06-11"
+    },
+    "소재": {
+      "close": 51.22,
+      "change_pct": 3.27,
+      "date": "2026-06-11"
+    },
+    "엔비디아": {
+      "close": 204.87,
+      "change_pct": 2.22,
+      "date": "2026-06-11"
+    },
+    "애플": {
+      "close": 295.63,
+      "change_pct": 1.39,
+      "date": "2026-06-11"
+    },
+    "마이크로소프트": {
+      "close": 390.34,
+      "change_pct": -1.77,
+      "date": "2026-06-11"
+    },
+    "아마존": {
+      "close": 241.51,
+      "change_pct": 1.47,
+      "date": "2026-06-11"
+    },
+    "알파벳": {
+      "close": 356.56,
+      "change_pct": 0.92,
+      "date": "2026-06-11"
+    },
+    "메타": {
+      "close": 568.43,
+      "change_pct": -0.45,
+      "date": "2026-06-11"
+    },
+    "테슬라": {
+      "close": 399.15,
+      "change_pct": 4.6,
+      "date": "2026-06-11"
+    },
+    "러셀2000": {
+      "close": 290.41,
+      "change_pct": 2.96,
+      "date": "2026-06-11"
+    },
+    "나스닥100ETF": {
+      "close": 717.12,
+      "change_pct": 3.38,
+      "date": "2026-06-11"
+    },
+    "가치ETF": {
+      "close": 215.08,
+      "change_pct": 1.67,
+      "date": "2026-06-11"
+    },
+    "닛케이225": {
+      "close": 66020.04,
+      "change_pct": 2.81,
+      "date": "2026-06-12"
+    },
+    "항셍": {
+      "close": 24249.29,
+      "change_pct": -0.65,
+      "date": "2026-06-11"
+    },
+    "상해종합": {
+      "close": 3987.01,
+      "change_pct": -0.16,
+      "date": "2026-06-11"
+    },
+    "독일DAX": {
+      "close": 24209.71,
+      "change_pct": 0.06,
+      "date": "2026-06-11"
+    },
+    "유로스톡스50": {
+      "close": 6056.96,
+      "change_pct": 0.78,
+      "date": "2026-06-11"
+    },
+    "하이일드채권": {
+      "close": 79.94,
+      "change_pct": 0.59,
+      "date": "2026-06-11"
+    },
+    "미장기채20Y+": {
+      "close": 85.98,
+      "change_pct": 1.3,
+      "date": "2026-06-11"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.62,
+  "macro_narrative": "전일 미국 증시는 S&P500 +1.75%, 나스닥 +2.54%로 상승 마감. 필라델피아 반도체지수 +8.39%. VIX 19.4 (보통 구간). 장단기 금리차 0.620%p (정상 범위). 금 4,090.30달러 (-0.44%). 달러인덱스 99.86 (-0.09%). 섹터: 기술(+3.73%) 주도, 에너지(-1.94%) 약세. QQQ-VTV 스프레드 +1.71%p → 성장주 우위. HYG +0.59% → 신용 스트레스 안정. Mag7 평균 +1.20% → 대형 기술주 강세. 아시아: 닛케이225 +2.81%, 항셍 -0.65%, 상해종합 -0.16%. 유럽: 독일DAX +0.06%, 유로스톡스50 +0.78%.",
+  "market_breadth": {
+    "total_up": 2074,
+    "total_down": 515,
+    "total_unchanged": 179,
+    "total": 2768,
+    "up_ratio": 74.9
+  },
+  "surges": [
+    {
+      "code": "204320",
+      "name": "HL만도",
+      "market": "KOSPI",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "surge",
+      "close": 65000.0,
+      "change_pct": 30.0,
+      "relative_strength": 25.37,
+      "amount_eok": 749.7497615,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "\"로봇 팔다리 한국이 만들 것\"…파격 전망에 상한가 폭발",
+        "[특징주]‘이틀 연속 약세’ HL 만도, 장초반 상한가 직행",
+        "\"HL만도, 로봇 관절 핵심 공급사\"",
+        "HL만도, 피지컬 AI 수혜 기대감 상한가…로봇주 강세[핫종목]",
+        "HL만도, 로봇 액추에이터 기대감에 上···여타 로봇주도 급등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 61.04,
+          "macd": -538.4854,
+          "macd_signal": -53.5157,
+          "macd_histogram": -484.9697,
+          "bb_upper": 68156.26,
+          "bb_middle": 58250.0,
+          "bb_lower": 48343.74,
+          "bb_position": "중립",
+          "ma_5": 53460.0,
+          "ma_20": 58250.0,
+          "ma_60": 55117.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.72,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 183300.0,
+      "change_pct": 30.0,
+      "relative_strength": 26.78,
+      "amount_eok": 6909.50052,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[애프터마켓 리뷰] 원익IPS 애프터마켓서 29% 급등…반도체 소부장 강세",
+        "[적중! 대박 예감] '원익IPS, 코미코' 내일장 예감 좋은 대박 종목은? - 머니투데이",
+        "원익IPS 18%대 급등...삼성전자 생산거점 확대 수혜",
+        "반도체주 뛰자 장비주 난다…원익IPS·HPSP 상한가 - 머니투데이",
+        "[시가총액 상위 종목] 원익IPS, 전일비 30.00% ↑... 현재가 18만3300원"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 69.82,
+          "macd": 5614.7184,
+          "macd_signal": 11.2511,
+          "macd_histogram": 5603.4673,
+          "bb_upper": 155783.52,
+          "bb_middle": 120210.0,
+          "bb_lower": 84636.48,
+          "bb_position": "상단돌파",
+          "ma_5": 133000.0,
+          "ma_20": 120210.0,
+          "ma_60": 121076.67,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.27,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.3배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 71500.0,
+      "change_pct": 30.0,
+      "relative_strength": 26.78,
+      "amount_eok": 11292.8869845,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "HPSP 주가 상한가...한미반도체, 스페이스X 주식 취득",
+        "HPSP 주가 급등세... 스페이스X 투자 소식에 관심 집중",
+        "AI 소부장株 들썩…HPSP·원익IPS 나란히 상한가 [이런국장 저런주식]",
+        "반도체주 뛰자 장비주 난다…원익IPS·HPSP 상한가 - 머니투데이",
+        "삼성전자 13% 급등·HPSP 신고가…반도체주 폭풍 랠리"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 67.55,
+          "macd": 2036.9313,
+          "macd_signal": 610.5295,
+          "macd_histogram": 1426.4019,
+          "bb_upper": 64130.53,
+          "bb_middle": 52452.5,
+          "bb_lower": 40774.47,
+          "bb_position": "상단돌파",
+          "ma_5": 56750.0,
+          "ma_20": 52452.5,
+          "ma_60": 49518.33,
+          "ma_trend": "정배열",
+          "volume_ratio": 3.41,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 3.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "000500",
+      "name": "가온전선",
+      "market": "KOSPI",
+      "industry": "절연선 및 케이블 제조업",
+      "move_type": "plunge",
+      "close": 252000.0,
+      "change_pct": -22.22,
+      "relative_strength": -26.85,
+      "amount_eok": 2105.35727,
+      "hints": [
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "가온전선, AI 데이터센터용 신제품 ‘케이블버스’ 북미 인증 획득",
+        "[속보] 가온전선, VI 수차례 발동 주가 14% 털썩",
+        "가온전선, 아시아 최초 케이블버스 CSA 인증 획득…북미 AI 인프라 시장 공략",
+        "가온전선, AI 데이터센터 전력 인프라 수혜 본격화"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 41.53,
+          "macd": -1145.3366,
+          "macd_signal": 17195.5273,
+          "macd_histogram": -18340.8639,
+          "bb_upper": 441798.27,
+          "bb_middle": 352300.0,
+          "bb_lower": 262801.73,
+          "bb_position": "하단이탈",
+          "ma_5": 299400.0,
+          "ma_20": 352300.0,
+          "ma_60": 242178.33,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.7,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 3.7배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "195500",
+      "name": "마니커에프앤지",
+      "market": "KOSDAQ",
+      "industry": "도축, 육류 가공 및 저장 처리업",
+      "move_type": "plunge",
+      "close": 1968.0,
+      "change_pct": -15.17,
+      "relative_strength": -18.39,
+      "amount_eok": 83.59874809,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 마니커에프앤지-육계 테마 상승세에 22.27% ↑",
+        "마니커에프앤지, +5.48% VI 발동 - 조선비즈",
+        "마니커에프앤지 주가, 상한가... 치킨값 오르자 주목받는 종목",
+        "마니커에프앤지, 치킨봉 신제품 2종 출시",
+        "상한가 마니커, 정작 치킨집은 \"이번엔 특수 없다\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 38.48,
+          "macd": -192.2147,
+          "macd_signal": -182.2406,
+          "macd_histogram": -9.9742,
+          "bb_upper": 2863.63,
+          "bb_middle": 2251.65,
+          "bb_lower": 1639.67,
+          "bb_position": "중립",
+          "ma_5": 1939.6,
+          "ma_20": 2251.65,
+          "ma_60": 2565.05,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.31,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 9.3배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "465770",
+      "name": "STX그린로지스",
+      "market": "KOSPI",
+      "industry": "해상 운송업",
+      "move_type": "plunge",
+      "close": 2895.0,
+      "change_pct": -14.35,
+      "relative_strength": -18.98,
+      "amount_eok": 47.12866221,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] STX그린로지스, 호르무즈 해협 봉쇄 가능성에 '上'",
+        "STX그린로지스, 썬에이스 매각 검토 공시→향후 전략 다양화 주목",
+        "호르무즈 해협 재봉쇄에 STX그린로지스 상한가[핫종목]",
+        "[특징주] 해운주, 미국·이란 갈등 재점화에 동반 강세⋯STX그린로지스 ‘上’",
+        "호르무즈 해협 전면 차단에 해운주 급등…STX그린로지스 상한가 - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 39.97,
+          "macd": -453.6054,
+          "macd_signal": -537.1305,
+          "macd_histogram": 83.5251,
+          "bb_upper": 3940.7,
+          "bb_middle": 3163.0,
+          "bb_lower": 2385.3,
+          "bb_position": "중립",
+          "ma_5": 2837.0,
+          "ma_20": 3163.0,
+          "ma_60": 4860.42,
+          "ma_trend": "역배열",
+          "volume_ratio": 7.31,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 7.3배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
