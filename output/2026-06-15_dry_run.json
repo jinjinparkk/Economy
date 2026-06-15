@@ -1,0 +1,480 @@
+{
+  "trade_date": "2026-06-15",
+  "macro": {
+    "S&P 500": {
+      "close": 7431.46,
+      "change_pct": 0.5,
+      "date": "2026-06-12"
+    },
+    "NASDAQ": {
+      "close": 25888.84,
+      "change_pct": 0.31,
+      "date": "2026-06-12"
+    },
+    "다우존스": {
+      "close": 51202.26,
+      "change_pct": 0.7,
+      "date": "2026-06-12"
+    },
+    "필라델피아반도체": {
+      "close": 596.25,
+      "change_pct": 1.59,
+      "date": "2026-06-12"
+    },
+    "원/달러": {
+      "close": 1511.61,
+      "change_pct": -0.38,
+      "date": "2026-06-15"
+    },
+    "달러인덱스": {
+      "close": 99.75,
+      "change_pct": -0.11,
+      "date": "2026-06-12"
+    },
+    "WTI유": {
+      "close": 84.88,
+      "change_pct": -3.23,
+      "date": "2026-06-12"
+    },
+    "금": {
+      "close": 4215.0,
+      "change_pct": 3.05,
+      "date": "2026-06-12"
+    },
+    "구리": {
+      "close": 6.43,
+      "change_pct": 2.72,
+      "date": "2026-06-12"
+    },
+    "천연가스": {
+      "close": 3.12,
+      "change_pct": 0.97,
+      "date": "2026-06-12"
+    },
+    "VIX": {
+      "close": 17.68,
+      "change_pct": -9.05,
+      "date": "2026-06-12"
+    },
+    "미국채10Y": {
+      "close": 4.49,
+      "change_pct": 0.67,
+      "date": "2026-06-12"
+    },
+    "미국채2Y": {
+      "close": 3.84,
+      "change_pct": 0.0,
+      "date": "2026-06-12"
+    },
+    "기술": {
+      "close": 184.8,
+      "change_pct": 0.87,
+      "date": "2026-06-12"
+    },
+    "금융": {
+      "close": 53.34,
+      "change_pct": 1.37,
+      "date": "2026-06-12"
+    },
+    "에너지": {
+      "close": 57.55,
+      "change_pct": 0.75,
+      "date": "2026-06-12"
+    },
+    "헬스케어": {
+      "close": 153.81,
+      "change_pct": -0.18,
+      "date": "2026-06-12"
+    },
+    "산업재": {
+      "close": 176.18,
+      "change_pct": 0.59,
+      "date": "2026-06-12"
+    },
+    "커뮤니케이션": {
+      "close": 111.65,
+      "change_pct": -0.42,
+      "date": "2026-06-12"
+    },
+    "경기소비재": {
+      "close": 116.6,
+      "change_pct": 0.26,
+      "date": "2026-06-12"
+    },
+    "필수소비재": {
+      "close": 85.82,
+      "change_pct": 0.65,
+      "date": "2026-06-12"
+    },
+    "부동산": {
+      "close": 45.36,
+      "change_pct": 0.98,
+      "date": "2026-06-12"
+    },
+    "유틸리티": {
+      "close": 44.53,
+      "change_pct": 1.09,
+      "date": "2026-06-12"
+    },
+    "소재": {
+      "close": 52.18,
+      "change_pct": 1.87,
+      "date": "2026-06-12"
+    },
+    "엔비디아": {
+      "close": 205.19,
+      "change_pct": 0.16,
+      "date": "2026-06-12"
+    },
+    "애플": {
+      "close": 291.13,
+      "change_pct": -1.52,
+      "date": "2026-06-12"
+    },
+    "마이크로소프트": {
+      "close": 390.74,
+      "change_pct": 0.1,
+      "date": "2026-06-12"
+    },
+    "아마존": {
+      "close": 238.55,
+      "change_pct": -1.23,
+      "date": "2026-06-12"
+    },
+    "알파벳": {
+      "close": 358.16,
+      "change_pct": 0.45,
+      "date": "2026-06-12"
+    },
+    "메타": {
+      "close": 566.98,
+      "change_pct": -0.26,
+      "date": "2026-06-12"
+    },
+    "테슬라": {
+      "close": 406.43,
+      "change_pct": 1.82,
+      "date": "2026-06-12"
+    },
+    "러셀2000": {
+      "close": 292.95,
+      "change_pct": 0.87,
+      "date": "2026-06-12"
+    },
+    "나스닥100ETF": {
+      "close": 721.34,
+      "change_pct": 0.59,
+      "date": "2026-06-12"
+    },
+    "가치ETF": {
+      "close": 217.09,
+      "change_pct": 0.93,
+      "date": "2026-06-12"
+    },
+    "닛케이225": {
+      "close": 69317.5,
+      "change_pct": 4.99,
+      "date": "2026-06-15"
+    },
+    "항셍": {
+      "close": 24718.1,
+      "change_pct": 1.93,
+      "date": "2026-06-12"
+    },
+    "상해종합": {
+      "close": 4031.51,
+      "change_pct": 1.12,
+      "date": "2026-06-12"
+    },
+    "독일DAX": {
+      "close": 24635.3,
+      "change_pct": 1.76,
+      "date": "2026-06-12"
+    },
+    "유로스톡스50": {
+      "close": 6187.63,
+      "change_pct": 2.16,
+      "date": "2026-06-12"
+    },
+    "하이일드채권": {
+      "close": 79.94,
+      "change_pct": 0.0,
+      "date": "2026-06-12"
+    },
+    "미장기채20Y+": {
+      "close": 85.77,
+      "change_pct": -0.24,
+      "date": "2026-06-12"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.65,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.50%, 나스닥 +0.31%로 상승 마감. 필라델피아 반도체지수 +1.59%. VIX 17.7 (보통 구간). 장단기 금리차 0.650%p (정상 범위). 원/달러 1,511.61원 (-0.38%, 원화 강세). 금 4,215.00달러 (+3.05%). 달러인덱스 99.75 (-0.11%). 섹터: 소재(+1.87%) 주도, 커뮤니케이션(-0.42%) 약세. QQQ-VTV 스프레드 -0.34%p → 가치주 우위. HYG +0.00% → 신용 스트레스 안정. Mag7 평균 -0.07% → 대형 기술주 약세. 아시아: 닛케이225 +4.99%, 항셍 +1.93%, 상해종합 +1.12%. 유럽: 독일DAX +1.76%, 유로스톡스50 +2.16%.",
+  "market_breadth": {
+    "total_up": 1686,
+    "total_down": 869,
+    "total_unchanged": 213,
+    "total": 2768,
+    "up_ratio": 60.9
+  },
+  "surges": [
+    {
+      "code": "317240",
+      "name": "TS트릴리온",
+      "market": "KOSDAQ",
+      "industry": "기타 화학제품 제조업",
+      "move_type": "surge",
+      "close": 1206.0,
+      "change_pct": 29.96,
+      "relative_strength": 29.48,
+      "amount_eok": 10.03191987,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "\"탈모는 생존 문제\"…건보 적용 논의에 TS트릴리온 상한가",
+        "[급등락주 짚어보기] 탈모 건보 기대에 현대약품ㆍJW신약·TS트릴리온 상한가…로봇·반도체도 강세",
+        "[특징주] TS트릴리온, 탈모 건강보험 적용 추진 소식에 상한가 직행",
+        "샴푸 회사가 ‘탈모 대장주’?…TS트릴리온의 역설",
+        "TS트릴리온, 하반기 탈모 치료 건보 적용 검토 소식에 '상한가'[특징주]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 56.11,
+          "macd": -106.9121,
+          "macd_signal": -127.5993,
+          "macd_histogram": 20.6872,
+          "bb_upper": 1323.49,
+          "bb_middle": 1058.35,
+          "bb_lower": 793.21,
+          "bb_position": "중립",
+          "ma_5": 958.2,
+          "ma_20": 1058.35,
+          "ma_60": 1373.53,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.6,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.6배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "067290",
+      "name": "JW신약",
+      "market": "KOSDAQ",
+      "industry": "의약품 제조업",
+      "move_type": "surge",
+      "close": 1775.0,
+      "change_pct": 29.94,
+      "relative_strength": 29.46,
+      "amount_eok": 24.5049755,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "양 제약지수 동반 상승, JW신약ㆍ현대약품ㆍ삼익제약 상한가",
+        "정은경發 탈모 건보 기대감에…JW신약·TS트릴리온 ‘상한가’ [Why 바이오]",
+        "JW신약·현대약품, 탈모 건보 적용 검토에 상한가 직행",
+        "[급등락주 짚어보기] 탈모 건보 기대에 현대약품ㆍJW신약·TS트릴리온 상한가…로봇·반도체도 강세",
+        "JW중외제약·JW신약, ‘트루패스’ 심포지엄 개최…전립선비대증 치료 전략 공유"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 61.11,
+          "macd": -102.1765,
+          "macd_signal": -135.1155,
+          "macd_histogram": 32.939,
+          "bb_upper": 1789.58,
+          "bb_middle": 1486.7,
+          "bb_lower": 1183.82,
+          "bb_position": "상단근접",
+          "ma_5": 1420.0,
+          "ma_20": 1486.7,
+          "ma_60": 1812.85,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.55,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 4.5배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "047770",
+      "name": "코데즈컴바인",
+      "market": "KOSDAQ",
+      "industry": "봉제의복 제조업",
+      "move_type": "surge",
+      "close": 3585.0,
+      "change_pct": 29.89,
+      "relative_strength": 29.41,
+      "amount_eok": 185.06906536,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "트럼프 ‘김정은 사진’에 남북경협주 급등...코데즈컴바인ㆍ아난티 등 강세",
+        "코데즈컴바인 투자분석 2026. 06. 10",
+        "코데즈컴바인, +1.33% 상승폭 확대 - 조선비즈",
+        "코데즈컴바인, 기취득 자기주식 보통주 9만3343주 소각 결정",
+        "기획력·조직력으로 승부"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 54.63,
+          "macd": -322.8611,
+          "macd_signal": -393.9441,
+          "macd_histogram": 71.083,
+          "bb_upper": 3555.16,
+          "bb_middle": 3029.5,
+          "bb_lower": 2503.84,
+          "bb_position": "상단돌파",
+          "ma_5": 2841.0,
+          "ma_20": 3029.5,
+          "ma_60": 4067.75,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.5,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 4.5배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "298000",
+      "name": "효성화학",
+      "market": "KOSPI",
+      "industry": "기초 화학물질 제조업",
+      "move_type": "plunge",
+      "close": 55000.0,
+      "change_pct": -29.31,
+      "relative_strength": -34.51,
+      "amount_eok": 410.2082335,
+      "hints": [
+        "하한가",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "효성화학, 오늘부터 거래재개…모회사 지원에 본업 회복까지",
+        "\"상폐 위기 넘겼지만\"…효성화학, 거래재개 첫날 29% 급락",
+        "효성화학, 오늘부터 주식 거래재개…상폐 위기 탈출",
+        "효성화학 살아났나 … 상폐 면했지만 회생 판단 일러"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 100.0,
+          "macd": 1284.3305,
+          "macd_signal": 256.8661,
+          "macd_histogram": 1027.4644,
+          "bb_upper": 46722.83,
+          "bb_middle": 39705.0,
+          "bb_lower": 32687.17,
+          "bb_position": "상단돌파",
+          "ma_5": 42120.0,
+          "ma_20": 39705.0,
+          "ma_60": 39168.33,
+          "ma_trend": "정배열",
+          "volume_ratio": 20.0,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 20.0배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "140860",
+      "name": "파크시스템스",
+      "market": "KOSDAQ",
+      "industry": "측정, 시험, 항해, 제어 및 기타 정밀기기 제조업; 광학기기 제외",
+      "move_type": "plunge",
+      "close": 258500.0,
+      "change_pct": -23.86,
+      "relative_strength": -24.34,
+      "amount_eok": 305.955625,
+      "hints": [
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "파크시스템스, 보통주 732주 임직원에 처분",
+        "파크시스템스, 애프터마켓서 18%대 급락",
+        "실적 쇼크 끝났다?…파크시스템스, 하반기 대반전 예고",
+        "파크시스템스 투자분석 2026. 06. 13",
+        "[종목 포커스] 파크시스템스, 수주잔고 급증으로 하반기부터 실적 반등 본격화?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 46.7,
+          "macd": -774.3436,
+          "macd_signal": -1232.2676,
+          "macd_histogram": 457.924,
+          "bb_upper": 315165.99,
+          "bb_middle": 273250.0,
+          "bb_lower": 231334.01,
+          "bb_position": "중립",
+          "ma_5": 271700.0,
+          "ma_20": 273250.0,
+          "ma_60": 271000.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.82,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "006050",
+      "name": "국영지앤엠",
+      "market": "KOSDAQ",
+      "industry": "유리 및 유리제품 제조업",
+      "move_type": "plunge",
+      "close": 535.0,
+      "change_pct": -22.35,
+      "relative_strength": -22.83,
+      "amount_eok": 17.70046091,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "국영지앤엠, 10대 1 주식병합 결정",
+        "국영지앤엠, 주식 10주를 1주로 합친다…8월 7일부터 매매거래 정지",
+        "국영지앤엠 투자분석 2026. 06. 10",
+        "'자사주 꼼수' 탈출, 다시 성행...국영지앤엠, 누리플렉스 등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 14.35,
+          "macd": -154.3417,
+          "macd_signal": -140.8815,
+          "macd_histogram": -13.4602,
+          "bb_upper": 1164.32,
+          "bb_middle": 850.0,
+          "bb_lower": 535.68,
+          "bb_position": "하단이탈",
+          "ma_5": 660.0,
+          "ma_20": 850.0,
+          "ma_60": 1195.7,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.96,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 극과매도(반등 가능성) / RSI 상승다이버전스 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 5.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
