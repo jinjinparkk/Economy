@@ -1,0 +1,354 @@
+{
+  "trade_date": "2026-06-16",
+  "macro": {
+    "달러인덱스": {
+      "close": 99.75,
+      "change_pct": -0.11,
+      "date": "2026-06-12"
+    },
+    "WTI유": {
+      "close": 80.75,
+      "change_pct": -4.87,
+      "date": "2026-06-15"
+    },
+    "금": {
+      "close": 4328.0,
+      "change_pct": 2.68,
+      "date": "2026-06-15"
+    },
+    "구리": {
+      "close": 6.48,
+      "change_pct": 0.78,
+      "date": "2026-06-15"
+    },
+    "천연가스": {
+      "close": 3.15,
+      "change_pct": 0.96,
+      "date": "2026-06-15"
+    },
+    "미국채10Y": {
+      "close": 4.49,
+      "change_pct": 0.67,
+      "date": "2026-06-12"
+    },
+    "미국채2Y": {
+      "close": 3.84,
+      "change_pct": 0.0,
+      "date": "2026-06-15"
+    },
+    "커뮤니케이션": {
+      "close": 112.19,
+      "change_pct": 0.48,
+      "date": "2026-06-15"
+    },
+    "부동산": {
+      "close": 44.99,
+      "change_pct": -0.82,
+      "date": "2026-06-15"
+    },
+    "알파벳": {
+      "close": 367.11,
+      "change_pct": 2.5,
+      "date": "2026-06-15"
+    },
+    "메타": {
+      "close": 593.48,
+      "change_pct": 4.67,
+      "date": "2026-06-15"
+    },
+    "러셀2000": {
+      "close": 294.64,
+      "change_pct": 0.58,
+      "date": "2026-06-15"
+    },
+    "나스닥100ETF": {
+      "close": 744.0,
+      "change_pct": 3.14,
+      "date": "2026-06-15"
+    },
+    "미장기채20Y+": {
+      "close": 85.72,
+      "change_pct": -0.06,
+      "date": "2026-06-15"
+    }
+  },
+  "market_regime": "판단불가",
+  "yield_spread": 0.65,
+  "macro_narrative": "장단기 금리차 0.650%p (정상 범위). 금 4,328.00달러 (+2.68%). 달러인덱스 99.75 (-0.11%). 섹터: 커뮤니케이션(+0.48%) 주도, 부동산(-0.82%) 약세. Mag7 평균 +3.58% → 대형 기술주 강세.",
+  "market_breadth": {
+    "total_up": 1283,
+    "total_down": 1256,
+    "total_unchanged": 229,
+    "total": 2768,
+    "up_ratio": 46.4
+  },
+  "surges": [
+    {
+      "code": "013360",
+      "name": "일성건설",
+      "market": "KOSPI",
+      "industry": "토목 건설업",
+      "move_type": "surge",
+      "close": 1677.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.89,
+      "amount_eok": 53.48889298,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[급등락주 짚어보기] 중동 재건·로봇 호재…일성건설·화신 등 '上'",
+        "[이격도과열 종목] 일성건설 화신 유진테크놀로지 파인디앤씨 화신정공 '앗~뜨거'",
+        "일성건설·성문전자·화신·파인디앤씨·서산 상한가…개별 재료에 매수세 집중",
+        "[주식마감] 트럼프 풍력 규제 후퇴에 씨에스윈드 상한가… 씨에스베어링·화신·일성건설 등 급등",
+        "주택 경기 불확실성 정면 돌파…일성건설, 정책 모멘텀 타고 기업가치 재평가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 62.64,
+          "macd": -100.2114,
+          "macd_signal": -139.011,
+          "macd_histogram": 38.7996,
+          "bb_upper": 1672.04,
+          "bb_middle": 1372.5,
+          "bb_lower": 1072.96,
+          "bb_position": "상단돌파",
+          "ma_5": 1317.4,
+          "ma_20": 1372.5,
+          "ma_60": 1735.25,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.19,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 9.2배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "010690",
+      "name": "화신",
+      "market": "KOSPI",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "surge",
+      "close": 14010.0,
+      "change_pct": 29.96,
+      "relative_strength": 27.85,
+      "amount_eok": 123.1817292,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "화신, 로봇 바디 모듈로 '휴머노이드 밸류체인' 진입 주목…\"업종 내 가장 저평가 기업\"",
+        "[0616시황레이더] 화신, 로봇 바디 모듈로 '휴머노이드 밸류체인' 진입 분석 등",
+        "[서울데이터랩]코스닥 거래상위 종목 혼조…서산 상한가, 화신정공·JW신약 강세",
+        "화신환경, 법무보호사업 후원 동행기업 55호 참여",
+        "[특징주]화신정공, 6월 들어 3배 가까이 급등…로봇 부품 공급 기대감에 투자자 몰려"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 62.35,
+          "macd": -241.7332,
+          "macd_signal": -444.4605,
+          "macd_histogram": 202.7273,
+          "bb_upper": 13444.76,
+          "bb_middle": 11158.0,
+          "bb_lower": 8871.24,
+          "bb_position": "상단돌파",
+          "ma_5": 11086.0,
+          "ma_20": 11158.0,
+          "ma_60": 11725.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 0.99,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "014910",
+      "name": "성문전자",
+      "market": "KOSPI",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 2755.0,
+      "change_pct": 29.95,
+      "relative_strength": 27.84,
+      "amount_eok": 34.37993646,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "일성건설·성문전자·화신·파인디앤씨·서산 상한가…개별 재료에 매수세 집중",
+        "성문전자, 신소재 기업에 투자·합작법인 설립",
+        "성문전자, 고부가가치 소재 기업으로 탈바꿈…합작법인 설립 검토",
+        "[특징주] 성문전자, 현대차 美 최다 판매 기대에 수혜...협력사 부각되며 상한가 급등세 지속",
+        "성문전자, 투자경고종목 해제→투자주의 지정 예고"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 55.88,
+          "macd": -12.8843,
+          "macd_signal": 69.0174,
+          "macd_histogram": -81.9017,
+          "bb_upper": 3515.9,
+          "bb_middle": 2677.25,
+          "bb_lower": 1838.6,
+          "bb_position": "중립",
+          "ma_5": 2236.0,
+          "ma_20": 2677.25,
+          "ma_60": 2125.93,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.38,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 6,
+          "avg_return_1d": 11.36,
+          "avg_return_5d": 11.75,
+          "positive_rate_1d": 100.0,
+          "positive_rate_5d": 40.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "040350",
+      "name": "크레오에스지",
+      "market": "KOSDAQ",
+      "industry": "컴퓨터 프로그래밍, 시스템 통합 및 관리업",
+      "move_type": "plunge",
+      "close": 8010.0,
+      "change_pct": -29.98,
+      "relative_strength": -28.5,
+      "amount_eok": 68.2478722,
+      "hints": [
+        "하한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "크레오에스지, 주식병합에 따른 매매거래 정지…14일부터",
+        "크레오에스지, 최대주주 큐로홀딩스 주식담보 제공 계약 체결",
+        "크레오에스지 투자분석 2026. 06. 12",
+        "크레오에스지, 질병청 마버그열 백신 개발 과제 참여…차세대 팬데믹 대응 본격화",
+        "크레오에스지, 삼성에스디에스와 19억원 규모 공급계약"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 55.6,
+          "macd": 1758.79,
+          "macd_signal": 1424.7468,
+          "macd_histogram": 334.0431,
+          "bb_upper": 12666.68,
+          "bb_middle": 6803.75,
+          "bb_lower": 940.82,
+          "bb_position": "중립",
+          "ma_5": 10582.0,
+          "ma_20": 6803.75,
+          "ma_60": 4706.08,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.76,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "087260",
+      "name": "모바일어플라이언스",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 462.0,
+      "change_pct": -24.14,
+      "relative_strength": -22.66,
+      "amount_eok": 59.02001885,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "모바일어플라이언스, 어른거리는 웰바이오텍 그림자…경영 안정성 ‘흔들’",
+        "모바일어플라이언스, 최대주주 변경 3개월 만에 경영권 분쟁",
+        "모바일어플라이언스 경영권 분쟁 격화…최윤근 대표 직무집행정지 소송 제기",
+        "[장중수급포착] 모바일어플라이언스, 외국인 7일 연속 순매수행진... 주가 +29.85%",
+        "모바일어플라이언스, 대표이사 정복희 체제로 변경"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 23.37,
+          "macd": -339.8814,
+          "macd_signal": -354.2971,
+          "macd_histogram": 14.4157,
+          "bb_upper": 1295.83,
+          "bb_middle": 771.35,
+          "bb_lower": 246.87,
+          "bb_position": "중립",
+          "ma_5": 506.0,
+          "ma_20": 771.35,
+          "ma_60": 1678.02,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.84,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 4.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "plunge",
+      "close": 66300.0,
+      "change_pct": -20.6,
+      "relative_strength": -19.12,
+      "amount_eok": 7791.25075,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "HPSP 주가, 12%대 급락... 왜?",
+        "HPSP, 투자경고종목 지정예고→투자주의 요망",
+        "[속보] HPSP VI 두차례 발동, 주가 급등세…주초장 장초반부터 도약",
+        "HPSP 주가, 급등중... 배경은?",
+        "HPSP 주가, 6월 16일 장중 71,200원 14.73% 하락"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 57.33,
+          "macd": 4436.6158,
+          "macd_signal": 1946.6172,
+          "macd_histogram": 2489.9986,
+          "bb_upper": 73278.91,
+          "bb_middle": 54732.5,
+          "bb_lower": 36186.09,
+          "bb_position": "중립",
+          "ma_5": 65880.0,
+          "ma_20": 54732.5,
+          "ma_60": 50447.5,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.57,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
