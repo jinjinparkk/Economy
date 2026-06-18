@@ -1,0 +1,473 @@
+{
+  "trade_date": "2026-06-18",
+  "macro": {
+    "S&P 500": {
+      "close": 7420.1,
+      "change_pct": -1.21,
+      "date": "2026-06-17"
+    },
+    "NASDAQ": {
+      "close": 26021.66,
+      "change_pct": -1.34,
+      "date": "2026-06-17"
+    },
+    "다우존스": {
+      "close": 51492.55,
+      "change_pct": -0.98,
+      "date": "2026-06-17"
+    },
+    "필라델피아반도체": {
+      "close": 599.73,
+      "change_pct": 1.44,
+      "date": "2026-06-17"
+    },
+    "달러인덱스": {
+      "close": 100.09,
+      "change_pct": 0.55,
+      "date": "2026-06-17"
+    },
+    "WTI유": {
+      "close": 76.79,
+      "change_pct": 0.97,
+      "date": "2026-06-17"
+    },
+    "금": {
+      "close": 4358.9,
+      "change_pct": 0.65,
+      "date": "2026-06-17"
+    },
+    "구리": {
+      "close": 6.48,
+      "change_pct": -0.15,
+      "date": "2026-06-17"
+    },
+    "천연가스": {
+      "close": 3.14,
+      "change_pct": -3.09,
+      "date": "2026-06-17"
+    },
+    "VIX": {
+      "close": 18.44,
+      "change_pct": 12.37,
+      "date": "2026-06-17"
+    },
+    "미국채10Y": {
+      "close": 4.49,
+      "change_pct": 0.67,
+      "date": "2026-06-12"
+    },
+    "미국채2Y": {
+      "close": 3.86,
+      "change_pct": 0.0,
+      "date": "2026-06-17"
+    },
+    "기술": {
+      "close": 185.8,
+      "change_pct": -0.34,
+      "date": "2026-06-17"
+    },
+    "금융": {
+      "close": 54.05,
+      "change_pct": -0.55,
+      "date": "2026-06-17"
+    },
+    "에너지": {
+      "close": 54.67,
+      "change_pct": -1.25,
+      "date": "2026-06-17"
+    },
+    "헬스케어": {
+      "close": 150.71,
+      "change_pct": -1.46,
+      "date": "2026-06-17"
+    },
+    "산업재": {
+      "close": 179.6,
+      "change_pct": -0.14,
+      "date": "2026-06-17"
+    },
+    "커뮤니케이션": {
+      "close": 109.2,
+      "change_pct": -2.78,
+      "date": "2026-06-17"
+    },
+    "경기소비재": {
+      "close": 115.49,
+      "change_pct": -2.51,
+      "date": "2026-06-17"
+    },
+    "필수소비재": {
+      "close": 83.68,
+      "change_pct": -2.23,
+      "date": "2026-06-17"
+    },
+    "부동산": {
+      "close": 43.97,
+      "change_pct": -2.51,
+      "date": "2026-06-17"
+    },
+    "유틸리티": {
+      "close": 44.46,
+      "change_pct": -1.33,
+      "date": "2026-06-17"
+    },
+    "소재": {
+      "close": 52.02,
+      "change_pct": -1.33,
+      "date": "2026-06-17"
+    },
+    "엔비디아": {
+      "close": 204.65,
+      "change_pct": -1.33,
+      "date": "2026-06-17"
+    },
+    "애플": {
+      "close": 295.95,
+      "change_pct": -1.1,
+      "date": "2026-06-17"
+    },
+    "마이크로소프트": {
+      "close": 378.91,
+      "change_pct": -3.79,
+      "date": "2026-06-17"
+    },
+    "아마존": {
+      "close": 237.5,
+      "change_pct": -3.46,
+      "date": "2026-06-17"
+    },
+    "알파벳": {
+      "close": 362.1,
+      "change_pct": -2.43,
+      "date": "2026-06-17"
+    },
+    "메타": {
+      "close": 567.58,
+      "change_pct": -5.44,
+      "date": "2026-06-17"
+    },
+    "테슬라": {
+      "close": 396.38,
+      "change_pct": -2.05,
+      "date": "2026-06-17"
+    },
+    "러셀2000": {
+      "close": 289.88,
+      "change_pct": -0.75,
+      "date": "2026-06-17"
+    },
+    "나스닥100ETF": {
+      "close": 722.51,
+      "change_pct": -1.01,
+      "date": "2026-06-17"
+    },
+    "가치ETF": {
+      "close": 216.09,
+      "change_pct": -0.89,
+      "date": "2026-06-17"
+    },
+    "닛케이225": {
+      "close": 71053.49,
+      "change_pct": 1.65,
+      "date": "2026-06-18"
+    },
+    "항셍": {
+      "close": 24312.16,
+      "change_pct": -0.74,
+      "date": "2026-06-17"
+    },
+    "상해종합": {
+      "close": 4108.08,
+      "change_pct": 0.4,
+      "date": "2026-06-17"
+    },
+    "독일DAX": {
+      "close": 24934.67,
+      "change_pct": 0.1,
+      "date": "2026-06-17"
+    },
+    "유로스톡스50": {
+      "close": 6300.07,
+      "change_pct": 0.68,
+      "date": "2026-06-17"
+    },
+    "하이일드채권": {
+      "close": 79.73,
+      "change_pct": -0.37,
+      "date": "2026-06-17"
+    },
+    "미장기채20Y+": {
+      "close": 86.33,
+      "change_pct": 0.16,
+      "date": "2026-06-17"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.63,
+  "macro_narrative": "전일 미국 증시는 S&P500 -1.21%, 나스닥 -1.34%로 하락 마감. 필라델피아 반도체지수 +1.44%. VIX 18.4 (보통 구간). 장단기 금리차 0.630%p (정상 범위). 금 4,358.90달러 (+0.65%). 달러인덱스 100.09 (+0.55%). 섹터: 산업재(-0.14%) 주도, 커뮤니케이션(-2.78%) 약세. QQQ-VTV 스프레드 -0.12%p → 가치주 우위. HYG -0.37% → 신용 스트레스 주의. Mag7 평균 -2.80% → 대형 기술주 약세. 아시아: 닛케이225 +1.65%, 항셍 -0.74%, 상해종합 +0.40%. 유럽: 독일DAX +0.10%, 유로스톡스50 +0.68%.",
+  "market_breadth": {
+    "total_up": 354,
+    "total_down": 2227,
+    "total_unchanged": 186,
+    "total": 2767,
+    "up_ratio": 12.8
+  },
+  "surges": [
+    {
+      "code": "009470",
+      "name": "삼화전기",
+      "market": "KOSPI",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 42900.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.75,
+      "amount_eok": 797.208496,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[EBN 데이터센터] 18일 상승 종목 30選… 삼화전기·대원화성 급등",
+        "[급등락주 짚어보기] 인공지능 전력 효율화 기대…삼화전기·전기 등 '上'",
+        "[N2 특징주] 삼화전기, AI發 핵심 수혜주 평가...주가 상한가",
+        "[특징주] 삼화전기, “AI서버·자율주행 MLCC 수요 증가”에 핵심 부품 수혜주로 ‘상한가’",
+        "[속보] 삼화전기, 장 초반 VI 두 차례 발동…강한 매수세에 급등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 62.09,
+          "macd": -1245.7441,
+          "macd_signal": -1970.0749,
+          "macd_histogram": 724.3308,
+          "bb_upper": 44386.46,
+          "bb_middle": 35565.0,
+          "bb_lower": 26743.54,
+          "bb_position": "상단근접",
+          "ma_5": 34860.0,
+          "ma_20": 35565.0,
+          "ma_60": 38530.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 5.12,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 5.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "198440",
+      "name": "강동씨앤엘",
+      "market": "KOSDAQ",
+      "industry": "시멘트, 석회, 플라스터 및 그 제품 제조업",
+      "move_type": "surge",
+      "close": 1859.0,
+      "change_pct": 30.0,
+      "relative_strength": 33.01,
+      "amount_eok": 313.63275671,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 0,
+      "news_titles": [],
+      "outlook": {
+        "technical": {
+          "rsi_14": 85.28,
+          "macd": 88.3708,
+          "macd_signal": 11.1817,
+          "macd_histogram": 77.1892,
+          "bb_upper": 1494.89,
+          "bb_middle": 1089.5,
+          "bb_lower": 684.11,
+          "bb_position": "상단돌파",
+          "ma_5": 1331.8,
+          "ma_20": 1089.5,
+          "ma_60": 1116.9,
+          "ma_trend": "혼조",
+          "volume_ratio": 12.37,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 12.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "046390",
+      "name": "삼화네트웍스",
+      "market": "KOSDAQ",
+      "industry": "영화, 비디오물, 방송프로그램 제작 및 배급업",
+      "move_type": "surge",
+      "close": 1950.0,
+      "change_pct": 30.0,
+      "relative_strength": 33.01,
+      "amount_eok": 42.97745066,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "삼화네트웍스, 주주가치 제고 위해 20억원 규모 자사주 취득 결정",
+        "삼화네트웍스, 자사주 신탁계약 체결 결정...20억 원 규모",
+        "삼화네트웍스, 자기주식취득 신탁계약 체결 결정",
+        "넷플릭스·디즈니의 무자비한 공습…삼화네트웍스, K-드라마 생존의 마지막 방파제",
+        "삼화네트웍스, 15억원 규모 자사주 취득 신탁계약 해지 결정"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 55.13,
+          "macd": -194.4463,
+          "macd_signal": -225.5118,
+          "macd_histogram": 31.0655,
+          "bb_upper": 2464.25,
+          "bb_middle": 1771.1,
+          "bb_lower": 1077.95,
+          "bb_position": "중립",
+          "ma_5": 1582.8,
+          "ma_20": 1771.1,
+          "ma_60": 2255.82,
+          "ma_trend": "역배열",
+          "volume_ratio": 7.74,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 7.7배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "309930",
+      "name": "조이웍스앤코",
+      "market": "KOSDAQ",
+      "industry": "기타 생활용품 소매업",
+      "move_type": "plunge",
+      "close": 1204.0,
+      "change_pct": -25.95,
+      "relative_strength": -22.94,
+      "amount_eok": 21.93671067,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "물거품 된 호카의 꿈...조이웍스앤코 투자자도 '날벼락'",
+        "조이웍스앤코 주요주주 나형균, 조이웍스앤코 주식등의 수 60만5667주 감소…총 지분율 5.71%",
+        "조이웍스앤코, 주식병합 마무리…\"하반기 가구사업 성장 본격화 기대\"",
+        "조이웍스앤코 투자분석 2026. 06. 13",
+        "조이웍스앤코, 주식병합 완료…무증·CB 소각으로 주주가치 제고"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 28.3,
+          "macd": -265.2015,
+          "macd_signal": -180.4428,
+          "macd_histogram": -84.7587,
+          "bb_upper": 3548.25,
+          "bb_middle": 2085.45,
+          "bb_lower": 622.65,
+          "bb_position": "중립",
+          "ma_5": 1519.4,
+          "ma_20": 2085.45,
+          "ma_60": 1950.22,
+          "ma_trend": "혼조",
+          "volume_ratio": 9.09,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 거래량 9.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "083660",
+      "name": "CSA 코스믹",
+      "market": "KOSDAQ",
+      "industry": "기타 화학제품 제조업",
+      "move_type": "plunge",
+      "close": 308.0,
+      "change_pct": -22.22,
+      "relative_strength": -19.21,
+      "amount_eok": 46.82962152,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "CSA 코스믹 투자분석 2026. 06. 17",
+        "CSA 코스믹, 공매도 과열지정 연장→거래 금지 지속",
+        "CSA 코스믹, 150억원 제3자배정 유상증자",
+        "코스피 5.20%·화장품 2.70% 급등…CSA코스믹 -18.48% ‘급락’",
+        "[유상증자 모니터] '적자' CSA코스믹, 150억 지원 나선 최대주주"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 51.3,
+          "macd": 6.6132,
+          "macd_signal": -6.6964,
+          "macd_histogram": 13.3096,
+          "bb_upper": 387.79,
+          "bb_middle": 277.15,
+          "bb_lower": 166.51,
+          "bb_position": "중립",
+          "ma_5": 345.2,
+          "ma_20": 277.15,
+          "ma_60": 298.4,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.87,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "0017J0",
+      "name": "세미티에스",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "plunge",
+      "close": 4700.0,
+      "change_pct": -18.83,
+      "relative_strength": -15.82,
+      "amount_eok": 258.33629252,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "'반도체 장비' 세미티에스, 실적 호조에 이틀째 '급등'",
+        "세미티에스 투자분석 2026. 06. 17",
+        "특징주, 세미티에스-2026 상반기 신규상장 테마 상승세에 5.81% ↑",
+        "세미티에스 주주 로프티록 블루코너 반도체 신기술조합, 세미티에스 지분 7.65% 보유",
+        "[거래량 상위 종목] 세미티에스, 전일비 29.82% ↑... 현재가 6530원"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 5546.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    }
+  ]
+}
