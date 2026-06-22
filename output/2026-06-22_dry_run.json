@@ -1,0 +1,471 @@
+{
+  "trade_date": "2026-06-22",
+  "macro": {
+    "S&P 500": {
+      "close": 7500.58,
+      "change_pct": 1.08,
+      "date": "2026-06-18"
+    },
+    "NASDAQ": {
+      "close": 26517.93,
+      "change_pct": 1.91,
+      "date": "2026-06-18"
+    },
+    "다우존스": {
+      "close": 51564.7,
+      "change_pct": 0.14,
+      "date": "2026-06-18"
+    },
+    "필라델피아반도체": {
+      "close": 639.45,
+      "change_pct": 6.62,
+      "date": "2026-06-18"
+    },
+    "원/달러": {
+      "close": 1537.15,
+      "change_pct": -0.03,
+      "date": "2026-06-22"
+    },
+    "달러인덱스": {
+      "close": 100.85,
+      "change_pct": 0.76,
+      "date": "2026-06-18"
+    },
+    "WTI유": {
+      "close": 76.6,
+      "change_pct": -0.25,
+      "date": "2026-06-18"
+    },
+    "금": {
+      "close": 4224.1,
+      "change_pct": -3.09,
+      "date": "2026-06-18"
+    },
+    "구리": {
+      "close": 6.37,
+      "change_pct": -1.7,
+      "date": "2026-06-18"
+    },
+    "천연가스": {
+      "close": 3.23,
+      "change_pct": 2.87,
+      "date": "2026-06-18"
+    },
+    "미국채2Y": {
+      "close": 3.86,
+      "change_pct": 0.0,
+      "date": "2026-06-18"
+    },
+    "기술": {
+      "close": 191.44,
+      "change_pct": 3.04,
+      "date": "2026-06-18"
+    },
+    "금융": {
+      "close": 53.57,
+      "change_pct": -0.89,
+      "date": "2026-06-18"
+    },
+    "에너지": {
+      "close": 53.77,
+      "change_pct": -1.65,
+      "date": "2026-06-18"
+    },
+    "헬스케어": {
+      "close": 149.4,
+      "change_pct": -0.87,
+      "date": "2026-06-18"
+    },
+    "산업재": {
+      "close": 180.91,
+      "change_pct": 0.73,
+      "date": "2026-06-18"
+    },
+    "커뮤니케이션": {
+      "close": 109.45,
+      "change_pct": 0.23,
+      "date": "2026-06-18"
+    },
+    "경기소비재": {
+      "close": 117.16,
+      "change_pct": 1.45,
+      "date": "2026-06-18"
+    },
+    "필수소비재": {
+      "close": 83.3,
+      "change_pct": -0.45,
+      "date": "2026-06-18"
+    },
+    "부동산": {
+      "close": 43.86,
+      "change_pct": -0.25,
+      "date": "2026-06-18"
+    },
+    "유틸리티": {
+      "close": 44.76,
+      "change_pct": 0.67,
+      "date": "2026-06-18"
+    },
+    "소재": {
+      "close": 51.81,
+      "change_pct": -0.4,
+      "date": "2026-06-18"
+    },
+    "엔비디아": {
+      "close": 210.69,
+      "change_pct": 2.95,
+      "date": "2026-06-18"
+    },
+    "애플": {
+      "close": 298.01,
+      "change_pct": 0.7,
+      "date": "2026-06-18"
+    },
+    "마이크로소프트": {
+      "close": 379.4,
+      "change_pct": 0.13,
+      "date": "2026-06-18"
+    },
+    "아마존": {
+      "close": 244.39,
+      "change_pct": 2.9,
+      "date": "2026-06-18"
+    },
+    "알파벳": {
+      "close": 367.46,
+      "change_pct": 1.48,
+      "date": "2026-06-18"
+    },
+    "메타": {
+      "close": 577.22,
+      "change_pct": 1.7,
+      "date": "2026-06-18"
+    },
+    "테슬라": {
+      "close": 400.49,
+      "change_pct": 1.04,
+      "date": "2026-06-18"
+    },
+    "러셀2000": {
+      "close": 295.59,
+      "change_pct": 1.97,
+      "date": "2026-06-18"
+    },
+    "나스닥100ETF": {
+      "close": 740.62,
+      "change_pct": 2.51,
+      "date": "2026-06-18"
+    },
+    "가치ETF": {
+      "close": 216.5,
+      "change_pct": 0.19,
+      "date": "2026-06-18"
+    },
+    "닛케이225": {
+      "close": 72353.96,
+      "change_pct": 1.55,
+      "date": "2026-06-22"
+    },
+    "항셍": {
+      "close": 23924.81,
+      "change_pct": -1.59,
+      "date": "2026-06-18"
+    },
+    "상해종합": {
+      "close": 4090.48,
+      "change_pct": -0.43,
+      "date": "2026-06-18"
+    },
+    "독일DAX": {
+      "close": 24985.82,
+      "change_pct": -0.16,
+      "date": "2026-06-19"
+    },
+    "유로스톡스50": {
+      "close": 6293.13,
+      "change_pct": -0.48,
+      "date": "2026-06-19"
+    },
+    "하이일드채권": {
+      "close": 80.01,
+      "change_pct": 0.35,
+      "date": "2026-06-18"
+    },
+    "미장기채20Y+": {
+      "close": 86.75,
+      "change_pct": 0.49,
+      "date": "2026-06-18"
+    }
+  },
+  "market_regime": "판단불가",
+  "yield_spread": null,
+  "macro_narrative": "전일 미국 증시는 S&P500 +1.08%, 나스닥 +1.91%로 상승 마감. 필라델피아 반도체지수 +6.62%. 원/달러 1,537.15원 (-0.03%, 원화 강세). 금 4,224.10달러 (-3.09%). 달러인덱스 100.85 (+0.76%). 섹터: 기술(+3.04%) 주도, 에너지(-1.65%) 약세. QQQ-VTV 스프레드 +2.32%p → 성장주 우위. HYG +0.35% → 신용 스트레스 안정. Mag7 평균 +1.56% → 대형 기술주 강세. 아시아: 닛케이225 +1.55%, 항셍 -1.59%, 상해종합 -0.43%. 유럽: 독일DAX -0.16%, 유로스톡스50 -0.48%.",
+  "market_breadth": {
+    "total_up": 531,
+    "total_down": 2039,
+    "total_unchanged": 198,
+    "total": 2768,
+    "up_ratio": 19.2
+  },
+  "surges": [
+    {
+      "code": "475430",
+      "name": "키스트론",
+      "market": "KOSDAQ",
+      "industry": "절연선 및 케이블 제조업",
+      "move_type": "surge",
+      "close": 6110.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.81,
+      "amount_eok": 410.82077154,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[특징주] 키스트론, 일 커패시터 3사에 리드와이어 공급 점유율 60% 소식에 상승세",
+        "AI가 분석해주는 키스트론(475430) 상승확률은?",
+        "[리포트 브리핑]키스트론, '체력 증명 성공' Not Rated - 신한투자증권",
+        "증권가 \"견조한 체력 대비 저평가\"…키스트론 7%↑[특징주]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 65.6,
+          "macd": 0.2936,
+          "macd_signal": -113.4423,
+          "macd_histogram": 113.7359,
+          "bb_upper": 5963.15,
+          "bb_middle": 4891.0,
+          "bb_lower": 3818.85,
+          "bb_position": "상단돌파",
+          "ma_5": 4995.0,
+          "ma_20": 4891.0,
+          "ma_60": 4884.25,
+          "ma_trend": "정배열",
+          "volume_ratio": 4.58,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 4.6배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "446070",
+      "name": "유니드비티플러스",
+      "market": "KOSPI",
+      "industry": "제재 및 목재 가공업",
+      "move_type": "surge",
+      "close": 2950.0,
+      "change_pct": 29.96,
+      "relative_strength": 29.27,
+      "amount_eok": 20.88314596,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "유니드비티플러스, 자기주식취득 신탁계약 75억원 체결 결정",
+        "유니드비티플러스, 주주가치 제고 위해 75억 자사주 신탁 계약…전량 소각 방침",
+        "유니드비티플러스, 상한가잔량 상위→투자주의종목 지정",
+        "유니드비티플러스, 상한가 진입.. +29.96% ↑",
+        "유니드비티플러스 투자분석 2026. 06. 19"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 65.95,
+          "macd": -69.3278,
+          "macd_signal": -128.0567,
+          "macd_histogram": 58.7289,
+          "bb_upper": 2808.79,
+          "bb_middle": 2424.25,
+          "bb_lower": 2039.71,
+          "bb_position": "상단돌파",
+          "ma_5": 2462.0,
+          "ma_20": 2424.25,
+          "ma_60": 2806.67,
+          "ma_trend": "혼조",
+          "volume_ratio": 10.91,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 10.9배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "071670",
+      "name": "에이테크솔루션",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 7510.0,
+      "change_pct": 29.93,
+      "relative_strength": 29.74,
+      "amount_eok": 60.84861325,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[상한가 종목] 부국철강-비비안 이어 에이테크솔루션-한울반도체 등 마감",
+        "에이테크솔루션 투자분석 2026. 06. 17",
+        "[특징주] 에이테크솔루션, 삼성전자 자율주행 인수 소식에 '상한가'",
+        "삼성에서 시작된 금형 DNA… 에이테크솔루션, 미래 제조의 핵심",
+        "에이테크솔루션, 지난해 당기순이익 9398만8373원… 전년 대비 76.3% 감소"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 56.64,
+          "macd": -436.2721,
+          "macd_signal": -577.1396,
+          "macd_histogram": 140.8674,
+          "bb_upper": 7825.91,
+          "bb_middle": 6522.5,
+          "bb_lower": 5219.09,
+          "bb_position": "중립",
+          "ma_5": 6374.0,
+          "ma_20": 6522.5,
+          "ma_60": 7966.17,
+          "ma_trend": "역배열",
+          "volume_ratio": 10.06,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 10.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "085620",
+      "name": "미래에셋생명",
+      "market": "KOSPI",
+      "industry": "보험업",
+      "move_type": "plunge",
+      "close": 24200.0,
+      "change_pct": -29.96,
+      "relative_strength": -30.65,
+      "amount_eok": 722.63282725,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "글로벌 변액보험으로 안정적인 은퇴 준비",
+        "미래에셋생명, 수익·건전성 두마리 토끼…CSM 확대에 K-ICS 167.7% 안정세",
+        "미래에셋생명, '자진 상장폐지설' 재차 부인…애프터마켓서 9%대 급락",
+        "거래소, 미래에셋생명·강동씨앤엘 투자경고종목 지정",
+        "생명보험주 동반 급락…미래에셋생명 하한가 수준 폭락"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 52.15,
+          "macd": 3837.0271,
+          "macd_signal": 3196.155,
+          "macd_histogram": 640.8721,
+          "bb_upper": 36157.95,
+          "bb_middle": 22639.5,
+          "bb_lower": 9121.05,
+          "bb_position": "중립",
+          "ma_5": 30720.0,
+          "ma_20": 22639.5,
+          "ma_60": 18490.0,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.93,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "001770",
+      "name": "SHD",
+      "market": "KOSPI",
+      "industry": "1차 철강 제조업",
+      "move_type": "plunge",
+      "close": 7810.0,
+      "change_pct": -29.64,
+      "relative_strength": -30.33,
+      "amount_eok": 14.770925,
+      "hints": [
+        "하한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "SHD, 하한가 직행…매도 물량 쏟아지며 투자심리 급랭…6거래일 연속 하락",
+        "SHD, 시총 200억 원 미달 지속…관리종목 지정 우려",
+        "SHD 투자분석 2026. 06. 17",
+        "엑시온그룹 등 '시총미달' 위기 주식 속출...'상폐위기' 회사도",
+        "SHD, +2.73% 상승폭 확대 - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 9.64,
+          "macd": -1261.026,
+          "macd_signal": -914.5101,
+          "macd_histogram": -346.5159,
+          "bb_upper": 16558.31,
+          "bb_middle": 13309.5,
+          "bb_lower": 10060.69,
+          "bb_position": "하단이탈",
+          "ma_5": 11622.0,
+          "ma_20": 13309.5,
+          "ma_60": 15513.17,
+          "ma_trend": "역배열",
+          "volume_ratio": 16.03,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 16.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "179900",
+      "name": "유티아이",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "plunge",
+      "close": 7450.0,
+      "change_pct": -26.09,
+      "relative_strength": -26.28,
+      "amount_eok": 136.4533613,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "적정가치 분석이 유티아이 주가 53% 하락을 어떻게 예견했나",
+        "애플 폴더블폰 기대감 커진 유티아이…CB 오버행 관리 '주목'",
+        "[베스트&워스트] 서산, 184% 폭등·유티아이 급락…건자재·제약 테마 순환매 랠리",
+        "유티아이, CB 상환 압박에 “이자 드리고 나눠서 갚을게요” - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 17.89,
+          "macd": -2256.2357,
+          "macd_signal": -1261.1671,
+          "macd_histogram": -995.0687,
+          "bb_upper": 25330.45,
+          "bb_middle": 17609.0,
+          "bb_lower": 9887.55,
+          "bb_position": "하단이탈",
+          "ma_5": 12990.0,
+          "ma_20": 17609.0,
+          "ma_60": 18930.5,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.32,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 6.3배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
