@@ -1,0 +1,477 @@
+{
+  "trade_date": "2026-06-24",
+  "macro": {
+    "S&P 500": {
+      "close": 7365.46,
+      "change_pct": -1.44,
+      "date": "2026-06-23"
+    },
+    "NASDAQ": {
+      "close": 25587.04,
+      "change_pct": -2.21,
+      "date": "2026-06-23"
+    },
+    "다우존스": {
+      "close": 51666.84,
+      "change_pct": -0.09,
+      "date": "2026-06-23"
+    },
+    "필라델피아반도체": {
+      "close": 603.39,
+      "change_pct": -7.88,
+      "date": "2026-06-23"
+    },
+    "달러인덱스": {
+      "close": 101.41,
+      "change_pct": 0.39,
+      "date": "2026-06-23"
+    },
+    "WTI유": {
+      "close": 73.21,
+      "change_pct": -2.15,
+      "date": "2026-06-23"
+    },
+    "금": {
+      "close": 4129.9,
+      "change_pct": -1.24,
+      "date": "2026-06-23"
+    },
+    "구리": {
+      "close": 6.14,
+      "change_pct": -3.46,
+      "date": "2026-06-23"
+    },
+    "천연가스": {
+      "close": 3.15,
+      "change_pct": -3.08,
+      "date": "2026-06-23"
+    },
+    "VIX": {
+      "close": 19.49,
+      "change_pct": 12.79,
+      "date": "2026-06-23"
+    },
+    "미국채10Y": {
+      "close": 4.45,
+      "change_pct": -0.22,
+      "date": "2026-06-18"
+    },
+    "미국채2Y": {
+      "close": 3.85,
+      "change_pct": 0.26,
+      "date": "2026-06-23"
+    },
+    "기술": {
+      "close": 184.19,
+      "change_pct": -4.14,
+      "date": "2026-06-23"
+    },
+    "금융": {
+      "close": 53.88,
+      "change_pct": 0.34,
+      "date": "2026-06-23"
+    },
+    "에너지": {
+      "close": 54.46,
+      "change_pct": 0.74,
+      "date": "2026-06-23"
+    },
+    "헬스케어": {
+      "close": 152.18,
+      "change_pct": 1.41,
+      "date": "2026-06-23"
+    },
+    "산업재": {
+      "close": 178.15,
+      "change_pct": -2.01,
+      "date": "2026-06-23"
+    },
+    "커뮤니케이션": {
+      "close": 107.27,
+      "change_pct": 0.38,
+      "date": "2026-06-23"
+    },
+    "경기소비재": {
+      "close": 113.76,
+      "change_pct": -1.03,
+      "date": "2026-06-23"
+    },
+    "필수소비재": {
+      "close": 83.72,
+      "change_pct": 1.87,
+      "date": "2026-06-23"
+    },
+    "부동산": {
+      "close": 44.64,
+      "change_pct": 1.41,
+      "date": "2026-06-23"
+    },
+    "유틸리티": {
+      "close": 45.07,
+      "change_pct": 0.78,
+      "date": "2026-06-23"
+    },
+    "소재": {
+      "close": 50.87,
+      "change_pct": -1.45,
+      "date": "2026-06-23"
+    },
+    "엔비디아": {
+      "close": 200.04,
+      "change_pct": -4.13,
+      "date": "2026-06-23"
+    },
+    "애플": {
+      "close": 294.3,
+      "change_pct": -0.91,
+      "date": "2026-06-23"
+    },
+    "마이크로소프트": {
+      "close": 373.94,
+      "change_pct": 1.8,
+      "date": "2026-06-23"
+    },
+    "아마존": {
+      "close": 234.11,
+      "change_pct": 0.57,
+      "date": "2026-06-23"
+    },
+    "알파벳": {
+      "close": 346.08,
+      "change_pct": -0.77,
+      "date": "2026-06-23"
+    },
+    "메타": {
+      "close": 562.2,
+      "change_pct": -0.29,
+      "date": "2026-06-23"
+    },
+    "테슬라": {
+      "close": 381.61,
+      "change_pct": -5.79,
+      "date": "2026-06-23"
+    },
+    "러셀2000": {
+      "close": 295.32,
+      "change_pct": -0.96,
+      "date": "2026-06-23"
+    },
+    "나스닥100ETF": {
+      "close": 713.65,
+      "change_pct": -3.29,
+      "date": "2026-06-23"
+    },
+    "가치ETF": {
+      "close": 217.43,
+      "change_pct": -0.56,
+      "date": "2026-06-23"
+    },
+    "닛케이225": {
+      "close": 69174.97,
+      "change_pct": -0.88,
+      "date": "2026-06-24"
+    },
+    "항셍": {
+      "close": 23336.28,
+      "change_pct": -1.82,
+      "date": "2026-06-23"
+    },
+    "상해종합": {
+      "close": 4106.25,
+      "change_pct": -1.37,
+      "date": "2026-06-23"
+    },
+    "독일DAX": {
+      "close": 24893.58,
+      "change_pct": -0.98,
+      "date": "2026-06-23"
+    },
+    "유로스톡스50": {
+      "close": 6230.55,
+      "change_pct": -1.28,
+      "date": "2026-06-23"
+    },
+    "하이일드채권": {
+      "close": 79.87,
+      "change_pct": -0.09,
+      "date": "2026-06-23"
+    },
+    "미장기채20Y+": {
+      "close": 86.2,
+      "change_pct": 0.13,
+      "date": "2026-06-23"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.6,
+  "macro_narrative": "전일 미국 증시는 S&P500 -1.44%, 나스닥 -2.21%로 하락 마감. 필라델피아 반도체지수 -7.88%. VIX 19.5 (보통 구간). 장단기 금리차 0.600%p (정상 범위). 금 4,129.90달러 (-1.24%). 달러인덱스 101.41 (+0.39%). 섹터: 필수소비재(+1.87%) 주도, 기술(-4.14%) 약세. QQQ-VTV 스프레드 -2.73%p → 가치주 우위. HYG -0.09% → 신용 스트레스 안정. Mag7 평균 -1.36% → 대형 기술주 약세. 아시아: 닛케이225 -0.88%, 항셍 -1.82%, 상해종합 -1.37%. 유럽: 독일DAX -0.98%, 유로스톡스50 -1.28%.",
+  "market_breadth": {
+    "total_up": 1399,
+    "total_down": 1153,
+    "total_unchanged": 216,
+    "total": 2768,
+    "up_ratio": 50.5
+  },
+  "surges": [
+    {
+      "code": "251630",
+      "name": "브이원텍",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 4615.0,
+      "change_pct": 30.0,
+      "relative_strength": 28.0,
+      "amount_eok": 21.38210786,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "브이원텍, 삼전닉스 공급사와 SiC링 검사장비 공동개발…고객사 테스트 돌입",
+        "\"AI가 판단하고 로봇이 실행…산업용 AI 토탈솔루션 기업 될 것\"[코스닥人]",
+        "\"AI로 74억 수주\"…브이원텍, 반도체·로봇 신사업 '성큼\"",
+        "브이원텍 투자분석 2026. 06. 19",
+        "브이원텍, 현대차 북미 거점 뚫었다...현대·LG·삼성에 AMR 로봇 1400대 공급"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 49.71,
+          "macd": -412.1019,
+          "macd_signal": -463.6705,
+          "macd_histogram": 51.5686,
+          "bb_upper": 5272.29,
+          "bb_middle": 4329.25,
+          "bb_lower": 3386.21,
+          "bb_position": "중립",
+          "ma_5": 4055.0,
+          "ma_20": 4329.25,
+          "ma_60": 5361.25,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.8,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 4.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "091590",
+      "name": "남화토건",
+      "market": "KOSDAQ",
+      "industry": "건물 건설업",
+      "move_type": "surge",
+      "close": 5980.0,
+      "change_pct": 30.0,
+      "relative_strength": 28.0,
+      "amount_eok": 100.0101494,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "호남 반도체 한 방에… 남화토건 30% 상한가 직행",
+        "[이격도과열 종목] 서암기계공업 남화토건 남화산업 보해양조 금호건설 동양파일 '앗~뜨거'",
+        "특징주, 남화토건-건설 중소형 테마 상승세에 30.0% ↑",
+        "남화토건 투자분석 2026. 06. 23",
+        "남화토건, 사외이사 조영환 자진사임"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 77.49,
+          "macd": 320.9868,
+          "macd_signal": 73.6809,
+          "macd_histogram": 247.3059,
+          "bb_upper": 5293.53,
+          "bb_middle": 3854.5,
+          "bb_lower": 2415.47,
+          "bb_position": "상단돌파",
+          "ma_5": 5000.0,
+          "ma_20": 3854.5,
+          "ma_60": 3999.92,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.5,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "100660",
+      "name": "서암기계공업",
+      "market": "KOSDAQ",
+      "industry": "일반 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 4420.0,
+      "change_pct": 30.0,
+      "relative_strength": 28.0,
+      "amount_eok": 42.79774615,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 서암기계공업-로봇(산업용/협동로봇 등) 테마 상승세에 30.0% ↑",
+        "독일·일본산 밀어낸 K-부품…서암기계공업, 공작기계 초정밀 가공 기술로 선점",
+        "서암기계공업 투자분석 2026. 05. 02",
+        "서암기계공업, +0.75% VI 발동 - 조선비즈",
+        "[속보] 서암기계공업, 일본 스즈키세이키 등 지분 90% 인수...종속기업 2곳 편입"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 64.21,
+          "macd": -74.3803,
+          "macd_signal": -176.7337,
+          "macd_histogram": 102.3534,
+          "bb_upper": 4065.36,
+          "bb_middle": 3517.75,
+          "bb_lower": 2970.14,
+          "bb_position": "상단돌파",
+          "ma_5": 3649.0,
+          "ma_20": 3517.75,
+          "ma_60": 4063.75,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.09,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 5.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "179900",
+      "name": "유티아이",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "plunge",
+      "close": 4100.0,
+      "change_pct": -29.91,
+      "relative_strength": -31.91,
+      "amount_eok": 149.92281978,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "적정가치 분석이 유티아이 주가 53% 하락을 어떻게 예견했나",
+        "애플 폴더블폰 기대감 커진 유티아이…CB 오버행 관리 '주목'",
+        "유티아이, 자회사 UTI VINA 금전대여 기간 연장 결정",
+        "유티아이, 공매도 거래 금지 연장→단기 주가 변동성 주목"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 14.53,
+          "macd": -3335.8707,
+          "macd_signal": -1922.5154,
+          "macd_histogram": -1413.3553,
+          "bb_upper": 25851.24,
+          "bb_middle": 15831.5,
+          "bb_lower": 5811.76,
+          "bb_position": "하단이탈",
+          "ma_5": 8376.0,
+          "ma_20": 15831.5,
+          "ma_60": 18479.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 7.13,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 7.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "900300",
+      "name": "오가닉티코스메틱",
+      "market": "KOSDAQ",
+      "industry": "기타 금융업",
+      "move_type": "plunge",
+      "close": 3460.0,
+      "change_pct": -23.96,
+      "relative_strength": -25.96,
+      "amount_eok": 97.68299969,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "오가닉티코스메틱, 50대 1 주식병합 마치고 24일 거래재개",
+        "오가닉티코스메틱, 유상증자 결정…1280만주 발행",
+        "오가닉티코스메틱, 582억원 규모 제3자배정 유상증자 결정",
+        "거래소, 오가닉티코스메틱 거래정지 해제 결정…24일부터 정상 매매",
+        "코스피 반등에 화장품 업종 2.85% 상승… 4거래일 하락세 벗어나"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 22.52,
+          "macd": -477.9021,
+          "macd_signal": -519.5617,
+          "macd_histogram": 41.6596,
+          "bb_upper": 4970.62,
+          "bb_middle": 4495.5,
+          "bb_lower": 4020.38,
+          "bb_position": "하단이탈",
+          "ma_5": 4332.0,
+          "ma_20": 4495.5,
+          "ma_60": 6141.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 20.0,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 골든크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 20.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "303030",
+      "name": "지니틱스",
+      "market": "KOSDAQ",
+      "industry": "반도체 제조업",
+      "move_type": "plunge",
+      "close": 1798.0,
+      "change_pct": -17.14,
+      "relative_strength": -19.14,
+      "amount_eok": 39.47701437,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "지니틱스, 휴머노이드 로봇핸드·관절 핵심 센서 IC 국책과제 착수",
+        "지니틱스, 휴머노이드 로봇 센서IC 국책과제 참여",
+        "지니틱스, 휴머노이드 센서 IC 개발 국책과제 참여",
+        "지니틱스, 휴머노이드 핵심 센서 IC 개발 소식에 '상한가'[특징주]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 36.55,
+          "macd": -249.3392,
+          "macd_signal": -290.3079,
+          "macd_histogram": 40.9687,
+          "bb_upper": 2374.17,
+          "bb_middle": 2020.55,
+          "bb_lower": 1666.93,
+          "bb_position": "중립",
+          "ma_5": 1879.8,
+          "ma_20": 2020.55,
+          "ma_60": 2997.52,
+          "ma_trend": "역배열",
+          "volume_ratio": 11.22,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 11.2배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
