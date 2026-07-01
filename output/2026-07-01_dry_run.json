@@ -1,0 +1,473 @@
+{
+  "trade_date": "2026-07-01",
+  "macro": {
+    "S&P 500": {
+      "close": 7499.36,
+      "change_pct": 0.79,
+      "date": "2026-06-30"
+    },
+    "NASDAQ": {
+      "close": 26213.72,
+      "change_pct": 1.52,
+      "date": "2026-06-30"
+    },
+    "다우존스": {
+      "close": 52319.2,
+      "change_pct": 0.26,
+      "date": "2026-06-30"
+    },
+    "필라델피아반도체": {
+      "close": 640.76,
+      "change_pct": 4.3,
+      "date": "2026-06-30"
+    },
+    "달러인덱스": {
+      "close": 101.19,
+      "change_pct": 0.08,
+      "date": "2026-06-30"
+    },
+    "WTI유": {
+      "close": 69.5,
+      "change_pct": -1.77,
+      "date": "2026-06-30"
+    },
+    "금": {
+      "close": 4022.9,
+      "change_pct": 0.01,
+      "date": "2026-06-30"
+    },
+    "구리": {
+      "close": 6.19,
+      "change_pct": 1.48,
+      "date": "2026-06-30"
+    },
+    "천연가스": {
+      "close": 3.28,
+      "change_pct": 3.14,
+      "date": "2026-06-30"
+    },
+    "VIX": {
+      "close": 16.45,
+      "change_pct": -6.8,
+      "date": "2026-06-30"
+    },
+    "미국채10Y": {
+      "close": 4.37,
+      "change_pct": -0.46,
+      "date": "2026-06-26"
+    },
+    "미국채2Y": {
+      "close": 4.13,
+      "change_pct": 6.99,
+      "date": "2026-06-30"
+    },
+    "기술": {
+      "close": 190.52,
+      "change_pct": 2.76,
+      "date": "2026-06-30"
+    },
+    "금융": {
+      "close": 53.61,
+      "change_pct": -0.2,
+      "date": "2026-06-30"
+    },
+    "에너지": {
+      "close": 53.11,
+      "change_pct": -0.88,
+      "date": "2026-06-30"
+    },
+    "헬스케어": {
+      "close": 158.66,
+      "change_pct": -1.29,
+      "date": "2026-06-30"
+    },
+    "산업재": {
+      "close": 185.23,
+      "change_pct": 1.35,
+      "date": "2026-06-30"
+    },
+    "커뮤니케이션": {
+      "close": 107.13,
+      "change_pct": -0.7,
+      "date": "2026-06-30"
+    },
+    "경기소비재": {
+      "close": 117.28,
+      "change_pct": 0.14,
+      "date": "2026-06-30"
+    },
+    "필수소비재": {
+      "close": 83.07,
+      "change_pct": -1.54,
+      "date": "2026-06-30"
+    },
+    "부동산": {
+      "close": 44.03,
+      "change_pct": -1.98,
+      "date": "2026-06-30"
+    },
+    "유틸리티": {
+      "close": 45.34,
+      "change_pct": -1.48,
+      "date": "2026-06-30"
+    },
+    "소재": {
+      "close": 50.83,
+      "change_pct": 0.34,
+      "date": "2026-06-30"
+    },
+    "엔비디아": {
+      "close": 200.09,
+      "change_pct": 2.63,
+      "date": "2026-06-30"
+    },
+    "애플": {
+      "close": 289.36,
+      "change_pct": 2.7,
+      "date": "2026-06-30"
+    },
+    "마이크로소프트": {
+      "close": 373.02,
+      "change_pct": 1.21,
+      "date": "2026-06-30"
+    },
+    "아마존": {
+      "close": 238.34,
+      "change_pct": -0.75,
+      "date": "2026-06-30"
+    },
+    "알파벳": {
+      "close": 353.33,
+      "change_pct": 0.58,
+      "date": "2026-06-30"
+    },
+    "메타": {
+      "close": 563.29,
+      "change_pct": 0.12,
+      "date": "2026-06-30"
+    },
+    "테슬라": {
+      "close": 420.6,
+      "change_pct": 2.13,
+      "date": "2026-06-30"
+    },
+    "러셀2000": {
+      "close": 300.45,
+      "change_pct": 0.5,
+      "date": "2026-06-30"
+    },
+    "나스닥100ETF": {
+      "close": 736.4,
+      "change_pct": 1.7,
+      "date": "2026-06-30"
+    },
+    "가치ETF": {
+      "close": 217.93,
+      "change_pct": -0.32,
+      "date": "2026-06-30"
+    },
+    "닛케이225": {
+      "close": 70474.96,
+      "change_pct": 0.59,
+      "date": "2026-07-01"
+    },
+    "항셍": {
+      "close": 22881.02,
+      "change_pct": -0.63,
+      "date": "2026-06-30"
+    },
+    "상해종합": {
+      "close": 4094.4,
+      "change_pct": 0.5,
+      "date": "2026-06-30"
+    },
+    "독일DAX": {
+      "close": 24995.81,
+      "change_pct": 1.5,
+      "date": "2026-06-30"
+    },
+    "유로스톡스50": {
+      "close": 6328.09,
+      "change_pct": 1.55,
+      "date": "2026-06-30"
+    },
+    "하이일드채권": {
+      "close": 79.97,
+      "change_pct": -0.05,
+      "date": "2026-06-30"
+    },
+    "미장기채20Y+": {
+      "close": 86.42,
+      "change_pct": -1.18,
+      "date": "2026-06-30"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.24,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.79%, 나스닥 +1.52%로 상승 마감. 필라델피아 반도체지수 +4.30%. VIX 16.4 (보통 구간). 장단기 금리차 0.240%p (축소 — 긴축 우려 잔존). 금 4,022.90달러 (+0.01%). 달러인덱스 101.19 (+0.08%). 섹터: 기술(+2.76%) 주도, 부동산(-1.98%) 약세. QQQ-VTV 스프레드 +2.02%p → 성장주 우위. HYG -0.05% → 신용 스트레스 안정. Mag7 평균 +1.23% → 대형 기술주 강세. 아시아: 닛케이225 +0.59%, 항셍 -0.63%, 상해종합 +0.50%. 유럽: 독일DAX +1.50%, 유로스톡스50 +1.55%.",
+  "market_breadth": {
+    "total_up": 1893,
+    "total_down": 684,
+    "total_unchanged": 189,
+    "total": 2766,
+    "up_ratio": 68.4
+  },
+  "surges": [
+    {
+      "code": "228340",
+      "name": "동양파일",
+      "market": "KOSDAQ",
+      "industry": "시멘트, 석회, 플라스터 및 그 제품 제조업",
+      "move_type": "surge",
+      "close": 6240.0,
+      "change_pct": 30.0,
+      "relative_strength": 28.56,
+      "amount_eok": 64.2596051,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "호남 클러스터 800조 청사진에 'PHC 말뚝'까지 들썩∙∙∙동양파일 또 상한가",
+        "[특징주] ‘호남 반도체 클러스터’ 기대에 관련주 급등⋯금호건설우ㆍ동양파일 上",
+        "[이격도과열 종목] 금호건설 미래산업 동양파일 한성크린텍 앱튼 주목을",
+        "[상한가 종목] 금호건설-광주신세계 이어 삼기-동양파일 등 마감",
+        "[MK 골든크로스 돌파종목 : 동양파일(228340) & 비비안(002070)]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 91.94,
+          "macd": 648.6268,
+          "macd_signal": 218.9972,
+          "macd_histogram": 429.6296,
+          "bb_upper": 4714.87,
+          "bb_middle": 2365.85,
+          "bb_lower": 16.83,
+          "bb_position": "상단돌파",
+          "ma_5": 3954.0,
+          "ma_20": 2365.85,
+          "ma_60": 2134.62,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.11,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 20.16,
+          "avg_return_5d": 158.92,
+          "positive_rate_1d": 75.0,
+          "positive_rate_5d": 100.0
+        }
+      }
+    },
+    {
+      "code": "025950",
+      "name": "동신건설",
+      "market": "KOSDAQ",
+      "industry": "토목 건설업",
+      "move_type": "surge",
+      "close": 13780.0,
+      "change_pct": 30.0,
+      "relative_strength": 28.56,
+      "amount_eok": 70.7036067,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "동신건설, 한국전력공사와 154kV 산이변전소 토건공사 계약 체결",
+        "[특징주] 동신건설, 한전과 109억 변전소 공사 계약에 '上'",
+        "동신건설, 109억 규모 산이변전소 토건공사 수주",
+        "‘이재명 무죄’에 동신건설 상한가...‘김동연 테마주’ 급락"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 57.88,
+          "macd": -657.0726,
+          "macd_signal": -850.1047,
+          "macd_histogram": 193.0321,
+          "bb_upper": 13743.77,
+          "bb_middle": 11746.5,
+          "bb_lower": 9749.23,
+          "bb_position": "상단돌파",
+          "ma_5": 11168.0,
+          "ma_20": 11746.5,
+          "ma_60": 14379.17,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.13,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 6.1배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 13.97,
+          "avg_return_5d": 8.48,
+          "positive_rate_1d": 100.0,
+          "positive_rate_5d": 75.0
+        }
+      }
+    },
+    {
+      "code": "225530",
+      "name": "HC보광산업",
+      "market": "KOSDAQ",
+      "industry": "기타 비금속 광물제품 제조업",
+      "move_type": "surge",
+      "close": 2665.0,
+      "change_pct": 30.0,
+      "relative_strength": 28.56,
+      "amount_eok": 23.02831306,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "HC보광산업 최대주주 에이치씨홈센타, HC보광산업 주식등의 수 3만1319주 증가…총 지분율 69.23%",
+        "HC보광산업 투자분석 2026. 06. 26",
+        "HC보광산업, +2.12% VI 발동 - 조선비즈",
+        "[메자닌 투자파일] HC보광산업, 70억 CB 발행…차입 돌려막기"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 59.8,
+          "macd": -165.9169,
+          "macd_signal": -234.5489,
+          "macd_histogram": 68.632,
+          "bb_upper": 2493.04,
+          "bb_middle": 2183.7,
+          "bb_lower": 1874.36,
+          "bb_position": "상단돌파",
+          "ma_5": 2144.8,
+          "ma_20": 2183.7,
+          "ma_60": 3022.23,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.82,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 6.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "087260",
+      "name": "모바일어플라이언스",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 265.0,
+      "change_pct": -29.89,
+      "relative_strength": -31.33,
+      "amount_eok": 21.96340718,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 모바일어플라이언스-스마트카 테마 상승세에 29.9% ↑",
+        "모바일어플라이언스 주가 113원 하락 후 장마감",
+        "모바일어플라이언스, 대표이사 신욱호 선임",
+        "모바일어플라이언스, 임시주총 앞두고 검사인 선임 청구 소송 제기당해",
+        "[단독]모바일어플라이언스, 경영진 줄줄이 피소…“친인척 동원 무자본 M&A”"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.19,
+          "macd": -237.5661,
+          "macd_signal": -277.1636,
+          "macd_histogram": 39.5975,
+          "bb_upper": 669.06,
+          "bb_middle": 429.85,
+          "bb_lower": 190.64,
+          "bb_position": "중립",
+          "ma_5": 306.6,
+          "ma_20": 429.85,
+          "ma_60": 1351.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.09,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 과매도 구간 / RSI 상승다이버전스 / MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "475040",
+      "name": "스트라드비젼",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 5840.0,
+      "change_pct": -18.89,
+      "relative_strength": -20.33,
+      "amount_eok": 1127.04484835,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "스트라드비젼 IPO 실권주 발생… 기관 미납입 - 조선비즈",
+        "포항테크노파크 입주 기업 '스트라드비젼' 코스닥 상장",
+        "[퇴근길 7분 뉴스] 한성숙·구글·스트라드비젼·오픈USD·미토스",
+        "스트라드비젼, 올해 첫 실권주 발생",
+        "포항TP 입주기업 ㈜스트라드비젼, 코스닥 상장"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "056090",
+      "name": "시지메드텍",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "plunge",
+      "close": 1066.0,
+      "change_pct": -16.72,
+      "relative_strength": -18.16,
+      "amount_eok": 48.06448897,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "시지메드텍, 5대 1 주식병합으로 유통주식수 축소...액면가 500원→2500원",
+        "시지메드텍, 최대주주 PE 인수에 ‘上’…탈모주 삼익제약·JW신약도↑[바이오맥짚기]",
+        "시지메드텍, 코오롱제약 첫 고객사 확보…인체조직 CDMO 본격화 - 조선비즈",
+        "뜨거운 ECM 스킨부스터, 코오롱제약-시지메드텍 손잡고 뛰어들어",
+        "시지메드텍-코오롱제약, 인체 세포외기질 기반 인체조직 제품 CDMO 계약"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 36.96,
+          "macd": -95.3941,
+          "macd_signal": -96.3102,
+          "macd_histogram": 0.9161,
+          "bb_upper": 1508.59,
+          "bb_middle": 1300.45,
+          "bb_lower": 1092.31,
+          "bb_position": "하단이탈",
+          "ma_5": 1237.0,
+          "ma_20": 1300.45,
+          "ma_60": 1665.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 1.3,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
