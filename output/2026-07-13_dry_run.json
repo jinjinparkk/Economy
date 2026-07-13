@@ -1,0 +1,493 @@
+{
+  "trade_date": "2026-07-13",
+  "macro": {
+    "S&P 500": {
+      "close": 7575.39,
+      "change_pct": 0.42,
+      "date": "2026-07-10"
+    },
+    "NASDAQ": {
+      "close": 26281.61,
+      "change_pct": 0.29,
+      "date": "2026-07-10"
+    },
+    "다우존스": {
+      "close": 52637.01,
+      "change_pct": 0.29,
+      "date": "2026-07-10"
+    },
+    "필라델피아반도체": {
+      "close": 581.34,
+      "change_pct": -0.06,
+      "date": "2026-07-10"
+    },
+    "원/달러": {
+      "close": 1491.86,
+      "change_pct": -0.93,
+      "date": "2026-07-13"
+    },
+    "달러인덱스": {
+      "close": 100.97,
+      "change_pct": 0.03,
+      "date": "2026-07-10"
+    },
+    "WTI유": {
+      "close": 71.41,
+      "change_pct": -0.93,
+      "date": "2026-07-10"
+    },
+    "금": {
+      "close": 4104.1,
+      "change_pct": -0.64,
+      "date": "2026-07-10"
+    },
+    "구리": {
+      "close": 6.23,
+      "change_pct": 0.16,
+      "date": "2026-07-10"
+    },
+    "천연가스": {
+      "close": 2.94,
+      "change_pct": -2.33,
+      "date": "2026-07-10"
+    },
+    "VIX": {
+      "close": 16.13,
+      "change_pct": 7.32,
+      "date": "2026-07-13"
+    },
+    "미국채10Y": {
+      "close": 4.57,
+      "change_pct": 0.66,
+      "date": "2026-07-10"
+    },
+    "미국채2Y": {
+      "close": 3.96,
+      "change_pct": 0.51,
+      "date": "2026-07-10"
+    },
+    "기술": {
+      "close": 185.78,
+      "change_pct": 0.23,
+      "date": "2026-07-10"
+    },
+    "금융": {
+      "close": 55.71,
+      "change_pct": 0.31,
+      "date": "2026-07-10"
+    },
+    "에너지": {
+      "close": 55.08,
+      "change_pct": 0.47,
+      "date": "2026-07-10"
+    },
+    "헬스케어": {
+      "close": 160.84,
+      "change_pct": -0.82,
+      "date": "2026-07-10"
+    },
+    "산업재": {
+      "close": 181.92,
+      "change_pct": 0.45,
+      "date": "2026-07-10"
+    },
+    "커뮤니케이션": {
+      "close": 111.64,
+      "change_pct": 1.02,
+      "date": "2026-07-10"
+    },
+    "경기소비재": {
+      "close": 117.24,
+      "change_pct": 0.33,
+      "date": "2026-07-10"
+    },
+    "필수소비재": {
+      "close": 84.12,
+      "change_pct": 1.11,
+      "date": "2026-07-10"
+    },
+    "부동산": {
+      "close": 44.45,
+      "change_pct": 0.5,
+      "date": "2026-07-10"
+    },
+    "유틸리티": {
+      "close": 45.41,
+      "change_pct": 0.62,
+      "date": "2026-07-10"
+    },
+    "소재": {
+      "close": 50.89,
+      "change_pct": 1.25,
+      "date": "2026-07-10"
+    },
+    "엔비디아": {
+      "close": 210.96,
+      "change_pct": 4.03,
+      "date": "2026-07-10"
+    },
+    "애플": {
+      "close": 315.32,
+      "change_pct": -0.28,
+      "date": "2026-07-10"
+    },
+    "마이크로소프트": {
+      "close": 385.1,
+      "change_pct": 0.19,
+      "date": "2026-07-10"
+    },
+    "아마존": {
+      "close": 245.34,
+      "change_pct": -0.69,
+      "date": "2026-07-10"
+    },
+    "알파벳": {
+      "close": 355.03,
+      "change_pct": -0.34,
+      "date": "2026-07-10"
+    },
+    "메타": {
+      "close": 669.21,
+      "change_pct": 5.97,
+      "date": "2026-07-10"
+    },
+    "테슬라": {
+      "close": 407.76,
+      "change_pct": 0.3,
+      "date": "2026-07-10"
+    },
+    "러셀2000": {
+      "close": 295.99,
+      "change_pct": -0.42,
+      "date": "2026-07-10"
+    },
+    "나스닥100ETF": {
+      "close": 725.51,
+      "change_pct": 0.31,
+      "date": "2026-07-10"
+    },
+    "가치ETF": {
+      "close": 219.2,
+      "change_pct": 0.29,
+      "date": "2026-07-10"
+    },
+    "닛케이225": {
+      "close": 67242.73,
+      "change_pct": -1.92,
+      "date": "2026-07-13"
+    },
+    "항셍": {
+      "close": 24175.12,
+      "change_pct": 0.6,
+      "date": "2026-07-10"
+    },
+    "상해종합": {
+      "close": 3996.16,
+      "change_pct": -1.0,
+      "date": "2026-07-10"
+    },
+    "독일DAX": {
+      "close": 25067.09,
+      "change_pct": -0.2,
+      "date": "2026-07-10"
+    },
+    "유로스톡스50": {
+      "close": 6269.97,
+      "change_pct": -0.23,
+      "date": "2026-07-10"
+    },
+    "하이일드채권": {
+      "close": 79.71,
+      "change_pct": -0.05,
+      "date": "2026-07-10"
+    },
+    "미장기채20Y+": {
+      "close": 84.47,
+      "change_pct": -0.02,
+      "date": "2026-07-10"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.61,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.42%, 나스닥 +0.29%로 상승 마감. 필라델피아 반도체지수 -0.06%. VIX 16.1 (보통 구간). 장단기 금리차 0.610%p (정상 범위). 원/달러 1,491.86원 (-0.93%, 원화 강세). 금 4,104.10달러 (-0.64%). 달러인덱스 100.97 (+0.03%). 섹터: 소재(+1.25%) 주도, 헬스케어(-0.82%) 약세. QQQ-VTV 스프레드 +0.02%p → 성장주 우위. HYG -0.05% → 신용 스트레스 안정. Mag7 평균 +1.31% → 대형 기술주 강세. 아시아: 닛케이225 -1.92%, 항셍 +0.60%, 상해종합 -1.00%. 유럽: 독일DAX -0.20%, 유로스톡스50 -0.23%.",
+  "market_breadth": {
+    "total_up": 400,
+    "total_down": 2176,
+    "total_unchanged": 190,
+    "total": 2766,
+    "up_ratio": 14.5
+  },
+  "surges": [
+    {
+      "code": "036420",
+      "name": "콘텐트리중앙",
+      "market": "KOSPI",
+      "industry": "영화, 비디오물, 방송프로그램 제작 및 배급업",
+      "move_type": "surge",
+      "close": 1976.0,
+      "change_pct": 30.0,
+      "relative_strength": 38.95,
+      "amount_eok": 11.2566205,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "줄도산 공포 걷히나…콘텐트리중앙 상한가 배경은 [엔터코노미]",
+        "중앙일보 워크아웃 개시…콘텐트리중앙 상한가 - 머니투데이",
+        "특징주, 콘텐트리중앙-미디어 테마 상승세에 30.0% ↑",
+        "[중앙그룹 회생신청] 워크아웃 승인받은 중앙일보…경영권 매각 본격화",
+        "콘텐트리중앙, 중앙일보 워크아웃 개시에 장중 '상한가'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 27.94,
+          "macd": -985.8089,
+          "macd_signal": -768.8234,
+          "macd_histogram": -216.9855,
+          "bb_upper": 6845.79,
+          "bb_middle": 3577.4,
+          "bb_lower": 309.01,
+          "bb_position": "중립",
+          "ma_5": 1462.2,
+          "ma_20": 3577.4,
+          "ma_60": 4857.55,
+          "ma_trend": "역배열",
+          "volume_ratio": 1.35,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "049080",
+      "name": "기가레인",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 7760.0,
+      "change_pct": 29.98,
+      "relative_strength": 34.53,
+      "amount_eok": 211.84649215,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "거래소 \"기가레인, 현저환 시황변동 조회공시 요구\"",
+        "기가레인 투자분석 2026. 07. 13",
+        "대한민국 NO1 가치투자포털",
+        "특징주, 기가레인-LED장비 테마 상승세에 10.9% ↑",
+        "기가레인, 상한가 직행…강한 매수세에 7,760원 마감권"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.83,
+          "macd": -1827.5032,
+          "macd_signal": -2032.3713,
+          "macd_histogram": 204.868,
+          "bb_upper": 12083.88,
+          "bb_middle": 7650.0,
+          "bb_lower": 3216.12,
+          "bb_position": "중립",
+          "ma_5": 5524.0,
+          "ma_20": 7650.0,
+          "ma_60": 14179.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.27,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 9.3배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 9,
+          "avg_return_1d": 12.9,
+          "avg_return_5d": 55.12,
+          "positive_rate_1d": 62.5,
+          "positive_rate_5d": 85.7
+        }
+      }
+    },
+    {
+      "code": "044340",
+      "name": "위닉스",
+      "market": "KOSDAQ",
+      "industry": "가정용 기기 제조업",
+      "move_type": "surge",
+      "close": 4445.0,
+      "change_pct": 29.97,
+      "relative_strength": 34.52,
+      "amount_eok": 61.91542837,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 위닉스-제습기 테마 상승세에 3.93% ↑",
+        "[특징주] '찜통더위'에 냉방가전주 강세…위닉스 상한가 직행",
+        "[특징주] 위닉스, 폭염 중대경보 발령에 상한가",
+        "제습기 테마 훨훨… 폭염·장마 수요에 위닉스 상한가",
+        "\"제습기의 계절이 왔다\" 파세코·위닉스 동반 급등[특징주]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 59.81,
+          "macd": -119.4152,
+          "macd_signal": -210.9986,
+          "macd_histogram": 91.5834,
+          "bb_upper": 4318.11,
+          "bb_middle": 3613.25,
+          "bb_lower": 2908.39,
+          "bb_position": "상단돌파",
+          "ma_5": 3563.0,
+          "ma_20": 3613.25,
+          "ma_60": 4386.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 5.1,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 5.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "131400",
+      "name": "이브이첨단소재",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "plunge",
+      "close": 725.0,
+      "change_pct": -29.95,
+      "relative_strength": -25.4,
+      "amount_eok": 20.97829694,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "이브이첨단소재, 10대 1 무상감자 결정…재무구조 개선",
+        "이브이첨단소재, 10대1 무상감자 결정…재무구조·주주가치 제고 목적 - 머니투데이",
+        "이브이첨단소재, ‘10대 1’ 균등 무상감자 결단… 동전주 탈피·결손금 전격 보전",
+        "EV첨단소재, 10:1 무상감자⋯배당여력 선제 확보"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 22.7,
+          "macd": -157.171,
+          "macd_signal": -118.6715,
+          "macd_histogram": -38.4995,
+          "bb_upper": 1613.79,
+          "bb_middle": 1228.3,
+          "bb_lower": 842.81,
+          "bb_position": "하단이탈",
+          "ma_5": 951.0,
+          "ma_20": 1228.3,
+          "ma_60": 1519.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.42,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 3.4배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "028300",
+      "name": "HLB",
+      "market": "KOSDAQ",
+      "industry": "의료용품 및 기타 의약 관련제품 제조업",
+      "move_type": "plunge",
+      "close": 25650.0,
+      "change_pct": -29.92,
+      "relative_strength": -25.37,
+      "amount_eok": 1253.7125605,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "HLB, ‘간암 신약’ FDA 허가 세 번째 불발에 이틀째 하한가…재허가 절차 착수 - 조선비즈",
+        "HLB, 간암약 美허가 또 불발…\"4차 신청 추진할것\"(종합)",
+        "“항서제약에 또 발목 잡혔다”…HLB 간임 신약 FDA허가 또 좌절",
+        "HLB, 세 번째 FDA 승인 실패…경쟁력·특허·신뢰 '삼중고'",
+        "HLB 리보세라닙, FDA 세 번째 문턱도 넘지 못했다…허가 실패 원인과 남은 과제는"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.05,
+          "macd": -2902.3401,
+          "macd_signal": -1159.7085,
+          "macd_histogram": -1742.6316,
+          "bb_upper": 59847.71,
+          "bb_middle": 47827.5,
+          "bb_lower": 35807.29,
+          "bb_position": "하단이탈",
+          "ma_5": 43250.0,
+          "ma_20": 47827.5,
+          "ma_60": 52717.5,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.56,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 4.6배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "365660",
+      "name": "레몬헬스케어",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 6980.0,
+      "change_pct": -28.78,
+      "relative_strength": -24.23,
+      "amount_eok": 232.39901175,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "'양방향 의료데이터' 레몬헬스케어 IPO 주목할 점 세 가지",
+        "레몬헬스케어 투자분석 2026. 07. 13",
+        "이번 주 레몬헬스케어 코스닥 입성…에이치엘지노믹스, 수요예측 이어가",
+        "레몬헬스케어(365660)",
+        "레메디·레몬헬스케어, 코스닥 재도전 잇딴 성공…의료기업 IPO 신호탄 될까"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 9808.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    }
+  ]
+}
