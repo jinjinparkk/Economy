@@ -1,0 +1,471 @@
+{
+  "trade_date": "2026-07-14",
+  "macro": {
+    "S&P 500": {
+      "close": 7515.34,
+      "change_pct": -0.79,
+      "date": "2026-07-13"
+    },
+    "NASDAQ": {
+      "close": 25873.18,
+      "change_pct": -1.55,
+      "date": "2026-07-13"
+    },
+    "다우존스": {
+      "close": 52498.64,
+      "change_pct": -0.26,
+      "date": "2026-07-13"
+    },
+    "필라델피아반도체": {
+      "close": 553.61,
+      "change_pct": -4.77,
+      "date": "2026-07-13"
+    },
+    "달러인덱스": {
+      "close": 101.28,
+      "change_pct": 0.31,
+      "date": "2026-07-13"
+    },
+    "WTI유": {
+      "close": 78.14,
+      "change_pct": 9.42,
+      "date": "2026-07-13"
+    },
+    "금": {
+      "close": 3997.0,
+      "change_pct": -2.61,
+      "date": "2026-07-13"
+    },
+    "구리": {
+      "close": 6.23,
+      "change_pct": 0.0,
+      "date": "2026-07-13"
+    },
+    "천연가스": {
+      "close": 2.9,
+      "change_pct": -1.36,
+      "date": "2026-07-13"
+    },
+    "VIX": {
+      "close": 17.16,
+      "change_pct": 14.17,
+      "date": "2026-07-13"
+    },
+    "미국채10Y": {
+      "close": 4.61,
+      "change_pct": 0.88,
+      "date": "2026-07-13"
+    },
+    "미국채2Y": {
+      "close": 3.96,
+      "change_pct": 0.0,
+      "date": "2026-07-13"
+    },
+    "기술": {
+      "close": 181.28,
+      "change_pct": -2.42,
+      "date": "2026-07-13"
+    },
+    "금융": {
+      "close": 56.07,
+      "change_pct": 0.65,
+      "date": "2026-07-13"
+    },
+    "에너지": {
+      "close": 56.74,
+      "change_pct": 3.01,
+      "date": "2026-07-13"
+    },
+    "헬스케어": {
+      "close": 161.41,
+      "change_pct": 0.35,
+      "date": "2026-07-13"
+    },
+    "산업재": {
+      "close": 180.37,
+      "change_pct": -0.85,
+      "date": "2026-07-13"
+    },
+    "커뮤니케이션": {
+      "close": 111.59,
+      "change_pct": -0.04,
+      "date": "2026-07-13"
+    },
+    "경기소비재": {
+      "close": 116.04,
+      "change_pct": -1.02,
+      "date": "2026-07-13"
+    },
+    "필수소비재": {
+      "close": 84.59,
+      "change_pct": 0.56,
+      "date": "2026-07-13"
+    },
+    "부동산": {
+      "close": 44.7,
+      "change_pct": 0.56,
+      "date": "2026-07-13"
+    },
+    "유틸리티": {
+      "close": 45.72,
+      "change_pct": 0.68,
+      "date": "2026-07-13"
+    },
+    "소재": {
+      "close": 50.58,
+      "change_pct": -0.61,
+      "date": "2026-07-13"
+    },
+    "엔비디아": {
+      "close": 203.53,
+      "change_pct": -3.52,
+      "date": "2026-07-13"
+    },
+    "애플": {
+      "close": 317.31,
+      "change_pct": 0.63,
+      "date": "2026-07-13"
+    },
+    "마이크로소프트": {
+      "close": 390.99,
+      "change_pct": 1.53,
+      "date": "2026-07-13"
+    },
+    "아마존": {
+      "close": 247.31,
+      "change_pct": 0.8,
+      "date": "2026-07-13"
+    },
+    "알파벳": {
+      "close": 350.67,
+      "change_pct": -1.23,
+      "date": "2026-07-13"
+    },
+    "메타": {
+      "close": 656.73,
+      "change_pct": -1.86,
+      "date": "2026-07-13"
+    },
+    "테슬라": {
+      "close": 394.76,
+      "change_pct": -3.19,
+      "date": "2026-07-13"
+    },
+    "러셀2000": {
+      "close": 293.48,
+      "change_pct": -0.85,
+      "date": "2026-07-13"
+    },
+    "나스닥100ETF": {
+      "close": 711.74,
+      "change_pct": -1.9,
+      "date": "2026-07-13"
+    },
+    "가치ETF": {
+      "close": 219.36,
+      "change_pct": 0.07,
+      "date": "2026-07-13"
+    },
+    "닛케이225": {
+      "close": 67743.5,
+      "change_pct": 0.74,
+      "date": "2026-07-14"
+    },
+    "항셍": {
+      "close": 24213.72,
+      "change_pct": 0.16,
+      "date": "2026-07-13"
+    },
+    "상해종합": {
+      "close": 3913.79,
+      "change_pct": -2.06,
+      "date": "2026-07-13"
+    },
+    "독일DAX": {
+      "close": 25114.25,
+      "change_pct": 0.19,
+      "date": "2026-07-13"
+    },
+    "유로스톡스50": {
+      "close": 6271.02,
+      "change_pct": 0.02,
+      "date": "2026-07-13"
+    },
+    "하이일드채권": {
+      "close": 79.52,
+      "change_pct": -0.24,
+      "date": "2026-07-13"
+    },
+    "미장기채20Y+": {
+      "close": 83.97,
+      "change_pct": -0.59,
+      "date": "2026-07-13"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.65,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.79%, 나스닥 -1.55%로 하락 마감. 필라델피아 반도체지수 -4.77%. VIX 17.2 (보통 구간). 장단기 금리차 0.650%p (정상 범위). 금 3,997.00달러 (-2.61%). 달러인덱스 101.28 (+0.31%). 섹터: 에너지(+3.01%) 주도, 기술(-2.42%) 약세. QQQ-VTV 스프레드 -1.97%p → 가치주 우위. HYG -0.24% → 신용 스트레스 안정. Mag7 평균 -0.98% → 대형 기술주 약세. 아시아: 닛케이225 +0.74%, 항셍 +0.16%, 상해종합 -2.06%. 유럽: 독일DAX +0.19%, 유로스톡스50 +0.02%.",
+  "market_breadth": {
+    "total_up": 664,
+    "total_down": 1874,
+    "total_unchanged": 228,
+    "total": 2766,
+    "up_ratio": 24.0
+  },
+  "surges": [
+    {
+      "code": "011090",
+      "name": "에넥스",
+      "market": "KOSPI",
+      "industry": "가구 제조업",
+      "move_type": "surge",
+      "close": 1631.0,
+      "change_pct": 29.96,
+      "relative_strength": 29.23,
+      "amount_eok": 50.74797204,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 에넥스, 이틀째 상한가…애국기업 테마 탑승",
+        "\"실적보다 사회적 가치\"…장수기업 '모나미·에넥스' 주목",
+        "애국테마 확산…모나미 '상한가' 에넥스 20%·한성기업 17%↑",
+        "에넥스 '에스코지 냉감 침구' 5종 출시...여름 숙면 시장 공략",
+        "[특징주] 에넥스, 상한가 직행… 한성·모나미 잇는 ‘애국 테마 매수세’ 폭발"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 66.3,
+          "macd": -80.9597,
+          "macd_signal": -140.5787,
+          "macd_histogram": 59.619,
+          "bb_upper": 1654.43,
+          "bb_middle": 1192.05,
+          "bb_lower": 729.67,
+          "bb_position": "상단근접",
+          "ma_5": 1149.6,
+          "ma_20": 1192.05,
+          "ma_60": 1618.17,
+          "ma_trend": "역배열",
+          "volume_ratio": 14.14,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 14.1배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 14.02,
+          "avg_return_5d": 9.31,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 66.7
+        }
+      }
+    },
+    {
+      "code": "054940",
+      "name": "엑사이엔씨",
+      "market": "KOSDAQ",
+      "industry": "실내건축 및 건축마무리 공사업",
+      "move_type": "surge",
+      "close": 855.0,
+      "change_pct": 29.94,
+      "relative_strength": 31.86,
+      "amount_eok": 86.12633533,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "엑사이엔씨, 삼성전자 평택 P5 공사 수주...890억원",
+        "[서울데이터랩]코스닥 거래상위 종목 혼조세…엑사이엔씨 상한가, 흥구석유·위닉스 강세",
+        "엑사이엔씨, 삼성전자 평택캠퍼스 P5 공사 수주...\"시공 레퍼런스 확대\"",
+        "엑사이엔씨, 삼성전자 평택캠퍼스 내 890억 규모 공사 수주"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 73.26,
+          "macd": 13.0892,
+          "macd_signal": -5.6348,
+          "macd_histogram": 18.724,
+          "bb_upper": 760.02,
+          "bb_middle": 647.5,
+          "bb_lower": 534.98,
+          "bb_position": "상단돌파",
+          "ma_5": 691.0,
+          "ma_20": 647.5,
+          "ma_60": 702.77,
+          "ma_trend": "혼조",
+          "volume_ratio": 10.4,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 10.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "050110",
+      "name": "캠시스",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 1133.0,
+      "change_pct": 29.93,
+      "relative_strength": 31.85,
+      "amount_eok": 18.94721545,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[공시] 캠시스, 올 상반기 영업익 87억.. 전년比 '흑자 전환'",
+        "[특징주] 캠시스, 상반기 흑자전환 소식에 상한가",
+        "[특징주] 캠시스, 흑자전환 소식에 강세…매수세 몰리며 급등",
+        "캠시스, 2026년 상반기 영업이익 86억7400만원…전년동기 대비 흑자전환",
+        "캠시스, 상반기 연결 영업익 87억원…전년비 흑자전환"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 56.56,
+          "macd": -102.0133,
+          "macd_signal": -147.7552,
+          "macd_histogram": 45.7419,
+          "bb_upper": 1171.95,
+          "bb_middle": 915.2,
+          "bb_lower": 658.45,
+          "bb_position": "상단근접",
+          "ma_5": 906.8,
+          "ma_20": 915.2,
+          "ma_60": 1430.73,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.21,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 6,
+          "avg_return_1d": 4.4,
+          "avg_return_5d": -9.59,
+          "positive_rate_1d": 40.0,
+          "positive_rate_5d": 40.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "210980",
+      "name": "SK디앤디",
+      "market": "KOSPI",
+      "industry": "부동산 임대 및 공급업",
+      "move_type": "plunge",
+      "close": 7850.0,
+      "change_pct": -28.96,
+      "relative_strength": -29.69,
+      "amount_eok": 49.8126431,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] SK디앤디, 재무구조 개선 소식에 21% 급락…“유상증자도 검토\" - 조선비즈",
+        "[특징주] SK디앤디, 재무구조 개선 추진에 하한가…자산 매각·유상증자 검토",
+        "주인 바뀐 SK디앤디, 자금 경색 우려에 25% 급락",
+        "SK디앤디, 하한가 진입.. -29.95% ↓",
+        "사모펀드에 안긴 SK디앤디…\"자산 매각·유동화 추진, 재무구조 개편\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 11.25,
+          "macd": -438.5833,
+          "macd_signal": -233.4898,
+          "macd_histogram": -205.0935,
+          "bb_upper": 12767.33,
+          "bb_middle": 11186.5,
+          "bb_lower": 9605.67,
+          "bb_position": "하단이탈",
+          "ma_5": 10526.0,
+          "ma_20": 11186.5,
+          "ma_60": 11956.5,
+          "ma_trend": "역배열",
+          "volume_ratio": 12.99,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 13.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "387690",
+      "name": "레메디",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "plunge",
+      "close": 17460.0,
+      "change_pct": -20.64,
+      "relative_strength": -18.72,
+      "amount_eok": 1383.74816415,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[IPO챗] '상장 삼수생' 레메디, 두 차례 고배 딛고 코스닥 입성",
+        "이화여대 교원 창업기업 레메디, 창립 이래 첫 코스닥 상장",
+        "'새내기주' 레메디, 상장 이틀차 12% '뚝'",
+        "[특징주] 레메디, 코스닥 상장 이틀째 12%대 '급락'",
+        "레메디, 코스닥 입성 첫날 60% 이상 급등"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "187660",
+      "name": "페니트리움바이오",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "plunge",
+      "close": 4345.0,
+      "change_pct": -16.28,
+      "relative_strength": -14.36,
+      "amount_eok": 68.24286318,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "페니트리움바이오 \"페니트리움 美 임상 2상 IND 제출 준비\"",
+        "[오늘의 IR] 대한항공ㆍ올릭스ㆍ페니트리움바이오 등",
+        "페니트리움바이오 \"美 임상 2상 동일 제형 인체 안전성 자료 기반으로 준비\"",
+        "페니트리움바이오, 면역항암제 후보물질 ‘페니트리움’ 미국 임상 2상 IND 제출 준비",
+        "페니트리움바이오, 美 항암 임상 2상 IND 준비…기존 안전성 자료 활용"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 32.72,
+          "macd": -600.8089,
+          "macd_signal": -693.339,
+          "macd_histogram": 92.5301,
+          "bb_upper": 6176.75,
+          "bb_middle": 5153.6,
+          "bb_lower": 4130.45,
+          "bb_position": "중립",
+          "ma_5": 4747.0,
+          "ma_20": 5153.6,
+          "ma_60": 7602.58,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.44,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
