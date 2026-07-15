@@ -1,0 +1,332 @@
+{
+  "trade_date": "2026-07-15",
+  "macro": {
+    "달러인덱스": {
+      "close": 101.28,
+      "change_pct": 0.31,
+      "date": "2026-07-13"
+    },
+    "WTI유": {
+      "close": 79.34,
+      "change_pct": 1.54,
+      "date": "2026-07-14"
+    },
+    "금": {
+      "close": 4061.1,
+      "change_pct": 1.6,
+      "date": "2026-07-14"
+    },
+    "구리": {
+      "close": 6.33,
+      "change_pct": 1.61,
+      "date": "2026-07-14"
+    },
+    "천연가스": {
+      "close": 2.9,
+      "change_pct": 0.0,
+      "date": "2026-07-14"
+    },
+    "미국채10Y": {
+      "close": 4.61,
+      "change_pct": 0.88,
+      "date": "2026-07-13"
+    },
+    "미국채2Y": {
+      "close": 3.97,
+      "change_pct": 0.25,
+      "date": "2026-07-14"
+    },
+    "커뮤니케이션": {
+      "close": 111.45,
+      "change_pct": -0.13,
+      "date": "2026-07-14"
+    },
+    "부동산": {
+      "close": 44.48,
+      "change_pct": -0.49,
+      "date": "2026-07-14"
+    },
+    "알파벳": {
+      "close": 357.33,
+      "change_pct": 1.9,
+      "date": "2026-07-14"
+    },
+    "메타": {
+      "close": 661.04,
+      "change_pct": 0.66,
+      "date": "2026-07-14"
+    }
+  },
+  "market_regime": "판단불가",
+  "yield_spread": 0.64,
+  "macro_narrative": "장단기 금리차 0.640%p (정상 범위). 금 4,061.10달러 (+1.60%). 달러인덱스 101.28 (+0.31%). 섹터: 커뮤니케이션(-0.13%) 주도, 부동산(-0.49%) 약세. Mag7 평균 +1.28% → 대형 기술주 강세.",
+  "market_breadth": {
+    "total_up": 2176,
+    "total_down": 386,
+    "total_unchanged": 203,
+    "total": 2765,
+    "up_ratio": 78.7
+  },
+  "surges": [
+    {
+      "code": "005360",
+      "name": "모나미",
+      "market": "KOSPI",
+      "industry": "생활용품 도매업",
+      "move_type": "surge",
+      "close": 3445.0,
+      "change_pct": 30.0,
+      "relative_strength": 23.69,
+      "amount_eok": 136.16572037,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 한성기업·모나미, '애국 매수' 열풍 지속…모나미 상한가",
+        "‘국민 볼펜은 국민이 절대 지켜’…모나미 “깊은 감동” 감사문",
+        "[특징주] 한성기업·모나미, ‘애국 테마’에 연일 급등…상폐 기준 벗어나",
+        "“여러분이 지켜줬다”…상폐 위기 넘긴 모나미 대표 자필 편지",
+        "[15일 특징주] \"상폐 막아라\"…모나미·한성기업 등 애국테마주 '상한가'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 90.49,
+          "macd": 310.4302,
+          "macd_signal": 95.6708,
+          "macd_histogram": 214.7594,
+          "bb_upper": 2706.22,
+          "bb_middle": 1542.15,
+          "bb_lower": 378.08,
+          "bb_position": "상단돌파",
+          "ma_5": 2397.4,
+          "ma_20": 1542.15,
+          "ma_60": 1538.77,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.11,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "024850",
+      "name": "HLB이노베이션",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 11960.0,
+      "change_pct": 30.0,
+      "relative_strength": 24.24,
+      "amount_eok": 112.53143465,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "간암 신약 FDA 불발 우려 완화에…HLB그룹株, 무더기 상한가",
+        "HBM 투자 확대에 반도체 소재·부품주 급등…HLB이노베이션 주가 '불기둥'",
+        "특징주, HLB이노베이션-반도체 재료/부품 테마 상승세에 6.64% ↑",
+        "[급등락주 짚어보기] HLB그룹주 무더기 상한가…한미반도체·애국테마주도 급등",
+        "HLB이노베이션, 그룹 핵심 계열사 부상…오너가 전면 배치"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 47.35,
+          "macd": -1386.2836,
+          "macd_signal": -1474.3116,
+          "macd_histogram": 88.0279,
+          "bb_upper": 14372.28,
+          "bb_middle": 11726.0,
+          "bb_lower": 9079.72,
+          "bb_position": "중립",
+          "ma_5": 10202.0,
+          "ma_20": 11726.0,
+          "ma_60": 16801.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.65,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.6배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "047920",
+      "name": "HLB제약",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "surge",
+      "close": 8580.0,
+      "change_pct": 30.0,
+      "relative_strength": 24.24,
+      "amount_eok": 35.9351684,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "HLB \"간암 신약, 미국 승인 문제 된 사안 대부분 해소\" - 머니투데이",
+        "[특징주] HLB, 간암 신약 美승인 문제 해소 기대에 상한가",
+        "[주식] HLB, CRL 리스크 걷히나…8개 계열사 줄줄이 상한가",
+        "HLB \"FDA 즉시 해소 장담\"의 이면…완제공장 리스크 '그대로'",
+        "간암 신약 FDA 불발 우려 완화에…HLB그룹株, 무더기 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 39.02,
+          "macd": -1181.9256,
+          "macd_signal": -727.7796,
+          "macd_histogram": -454.1461,
+          "bb_upper": 15115.76,
+          "bb_middle": 11194.5,
+          "bb_lower": 7273.24,
+          "bb_position": "중립",
+          "ma_5": 8432.0,
+          "ma_20": 11194.5,
+          "ma_60": 13298.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.71,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "373200",
+      "name": "엑스플러스",
+      "market": "KOSDAQ",
+      "industry": "그외 기타 제품 제조업",
+      "move_type": "plunge",
+      "close": 1555.0,
+      "change_pct": -29.95,
+      "relative_strength": -35.71,
+      "amount_eok": 55.82354153,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "엑스플러스 자회사 시그널웨이브, K-뷰티 브랜드 'UZ2B' 출시…북미 시장 공략 본격화",
+        "시그널웨이브, 북미 겨냥 K-뷰티 브랜드 'UZ2B' 첫 제품 출시",
+        "엑스플러스, 디즈니코리아 협업 '토이 스토리' 오프라인 유통 확대 - 머니투데이",
+        "엑스플러스 10%이상주주 엑스페릭스, 소유 특정증권등 수량 2091만3099주 감소…소유 비율 4.37%p 하락"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 14.9,
+          "macd": -206.9712,
+          "macd_signal": -124.4927,
+          "macd_histogram": -82.4785,
+          "bb_upper": 3201.74,
+          "bb_middle": 2619.0,
+          "bb_lower": 2036.26,
+          "bb_position": "하단이탈",
+          "ma_5": 2257.0,
+          "ma_20": 2619.0,
+          "ma_60": 2938.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 13.48,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 13.5배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "083470",
+      "name": "이엠앤아이",
+      "market": "KOSDAQ",
+      "industry": "기초 화학물질 제조업",
+      "move_type": "plunge",
+      "close": 720.0,
+      "change_pct": -21.74,
+      "relative_strength": -27.5,
+      "amount_eok": 29.24797606,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "이엠앤아이 \"주가 급락 관련 경영상 특이사항 없어…주요 사업 순항\" - 머니투데이",
+        "이엠앤아이 \"주가 급락 관련 경영상 특이사항 없어\"",
+        "이엠앤아이 \"주가 급락 관련 경영상 특이사항 無…중수 사업·전고체 전해질 매출 지속\"",
+        "‘위기의 동전주’ 이엠앤아이, 5년만에 다시 M&A 매물로 - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 34.62,
+          "macd": -24.6642,
+          "macd_signal": -24.4086,
+          "macd_histogram": -0.2556,
+          "bb_upper": 1008.69,
+          "bb_middle": 885.6,
+          "bb_lower": 762.51,
+          "bb_position": "하단이탈",
+          "ma_5": 877.6,
+          "ma_20": 885.6,
+          "ma_60": 975.27,
+          "ma_trend": "역배열",
+          "volume_ratio": 14.46,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 14.5배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "210980",
+      "name": "SK디앤디",
+      "market": "KOSPI",
+      "industry": "부동산 임대 및 공급업",
+      "move_type": "plunge",
+      "close": 6300.0,
+      "change_pct": -19.75,
+      "relative_strength": -26.06,
+      "amount_eok": 57.80032185,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "BBB 회사채 한파에 PF 규제도 강화…SK디앤디 “유상증자로 재무구조 개선” - 조선비즈",
+        "[오늘의 IR] HDC현대산업개발ㆍSK디앤디ㆍ프로티나 등",
+        "SK디앤디, 자금 경색 우려에 주가 급락…최대주주 한앤코 득실은 |",
+        "SK디앤디 유상증자 추진, 재무구조 개선 나선다",
+        "SK디앤디 \"주주배정 유상증자 우선 검토…재무구조 개선 시도\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 8.3,
+          "macd": -762.3169,
+          "macd_signal": -339.2553,
+          "macd_histogram": -423.0617,
+          "bb_upper": 13553.35,
+          "bb_middle": 10918.5,
+          "bb_lower": 8283.65,
+          "bb_position": "하단이탈",
+          "ma_5": 9536.0,
+          "ma_20": 10918.5,
+          "ma_60": 11842.0,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.49,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 9.5배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
