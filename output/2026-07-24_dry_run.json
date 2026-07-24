@@ -1,0 +1,475 @@
+{
+  "trade_date": "2026-07-24",
+  "macro": {
+    "S&P 500": {
+      "close": 7408.3,
+      "change_pct": -1.21,
+      "date": "2026-07-23"
+    },
+    "NASDAQ": {
+      "close": 25137.69,
+      "change_pct": -2.15,
+      "date": "2026-07-23"
+    },
+    "다우존스": {
+      "close": 51711.65,
+      "change_pct": -0.97,
+      "date": "2026-07-23"
+    },
+    "필라델피아반도체": {
+      "close": 551.24,
+      "change_pct": -0.77,
+      "date": "2026-07-23"
+    },
+    "달러인덱스": {
+      "close": 101.43,
+      "change_pct": 0.29,
+      "date": "2026-07-23"
+    },
+    "WTI유": {
+      "close": 92.19,
+      "change_pct": 6.17,
+      "date": "2026-07-23"
+    },
+    "금": {
+      "close": 4046.6,
+      "change_pct": -2.42,
+      "date": "2026-07-23"
+    },
+    "구리": {
+      "close": 6.3,
+      "change_pct": -2.33,
+      "date": "2026-07-23"
+    },
+    "천연가스": {
+      "close": 2.92,
+      "change_pct": 0.0,
+      "date": "2026-07-23"
+    },
+    "VIX": {
+      "close": 18.7,
+      "change_pct": 12.38,
+      "date": "2026-07-23"
+    },
+    "미국채10Y": {
+      "close": 4.7,
+      "change_pct": 0.86,
+      "date": "2026-07-23"
+    },
+    "미국채2Y": {
+      "close": 4.03,
+      "change_pct": 0.0,
+      "date": "2026-07-23"
+    },
+    "기술": {
+      "close": 178.45,
+      "change_pct": -1.01,
+      "date": "2026-07-23"
+    },
+    "금융": {
+      "close": 55.83,
+      "change_pct": -0.39,
+      "date": "2026-07-23"
+    },
+    "에너지": {
+      "close": 59.38,
+      "change_pct": 0.3,
+      "date": "2026-07-23"
+    },
+    "헬스케어": {
+      "close": 161.44,
+      "change_pct": 1.26,
+      "date": "2026-07-23"
+    },
+    "산업재": {
+      "close": 181.94,
+      "change_pct": 1.73,
+      "date": "2026-07-23"
+    },
+    "커뮤니케이션": {
+      "close": 105.38,
+      "change_pct": -3.5,
+      "date": "2026-07-23"
+    },
+    "경기소비재": {
+      "close": 108.76,
+      "change_pct": -4.61,
+      "date": "2026-07-23"
+    },
+    "필수소비재": {
+      "close": 83.21,
+      "change_pct": -1.39,
+      "date": "2026-07-23"
+    },
+    "부동산": {
+      "close": 44.95,
+      "change_pct": -0.13,
+      "date": "2026-07-23"
+    },
+    "유틸리티": {
+      "close": 46.19,
+      "change_pct": 0.57,
+      "date": "2026-07-23"
+    },
+    "소재": {
+      "close": 50.29,
+      "change_pct": -1.04,
+      "date": "2026-07-23"
+    },
+    "엔비디아": {
+      "close": 208.76,
+      "change_pct": -1.56,
+      "date": "2026-07-23"
+    },
+    "애플": {
+      "close": 321.66,
+      "change_pct": -1.3,
+      "date": "2026-07-23"
+    },
+    "마이크로소프트": {
+      "close": 381.58,
+      "change_pct": -2.24,
+      "date": "2026-07-23"
+    },
+    "아마존": {
+      "close": 233.66,
+      "change_pct": -4.57,
+      "date": "2026-07-23"
+    },
+    "알파벳": {
+      "close": 318.34,
+      "change_pct": -6.89,
+      "date": "2026-07-23"
+    },
+    "메타": {
+      "close": 606.1,
+      "change_pct": -3.36,
+      "date": "2026-07-23"
+    },
+    "테슬라": {
+      "close": 319.69,
+      "change_pct": -14.52,
+      "date": "2026-07-23"
+    },
+    "러셀2000": {
+      "close": 292.09,
+      "change_pct": -0.58,
+      "date": "2026-07-23"
+    },
+    "나스닥100ETF": {
+      "close": 691.96,
+      "change_pct": -1.9,
+      "date": "2026-07-23"
+    },
+    "가치ETF": {
+      "close": 219.86,
+      "change_pct": 0.24,
+      "date": "2026-07-23"
+    },
+    "닛케이225": {
+      "close": 64611.15,
+      "change_pct": -2.73,
+      "date": "2026-07-24"
+    },
+    "항셍": {
+      "close": 25210.81,
+      "change_pct": 1.28,
+      "date": "2026-07-23"
+    },
+    "상해종합": {
+      "close": 3876.78,
+      "change_pct": 0.25,
+      "date": "2026-07-23"
+    },
+    "독일DAX": {
+      "close": 24763.12,
+      "change_pct": -1.56,
+      "date": "2026-07-23"
+    },
+    "유로스톡스50": {
+      "close": 6210.17,
+      "change_pct": -1.69,
+      "date": "2026-07-23"
+    },
+    "하이일드채권": {
+      "close": 79.23,
+      "change_pct": -0.36,
+      "date": "2026-07-23"
+    },
+    "미장기채20Y+": {
+      "close": 83.17,
+      "change_pct": -0.32,
+      "date": "2026-07-23"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.67,
+  "macro_narrative": "전일 미국 증시는 S&P500 -1.21%, 나스닥 -2.15%로 하락 마감. 필라델피아 반도체지수 -0.77%. VIX 18.7 (보통 구간). 장단기 금리차 0.670%p (정상 범위). 금 4,046.60달러 (-2.42%). 달러인덱스 101.43 (+0.29%). 섹터: 산업재(+1.73%) 주도, 경기소비재(-4.61%) 약세. QQQ-VTV 스프레드 -2.14%p → 가치주 우위. HYG -0.36% → 신용 스트레스 주의. Mag7 평균 -4.92% → 대형 기술주 약세. 아시아: 닛케이225 -2.73%, 항셍 +1.28%, 상해종합 +0.25%. 유럽: 독일DAX -1.56%, 유로스톡스50 -1.69%.",
+  "market_breadth": {
+    "total_up": 590,
+    "total_down": 1975,
+    "total_unchanged": 199,
+    "total": 2764,
+    "up_ratio": 21.3
+  },
+  "surges": [
+    {
+      "code": "131760",
+      "name": "파인텍",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 2340.0,
+      "change_pct": 30.0,
+      "relative_strength": 34.65,
+      "amount_eok": 36.54827804,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "파인텍, 195억 규모 OLED 제조장비 공급 계약 체결",
+        "파인텍, 삼성디스플레이 베트남에 OLED 제조장비 195억87만원 공급 계약",
+        "파인텍, 삼성D 베트남에 OLED 장비 공급",
+        "파인텍, 195억원 규모 OLED 장비 공급계약"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 58.41,
+          "macd": -216.3299,
+          "macd_signal": -344.4608,
+          "macd_histogram": 128.131,
+          "bb_upper": 2116.14,
+          "bb_middle": 1750.4,
+          "bb_lower": 1384.66,
+          "bb_position": "상단돌파",
+          "ma_5": 1797.2,
+          "ma_20": 1750.4,
+          "ma_60": 3180.43,
+          "ma_trend": "혼조",
+          "volume_ratio": 8.09,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 8.1배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 17.99,
+          "avg_return_5d": 30.88,
+          "positive_rate_1d": 75.0,
+          "positive_rate_5d": 50.0
+        }
+      }
+    },
+    {
+      "code": "226330",
+      "name": "신테카바이오",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 1835.0,
+      "change_pct": 29.96,
+      "relative_strength": 34.61,
+      "amount_eok": 19.74551071,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "신테카바이오, 김동건 이사장 사내이사 추천…AI 진단 플랫폼 사업 확대 추진",
+        "[급등락주 짚어보기] FDA·AI 호재에 듀켐바이오·신테카바이오 '上'…에스아이리소스 '下'",
+        "신테카바이오, AI 활용 항체 설계 기반 바이오베터 후보 연구 공개",
+        "신테카바이오, AI로 키트루다 재설계…고용해 항체 바이오베터 후보 확보",
+        "신테카바이오, 블록버스터 항체 AI로 재설계…바이오베터 개발 지름길 개척"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 56.11,
+          "macd": -97.8185,
+          "macd_signal": -132.7841,
+          "macd_histogram": 34.9655,
+          "bb_upper": 1811.03,
+          "bb_middle": 1557.55,
+          "bb_lower": 1304.07,
+          "bb_position": "상단돌파",
+          "ma_5": 1487.4,
+          "ma_20": 1557.55,
+          "ma_60": 2064.1,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.68,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "354200",
+      "name": "엔젠바이오",
+      "market": "KOSDAQ",
+      "industry": "그외 기타 전문, 과학 및 기술 서비스업",
+      "move_type": "surge",
+      "close": 2585.0,
+      "change_pct": 29.9,
+      "relative_strength": 34.55,
+      "amount_eok": 52.79860845,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "‘TG-C’ 소식에 코오롱 3사 下 직행…엔젠바이오는 上[바이오맥짚기]",
+        "엔젠바이오, AI 플랫폼 전환···반복 매출 확보 숙제",
+        "엔젠바이오, 잇단 호재 상한가…진단패널 공급 확대",
+        "엔젠바이오, 혈액암 진단 패널 매출 5년 연평균 36% 성장… 분당서울대병원으로 공급 확대"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 64.34,
+          "macd": -29.4988,
+          "macd_signal": -158.6167,
+          "macd_histogram": 129.1179,
+          "bb_upper": 2389.72,
+          "bb_middle": 1777.25,
+          "bb_lower": 1164.78,
+          "bb_position": "상단돌파",
+          "ma_5": 2034.8,
+          "ma_20": 1777.25,
+          "ma_60": 2327.37,
+          "ma_trend": "혼조",
+          "volume_ratio": 6.69,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 6.7배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 1.51,
+          "avg_return_5d": -9.63,
+          "positive_rate_1d": 25.0,
+          "positive_rate_5d": 0.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "950160",
+      "name": "코오롱티슈진",
+      "market": "KOSDAQ",
+      "industry": "기초 의약물질 제조업",
+      "move_type": "plunge",
+      "close": 14750.0,
+      "change_pct": -29.93,
+      "relative_strength": -25.28,
+      "amount_eok": 3730.53095215,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "코오롱티슈진, 24% 급락…TG-C 임상 3상 유의성 확보 불발 충격",
+        "[코오롱티슈진 TG-C 3상]③ 1221억 재배분…추가임상·지원 셈법",
+        "코오롱티슈진, TG-C '위약 반응' 즉시 대표이사 출격 해법 나올까",
+        "코오롱티슈진 임상 쇼크에 1200억 CB 투자자 '손실구간' 진입",
+        "코오롱티슈진, 'TG-C' 美3상 2차 4개지표도 \"미충족\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 17.05,
+          "macd": -18668.8966,
+          "macd_signal": -11703.3614,
+          "macd_histogram": -6965.5352,
+          "bb_upper": 123972.79,
+          "bb_middle": 73170.0,
+          "bb_lower": 22367.21,
+          "bb_position": "하단이탈",
+          "ma_5": 34040.0,
+          "ma_20": 73170.0,
+          "ma_60": 95658.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 14.88,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 14.9배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "065420",
+      "name": "에스아이리소스",
+      "market": "KOSDAQ",
+      "industry": "기타 화학제품 제조업",
+      "move_type": "plunge",
+      "close": 150.0,
+      "change_pct": -29.91,
+      "relative_strength": -25.26,
+      "amount_eok": 44.56808594,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "특징주, 에스아이리소스-자원개발 테마 상승세에 29.59% ↑",
+        "에스아이리소스, 투자주의 예고→주가 급등에 경보 등락",
+        "[서울데이터랩]코스닥 거래상위 종목 혼조세…에스아이리소스·동일스틸럭스 상한가",
+        "에스아이리소스 경영권 분쟁 소송 일단락…채권자 소 취하"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.19,
+          "macd": -8.8068,
+          "macd_signal": -10.279,
+          "macd_histogram": 1.4721,
+          "bb_upper": 218.09,
+          "bb_middle": 168.55,
+          "bb_lower": 119.01,
+          "bb_position": "중립",
+          "ma_5": 150.8,
+          "ma_20": 168.55,
+          "ma_60": 203.37,
+          "ma_trend": "역배열",
+          "volume_ratio": 8.76,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 8.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "0156T0",
+      "name": "에이치엘지노믹스",
+      "market": "KOSDAQ",
+      "industry": "기초 의약물질 제조업",
+      "move_type": "plunge",
+      "close": 15650.0,
+      "change_pct": -27.21,
+      "relative_strength": -22.56,
+      "amount_eok": 3628.92249095,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 상장날 급락장에 '날벼락'…에이치엘지노믹스 31%↓(종합)",
+        "[0724주요일정] 전문의약품 생산 업체 에이치엘지노믹스 신규 상장 예정 등",
+        "(특징주)에이치엘지노믹스, 상장 첫날 강세",
+        "[공모주 SWOT] 에이치엘지노믹스, 안정된 캐시플로 속 '대주주 의존도' 부각",
+        "[특징주] 에이치엘지노믹스, 코스닥 상장 첫날.. 6%대 '상승'"
+      ],
+      "outlook": {}
+    }
+  ]
+}
