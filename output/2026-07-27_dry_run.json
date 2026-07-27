@@ -1,0 +1,309 @@
+{
+  "trade_date": "2026-07-27",
+  "macro": {
+    "원/달러": {
+      "close": 1468.55,
+      "change_pct": -0.37,
+      "date": "2026-07-27"
+    },
+    "달러인덱스": {
+      "close": 101.43,
+      "change_pct": 0.29,
+      "date": "2026-07-23"
+    },
+    "WTI유": {
+      "close": 89.31,
+      "change_pct": -3.12,
+      "date": "2026-07-24"
+    },
+    "금": {
+      "close": 4067.6,
+      "change_pct": 0.52,
+      "date": "2026-07-24"
+    },
+    "구리": {
+      "close": 6.32,
+      "change_pct": 0.32,
+      "date": "2026-07-24"
+    },
+    "천연가스": {
+      "close": 2.87,
+      "change_pct": -1.71,
+      "date": "2026-07-24"
+    },
+    "미국채10Y": {
+      "close": 4.7,
+      "change_pct": 0.86,
+      "date": "2026-07-23"
+    },
+    "미국채2Y": {
+      "close": 4.05,
+      "change_pct": 0.5,
+      "date": "2026-07-24"
+    }
+  },
+  "market_regime": "판단불가",
+  "yield_spread": 0.65,
+  "macro_narrative": "장단기 금리차 0.650%p (정상 범위). 원/달러 1,468.55원 (-0.37%, 원화 강세). 금 4,067.60달러 (+0.52%). 달러인덱스 101.43 (+0.29%).",
+  "market_breadth": {
+    "total_up": 1504,
+    "total_down": 1000,
+    "total_unchanged": 261,
+    "total": 2765,
+    "up_ratio": 54.4
+  },
+  "surges": [
+    {
+      "code": "052460",
+      "name": "아이크래프트",
+      "market": "KOSDAQ",
+      "industry": "컴퓨터 프로그래밍, 시스템 통합 및 관리업",
+      "move_type": "surge",
+      "close": 4420.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.78,
+      "amount_eok": 136.9927949,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "아이크래프트, 네이버에 엔비디아 GPU 공급 부각..20%대 급등",
+        "[이격도과열 종목] 썸에이지 아이크래프트 케이엔알시스템 아이씨에이치\t씨피시스템 '불기둥'",
+        "[서울데이터랩]코스닥 거래상위 종목 혼조세…아이크래프트 상한가·위닉스 20%대 급등",
+        "특징주, 아이크래프트-SI기업 테마 상승세에 12.71% ↑",
+        "아이크래프트 주가, 상한가... 어떤 회사길래?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 78.57,
+          "macd": 170.9524,
+          "macd_signal": 80.3792,
+          "macd_histogram": 90.5732,
+          "bb_upper": 3879.75,
+          "bb_middle": 3173.0,
+          "bb_lower": 2466.25,
+          "bb_position": "상단돌파",
+          "ma_5": 3448.0,
+          "ma_20": 3173.0,
+          "ma_60": 3172.5,
+          "ma_trend": "정배열",
+          "volume_ratio": 7.2,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 7.2배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "199430",
+      "name": "케이엔알시스템",
+      "market": "KOSDAQ",
+      "industry": "측정, 시험, 항해, 제어 및 기타 정밀기기 제조업; 광학기기 제외",
+      "move_type": "surge",
+      "close": 14270.0,
+      "change_pct": 29.96,
+      "relative_strength": 27.74,
+      "amount_eok": 33.6502303,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "케이엔알시스템, 악력 300kg ‘슈퍼휴머노이드 로봇손’ 개발 성공",
+        "[더벨]케이엔알시스템, 슈퍼휴머노이드 로봇손 개발 성공 - 머니투데이",
+        "케이엔알시스템, 악력 300kg 슈퍼휴머노이드 로봇손 개발…글로벌 빅테크 기업 공략",
+        "케이엔알시스템, 글로벌 빅테크향 '악력 최대 300kg' 슈퍼 휴머노이드 손 개발 완료",
+        "'상한가' 찍은 슈퍼휴머노이드의 힘 … 케이엔알시스템, 300㎏ 악력 ‘로봇손’ 개발"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 59.38,
+          "macd": -801.9915,
+          "macd_signal": -1424.3472,
+          "macd_histogram": 622.3557,
+          "bb_upper": 13463.72,
+          "bb_middle": 10871.5,
+          "bb_lower": 8279.28,
+          "bb_position": "상단돌파",
+          "ma_5": 11304.0,
+          "ma_20": 10871.5,
+          "ma_60": 16157.67,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.12,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 4.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "368600",
+      "name": "아이씨에이치",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 1033.0,
+      "change_pct": 29.94,
+      "relative_strength": 27.72,
+      "amount_eok": 20.82250123,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] “삼성전자 폴더블폰에 소재 공급 중” 소식에…아이씨에이치, 上 - 조선비즈",
+        "[이격도과열 종목] 썸에이지 아이크래프트 케이엔알시스템 아이씨에이치\t씨피시스템 '불기둥'",
+        "아이씨에이치, 테슬라 '옵티머스' 로봇용 소재 퀄 테스트 완료…양산 공급 확정",
+        "아이씨에이치 주가, 상한가... 왜?",
+        "[더벨]아이씨에이치, 삼성 신제품에 핵심 소재 공급 - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 81.81,
+          "macd": 22.9957,
+          "macd_signal": -22.2134,
+          "macd_histogram": 45.2091,
+          "bb_upper": 836.61,
+          "bb_middle": 628.35,
+          "bb_lower": 420.09,
+          "bb_position": "상단돌파",
+          "ma_5": 729.8,
+          "ma_20": 628.35,
+          "ma_60": 773.62,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.22,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 4.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 9.23,
+          "avg_return_5d": -12.71,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 33.3
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "465770",
+      "name": "STX그린로지스",
+      "market": "KOSPI",
+      "industry": "해상 운송업",
+      "move_type": "plunge",
+      "close": 3055.0,
+      "change_pct": -29.93,
+      "relative_strength": -30.9,
+      "amount_eok": 55.98681828,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "호르무즈 재봉쇄에 해운주 강세…STX그린로지스 상한가 - 머니투데이",
+        "STX그린로지스 투자분석 2026. 07. 25",
+        "STX그린로지스, 96억 장기대선계약…안정 매출 확보",
+        "STX그린로지스, 보통주 47,348주 추가상장→주식 유동성 확대 기대",
+        "STX그린로지스 주가 장중 17%대 상승, 중동 해협 봉쇄에 해운주 강세"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 49.05,
+          "macd": 394.6343,
+          "macd_signal": 231.9414,
+          "macd_histogram": 162.6929,
+          "bb_upper": 4946.46,
+          "bb_middle": 2891.1,
+          "bb_lower": 835.74,
+          "bb_position": "중립",
+          "ma_5": 4182.0,
+          "ma_20": 2891.1,
+          "ma_60": 3091.27,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.66,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "336260",
+      "name": "두산퓨얼셀",
+      "market": "KOSPI",
+      "industry": "전동기, 발전기 및 전기 변환 · 공급 · 제어 장치 제조업",
+      "move_type": "plunge",
+      "close": 30000.0,
+      "change_pct": -29.91,
+      "relative_strength": -30.88,
+      "amount_eok": 504.647906,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "메리츠證 \"두산퓨얼셀, 하반기 수주·매출 인식 집중…경쟁사 리스크도 기회\"",
+        "[속보] 두산퓨얼셀 VI 두 차례 발동, 주가 20%대 급락",
+        "두산퓨얼셀, 2분기 어닝 쇼크∙∙∙납품 지연·품질 비용에 발목",
+        "[헬로스톡] 7/27 주목할 종목 : 삼성중공업·현대위아·두산퓨얼셀·현대로템",
+        "해외 수주 지연 두산퓨얼셀 목표價↓…실적 바닥론"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 29.8,
+          "macd": -7053.9082,
+          "macd_signal": -6894.0279,
+          "macd_histogram": -159.8803,
+          "bb_upper": 61027.33,
+          "bb_middle": 46492.5,
+          "bb_lower": 31957.67,
+          "bb_position": "하단이탈",
+          "ma_5": 39440.0,
+          "ma_20": 46492.5,
+          "ma_60": 67099.17,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.02,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 과매도 구간 / RSI 상승다이버전스 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 3.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "0218L0",
+      "name": "네오뷰",
+      "market": "KOSDAQ",
+      "industry": "영상 및 음향기기 제조업",
+      "move_type": "plunge",
+      "close": 17950.0,
+      "change_pct": -29.88,
+      "relative_strength": -32.1,
+      "amount_eok": 1116.8456992,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "네오뷰, 분할 재상장 첫날 26%대 급락 출발 - 머니투데이",
+        "[특징주] 네오뷰, 코스닥 분할 재상장 첫날 급락… 시초가比 27%↓ - 조선비즈",
+        "네오뷰, 분할 후 재상장 첫날 장 초반 27% 급락",
+        "[주간IPO] 네오뷰, 코스닥 상장",
+        "토비스서 분할된 네오뷰 재상장 첫날 장중 주가 기준가보다 9%대 내려"
+      ],
+      "outlook": {}
+    }
+  ]
+}
