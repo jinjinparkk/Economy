@@ -1,0 +1,329 @@
+{
+  "trade_date": "2026-07-29",
+  "macro": {
+    "달러인덱스": {
+      "close": 101.51,
+      "change_pct": 0.08,
+      "date": "2026-07-27"
+    },
+    "WTI유": {
+      "close": 79.26,
+      "change_pct": -4.06,
+      "date": "2026-07-28"
+    },
+    "금": {
+      "close": 4036.3,
+      "change_pct": -0.94,
+      "date": "2026-07-28"
+    },
+    "구리": {
+      "close": 6.32,
+      "change_pct": -0.32,
+      "date": "2026-07-28"
+    },
+    "천연가스": {
+      "close": 2.66,
+      "change_pct": -3.97,
+      "date": "2026-07-28"
+    },
+    "미국채10Y": {
+      "close": 4.64,
+      "change_pct": -1.28,
+      "date": "2026-07-27"
+    },
+    "미국채2Y": {
+      "close": 4.09,
+      "change_pct": 0.74,
+      "date": "2026-07-28"
+    }
+  },
+  "market_regime": "판단불가",
+  "yield_spread": 0.55,
+  "macro_narrative": "장단기 금리차 0.550%p (정상 범위). 금 4,036.30달러 (-0.94%). 달러인덱스 101.51 (+0.08%).",
+  "market_breadth": {
+    "total_up": 232,
+    "total_down": 2359,
+    "total_unchanged": 173,
+    "total": 2764,
+    "up_ratio": 8.4
+  },
+  "surges": [
+    {
+      "code": "0039P0",
+      "name": "매드업",
+      "market": "KOSDAQ",
+      "industry": "광고업",
+      "move_type": "surge",
+      "close": 5920.0,
+      "change_pct": 29.82,
+      "relative_strength": 35.94,
+      "amount_eok": 342.14491625,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[공시 Pick] 매드업, 예상치 뛰어넘는 실적발표에 '상한가'",
+        "매드업(0039P0)저점을 줄때마다 물량 모아둘 기회로 보이며 이후 전망 및 대응전략.",
+        "[특징주] 하반기 신규상장株 강세…매드업 '상한가'",
+        "[특징주] 매드업, 상반기 호실적에 상한가",
+        "매드업, 2026년 2분기 당기순이익 42억3900만원…전년동기대비 505.2% 급증"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 18.18,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": 9318.59,
+          "bb_middle": 6537.75,
+          "bb_lower": 3756.91,
+          "bb_position": "중립",
+          "ma_5": 5209.0,
+          "ma_20": 6537.75,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": 0.62,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "900300",
+      "name": "오가닉티코스메틱",
+      "market": "KOSDAQ",
+      "industry": "기타 금융업",
+      "move_type": "surge",
+      "close": 2025.0,
+      "change_pct": 29.72,
+      "relative_strength": 35.84,
+      "amount_eok": 15.86824739,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 뷰티 열풍에 화장품株 강세…오가닉티코스메틱 '상한가'",
+        "중국 내수 시장 영토 넓히는 오가닉티코스메틱… 실적 개선 모멘텀",
+        "오가닉티코스메틱 주가, 상한가... 왜?",
+        "오가닉티코스메틱, 임시주주총회 9월 4일 개최 결의…안건은 미확정",
+        "\"동전주 상폐 검토\"에 주식병합한 오가닉티코스메틱…주가는 롤러코스터"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 39.47,
+          "macd": -501.0824,
+          "macd_signal": -601.3334,
+          "macd_histogram": 100.251,
+          "bb_upper": 2475.0,
+          "bb_middle": 1997.4,
+          "bb_lower": 1519.8,
+          "bb_position": "중립",
+          "ma_5": 1778.4,
+          "ma_20": 1997.4,
+          "ma_60": 4058.38,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.42,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.4배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 10,
+          "avg_return_1d": -4.11,
+          "avg_return_5d": -6.21,
+          "positive_rate_1d": 33.3,
+          "positive_rate_5d": 44.4
+        }
+      }
+    },
+    {
+      "code": "484810",
+      "name": "티엑스알로보틱스",
+      "market": "KOSDAQ",
+      "industry": "일반 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 13870.0,
+      "change_pct": 24.62,
+      "relative_strength": 30.74,
+      "amount_eok": 321.00333275,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 로봇주株 강세…티엑스알로보틱스 '상한가'",
+        "[1% 초고수의 선택] '티엑스알로보틱스' 사고 '달바글로벌' 팔았다",
+        "글로벌 제조·물류 혁신 바람… 티엑스알로보틱스, 자율주행 로봇 날개",
+        "[STOCK톺] 美, 중국산 로봇 규제…엔젤로보틱스·티엑스알로보틱스 '上'",
+        "[특징주] 로봇주 '동반 급등'…美 \"中 휴머노이드 로봇 수입 금지\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 59.78,
+          "macd": 248.34,
+          "macd_signal": -409.3571,
+          "macd_histogram": 657.697,
+          "bb_upper": 13839.97,
+          "bb_middle": 10151.0,
+          "bb_lower": 6462.03,
+          "bb_position": "상단돌파",
+          "ma_5": 12672.0,
+          "ma_20": 10151.0,
+          "ma_60": 13103.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 6.85,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 6.8배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "급등(10%+)",
+          "sample_count": 16,
+          "avg_return_1d": -0.42,
+          "avg_return_5d": -1.65,
+          "positive_rate_1d": 33.3,
+          "positive_rate_5d": 42.9
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "011080",
+      "name": "형지I&C",
+      "market": "KOSDAQ",
+      "industry": "봉제의복 제조업",
+      "move_type": "plunge",
+      "close": 1005.0,
+      "change_pct": -29.97,
+      "relative_strength": -23.85,
+      "amount_eok": 12.4747006,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "형지I&C 예작, 중국 진출 본격화…상하이 코리아타운서 팝업 연다",
+        "형지I&C 예작, 중추절 겨냥 상하이 홍취안루 팝업…중국 진출 본격화",
+        "형지I&C 예작, 상하이서 팝업 연다…“中 진출 신호탄”",
+        "형지I&C '예작', 상하이 홍취안루서 중국 진출 첫발",
+        "[오늘의 특징주] \"유상증자·실적 부담 여파\"… SK디앤디·형지I&C 하한가 직행"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 31.04,
+          "macd": -267.3946,
+          "macd_signal": -197.4658,
+          "macd_histogram": -69.9289,
+          "bb_upper": 2767.81,
+          "bb_middle": 2049.15,
+          "bb_lower": 1330.49,
+          "bb_position": "하단이탈",
+          "ma_5": 1723.0,
+          "ma_20": 2049.15,
+          "ma_60": 2632.02,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.2,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 4.2배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "210980",
+      "name": "SK디앤디",
+      "market": "KOSPI",
+      "industry": "부동산 임대 및 공급업",
+      "move_type": "plunge",
+      "close": 3880.0,
+      "change_pct": -29.96,
+      "relative_strength": -23.98,
+      "amount_eok": 26.35722556,
+      "hints": [
+        "하한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "SK디앤디, 1367억 규모 유상증자…재무구조 개선 초점",
+        "[시간외Y] 로킷헬스케어, SK디앤디 '하한가'",
+        "SK디앤디, 재무구조 개선 위해 4468만1000주 신주 발행",
+        "(특징주)SK디앤디, 1400억 유상증자 결정에 52주 신저가",
+        "SK디앤디, 1367억원 유증…‘트리아츠’ 불끄기"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 10.52,
+          "macd": -1763.9897,
+          "macd_signal": -1446.3381,
+          "macd_histogram": -317.6516,
+          "bb_upper": 13928.38,
+          "bb_middle": 8223.0,
+          "bb_lower": 2517.62,
+          "bb_position": "중립",
+          "ma_5": 5276.0,
+          "ma_20": 8223.0,
+          "ma_60": 10713.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.66,
+          "obv_trend": "하락",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 극과매도(반등 가능성) / RSI 상승다이버전스 / MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.7배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "092600",
+      "name": "앤씨앤",
+      "market": "KOSDAQ",
+      "industry": "반도체 제조업",
+      "move_type": "plunge",
+      "close": 1915.0,
+      "change_pct": -29.85,
+      "relative_strength": -23.73,
+      "amount_eok": 11.64065066,
+      "hints": [
+        "하한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "앤씨앤, 2분기 흑자전환...적자 회사도 떼어냈다",
+        "\"본업 중심 사업구조 명확해져\" 앤씨앤, 2분기 흑자 달성",
+        "[공시 Pick] 앤씨앤, 2분기 흑자 전환에 주가 강세",
+        "[잠정실적]앤씨앤, 3년 중 최고 영업이익 기록, 매출액은 전년동기 대비 -27%↓ (연결)",
+        "앤씨앤, 2Q 연결 영업이익 6억...흑자전환"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 40.05,
+          "macd": -149.3388,
+          "macd_signal": -185.1105,
+          "macd_histogram": 35.7718,
+          "bb_upper": 2678.4,
+          "bb_middle": 2328.25,
+          "bb_lower": 1978.1,
+          "bb_position": "하단이탈",
+          "ma_5": 2348.0,
+          "ma_20": 2328.25,
+          "ma_60": 3170.92,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.11,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 5.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
