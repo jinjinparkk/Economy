@@ -1,0 +1,494 @@
+{
+  "trade_date": "2026-07-31",
+  "macro": {
+    "S&P 500": {
+      "close": 7437.63,
+      "change_pct": 1.66,
+      "date": "2026-07-30"
+    },
+    "NASDAQ": {
+      "close": 25122.18,
+      "change_pct": 2.78,
+      "date": "2026-07-30"
+    },
+    "다우존스": {
+      "close": 52208.06,
+      "change_pct": 1.19,
+      "date": "2026-07-30"
+    },
+    "필라델피아반도체": {
+      "close": 504.53,
+      "change_pct": 8.5,
+      "date": "2026-07-30"
+    },
+    "달러인덱스": {
+      "close": 100.01,
+      "change_pct": -0.78,
+      "date": "2026-07-30"
+    },
+    "WTI유": {
+      "close": 83.59,
+      "change_pct": -1.03,
+      "date": "2026-07-30"
+    },
+    "금": {
+      "close": 4100.1,
+      "change_pct": 1.62,
+      "date": "2026-07-30"
+    },
+    "구리": {
+      "close": 6.44,
+      "change_pct": 2.71,
+      "date": "2026-07-30"
+    },
+    "천연가스": {
+      "close": 2.76,
+      "change_pct": 1.47,
+      "date": "2026-07-30"
+    },
+    "VIX": {
+      "close": 17.09,
+      "change_pct": -17.28,
+      "date": "2026-07-30"
+    },
+    "미국채10Y": {
+      "close": 4.66,
+      "change_pct": 0.87,
+      "date": "2026-07-30"
+    },
+    "미국채2Y": {
+      "close": 4.13,
+      "change_pct": 0.98,
+      "date": "2026-07-30"
+    },
+    "기술": {
+      "close": 175.73,
+      "change_pct": 5.5,
+      "date": "2026-07-30"
+    },
+    "금융": {
+      "close": 57.0,
+      "change_pct": 0.56,
+      "date": "2026-07-30"
+    },
+    "에너지": {
+      "close": 58.96,
+      "change_pct": 0.53,
+      "date": "2026-07-30"
+    },
+    "헬스케어": {
+      "close": 163.52,
+      "change_pct": -1.64,
+      "date": "2026-07-30"
+    },
+    "산업재": {
+      "close": 178.39,
+      "change_pct": 0.98,
+      "date": "2026-07-30"
+    },
+    "커뮤니케이션": {
+      "close": 106.58,
+      "change_pct": -2.68,
+      "date": "2026-07-30"
+    },
+    "경기소비재": {
+      "close": 112.39,
+      "change_pct": 0.7,
+      "date": "2026-07-30"
+    },
+    "필수소비재": {
+      "close": 85.47,
+      "change_pct": -2.16,
+      "date": "2026-07-30"
+    },
+    "부동산": {
+      "close": 45.3,
+      "change_pct": -1.44,
+      "date": "2026-07-30"
+    },
+    "유틸리티": {
+      "close": 44.66,
+      "change_pct": -0.56,
+      "date": "2026-07-30"
+    },
+    "소재": {
+      "close": 51.64,
+      "change_pct": -0.19,
+      "date": "2026-07-30"
+    },
+    "엔비디아": {
+      "close": 195.04,
+      "change_pct": 2.65,
+      "date": "2026-07-30"
+    },
+    "애플": {
+      "close": 333.43,
+      "change_pct": -1.41,
+      "date": "2026-07-30"
+    },
+    "마이크로소프트": {
+      "close": 451.1,
+      "change_pct": 15.51,
+      "date": "2026-07-30"
+    },
+    "아마존": {
+      "close": 235.5,
+      "change_pct": 3.9,
+      "date": "2026-07-30"
+    },
+    "알파벳": {
+      "close": 333.68,
+      "change_pct": -0.62,
+      "date": "2026-07-30"
+    },
+    "메타": {
+      "close": 539.03,
+      "change_pct": -7.95,
+      "date": "2026-07-30"
+    },
+    "테슬라": {
+      "close": 308.85,
+      "change_pct": 3.53,
+      "date": "2026-07-30"
+    },
+    "러셀2000": {
+      "close": 292.59,
+      "change_pct": 1.39,
+      "date": "2026-07-30"
+    },
+    "나스닥100ETF": {
+      "close": 683.55,
+      "change_pct": 3.3,
+      "date": "2026-07-30"
+    },
+    "가치ETF": {
+      "close": 220.54,
+      "change_pct": 0.34,
+      "date": "2026-07-30"
+    },
+    "닛케이225": {
+      "close": 64362.02,
+      "change_pct": 4.03,
+      "date": "2026-07-31"
+    },
+    "항셍": {
+      "close": 25858.88,
+      "change_pct": 0.2,
+      "date": "2026-07-30"
+    },
+    "상해종합": {
+      "close": 3804.69,
+      "change_pct": -0.62,
+      "date": "2026-07-30"
+    },
+    "독일DAX": {
+      "close": 25612.03,
+      "change_pct": 0.6,
+      "date": "2026-07-30"
+    },
+    "유로스톡스50": {
+      "close": 6344.4,
+      "change_pct": 1.53,
+      "date": "2026-07-30"
+    },
+    "하이일드채권": {
+      "close": 79.47,
+      "change_pct": 0.29,
+      "date": "2026-07-30"
+    },
+    "미장기채20Y+": {
+      "close": 82.8,
+      "change_pct": -0.06,
+      "date": "2026-07-30"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.53,
+  "macro_narrative": "전일 미국 증시는 S&P500 +1.66%, 나스닥 +2.78%로 상승 마감. 필라델피아 반도체지수 +8.50%. VIX 17.1 (보통 구간). 장단기 금리차 0.530%p (정상 범위). 금 4,100.10달러 (+1.62%). 달러인덱스 100.01 (-0.78%). 섹터: 기술(+5.50%) 주도, 커뮤니케이션(-2.68%) 약세. QQQ-VTV 스프레드 +2.96%p → 성장주 우위. HYG +0.29% → 신용 스트레스 안정. Mag7 평균 +2.23% → 대형 기술주 강세. 아시아: 닛케이225 +4.03%, 항셍 +0.20%, 상해종합 -0.62%. 유럽: 독일DAX +0.60%, 유로스톡스50 +1.53%.",
+  "market_breadth": {
+    "total_up": 2332,
+    "total_down": 268,
+    "total_unchanged": 163,
+    "total": 2763,
+    "up_ratio": 84.4
+  },
+  "surges": [
+    {
+      "code": "000150",
+      "name": "두산",
+      "market": "KOSPI",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 1170000.0,
+      "change_pct": 30.0,
+      "relative_strength": 12.09,
+      "amount_eok": 1529.72994,
+      "hints": [
+        "상한가",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[속보] SK그룹, SK실트론 두산에 매각…2조3000억원 규모",
+        "'썸머퀸' 권은비, 두산-LG 잠실 라이벌전 시구 \"두플래쉬 시리즈 시구 맡아 기쁘다\"",
+        "[핌in잠실] '양의지 목 담 증세 결장' 두산, 안재석 데뷔 첫 4번 카드 승부수",
+        "손아섭 2군행! 두산, LG전 라인업 떴다 → 안재석 데뷔 첫 4번타자 [잠실 현장]",
+        "'이럴수가' 두산 양의지 LG 상대로 출전 어렵다, 손아섭 1군 엔트리 말소... 안재석 데뷔 첫 4번 출장! 사령탑 \"최근 흐름 좋다\" [잠실 현장] - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.89,
+          "macd": -116333.545,
+          "macd_signal": -110083.6778,
+          "macd_histogram": -6249.8672,
+          "bb_upper": 1467520.57,
+          "bb_middle": 1209900.0,
+          "bb_lower": 952279.43,
+          "bb_position": "중립",
+          "ma_5": 1062400.0,
+          "ma_20": 1209900.0,
+          "ma_60": 1511483.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 1.53,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "009155",
+      "name": "삼성전기우",
+      "market": "KOSPI",
+      "industry": "",
+      "move_type": "surge",
+      "close": 416000.0,
+      "change_pct": 30.0,
+      "relative_strength": 12.09,
+      "amount_eok": 321.0472675,
+      "hints": [
+        "상한가",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "삼성전기우 주가, 7월 31일 장중 상한가 416,000원 기록, 414,000원 29.38% 상승",
+        "삼성전기우 투자분석 2026. 07. 30",
+        "[장중수급포착] 삼성전기우, 외국인 11일 연속 순매수행진... 주가 +8.79%",
+        "삼성전기우 주가, 급등세... 이유는?",
+        "[특징주] 삼성전기, 'AI붐' MLCC·기판값 상승 기대감…장초반 역대최고가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 41.58,
+          "macd": -64336.2395,
+          "macd_signal": -51436.7156,
+          "macd_histogram": -12899.5239,
+          "bb_upper": 667101.89,
+          "bb_middle": 489400.0,
+          "bb_lower": 311698.11,
+          "bb_position": "중립",
+          "ma_5": 388700.0,
+          "ma_20": 489400.0,
+          "ma_60": 557058.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 1.33,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "095610",
+      "name": "테스",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 130000.0,
+      "change_pct": 30.0,
+      "relative_strength": 18.37,
+      "amount_eok": 504.5780815,
+      "hints": [
+        "상한가",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "SK에코플랜트 자회사 'SK테스', IT 자산 생애주기 관리 서비스 도입",
+        "혹한기 뚫은 테스투자·허니팟, 205억 펀드 결성…'6개 섹터' 집중 투자",
+        "테스 주가 장중 상한가, 반도체 투자심리 회복에 코스닥 소부장주 강세",
+        "테스 주가, 7월 31일 130,000원 30.00% 상한가 마감",
+        "오후 이슈 [반도체] : 테스, 삼양엔씨켐, 엠케이전자, SK하이닉스, 태성"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 43.89,
+          "macd": -11465.6429,
+          "macd_signal": -3687.3379,
+          "macd_histogram": -7778.305,
+          "bb_upper": 218422.53,
+          "bb_middle": 157250.0,
+          "bb_lower": 96077.47,
+          "bb_position": "중립",
+          "ma_5": 121700.0,
+          "ma_20": 157250.0,
+          "ma_60": 147930.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.62,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "069620",
+      "name": "대웅제약",
+      "market": "KOSPI",
+      "industry": "의약품 제조업",
+      "move_type": "plunge",
+      "close": 113800.0,
+      "change_pct": -9.25,
+      "relative_strength": -27.16,
+      "amount_eok": 179.1071285,
+      "hints": [
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "대웅제약 나보타, 쿠웨이트 진출… 중동 7개국 시장 확대",
+        "[리포트 브리핑]대웅제약, '나보타 조기 선적이 앞당긴 이익' 목표가 200,000원 - 미래에셋증권",
+        "[주식] 셀비온 19% 급등…대웅제약·네이처셀 약세",
+        "[초점] 대웅제약, 나보타 업고 성장동력 확보 '속도'",
+        "나보타, 쿠웨이트 진출로 중동 7개국 출시 달성"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 39.87,
+          "macd": -951.7012,
+          "macd_signal": -398.0577,
+          "macd_histogram": -553.6435,
+          "bb_upper": 138131.02,
+          "bb_middle": 126060.0,
+          "bb_lower": 113988.98,
+          "bb_position": "하단이탈",
+          "ma_5": 123100.0,
+          "ma_20": 126060.0,
+          "ma_60": 126695.0,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.01,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 3.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "001210",
+      "name": "금호전기",
+      "market": "KOSPI",
+      "industry": "전구 및 조명장치 제조업",
+      "move_type": "plunge",
+      "close": 4115.0,
+      "change_pct": -7.94,
+      "relative_strength": -25.85,
+      "amount_eok": 257.77049244,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "금호전기, 제13회 전환사채 전환가액 4685원에서 5986원으로 상향 조정",
+        "2년 표류한 금호전기 110억 CB…최대주주측 전액 인수",
+        "[특징주] '액면병합' 금호전기, 31일 거래 재재…기준가 4,470원",
+        "금호전기 등 저(低)주가 상장사들, '퇴출 위기' 탈출 위해 '몸부림'",
+        "[특징주] '호남 반도체 클러스터' 기대감…금호전기 등 관련주 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.22,
+          "macd": 42.8428,
+          "macd_signal": 170.7234,
+          "macd_histogram": -127.8806,
+          "bb_upper": 6394.46,
+          "bb_middle": 4805.25,
+          "bb_lower": 3216.04,
+          "bb_position": "중립",
+          "ma_5": 4399.0,
+          "ma_20": 4805.25,
+          "ma_60": 3933.83,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.18,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "급락(5%+)",
+          "sample_count": 8,
+          "avg_return_1d": 0.61,
+          "avg_return_5d": 13.61,
+          "positive_rate_1d": 37.5,
+          "positive_rate_5d": 50.0
+        }
+      }
+    },
+    {
+      "code": "228340",
+      "name": "동양파일",
+      "market": "KOSDAQ",
+      "industry": "시멘트, 석회, 플라스터 및 그 제품 제조업",
+      "move_type": "plunge",
+      "close": 2450.0,
+      "change_pct": -7.72,
+      "relative_strength": -19.35,
+      "amount_eok": 31.31842207,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "오후 이슈 [서남권 반도체] : 금호전기, 서산, 다스코, 동양파일, 대한제당",
+        "호남 클러스터 800조 청사진에 'PHC 말뚝'까지 들썩∙∙∙동양파일 또 상한가",
+        "동양파일 투자분석 2026. 07. 25",
+        "[MK 골든크로스 돌파종목 : 동양파일(228340) & 비비안(002070)]",
+        "동양파일 480억 묶인 사이…한림건설 김상수 골프장 확장에 주주 '부글'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.29,
+          "macd": -120.6317,
+          "macd_signal": 0.3932,
+          "macd_histogram": -121.0249,
+          "bb_upper": 4151.02,
+          "bb_middle": 3053.75,
+          "bb_lower": 1956.48,
+          "bb_position": "중립",
+          "ma_5": 2502.0,
+          "ma_20": 3053.75,
+          "ma_60": 2507.4,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.59,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "급락(5%+)",
+          "sample_count": 6,
+          "avg_return_1d": -1.62,
+          "avg_return_5d": -2.03,
+          "positive_rate_1d": 33.3,
+          "positive_rate_5d": 40.0
+        }
+      }
+    }
+  ]
+}
