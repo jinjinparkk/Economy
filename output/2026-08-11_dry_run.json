@@ -1,0 +1,498 @@
+{
+  "trade_date": "2026-08-11",
+  "macro": {
+    "S&P 500": {
+      "close": 7753.11,
+      "change_pct": -0.06,
+      "date": "2026-08-10"
+    },
+    "NASDAQ": {
+      "close": 26605.36,
+      "change_pct": -0.32,
+      "date": "2026-08-10"
+    },
+    "다우존스": {
+      "close": 53975.98,
+      "change_pct": -0.11,
+      "date": "2026-08-10"
+    },
+    "필라델피아반도체": {
+      "close": 529.39,
+      "change_pct": -2.55,
+      "date": "2026-08-10"
+    },
+    "달러인덱스": {
+      "close": 99.81,
+      "change_pct": 0.21,
+      "date": "2026-08-10"
+    },
+    "WTI유": {
+      "close": 82.13,
+      "change_pct": 5.05,
+      "date": "2026-08-10"
+    },
+    "금": {
+      "close": 4361.8,
+      "change_pct": 0.49,
+      "date": "2026-08-10"
+    },
+    "구리": {
+      "close": 6.59,
+      "change_pct": 0.3,
+      "date": "2026-08-10"
+    },
+    "천연가스": {
+      "close": 2.79,
+      "change_pct": 4.89,
+      "date": "2026-08-10"
+    },
+    "VIX": {
+      "close": 15.46,
+      "change_pct": 3.76,
+      "date": "2026-08-10"
+    },
+    "미국채10Y": {
+      "close": 4.7,
+      "change_pct": 0.86,
+      "date": "2026-08-10"
+    },
+    "미국채2Y": {
+      "close": 4.17,
+      "change_pct": 0.0,
+      "date": "2026-08-10"
+    },
+    "기술": {
+      "close": 186.32,
+      "change_pct": -0.88,
+      "date": "2026-08-10"
+    },
+    "금융": {
+      "close": 57.81,
+      "change_pct": 0.36,
+      "date": "2026-08-10"
+    },
+    "에너지": {
+      "close": 60.18,
+      "change_pct": 4.66,
+      "date": "2026-08-10"
+    },
+    "헬스케어": {
+      "close": 168.44,
+      "change_pct": 1.67,
+      "date": "2026-08-10"
+    },
+    "산업재": {
+      "close": 184.6,
+      "change_pct": -0.31,
+      "date": "2026-08-10"
+    },
+    "커뮤니케이션": {
+      "close": 111.83,
+      "change_pct": 0.52,
+      "date": "2026-08-10"
+    },
+    "경기소비재": {
+      "close": 119.67,
+      "change_pct": -0.16,
+      "date": "2026-08-10"
+    },
+    "필수소비재": {
+      "close": 84.95,
+      "change_pct": -0.2,
+      "date": "2026-08-10"
+    },
+    "부동산": {
+      "close": 44.4,
+      "change_pct": -1.29,
+      "date": "2026-08-10"
+    },
+    "유틸리티": {
+      "close": 43.13,
+      "change_pct": -1.1,
+      "date": "2026-08-10"
+    },
+    "소재": {
+      "close": 53.18,
+      "change_pct": 0.61,
+      "date": "2026-08-10"
+    },
+    "엔비디아": {
+      "close": 217.55,
+      "change_pct": -2.86,
+      "date": "2026-08-10"
+    },
+    "애플": {
+      "close": 308.26,
+      "change_pct": -1.62,
+      "date": "2026-08-10"
+    },
+    "마이크로소프트": {
+      "close": 506.06,
+      "change_pct": 1.21,
+      "date": "2026-08-10"
+    },
+    "아마존": {
+      "close": 278.09,
+      "change_pct": 1.32,
+      "date": "2026-08-10"
+    },
+    "알파벳": {
+      "close": 355.84,
+      "change_pct": 0.67,
+      "date": "2026-08-10"
+    },
+    "메타": {
+      "close": 594.92,
+      "change_pct": 0.48,
+      "date": "2026-08-10"
+    },
+    "테슬라": {
+      "close": 330.88,
+      "change_pct": 0.7,
+      "date": "2026-08-10"
+    },
+    "러셀2000": {
+      "close": 299.98,
+      "change_pct": -0.52,
+      "date": "2026-08-10"
+    },
+    "나스닥100ETF": {
+      "close": 720.87,
+      "change_pct": -0.3,
+      "date": "2026-08-10"
+    },
+    "가치ETF": {
+      "close": 225.02,
+      "change_pct": 0.32,
+      "date": "2026-08-10"
+    },
+    "닛케이225": {
+      "close": 66970.22,
+      "change_pct": 2.08,
+      "date": "2026-08-10"
+    },
+    "항셍": {
+      "close": 25937.49,
+      "change_pct": 1.05,
+      "date": "2026-08-10"
+    },
+    "상해종합": {
+      "close": 3966.59,
+      "change_pct": 0.67,
+      "date": "2026-08-10"
+    },
+    "독일DAX": {
+      "close": 26323.88,
+      "change_pct": 0.02,
+      "date": "2026-08-10"
+    },
+    "유로스톡스50": {
+      "close": 6535.62,
+      "change_pct": 0.18,
+      "date": "2026-08-10"
+    },
+    "하이일드채권": {
+      "close": 79.48,
+      "change_pct": -0.16,
+      "date": "2026-08-10"
+    },
+    "미장기채20Y+": {
+      "close": 82.06,
+      "change_pct": -0.85,
+      "date": "2026-08-10"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.53,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.06%, 나스닥 -0.32%로 하락 마감. 필라델피아 반도체지수 -2.55%. VIX 15.5 (보통 구간). 장단기 금리차 0.530%p (정상 범위). 금 4,361.80달러 (+0.49%). 달러인덱스 99.81 (+0.21%). 섹터: 에너지(+4.66%) 주도, 부동산(-1.29%) 약세. QQQ-VTV 스프레드 -0.62%p → 가치주 우위. HYG -0.16% → 신용 스트레스 안정. Mag7 평균 -0.01% → 대형 기술주 약세. 아시아: 닛케이225 +2.08%, 항셍 +1.05%, 상해종합 +0.67%. 유럽: 독일DAX +0.02%, 유로스톡스50 +0.18%.",
+  "market_breadth": {
+    "total_up": 1660,
+    "total_down": 856,
+    "total_unchanged": 245,
+    "total": 2761,
+    "up_ratio": 60.1
+  },
+  "surges": [
+    {
+      "code": "226340",
+      "name": "본느",
+      "market": "KOSDAQ",
+      "industry": "기타 화학제품 제조업",
+      "move_type": "surge",
+      "close": 8060.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.61,
+      "amount_eok": 1051.5727347,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[이격도과열 종목] 동양파일 LK삼양 본느 서산 코칩 NHN '앗~뜨거'",
+        "상폐 위기의 본느, 구미현 전 아워홈 회장이 인수… 추가 M&A 가능성도 - 조선비즈",
+        "[주간e종목] 아워홈 장녀 구미현이 인수하는 본느 '6연上'",
+        "구미현 전 아워홈 회장, 코스닥 상장사 '본느' 인수…K뷰티 시장 진출",
+        "[단독] 구미현 전 아워홈 회장, K뷰티 기업 본느 인수"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 93.43,
+          "macd": 1110.7371,
+          "macd_signal": 422.4492,
+          "macd_histogram": 688.2878,
+          "bb_upper": 6613.88,
+          "bb_middle": 2670.3,
+          "bb_lower": -1273.28,
+          "bb_position": "상단돌파",
+          "ma_5": 5782.0,
+          "ma_20": 2670.3,
+          "ma_60": 2443.72,
+          "ma_trend": "정배열",
+          "volume_ratio": 15.2,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 15.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 8,
+          "avg_return_1d": 19.72,
+          "avg_return_5d": 154.77,
+          "positive_rate_1d": 71.4,
+          "positive_rate_5d": 75.0
+        }
+      }
+    },
+    {
+      "code": "002680",
+      "name": "한탑",
+      "market": "KOSDAQ",
+      "industry": "곡물가공품, 전분 및 전분제품 제조업",
+      "move_type": "surge",
+      "close": 2150.0,
+      "change_pct": 29.99,
+      "relative_strength": 29.6,
+      "amount_eok": 15.02642719,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "한탑, 최대주주 보통주 200만주 장내 매수 계획",
+        "\"수입 원자재 부담 낮췄다\"…한탑, 곡물가 안정에 수익성 회복",
+        "한탑 주가, 상한가... 왜?",
+        "한탑, 최대주주 보통주 200만주 장내 매수…\"기업가치 제고\"",
+        "한탑 투자분석 2026. 08. 08"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 58.43,
+          "macd": -64.3037,
+          "macd_signal": -85.9719,
+          "macd_histogram": 21.6681,
+          "bb_upper": 2532.78,
+          "bb_middle": 1927.85,
+          "bb_lower": 1322.92,
+          "bb_position": "중립",
+          "ma_5": 1793.0,
+          "ma_20": 1927.85,
+          "ma_60": 2063.8,
+          "ma_trend": "역배열",
+          "volume_ratio": 0.94,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "002990",
+      "name": "금호건설",
+      "market": "KOSPI",
+      "industry": "건물 건설업",
+      "move_type": "surge",
+      "close": 11490.0,
+      "change_pct": 29.98,
+      "relative_strength": 29.25,
+      "amount_eok": 1430.2753548,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[특징주] 李 '호남 반도체' 속도전 지시⋯금호건설·남화토건 '급등'",
+        "[11일 특징주] CJ제일제당, 실적 부진에 8%↓…'호남 반도체' 금호건설·남화토건 '上'",
+        "[특징주] “호남 반도체 속도전”…금호건설·남화토건 장중 상한가",
+        "[급등락주 짚어보기] 호남 반도체 클러스터 기대에 금호건설株 ‘上’…NHN은 실적 랠리"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 56.91,
+          "macd": 70.1869,
+          "macd_signal": 147.9189,
+          "macd_histogram": -77.732,
+          "bb_upper": 13110.45,
+          "bb_middle": 10121.5,
+          "bb_lower": 7132.55,
+          "bb_position": "중립",
+          "ma_5": 9906.0,
+          "ma_20": 10121.5,
+          "ma_60": 7804.33,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.14,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 8,
+          "avg_return_1d": 12.15,
+          "avg_return_5d": 46.16,
+          "positive_rate_1d": 71.4,
+          "positive_rate_5d": 85.7
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "047810",
+      "name": "한국항공우주",
+      "market": "KOSPI",
+      "industry": "항공기,우주선 및 부품 제조업",
+      "move_type": "plunge",
+      "close": 135500.0,
+      "change_pct": -12.07,
+      "relative_strength": -12.8,
+      "amount_eok": 914.4528955,
+      "hints": [
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "한화, KAI 지분 15% 넘겨…\"의사결정 참여 검토\"(종합)",
+        "[리포트 브리핑]한국항공우주, '[NDR 후기] 구조적으로 성장하는 기업' 목표가 186,000원 - 대신증권",
+        "한화-한국항공우주 결합, 방산 판도 바꾸나",
+        "한국항공우주 주가, 8월 11일 135,500원 12.07% 하락 마감",
+        "한화, 육·해·공·우주까지...‘한국판 스페이스X’ 마지막 퍼즐 KAI 품나"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.43,
+          "macd": -1258.0693,
+          "macd_signal": -2480.6012,
+          "macd_histogram": 1222.5318,
+          "bb_upper": 166880.2,
+          "bb_middle": 142600.0,
+          "bb_lower": 118319.8,
+          "bb_position": "중립",
+          "ma_5": 148080.0,
+          "ma_20": 142600.0,
+          "ma_60": 148305.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.36,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "011330",
+      "name": "유니켐",
+      "market": "KOSPI",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "plunge",
+      "close": 5180.0,
+      "change_pct": -9.91,
+      "relative_strength": -10.64,
+      "amount_eok": 42.82649225,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[더벨]유니켐, '루미아' 통해 부가티에 열선 매트 공급 - 머니투데이",
+        "유니켐이 인수하는 루미아, 부가티 차세대 하이퍼카에 '열선 매트' 공급",
+        "유니켐 \"루미아, 부가티 차세대 BR1 시트 열선 매트 공급\"",
+        "유니켐子 루미아, 글로벌 로봇·완성차와 공동개발 확대",
+        "[특징주] 유니켐, 美 유연전자 기업 루미아 인수 소식에 ‘상한가’ - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 63.12,
+          "macd": 295.1734,
+          "macd_signal": 60.5113,
+          "macd_histogram": 234.662,
+          "bb_upper": 5507.06,
+          "bb_middle": 4063.25,
+          "bb_lower": 2619.44,
+          "bb_position": "중립",
+          "ma_5": 4978.0,
+          "ma_20": 4063.25,
+          "ma_60": 4206.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.45,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "급락(5%+)",
+          "sample_count": 5,
+          "avg_return_1d": -5.43,
+          "avg_return_5d": 5.6,
+          "positive_rate_1d": 0.0,
+          "positive_rate_5d": 80.0
+        }
+      }
+    },
+    {
+      "code": "018000",
+      "name": "유니슨",
+      "market": "KOSDAQ",
+      "industry": "일반 목적용 기계 제조업",
+      "move_type": "plunge",
+      "close": 901.0,
+      "change_pct": -9.9,
+      "relative_strength": -10.29,
+      "amount_eok": 27.88544457,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "유니슨, 제주 어름비 풍력발전과 유지·보수 계약",
+        "[공시 Pick] 유니슨, 제주도 풍력발전소 장기 운영계약에 주가 약 9% 상승",
+        "유니슨, 풍력 장기 유지보수 확대…O&M 발전단지 24곳",
+        "유니슨, 제주 어름비풍력발전소 20년 O&M 계약",
+        "유니슨, 영업현금 대규모 유출에 CB·재무조달로 보완, 단일계약 정정 반복·전환가액 조정 병행"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 52.89,
+          "macd": -5.5848,
+          "macd_signal": -31.7496,
+          "macd_histogram": 26.1649,
+          "bb_upper": 995.36,
+          "bb_middle": 833.25,
+          "bb_lower": 671.14,
+          "bb_position": "중립",
+          "ma_5": 915.4,
+          "ma_20": 833.25,
+          "ma_60": 917.95,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.44,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
