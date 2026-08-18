@@ -1,0 +1,294 @@
+{
+  "trade_date": "2026-08-18",
+  "macro": {
+    "달러인덱스": {
+      "close": 99.67,
+      "change_pct": -0.29,
+      "date": "2026-08-14"
+    },
+    "WTI유": {
+      "close": 84.5,
+      "change_pct": 2.55,
+      "date": "2026-08-17"
+    },
+    "금": {
+      "close": 4417.8,
+      "change_pct": 0.85,
+      "date": "2026-08-17"
+    },
+    "구리": {
+      "close": 6.6,
+      "change_pct": 0.0,
+      "date": "2026-08-17"
+    },
+    "천연가스": {
+      "close": 2.69,
+      "change_pct": -1.47,
+      "date": "2026-08-17"
+    },
+    "미국채10Y": {
+      "close": 4.7,
+      "change_pct": 1.29,
+      "date": "2026-08-14"
+    },
+    "미국채2Y": {
+      "close": 4.17,
+      "change_pct": 0.0,
+      "date": "2026-08-17"
+    }
+  },
+  "market_regime": "판단불가",
+  "yield_spread": 0.53,
+  "macro_narrative": "장단기 금리차 0.530%p (정상 범위). 금 4,417.80달러 (+0.85%). 달러인덱스 99.67 (-0.29%).",
+  "market_breadth": {
+    "total_up": 567,
+    "total_down": 1970,
+    "total_unchanged": 226,
+    "total": 2763,
+    "up_ratio": 20.5
+  },
+  "surges": [
+    {
+      "code": "950260",
+      "name": "인제니아테라퓨틱스(Reg.S)",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "surge",
+      "close": 17990.0,
+      "change_pct": 49.92,
+      "relative_strength": 54.15,
+      "amount_eok": 7191.8065691,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "인제니아테라퓨틱스, 코스닥 상장일 10%대 급락 출발 - 머니투데이",
+        "인제니아테라퓨틱스 코스닥 입성...글로벌 임상·후속 파이프라인 개발 속도",
+        "[EBN 데이터센터] 18일 상승 종목 30選",
+        "마켓",
+        "[특징주] 외국인·기관, 흥아해운·HMM·티씨머티리얼즈 '러브콜'"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "047770",
+      "name": "코데즈컴바인",
+      "market": "KOSDAQ",
+      "industry": "봉제의복 제조업",
+      "move_type": "surge",
+      "close": 3510.0,
+      "change_pct": 30.0,
+      "relative_strength": 34.23,
+      "amount_eok": 33.44515985,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "'종전 논의' 한마디에 상한가∙∙∙코데즈컴바인이 안고 있는 세 가지 간격",
+        "[특징주] 코데즈컴바인, 남북·북미 대화 재개 기대감에 상한가 직행",
+        "코데즈컴바인, 개성공단 입주 이력 주목… 생산라인 빠르게 정상화",
+        "코데즈컴바인 3510원 상한가…북미대화 기대에 남북경협주 '불기둥'",
+        "특징주, 코데즈컴바인-남북경협 테마 상승세에 23.08% ↑"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 71.73,
+          "macd": 46.4677,
+          "macd_signal": -46.5776,
+          "macd_histogram": 93.0453,
+          "bb_upper": 3128.71,
+          "bb_middle": 2595.75,
+          "bb_lower": 2062.79,
+          "bb_position": "상단돌파",
+          "ma_5": 2850.0,
+          "ma_20": 2595.75,
+          "ma_60": 2827.58,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.41,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "033340",
+      "name": "좋은사람들",
+      "market": "KOSDAQ",
+      "industry": "봉제의복 제조업",
+      "move_type": "surge",
+      "close": 429.0,
+      "change_pct": 30.0,
+      "relative_strength": 34.23,
+      "amount_eok": 12.5817611,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 좋은사람들-남북경협 테마 상승세에 22.54% ↑",
+        "[N2 증시 풍향계] 좋은사람들부터 인디에프까지, 남북경협주 대거 ‘상한가’…S7·현대해상·로보티즈 ‘강세’",
+        "“그가 응답했다” 트럼프 언급에 남북경협주 불기둥…좋은사람들·코데즈 ‘상한가’",
+        "[특징주] 좋은사람들, 남북경협 추진 기대감에 가격제한폭 안착",
+        "토종 속옷 반격… 좋은사람들, 국내 시장 점유율 회복 기대"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 53.81,
+          "macd": -55.9374,
+          "macd_signal": -82.0371,
+          "macd_histogram": 26.0997,
+          "bb_upper": 394.05,
+          "bb_middle": 327.0,
+          "bb_lower": 259.95,
+          "bb_position": "상단돌파",
+          "ma_5": 333.4,
+          "ma_20": 327.0,
+          "ma_60": 619.8,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.28,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "371950",
+      "name": "풍원정밀",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "plunge",
+      "close": 4120.0,
+      "change_pct": -29.93,
+      "relative_strength": -25.7,
+      "amount_eok": 26.5114318,
+      "hints": [
+        "하한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "풍원정밀, 30% 할인된 3820원에 신주 발행…30억원 규모 유상증자",
+        "풍원정밀, 매출 줄고 적자 눈덩이···검증대 올라",
+        "풍원정밀, 日 전량 의존 'FMM' 국산화",
+        "풍원정밀, 운영·채무상환 목적 30억원 규모 일반공모 유상증자 결정",
+        "풍원정밀 투자분석 2026. 08. 13"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 35.1,
+          "macd": -257.2693,
+          "macd_signal": -364.0001,
+          "macd_histogram": 106.7308,
+          "bb_upper": 6051.11,
+          "bb_middle": 5002.75,
+          "bb_lower": 3954.39,
+          "bb_position": "하단근접",
+          "ma_5": 5318.0,
+          "ma_20": 5002.75,
+          "ma_60": 6355.25,
+          "ma_trend": "혼조",
+          "volume_ratio": 12.44,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 거래량 12.4배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "039830",
+      "name": "오로라",
+      "market": "KOSDAQ",
+      "industry": "전문디자인업",
+      "move_type": "plunge",
+      "close": 17020.0,
+      "change_pct": -26.16,
+      "relative_strength": -21.93,
+      "amount_eok": 151.5180634,
+      "hints": [
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[여행소식] 캐나다관광청, 오로라 명소 3곳 추천",
+        "현대차, 美 자율주행 업체 '오로라' 지분 전량 처분…7년 투자관계 정리",
+        "지워지고서야 드러나는 존재",
+        "[KLPGA] 오로라월드 챔피언십 최종순위…이다연 우승, 김수지 2위, 이예원·서교림·이지현3·김재희 3위",
+        "드디어 만난 오로라, 그리고 쓸 데 없이 좋은 날씨"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 35.99,
+          "macd": 639.556,
+          "macd_signal": 991.85,
+          "macd_histogram": -352.294,
+          "bb_upper": 25315.28,
+          "bb_middle": 21084.5,
+          "bb_lower": 16853.72,
+          "bb_position": "하단근접",
+          "ma_5": 21644.0,
+          "ma_20": 21084.5,
+          "ma_60": 19126.33,
+          "ma_trend": "정배열",
+          "volume_ratio": 5.38,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 정배열(상승추세) / 거래량 5.4배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "226330",
+      "name": "신테카바이오",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 1131.0,
+      "change_pct": -24.45,
+      "relative_strength": -20.22,
+      "amount_eok": 17.52085571,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "신테카바이오, 바이오베터' AI 플랫폼 확보 \"실적 개선 노력\" - 머니투데이",
+        "반기보고서 '감사의견 거절' 신테카바이오, 장초반 하한가 - 머니투데이",
+        "신테카바이오 \"감사의견 이슈 조속히 해소… 본업 경쟁력·턴어라운드 흐름 견고”",
+        "[더벨]신테카바이오, 차세대 AI 플랫폼 기반으로 글로벌 시장 도전 본격화 - 머니투데이",
+        "[특징주] 신테카바이오, 반기 검토의견 '의견거절'에 하한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 32.45,
+          "macd": -59.698,
+          "macd_signal": -48.7599,
+          "macd_histogram": -10.9381,
+          "bb_upper": 1774.04,
+          "bb_middle": 1502.6,
+          "bb_lower": 1231.16,
+          "bb_position": "하단이탈",
+          "ma_5": 1471.8,
+          "ma_20": 1502.6,
+          "ma_60": 1714.37,
+          "ma_trend": "역배열",
+          "volume_ratio": 4.16,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 4.2배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
