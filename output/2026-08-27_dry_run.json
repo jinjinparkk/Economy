@@ -1,0 +1,464 @@
+{
+  "trade_date": "2026-08-27",
+  "macro": {
+    "S&P 500": {
+      "close": 7675.7,
+      "change_pct": -0.02,
+      "date": "2026-08-26"
+    },
+    "NASDAQ": {
+      "close": 26130.2,
+      "change_pct": -0.08,
+      "date": "2026-08-26"
+    },
+    "다우존스": {
+      "close": 53463.88,
+      "change_pct": -0.21,
+      "date": "2026-08-26"
+    },
+    "필라델피아반도체": {
+      "close": 515.4,
+      "change_pct": 0.26,
+      "date": "2026-08-26"
+    },
+    "달러인덱스": {
+      "close": 99.17,
+      "change_pct": 0.25,
+      "date": "2026-08-26"
+    },
+    "WTI유": {
+      "close": 82.23,
+      "change_pct": -0.16,
+      "date": "2026-08-26"
+    },
+    "금": {
+      "close": 4598.2,
+      "change_pct": -0.86,
+      "date": "2026-08-26"
+    },
+    "구리": {
+      "close": 6.59,
+      "change_pct": -1.79,
+      "date": "2026-08-26"
+    },
+    "천연가스": {
+      "close": 2.84,
+      "change_pct": 2.53,
+      "date": "2026-08-26"
+    },
+    "VIX": {
+      "close": 15.21,
+      "change_pct": -1.55,
+      "date": "2026-08-26"
+    },
+    "미국채10Y": {
+      "close": 4.66,
+      "change_pct": 0.43,
+      "date": "2026-08-26"
+    },
+    "미국채2Y": {
+      "close": 4.17,
+      "change_pct": 0.0,
+      "date": "2026-08-26"
+    },
+    "기술": {
+      "close": 182.84,
+      "change_pct": 0.61,
+      "date": "2026-08-26"
+    },
+    "금융": {
+      "close": 58.26,
+      "change_pct": -0.09,
+      "date": "2026-08-26"
+    },
+    "에너지": {
+      "close": 62.43,
+      "change_pct": 0.6,
+      "date": "2026-08-26"
+    },
+    "헬스케어": {
+      "close": 173.54,
+      "change_pct": -1.0,
+      "date": "2026-08-26"
+    },
+    "산업재": {
+      "close": 180.34,
+      "change_pct": 1.09,
+      "date": "2026-08-26"
+    },
+    "커뮤니케이션": {
+      "close": 112.61,
+      "change_pct": -0.5,
+      "date": "2026-08-26"
+    },
+    "경기소비재": {
+      "close": 117.16,
+      "change_pct": -0.67,
+      "date": "2026-08-26"
+    },
+    "필수소비재": {
+      "close": 86.27,
+      "change_pct": -0.29,
+      "date": "2026-08-26"
+    },
+    "부동산": {
+      "close": 45.09,
+      "change_pct": -0.6,
+      "date": "2026-08-26"
+    },
+    "유틸리티": {
+      "close": 43.51,
+      "change_pct": 0.46,
+      "date": "2026-08-26"
+    },
+    "소재": {
+      "close": 53.67,
+      "change_pct": 0.17,
+      "date": "2026-08-26"
+    },
+    "엔비디아": {
+      "close": 209.66,
+      "change_pct": -1.59,
+      "date": "2026-08-26"
+    },
+    "애플": {
+      "close": 313.45,
+      "change_pct": 1.15,
+      "date": "2026-08-26"
+    },
+    "마이크로소프트": {
+      "close": 496.37,
+      "change_pct": 0.95,
+      "date": "2026-08-26"
+    },
+    "아마존": {
+      "close": 260.28,
+      "change_pct": -0.3,
+      "date": "2026-08-26"
+    },
+    "알파벳": {
+      "close": 339.1,
+      "change_pct": -1.23,
+      "date": "2026-08-26"
+    },
+    "메타": {
+      "close": 576.14,
+      "change_pct": 1.07,
+      "date": "2026-08-26"
+    },
+    "테슬라": {
+      "close": 345.82,
+      "change_pct": -1.26,
+      "date": "2026-08-26"
+    },
+    "러셀2000": {
+      "close": 298.93,
+      "change_pct": -0.1,
+      "date": "2026-08-26"
+    },
+    "나스닥100ETF": {
+      "close": 711.37,
+      "change_pct": 0.09,
+      "date": "2026-08-26"
+    },
+    "가치ETF": {
+      "close": 226.83,
+      "change_pct": 0.02,
+      "date": "2026-08-26"
+    },
+    "닛케이225": {
+      "close": 66262.16,
+      "change_pct": 0.62,
+      "date": "2026-08-26"
+    },
+    "항셍": {
+      "close": 25652.97,
+      "change_pct": 0.56,
+      "date": "2026-08-26"
+    },
+    "상해종합": {
+      "close": 3912.52,
+      "change_pct": 0.59,
+      "date": "2026-08-26"
+    },
+    "독일DAX": {
+      "close": 26285.96,
+      "change_pct": 0.08,
+      "date": "2026-08-26"
+    },
+    "유로스톡스50": {
+      "close": 6470.74,
+      "change_pct": 0.23,
+      "date": "2026-08-26"
+    },
+    "하이일드채권": {
+      "close": 79.9,
+      "change_pct": -0.03,
+      "date": "2026-08-26"
+    },
+    "미장기채20Y+": {
+      "close": 83.3,
+      "change_pct": -0.2,
+      "date": "2026-08-26"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.49,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.02%, 나스닥 -0.08%로 하락 마감. 필라델피아 반도체지수 +0.26%. VIX 15.2 (보통 구간). 장단기 금리차 0.490%p (축소 — 긴축 우려 잔존). 금 4,598.20달러 (-0.86%). 달러인덱스 99.17 (+0.25%). 섹터: 산업재(+1.09%) 주도, 헬스케어(-1.00%) 약세. QQQ-VTV 스프레드 +0.07%p → 성장주 우위. HYG -0.03% → 신용 스트레스 안정. Mag7 평균 -0.17% → 대형 기술주 약세. 아시아: 닛케이225 +0.62%, 항셍 +0.56%, 상해종합 +0.59%. 유럽: 독일DAX +0.08%, 유로스톡스50 +0.23%.",
+  "market_breadth": {
+    "total_up": 999,
+    "total_down": 1526,
+    "total_unchanged": 242,
+    "total": 2767,
+    "up_ratio": 36.1
+  },
+  "surges": [
+    {
+      "code": "389680",
+      "name": "유디엠텍",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 1757.0,
+      "change_pct": 29.96,
+      "relative_strength": 28.66,
+      "amount_eok": 22.51192458,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[이격도과열 종목] 파루 유디엠텍 넥사다이내믹스 휴온스글로벌 벡트 가온전선 노려라",
+        "[주식마감] '2분기 흑자전환' 라온피플 상한가... 휴온스글로벌, 파루, 유디엠텍 등 강세",
+        "[상한가 종목] SK아이이테크놀로지-이월드 이어 시그네틱스-유디엠텍 등 마감",
+        "[특징주] SKIET·유디엠텍·CSA코스믹 상한가…모아데이타 매수잔량 122만주",
+        "유디엠텍, 글로벌 모빌리티 소프트웨어 및 제조 기업과 '차세대 디지털 트윈 플랫폼' 공급 계약 체결"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 66.67,
+          "macd": -73.817,
+          "macd_signal": -144.5195,
+          "macd_histogram": 70.7024,
+          "bb_upper": 1553.77,
+          "bb_middle": 1194.05,
+          "bb_lower": 834.33,
+          "bb_position": "상단돌파",
+          "ma_5": 1216.6,
+          "ma_20": 1194.05,
+          "ma_60": 1627.35,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.02,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 5.0배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 10,
+          "avg_return_1d": 7.86,
+          "avg_return_5d": -14.7,
+          "positive_rate_1d": 44.4,
+          "positive_rate_5d": 12.5
+        }
+      }
+    },
+    {
+      "code": "331920",
+      "name": "셀레믹스",
+      "market": "KOSDAQ",
+      "industry": "기초 의약물질 제조업",
+      "move_type": "surge",
+      "close": 10890.0,
+      "change_pct": 29.95,
+      "relative_strength": 28.65,
+      "amount_eok": 59.0451697,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 셀레믹스, 갑작스러운 상한가 배경은?",
+        "양 제약지수 동반 하락, 휴온스글로벌ㆍ셀레믹스 상한가",
+        "ASF 재확산 공포 뚫는다… 셀레믹스, 바이러스 진단 솔루션 특수",
+        "[상한가 종목] 휴온스그로벌-셀레믹스 이어 파루-라온피플 등 마감",
+        "셀레믹스 주가, 급등세... 무슨 회사길래?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 58.16,
+          "macd": -350.2169,
+          "macd_signal": -461.1928,
+          "macd_histogram": 110.9759,
+          "bb_upper": 10716.93,
+          "bb_middle": 9467.0,
+          "bb_lower": 8217.07,
+          "bb_position": "상단돌파",
+          "ma_5": 9088.0,
+          "ma_20": 9467.0,
+          "ma_60": 11236.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.22,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 9.2배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "351320",
+      "name": "넥사다이내믹스",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 2550.0,
+      "change_pct": 29.9,
+      "relative_strength": 28.6,
+      "amount_eok": 76.89379239,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "OLEDoS·IT용 OLED 판 커졌다… 넥사다이내믹스, 공정 부품 특수",
+        "넥사다이내믹스, 20억원 규모 제3자배정 유상증자 결정",
+        "넥사다이내믹스, 150억원 유증…시원이노텍 등에 3자 배정",
+        "넥사다이내믹스, 80억원 사모 전환사채 발행 결정",
+        "넥사다이내믹스, 만기 전 CB 45억 원어치 매입... 잔액 60억 원으로 감소"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 89.57,
+          "macd": 243.7538,
+          "macd_signal": 98.0452,
+          "macd_histogram": 145.7086,
+          "bb_upper": 2038.06,
+          "bb_middle": 1200.6,
+          "bb_lower": 363.14,
+          "bb_position": "상단돌파",
+          "ma_5": 1791.0,
+          "ma_20": 1200.6,
+          "ma_60": 1114.13,
+          "ma_trend": "정배열",
+          "volume_ratio": 4.35,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 4.3배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "115180",
+      "name": "큐리언트",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "plunge",
+      "close": 21150.0,
+      "change_pct": -17.54,
+      "relative_strength": -18.84,
+      "amount_eok": 84.7883165,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "큐리언트, 이중 페이로드 ADC 주목…론자 플랫폼 연계 기대",
+        "큐리언트, TOP1·CDK7 이중 페이로드 ADC 개발…QP101 내년 IND 목표",
+        "자큐보 인도 허가에 온코닉 급등…큐리언트·보로노이도 강세[바이오맥짚기]",
+        "[리포트 브리핑]큐리언트, '이중페이로드 ADC 한국 대장주' Not Rated - 한양증권",
+        "\"론자가 선택한 이중 ADC\"… 큐리언트, CDK7i로 글로벌 게임체인저 부상 - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 47.82,
+          "macd": 1198.6537,
+          "macd_signal": 1266.8704,
+          "macd_histogram": -68.2167,
+          "bb_upper": 29993.02,
+          "bb_middle": 23318.5,
+          "bb_lower": 16643.98,
+          "bb_position": "중립",
+          "ma_5": 24830.0,
+          "ma_20": 23318.5,
+          "ma_60": 22026.17,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.73,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "market": "KOSPI",
+      "industry": "기타 금융업",
+      "move_type": "plunge",
+      "close": 7640.0,
+      "change_pct": -15.21,
+      "relative_strength": -16.74,
+      "amount_eok": 485.8543169,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 한화, 인적분할 후 거래재개 첫날 17.4% 급등(종합)",
+        "한화머시너리앤서비스홀딩스(0220W0)",
+        "한화머시너리앤서비스홀딩스, 재상장 첫날 상한가…한화 인적분할 효과",
+        "[0825시황레이더] 에브리봇, 中 엑스스퀘어와 MOU 체결 및 휴머노이드 사업 확대 소식 등",
+        "26일만에 돌아온 (주)한화…주가 17% 급등"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "330350",
+      "name": "위더스제약",
+      "market": "KOSDAQ",
+      "industry": "의약품 제조업",
+      "move_type": "plunge",
+      "close": 7690.0,
+      "change_pct": -14.56,
+      "relative_strength": -15.86,
+      "amount_eok": 28.0088973,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "정부, 탈모 급여 검토…위더스제약 생산 플랫폼 부각·관련주 급등",
+        "양 제약지수 동반 하락, 제테마ㆍ위더스제약 선전",
+        "위더스제약, 소수계좌 거래집중으로 투자주의종목 지정",
+        "위더스제약, '주력' 순환기에 집중…라인업·신약 연구 강화",
+        "[인터뷰] 위더스제약 성대영, 위기를 기회로 바꾼 혁신가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 49.52,
+          "macd": 488.0282,
+          "macd_signal": 404.8567,
+          "macd_histogram": 83.1715,
+          "bb_upper": 9207.46,
+          "bb_middle": 7530.0,
+          "bb_lower": 5852.54,
+          "bb_position": "중립",
+          "ma_5": 8636.0,
+          "ma_20": 7530.0,
+          "ma_60": 6999.33,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.03,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
