@@ -1,0 +1,475 @@
+{
+  "trade_date": "2026-09-01",
+  "macro": {
+    "S&P 500": {
+      "close": 7686.14,
+      "change_pct": -0.58,
+      "date": "2026-08-31"
+    },
+    "NASDAQ": {
+      "close": 26370.89,
+      "change_pct": -0.64,
+      "date": "2026-08-31"
+    },
+    "다우존스": {
+      "close": 53185.9,
+      "change_pct": -0.72,
+      "date": "2026-08-31"
+    },
+    "필라델피아반도체": {
+      "close": 511.04,
+      "change_pct": 0.48,
+      "date": "2026-08-31"
+    },
+    "달러인덱스": {
+      "close": 99.43,
+      "change_pct": 0.27,
+      "date": "2026-08-31"
+    },
+    "WTI유": {
+      "close": 85.76,
+      "change_pct": 2.83,
+      "date": "2026-08-31"
+    },
+    "금": {
+      "close": 4431.1,
+      "change_pct": -1.05,
+      "date": "2026-08-31"
+    },
+    "구리": {
+      "close": 6.59,
+      "change_pct": 0.46,
+      "date": "2026-08-31"
+    },
+    "천연가스": {
+      "close": 2.93,
+      "change_pct": 1.38,
+      "date": "2026-08-31"
+    },
+    "VIX": {
+      "close": 14.92,
+      "change_pct": 2.83,
+      "date": "2026-08-31"
+    },
+    "미국채10Y": {
+      "close": 4.76,
+      "change_pct": 1.93,
+      "date": "2026-08-31"
+    },
+    "미국채2Y": {
+      "close": 4.35,
+      "change_pct": 4.32,
+      "date": "2026-08-31"
+    },
+    "기술": {
+      "close": 186.5,
+      "change_pct": -1.12,
+      "date": "2026-08-31"
+    },
+    "금융": {
+      "close": 57.71,
+      "change_pct": -0.67,
+      "date": "2026-08-31"
+    },
+    "에너지": {
+      "close": 63.96,
+      "change_pct": 2.04,
+      "date": "2026-08-31"
+    },
+    "헬스케어": {
+      "close": 170.54,
+      "change_pct": -0.36,
+      "date": "2026-08-31"
+    },
+    "산업재": {
+      "close": 175.13,
+      "change_pct": -1.13,
+      "date": "2026-08-31"
+    },
+    "커뮤니케이션": {
+      "close": 111.46,
+      "change_pct": 0.04,
+      "date": "2026-08-31"
+    },
+    "경기소비재": {
+      "close": 116.59,
+      "change_pct": 0.61,
+      "date": "2026-08-31"
+    },
+    "필수소비재": {
+      "close": 84.98,
+      "change_pct": -0.12,
+      "date": "2026-08-31"
+    },
+    "부동산": {
+      "close": 44.11,
+      "change_pct": -0.83,
+      "date": "2026-08-31"
+    },
+    "유틸리티": {
+      "close": 42.23,
+      "change_pct": -2.2,
+      "date": "2026-08-31"
+    },
+    "소재": {
+      "close": 52.69,
+      "change_pct": -1.01,
+      "date": "2026-08-31"
+    },
+    "엔비디아": {
+      "close": 220.78,
+      "change_pct": 1.48,
+      "date": "2026-08-31"
+    },
+    "애플": {
+      "close": 316.85,
+      "change_pct": -0.89,
+      "date": "2026-08-31"
+    },
+    "마이크로소프트": {
+      "close": 507.29,
+      "change_pct": -1.22,
+      "date": "2026-08-31"
+    },
+    "아마존": {
+      "close": 259.77,
+      "change_pct": -2.5,
+      "date": "2026-08-31"
+    },
+    "알파벳": {
+      "close": 335.41,
+      "change_pct": -2.18,
+      "date": "2026-08-31"
+    },
+    "메타": {
+      "close": 572.34,
+      "change_pct": -0.98,
+      "date": "2026-08-31"
+    },
+    "테슬라": {
+      "close": 367.95,
+      "change_pct": 5.51,
+      "date": "2026-08-31"
+    },
+    "러셀2000": {
+      "close": 293.93,
+      "change_pct": -1.96,
+      "date": "2026-08-31"
+    },
+    "나스닥100ETF": {
+      "close": 716.76,
+      "change_pct": 0.05,
+      "date": "2026-08-31"
+    },
+    "가치ETF": {
+      "close": 224.85,
+      "change_pct": -0.27,
+      "date": "2026-08-31"
+    },
+    "닛케이225": {
+      "close": 66215.34,
+      "change_pct": -0.15,
+      "date": "2026-09-01"
+    },
+    "항셍": {
+      "close": 25566.99,
+      "change_pct": 0.0,
+      "date": "2026-08-31"
+    },
+    "상해종합": {
+      "close": 3986.3,
+      "change_pct": 0.75,
+      "date": "2026-08-31"
+    },
+    "독일DAX": {
+      "close": 26258.11,
+      "change_pct": -0.41,
+      "date": "2026-08-31"
+    },
+    "유로스톡스50": {
+      "close": 6420.16,
+      "change_pct": -0.07,
+      "date": "2026-08-31"
+    },
+    "하이일드채권": {
+      "close": 79.81,
+      "change_pct": -0.08,
+      "date": "2026-08-31"
+    },
+    "미장기채20Y+": {
+      "close": 82.52,
+      "change_pct": -0.73,
+      "date": "2026-08-31"
+    }
+  },
+  "market_regime": "안정",
+  "yield_spread": 0.41,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.58%, 나스닥 -0.64%로 하락 마감. 필라델피아 반도체지수 +0.48%. VIX 14.9 (안정 구간). 장단기 금리차 0.410%p (축소 — 긴축 우려 잔존). 금 4,431.10달러 (-1.05%). 달러인덱스 99.43 (+0.27%). 섹터: 에너지(+2.04%) 주도, 유틸리티(-2.20%) 약세. QQQ-VTV 스프레드 +0.32%p → 성장주 우위. HYG -0.08% → 신용 스트레스 안정. Mag7 평균 -0.11% → 대형 기술주 약세. 아시아: 닛케이225 -0.15%, 항셍 +0.00%, 상해종합 +0.75%. 유럽: 독일DAX -0.41%, 유로스톡스50 -0.07%.",
+  "market_breadth": {
+    "total_up": 1132,
+    "total_down": 1372,
+    "total_unchanged": 261,
+    "total": 2765,
+    "up_ratio": 40.9
+  },
+  "surges": [
+    {
+      "code": "005320",
+      "name": "온타이드",
+      "market": "KOSPI",
+      "industry": "생활용품 도매업",
+      "move_type": "surge",
+      "close": 1040.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.77,
+      "amount_eok": 13.96746834,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[EBN 데이터센터] 온타이드 등 상한가 4종목...코스닥, JW신약 등 3종목 급등",
+        "온타이드, 상한가 진입.. +30.00% ↑",
+        "온타이드 주가, 상한가... 무슨 회사길래?",
+        "[이격도과열 종목] JW신약 온타이드 인디에프 현대약품 박셀바이오 삼익제약 '펄펄 끓네'",
+        "온타이드, 주식병합에도 다시 동전주...'새주인' 약진통상도 골머리"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 69.49,
+          "macd": 14.5035,
+          "macd_signal": -6.6993,
+          "macd_histogram": 21.2027,
+          "bb_upper": 941.11,
+          "bb_middle": 794.8,
+          "bb_lower": 648.49,
+          "bb_position": "상단돌파",
+          "ma_5": 840.4,
+          "ma_20": 794.8,
+          "ma_60": 860.43,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.76,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "067290",
+      "name": "JW신약",
+      "market": "KOSDAQ",
+      "industry": "의약품 제조업",
+      "move_type": "surge",
+      "close": 2990.0,
+      "change_pct": 30.0,
+      "relative_strength": 31.56,
+      "amount_eok": 1030.0254065,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] '비만약 다음은 탈모약'…글로벌 관심에 'JW신약·현대약품' 관련株 강세",
+        "[고래사냥] '피노·한화엔진·JW신약! 내일장 고래 종목은?!",
+        "[주식] JW신약·현대약품 30%↑...첨단재생의료 첫 시행 바이젠셀도 '급등'",
+        "양 제약지수 동반 하락, 현대약품ㆍJW신약 상한가",
+        "특징주, JW신약-탈모 치료 테마 상승세에 30.0% ↑"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 72.79,
+          "macd": 115.5895,
+          "macd_signal": 68.1671,
+          "macd_histogram": 47.4223,
+          "bb_upper": 2628.22,
+          "bb_middle": 2179.65,
+          "bb_lower": 1731.08,
+          "bb_position": "상단돌파",
+          "ma_5": 2274.6,
+          "ma_20": 2179.65,
+          "ma_60": 1962.68,
+          "ma_trend": "정배열",
+          "volume_ratio": 3.62,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 3.6배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "014990",
+      "name": "인디에프",
+      "market": "KOSPI",
+      "industry": "봉제의복 제조업",
+      "move_type": "surge",
+      "close": 4010.0,
+      "change_pct": 29.98,
+      "relative_strength": 29.75,
+      "amount_eok": 97.84317314,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "인디에프 주가, 상한가... 이유는?",
+        "[이격도과열 종목] JW신약 온타이드 인디에프 현대약품 박셀바이오 삼익제약 '펄펄 끓네'",
+        "[공시] 셀레믹스·인디에프 '거래정지 예고', KBI메탈 '투자경고' 등...50건",
+        "인디에프, 마감 직전 상한가 근접 급등세…4천원 돌파 마감",
+        "인디에프, 스타트업 정신으로 혁신경영 초점"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 75.82,
+          "macd": 392.1029,
+          "macd_signal": 275.7912,
+          "macd_histogram": 116.3117,
+          "bb_upper": 3926.72,
+          "bb_middle": 2555.7,
+          "bb_lower": 1184.68,
+          "bb_position": "상단돌파",
+          "ma_5": 3279.0,
+          "ma_20": 2555.7,
+          "ma_60": 2193.7,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.66,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 과매수 진입 / RSI 하락다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "052460",
+      "name": "아이크래프트",
+      "market": "KOSDAQ",
+      "industry": "컴퓨터 프로그래밍, 시스템 통합 및 관리업",
+      "move_type": "plunge",
+      "close": 5230.0,
+      "change_pct": -25.6,
+      "relative_strength": -24.04,
+      "amount_eok": 100.40893085,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "아이크래프트, ‘엔비디아 파트너십’ 탄력… AI 풀스택 구축 수요에 실적 UP",
+        "아이크래프트 투자분석 2026. 08. 27",
+        "AI 인프라 투자 확대 속 SGA솔루션즈·아이크래프트 등 주가 '함박웃음'",
+        "[DQN] 아이크래프트, 2659억 수주에도…매출 전환·수익성은 검증대",
+        "아이크래프트, AI 투자 결실… NIPA AI 인프라 구축 사업 수주로 기술력 입증"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 45.34,
+          "macd": 409.8779,
+          "macd_signal": 661.3347,
+          "macd_histogram": -251.4568,
+          "bb_upper": 8104.36,
+          "bb_middle": 6622.5,
+          "bb_lower": 5140.64,
+          "bb_position": "하단근접",
+          "ma_5": 6164.0,
+          "ma_20": 6622.5,
+          "ma_60": 4332.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.51,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "040350",
+      "name": "크레오에스지",
+      "market": "KOSDAQ",
+      "industry": "컴퓨터 프로그래밍, 시스템 통합 및 관리업",
+      "move_type": "plunge",
+      "close": 4875.0,
+      "change_pct": -24.54,
+      "relative_strength": -22.98,
+      "amount_eok": 30.66621479,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "지엔코, 최대주주 크레오에스지 측 주식등 보유 비율 0.07%p 증가",
+        "크레오에스지 투자분석 2026. 08. 28",
+        "[더벨]크레오에스지, 자이르형 에볼라 백신 후보 확보 - 머니투데이",
+        "크레오에스지, 모더나 암백신 3상 '잭팟'에 주목…'백신→항암' 플랫폼 부각",
+        "크레오에스지, 주식병합에 따른 매매거래 정지…14일부터"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 30.87,
+          "macd": -421.2679,
+          "macd_signal": -275.34,
+          "macd_histogram": -145.9279,
+          "bb_upper": 8173.02,
+          "bb_middle": 6857.75,
+          "bb_lower": 5542.48,
+          "bb_position": "하단이탈",
+          "ma_5": 5967.0,
+          "ma_20": 6857.75,
+          "ma_60": 7923.75,
+          "ma_trend": "역배열",
+          "volume_ratio": 5.31,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 5.3배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "270520",
+      "name": "앱튼",
+      "market": "KOSDAQ",
+      "industry": "건축기술, 엔지니어링 및 관련 기술 서비스업",
+      "move_type": "plunge",
+      "close": 2910.0,
+      "change_pct": -14.03,
+      "relative_strength": -12.47,
+      "amount_eok": 21.62627317,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "앱튼, FDA 희귀의약품 ‘GPC-100’ 美 임상 3상·품목허가 추진 : 네이버 블로그",
+        "주가 폭락했는데... 앱튼 CB 투자자들, ‘이 조항’ 덕에 3배 초대박 가능성 - 조선비즈",
+        "앱튼, GPC-100 미국 3상 추진…FDA 품목허가 도전",
+        "앱튼, GPC-100 美 3상 추진…혈액암 넘어 ‘세포·유전자치료’ 확장성 주목",
+        "앱튼 “GPC-100, 美 임상 3상 및 품목허가 추진 방침”"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 35.36,
+          "macd": 84.7353,
+          "macd_signal": 221.822,
+          "macd_histogram": -137.0867,
+          "bb_upper": 4189.29,
+          "bb_middle": 3681.0,
+          "bb_lower": 3172.71,
+          "bb_position": "하단이탈",
+          "ma_5": 3370.0,
+          "ma_20": 3681.0,
+          "ma_60": 2615.35,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.41,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
