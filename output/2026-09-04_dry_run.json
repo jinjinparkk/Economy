@@ -1,0 +1,469 @@
+{
+  "trade_date": "2026-09-04",
+  "macro": {
+    "S&P 500": {
+      "close": 7747.71,
+      "change_pct": 1.06,
+      "date": "2026-09-03"
+    },
+    "NASDAQ": {
+      "close": 26584.06,
+      "change_pct": 1.4,
+      "date": "2026-09-03"
+    },
+    "다우존스": {
+      "close": 53686.11,
+      "change_pct": 1.18,
+      "date": "2026-09-03"
+    },
+    "필라델피아반도체": {
+      "close": 502.2,
+      "change_pct": 0.15,
+      "date": "2026-09-03"
+    },
+    "달러인덱스": {
+      "close": 99.0,
+      "change_pct": -0.56,
+      "date": "2026-09-03"
+    },
+    "WTI유": {
+      "close": 91.3,
+      "change_pct": 0.32,
+      "date": "2026-09-03"
+    },
+    "금": {
+      "close": 4491.7,
+      "change_pct": 2.87,
+      "date": "2026-09-03"
+    },
+    "구리": {
+      "close": 6.58,
+      "change_pct": 1.23,
+      "date": "2026-09-03"
+    },
+    "천연가스": {
+      "close": 2.91,
+      "change_pct": -1.69,
+      "date": "2026-09-03"
+    },
+    "VIX": {
+      "close": 14.32,
+      "change_pct": -5.79,
+      "date": "2026-09-03"
+    },
+    "미국채10Y": {
+      "close": 4.76,
+      "change_pct": -0.83,
+      "date": "2026-09-03"
+    },
+    "미국채2Y": {
+      "close": 4.2,
+      "change_pct": 0.0,
+      "date": "2026-09-03"
+    },
+    "기술": {
+      "close": 185.97,
+      "change_pct": 1.29,
+      "date": "2026-09-03"
+    },
+    "금융": {
+      "close": 58.56,
+      "change_pct": 1.56,
+      "date": "2026-09-03"
+    },
+    "에너지": {
+      "close": 64.62,
+      "change_pct": -0.74,
+      "date": "2026-09-03"
+    },
+    "헬스케어": {
+      "close": 173.26,
+      "change_pct": 0.18,
+      "date": "2026-09-03"
+    },
+    "산업재": {
+      "close": 174.56,
+      "change_pct": 1.03,
+      "date": "2026-09-03"
+    },
+    "커뮤니케이션": {
+      "close": 113.38,
+      "change_pct": 0.85,
+      "date": "2026-09-03"
+    },
+    "경기소비재": {
+      "close": 116.46,
+      "change_pct": 1.39,
+      "date": "2026-09-03"
+    },
+    "필수소비재": {
+      "close": 85.26,
+      "change_pct": -0.32,
+      "date": "2026-09-03"
+    },
+    "부동산": {
+      "close": 44.25,
+      "change_pct": 1.19,
+      "date": "2026-09-03"
+    },
+    "유틸리티": {
+      "close": 43.03,
+      "change_pct": 0.84,
+      "date": "2026-09-03"
+    },
+    "소재": {
+      "close": 52.62,
+      "change_pct": -0.62,
+      "date": "2026-09-03"
+    },
+    "엔비디아": {
+      "close": 228.45,
+      "change_pct": 1.8,
+      "date": "2026-09-03"
+    },
+    "애플": {
+      "close": 328.21,
+      "change_pct": 1.0,
+      "date": "2026-09-03"
+    },
+    "마이크로소프트": {
+      "close": 510.12,
+      "change_pct": 2.68,
+      "date": "2026-09-03"
+    },
+    "아마존": {
+      "close": 258.9,
+      "change_pct": 1.54,
+      "date": "2026-09-03"
+    },
+    "알파벳": {
+      "close": 339.08,
+      "change_pct": 1.59,
+      "date": "2026-09-03"
+    },
+    "메타": {
+      "close": 610.68,
+      "change_pct": 3.01,
+      "date": "2026-09-03"
+    },
+    "테슬라": {
+      "close": 376.37,
+      "change_pct": 5.42,
+      "date": "2026-09-03"
+    },
+    "러셀2000": {
+      "close": 295.19,
+      "change_pct": 0.4,
+      "date": "2026-09-03"
+    },
+    "나스닥100ETF": {
+      "close": 717.67,
+      "change_pct": 1.19,
+      "date": "2026-09-03"
+    },
+    "가치ETF": {
+      "close": 227.02,
+      "change_pct": 0.71,
+      "date": "2026-09-03"
+    },
+    "닛케이225": {
+      "close": 65020.94,
+      "change_pct": 1.26,
+      "date": "2026-09-04"
+    },
+    "항셍": {
+      "close": 25213.31,
+      "change_pct": -0.39,
+      "date": "2026-09-03"
+    },
+    "상해종합": {
+      "close": 3942.09,
+      "change_pct": 0.02,
+      "date": "2026-09-03"
+    },
+    "독일DAX": {
+      "close": 26003.32,
+      "change_pct": 0.63,
+      "date": "2026-09-03"
+    },
+    "유로스톡스50": {
+      "close": 6382.59,
+      "change_pct": 0.32,
+      "date": "2026-09-03"
+    },
+    "하이일드채권": {
+      "close": 79.21,
+      "change_pct": 0.13,
+      "date": "2026-09-03"
+    },
+    "미장기채20Y+": {
+      "close": 82.07,
+      "change_pct": 0.15,
+      "date": "2026-09-03"
+    }
+  },
+  "market_regime": "안정",
+  "yield_spread": 0.56,
+  "macro_narrative": "전일 미국 증시는 S&P500 +1.06%, 나스닥 +1.40%로 상승 마감. 필라델피아 반도체지수 +0.15%. VIX 14.3 (안정 구간). 장단기 금리차 0.560%p (정상 범위). 금 4,491.70달러 (+2.87%). 달러인덱스 99.00 (-0.56%). 섹터: 금융(+1.56%) 주도, 에너지(-0.74%) 약세. QQQ-VTV 스프레드 +0.48%p → 성장주 우위. HYG +0.13% → 신용 스트레스 안정. Mag7 평균 +2.43% → 대형 기술주 강세. 아시아: 닛케이225 +1.26%, 항셍 -0.39%, 상해종합 +0.02%. 유럽: 독일DAX +0.63%, 유로스톡스50 +0.32%.",
+  "market_breadth": {
+    "total_up": 1748,
+    "total_down": 745,
+    "total_unchanged": 272,
+    "total": 2765,
+    "up_ratio": 63.2
+  },
+  "surges": [
+    {
+      "code": "386380",
+      "name": "스카이랩스",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "surge",
+      "close": 23500.0,
+      "change_pct": 135.0,
+      "relative_strength": 132.05,
+      "amount_eok": 16776.14499435,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "\"글로벌 성장 발판\"…스카이랩스, 코스닥 '입성'",
+        "스카이랩스(386380)",
+        "코스닥 입성 스카이랩스, 혈압계 넘어 '의료데이터 플랫폼' 확장",
+        "[특징주] 스카이랩스, 코스닥 상장 첫날 장 초반 6% 상승",
+        "스카이랩스, 오늘 코스닥 입성…오전 주가 강세"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "048770",
+      "name": "TPC로보틱스",
+      "market": "KOSDAQ",
+      "industry": "일반 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 3965.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.05,
+      "amount_eok": 70.13697849,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 휴머노이드 사업 확대 기대…'TPC로보틱스·로보티즈' 로봇株 강세",
+        "[급등락주 짚어보기] 로봇주 훈풍에 원익홀딩스·TPC로보틱스 '上'",
+        "3D 프린터 테마에 무슨 호재 있나… TPC로보틱스 상한가·로보스타 폭등랠리",
+        "[특징주] TPC로보틱스, 로보티즈 ‘흑자전환’ 소식에 동반 강세",
+        "TPC로보틱스, 휴머노이드용 액추에이터 7종 출시…하반기 실적 반등 정조준"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 69.18,
+          "macd": 46.9875,
+          "macd_signal": -28.5072,
+          "macd_histogram": 75.4946,
+          "bb_upper": 3615.79,
+          "bb_middle": 3100.25,
+          "bb_lower": 2584.71,
+          "bb_position": "상단돌파",
+          "ma_5": 3183.0,
+          "ma_20": 3100.25,
+          "ma_60": 3171.75,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.44,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 5.4배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 8.0,
+          "avg_return_5d": -16.33,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 25.0
+        }
+      }
+    },
+    {
+      "code": "418620",
+      "name": "E8",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 572.0,
+      "change_pct": 30.0,
+      "relative_strength": 27.05,
+      "amount_eok": 18.64320291,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[더벨]유증 납입일 단축한 E8, 관련 절차 순항 - 머니투데이",
+        "E8, 유상증자 납입일 단축…자본 확충 조기 마무리",
+        "E8 “유상증자 납입일 단축…자본 확충 조기 마무리”",
+        "E8, AI 시뮬레이션으로 데이터센터 ‘냉각 전력’ 잡는다"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 49.22,
+          "macd": -62.6542,
+          "macd_signal": -71.9196,
+          "macd_histogram": 9.2654,
+          "bb_upper": 869.09,
+          "bb_middle": 567.6,
+          "bb_lower": 266.11,
+          "bb_position": "중립",
+          "ma_5": 504.8,
+          "ma_20": 567.6,
+          "ma_60": 728.82,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.52,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "008290",
+      "name": "원풍물산",
+      "market": "KOSDAQ",
+      "industry": "봉제의복 제조업",
+      "move_type": "plunge",
+      "close": 427.0,
+      "change_pct": -30.0,
+      "relative_strength": -32.95,
+      "amount_eok": 39.52303431,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "원풍물산 주가 상승랠리 뚜렷... 무슨 호재 있나",
+        "원풍물산, 美 선다이오드와 방산용 AR 디스플레이 양산 협력… 신사업 본격화",
+        "원풍물산, 주가 미달로 관리종목 지정사유 추가",
+        "원풍물산, 美 실리콘밸리 선다이오드와 차세대 마이크로LED 협력",
+        "양복으로 알려진 원풍물산, 방산용 디스플레이로 첨단 IT사업 본격화...美 실리콘벨리 기업과 협력"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 43.03,
+          "macd": 53.9397,
+          "macd_signal": 62.1,
+          "macd_histogram": -8.1603,
+          "bb_upper": 830.52,
+          "bb_middle": 537.85,
+          "bb_lower": 245.18,
+          "bb_position": "중립",
+          "ma_5": 630.0,
+          "ma_20": 537.85,
+          "ma_60": 452.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.22,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 하락다이버전스 / MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "033340",
+      "name": "좋은사람들",
+      "market": "KOSDAQ",
+      "industry": "봉제의복 제조업",
+      "move_type": "plunge",
+      "close": 551.0,
+      "change_pct": -11.84,
+      "relative_strength": -14.79,
+      "amount_eok": 154.46147997,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "좋은사람들, '감자·주식병합'에도…재무 개선은 아직",
+        "특징주, 좋은사람들-남북경협 테마 상승세에 29.94% ↑",
+        "[서울데이터랩]코스닥 거래상위 종목 장중 혼조…좋은사람들·동양파일·서산 상한가",
+        "김용범 “좋은 사람과 좋은 뜻 가지고 마음껏 일해봐”",
+        "좋은사람들 주가, 9월 1일 장중 상한가, 481원 22.39% 상승 마감"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 56.96,
+          "macd": 31.1889,
+          "macd_signal": 9.4748,
+          "macd_histogram": 21.7141,
+          "bb_upper": 670.05,
+          "bb_middle": 447.8,
+          "bb_lower": 225.55,
+          "bb_position": "중립",
+          "ma_5": 535.0,
+          "ma_20": 447.8,
+          "ma_60": 510.98,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.31,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 하락다이버전스 / MACD 골든크로스 진행 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "079650",
+      "name": "서산",
+      "market": "KOSDAQ",
+      "industry": "시멘트, 석회, 플라스터 및 그 제품 제조업",
+      "move_type": "plunge",
+      "close": 6730.0,
+      "change_pct": -11.1,
+      "relative_strength": -14.05,
+      "amount_eok": 470.11239735,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "조동식 서산시의원, '대산항'을 '서산항'으로",
+        "대산항 '서산항'으로 바꾸자…조동식 의원 “도시 브랜드로 키워야”",
+        "조동식 의원 \"'대산항→서산항' 명칭 변경해야\"…글로벌 해양도시 도약 강조!",
+        "서산시, 3,566억 규모 126건 신규시책 토론회 개최… 민선9기 실행 박차",
+        "서산시, 2027년 시정 밑그림 그린다, 126개 신규시책 '시동'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 63.17,
+          "macd": 543.2301,
+          "macd_signal": 323.2505,
+          "macd_histogram": 219.9795,
+          "bb_upper": 7033.7,
+          "bb_middle": 5256.25,
+          "bb_lower": 3478.8,
+          "bb_position": "상단근접",
+          "ma_5": 6306.0,
+          "ma_20": 5256.25,
+          "ma_60": 4703.75,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.15,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
