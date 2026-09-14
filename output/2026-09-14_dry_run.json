@@ -1,0 +1,497 @@
+{
+  "trade_date": "2026-09-14",
+  "macro": {
+    "S&P 500": {
+      "close": 7656.98,
+      "change_pct": 0.86,
+      "date": "2026-09-11"
+    },
+    "NASDAQ": {
+      "close": 26333.04,
+      "change_pct": 0.96,
+      "date": "2026-09-11"
+    },
+    "다우존스": {
+      "close": 52573.29,
+      "change_pct": 0.98,
+      "date": "2026-09-11"
+    },
+    "필라델피아반도체": {
+      "close": 527.07,
+      "change_pct": 1.86,
+      "date": "2026-09-11"
+    },
+    "원/달러": {
+      "close": 1348.75,
+      "change_pct": 0.04,
+      "date": "2026-09-14"
+    },
+    "달러인덱스": {
+      "close": 99.12,
+      "change_pct": 0.03,
+      "date": "2026-09-11"
+    },
+    "WTI유": {
+      "close": 100.05,
+      "change_pct": -2.37,
+      "date": "2026-09-11"
+    },
+    "금": {
+      "close": 4366.2,
+      "change_pct": 0.04,
+      "date": "2026-09-11"
+    },
+    "구리": {
+      "close": 6.47,
+      "change_pct": 0.0,
+      "date": "2026-09-11"
+    },
+    "천연가스": {
+      "close": 2.83,
+      "change_pct": 0.0,
+      "date": "2026-09-11"
+    },
+    "VIX": {
+      "close": 15.84,
+      "change_pct": -11.21,
+      "date": "2026-09-11"
+    },
+    "미국채10Y": {
+      "close": 4.97,
+      "change_pct": 0.61,
+      "date": "2026-09-11"
+    },
+    "미국채2Y": {
+      "close": 4.38,
+      "change_pct": 0.0,
+      "date": "2026-09-11"
+    },
+    "기술": {
+      "close": 187.67,
+      "change_pct": 1.32,
+      "date": "2026-09-11"
+    },
+    "금융": {
+      "close": 57.25,
+      "change_pct": 0.67,
+      "date": "2026-09-11"
+    },
+    "에너지": {
+      "close": 65.14,
+      "change_pct": 0.32,
+      "date": "2026-09-11"
+    },
+    "헬스케어": {
+      "close": 165.36,
+      "change_pct": -0.18,
+      "date": "2026-09-11"
+    },
+    "산업재": {
+      "close": 172.37,
+      "change_pct": 1.07,
+      "date": "2026-09-11"
+    },
+    "커뮤니케이션": {
+      "close": 112.6,
+      "change_pct": 0.99,
+      "date": "2026-09-11"
+    },
+    "경기소비재": {
+      "close": 112.96,
+      "change_pct": 0.89,
+      "date": "2026-09-11"
+    },
+    "필수소비재": {
+      "close": 83.38,
+      "change_pct": 0.35,
+      "date": "2026-09-11"
+    },
+    "부동산": {
+      "close": 43.42,
+      "change_pct": 0.86,
+      "date": "2026-09-11"
+    },
+    "유틸리티": {
+      "close": 42.39,
+      "change_pct": -0.31,
+      "date": "2026-09-11"
+    },
+    "소재": {
+      "close": 50.95,
+      "change_pct": 0.37,
+      "date": "2026-09-11"
+    },
+    "엔비디아": {
+      "close": 218.29,
+      "change_pct": -0.03,
+      "date": "2026-09-11"
+    },
+    "애플": {
+      "close": 332.27,
+      "change_pct": 1.75,
+      "date": "2026-09-11"
+    },
+    "마이크로소프트": {
+      "close": 495.63,
+      "change_pct": 0.65,
+      "date": "2026-09-11"
+    },
+    "아마존": {
+      "close": 256.78,
+      "change_pct": 1.94,
+      "date": "2026-09-11"
+    },
+    "알파벳": {
+      "close": 335.45,
+      "change_pct": 1.53,
+      "date": "2026-09-11"
+    },
+    "메타": {
+      "close": 648.03,
+      "change_pct": 0.57,
+      "date": "2026-09-11"
+    },
+    "테슬라": {
+      "close": 365.44,
+      "change_pct": 0.52,
+      "date": "2026-09-11"
+    },
+    "러셀2000": {
+      "close": 288.89,
+      "change_pct": 0.41,
+      "date": "2026-09-11"
+    },
+    "나스닥100ETF": {
+      "close": 714.88,
+      "change_pct": 0.87,
+      "date": "2026-09-11"
+    },
+    "가치ETF": {
+      "close": 223.97,
+      "change_pct": 0.72,
+      "date": "2026-09-11"
+    },
+    "닛케이225": {
+      "close": 63492.99,
+      "change_pct": -0.81,
+      "date": "2026-09-14"
+    },
+    "항셍": {
+      "close": 24805.63,
+      "change_pct": -0.6,
+      "date": "2026-09-11"
+    },
+    "상해종합": {
+      "close": 3888.11,
+      "change_pct": -1.18,
+      "date": "2026-09-11"
+    },
+    "독일DAX": {
+      "close": 25568.56,
+      "change_pct": 0.82,
+      "date": "2026-09-11"
+    },
+    "유로스톡스50": {
+      "close": 6325.13,
+      "change_pct": 0.9,
+      "date": "2026-09-11"
+    },
+    "하이일드채권": {
+      "close": 78.6,
+      "change_pct": -0.03,
+      "date": "2026-09-11"
+    },
+    "미장기채20Y+": {
+      "close": 80.87,
+      "change_pct": 0.11,
+      "date": "2026-09-11"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.59,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.86%, 나스닥 +0.96%로 상승 마감. 필라델피아 반도체지수 +1.86%. VIX 15.8 (보통 구간). 장단기 금리차 0.590%p (정상 범위). 원/달러 1,348.75원 (+0.04%, 원화 약세). 금 4,366.20달러 (+0.04%). 달러인덱스 99.12 (+0.03%). 섹터: 기술(+1.32%) 주도, 유틸리티(-0.31%) 약세. QQQ-VTV 스프레드 +0.15%p → 성장주 우위. HYG -0.03% → 신용 스트레스 안정. Mag7 평균 +0.99% → 대형 기술주 강세. 아시아: 닛케이225 -0.81%, 항셍 -0.60%, 상해종합 -1.18%. 유럽: 독일DAX +0.82%, 유로스톡스50 +0.90%.",
+  "market_breadth": {
+    "total_up": 1008,
+    "total_down": 1543,
+    "total_unchanged": 213,
+    "total": 2764,
+    "up_ratio": 36.5
+  },
+  "surges": [
+    {
+      "code": "017900",
+      "name": "광전자",
+      "market": "KOSPI",
+      "industry": "반도체 제조업",
+      "move_type": "surge",
+      "close": 10270.0,
+      "change_pct": 30.0,
+      "relative_strength": 33.26,
+      "amount_eok": 2722.51297725,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[속보] 광전자 VI 발동, 주가 장초반부터 급등",
+        "\"장 끝났는데 또 거래\"…거래소 애프터마켓 첫날 광전자·빛과전자 '활발'",
+        "광전자, 상한가 진입.. +30.00% ↑",
+        "KRX 애프터마켓 첫 시행… 광전자·빛과전자·삼익제약 거래량 급증",
+        "광전자 주가, 상한가... 무슨 회사길래?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 71.66,
+          "macd": 359.6753,
+          "macd_signal": 191.1084,
+          "macd_histogram": 168.567,
+          "bb_upper": 9203.66,
+          "bb_middle": 7808.0,
+          "bb_lower": 6412.34,
+          "bb_position": "상단돌파",
+          "ma_5": 8524.0,
+          "ma_20": 7808.0,
+          "ma_60": 6968.92,
+          "ma_trend": "정배열",
+          "volume_ratio": 7.62,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 7.6배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 10,
+          "avg_return_1d": 8.17,
+          "avg_return_5d": 36.34,
+          "positive_rate_1d": 55.6,
+          "positive_rate_5d": 55.6
+        }
+      }
+    },
+    {
+      "code": "071200",
+      "name": "인피니트헬스케어",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 11310.0,
+      "change_pct": 30.0,
+      "relative_strength": 31.69,
+      "amount_eok": 63.05325,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[특징주] 인피니트헬스케어 '654억' 배당에 상한가",
+        "[특징주] 인피니트헬스케어, 650억 규모 배당 예고에 30% 폭등",
+        "654억 배당 카드 꺼낸 인피니트헬스케어…장 초반 상한가",
+        "[모멘텀특징주] 오전장 인피니트헬스케어(30.0%), 영풍(29.9%) 등 강세"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 68.14,
+          "macd": 121.6088,
+          "macd_signal": 109.4901,
+          "macd_histogram": 12.1187,
+          "bb_upper": 10550.11,
+          "bb_middle": 9405.5,
+          "bb_lower": 8260.89,
+          "bb_position": "상단돌파",
+          "ma_5": 9238.0,
+          "ma_20": 9405.5,
+          "ma_60": 8584.83,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.96,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 6.0배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "101000",
+      "name": "KS인더스트리",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 1904.0,
+      "change_pct": 29.97,
+      "relative_strength": 31.66,
+      "amount_eok": 12.084049,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "KS인더스트리, 깊어지는 적자 속 전환사채·유상증자 반복…유동성 해법은?",
+        "KS인더스트리, 60억원 규모 제3자배정 유상증자 결정",
+        "KS인더스트리, 26억원 규모 부동산가압류 결정",
+        "[stock-in] KS인더스트리, 주가 폭등에도 '시총 200억' 미달...상폐 위험·이상수급 '경고등'",
+        "KS인더스트리, 70억 원 규모 사모 전환사채 발행 결정...특허권 취득 자금 조달"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 87.08,
+          "macd": 173.8216,
+          "macd_signal": 63.6512,
+          "macd_histogram": 110.1705,
+          "bb_upper": 1641.22,
+          "bb_middle": 974.2,
+          "bb_lower": 307.18,
+          "bb_position": "상단돌파",
+          "ma_5": 1459.8,
+          "ma_20": 974.2,
+          "ma_60": 987.67,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.92,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 7.14,
+          "avg_return_5d": -0.42,
+          "positive_rate_1d": 50.0,
+          "positive_rate_5d": 50.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "046070",
+      "name": "코다코",
+      "market": "KOSDAQ",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "plunge",
+      "close": 300.0,
+      "change_pct": -33.63,
+      "relative_strength": -31.94,
+      "amount_eok": 14.67433966,
+      "hints": [
+        "하한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[위기의 상장사] 멕시코 법인 매각했지만…벼랑 끝 코다코, 감사의견 촉각",
+        "[단독] VAC, ‘기회추구형’ 투자 속도… 회생기업 코다코에 500억 DIP 대출 - 조선비즈",
+        "코다코, 감사의견 거절로 상장폐지…10일부터 정리매매 돌입",
+        "코다코 34% 폭등해 550원…정리매매 이틀째 극심한 변동성",
+        "[속보] 코다코, 8대1 주식병합 신주 내일 상장...발행주식 87.5% 감소"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 0.06,
+          "macd": -15402.0088,
+          "macd_signal": -5768.2181,
+          "macd_histogram": -9633.7907,
+          "bb_upper": 128510.47,
+          "bb_middle": 70013.1,
+          "bb_lower": 11515.73,
+          "bb_position": "하단이탈",
+          "ma_5": 33152.4,
+          "ma_20": 70013.1,
+          "ma_60": 78204.37,
+          "ma_trend": "역배열",
+          "volume_ratio": 5.7,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매도(반등 가능성) / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 5.7배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "224060",
+      "name": "더코디",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "plunge",
+      "close": 7730.0,
+      "change_pct": -21.84,
+      "relative_strength": -20.15,
+      "amount_eok": 75.3274756,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "더코디, 제3자배정 유상증자 일정 변경...납입일 10월 8일로 앞당겨",
+        "[카드뉴스] 더코디① 임원은 선매수, 주가는 연속 上, CB는 바겐세일",
+        "더코디, 범LG家 편입 기대감에 이틀째 상한가[특징주]",
+        "[특징주] 더코디, 구본호 회장 판토스코퍼레이션 최대주주.. '상한가'",
+        "[단독] 더코디 대표·임원, 주가 급등 재료 공시 직전에 선매수…“미공개정보 이용 의혹”"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 66.31,
+          "macd": 1205.1042,
+          "macd_signal": 577.0037,
+          "macd_histogram": 628.1005,
+          "bb_upper": 9084.25,
+          "bb_middle": 4669.0,
+          "bb_lower": 253.75,
+          "bb_position": "중립",
+          "ma_5": 8196.0,
+          "ma_20": 4669.0,
+          "ma_60": 4273.0,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.7,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "293580",
+      "name": "나우IB",
+      "market": "KOSDAQ",
+      "industry": "기타 금융업",
+      "move_type": "plunge",
+      "close": 1147.0,
+      "change_pct": -18.42,
+      "relative_strength": -16.73,
+      "amount_eok": 46.74230964,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "나우IB, 자본감소 사유로 14일 주권매매거래정지",
+        "\"주주가치 최우선\"…나우IB, 배당 재원 마련 착수[마켓인]",
+        "나우IB 주가, 9월 14일 1,200원 14.65% 하락",
+        "나우IB, 재무 개선 위해 75% 무상감자 결정",
+        "나우IB 투자분석 2026. 09. 10"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 24.37,
+          "macd": -28.6188,
+          "macd_signal": -2.9261,
+          "macd_histogram": -25.6928,
+          "bb_upper": 1585.09,
+          "bb_middle": 1438.15,
+          "bb_lower": 1291.21,
+          "bb_position": "하단이탈",
+          "ma_5": 1361.6,
+          "ma_20": 1438.15,
+          "ma_60": 1400.9,
+          "ma_trend": "혼조",
+          "volume_ratio": 12.78,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 12.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
