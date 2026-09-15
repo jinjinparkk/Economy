@@ -1,0 +1,732 @@
+{
+  "trade_date": "2026-09-16",
+  "macro": {
+    "S&P 500": {
+      "Close": 7619.98,
+      "ChangePct": -0.48,
+      "Change": -37.0
+    },
+    "NASDAQ": {
+      "Close": 26186.41,
+      "ChangePct": -0.56,
+      "Change": -146.63
+    },
+    "다우존스": {
+      "Close": 52421.2,
+      "ChangePct": -0.29,
+      "Change": -152.09
+    },
+    "필라델피아반도체": {
+      "Close": 497.4,
+      "ChangePct": -5.63,
+      "Change": -29.67
+    },
+    "원/달러": {
+      "Close": 1344.64,
+      "ChangePct": -0.26,
+      "Change": -3.53
+    },
+    "달러인덱스": {
+      "Close": 99.46,
+      "ChangePct": 0.34,
+      "Change": 0.34
+    },
+    "WTI유": {
+      "Close": 101.39,
+      "ChangePct": 1.34,
+      "Change": 1.34
+    },
+    "금": {
+      "Close": 4351.9,
+      "ChangePct": -1.29,
+      "Change": -57.0
+    },
+    "구리": {
+      "Close": 6.33,
+      "ChangePct": -2.16,
+      "Change": -0.14
+    },
+    "천연가스": {
+      "Close": 2.9,
+      "ChangePct": 2.47,
+      "Change": 0.07
+    },
+    "VIX": {
+      "Close": 17.1,
+      "ChangePct": 7.95,
+      "Change": 1.26
+    },
+    "미국채10Y": {
+      "Close": 4.96,
+      "ChangePct": -0.2,
+      "Change": -0.01
+    },
+    "미국채2Y": {
+      "Close": 4.38,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "기술": {
+      "Close": 184.28,
+      "ChangePct": -1.81,
+      "Change": -3.39
+    },
+    "금융": {
+      "Close": 57.03,
+      "ChangePct": -0.38,
+      "Change": -0.22
+    },
+    "에너지": {
+      "Close": 64.53,
+      "ChangePct": -0.94,
+      "Change": -0.61
+    },
+    "헬스케어": {
+      "Close": 167.75,
+      "ChangePct": 1.45,
+      "Change": 2.39
+    },
+    "산업재": {
+      "Close": 169.93,
+      "ChangePct": -1.42,
+      "Change": -2.44
+    },
+    "커뮤니케이션": {
+      "Close": 115.07,
+      "ChangePct": 2.19,
+      "Change": 2.47
+    },
+    "경기소비재": {
+      "Close": 112.85,
+      "ChangePct": -0.1,
+      "Change": -0.11
+    },
+    "필수소비재": {
+      "Close": 84.42,
+      "ChangePct": 1.25,
+      "Change": 1.04
+    },
+    "부동산": {
+      "Close": 43.12,
+      "ChangePct": -0.69,
+      "Change": -0.3
+    },
+    "유틸리티": {
+      "Close": 41.82,
+      "ChangePct": -1.34,
+      "Change": -0.57
+    },
+    "소재": {
+      "Close": 50.49,
+      "ChangePct": -0.9,
+      "Change": -0.46
+    },
+    "엔비디아": {
+      "Close": 210.96,
+      "ChangePct": -3.36,
+      "Change": -7.33
+    },
+    "애플": {
+      "Close": 333.08,
+      "ChangePct": 0.24,
+      "Change": 0.81
+    },
+    "마이크로소프트": {
+      "Close": 505.41,
+      "ChangePct": 1.97,
+      "Change": 9.78
+    },
+    "아마존": {
+      "Close": 253.54,
+      "ChangePct": -1.26,
+      "Change": -3.24
+    },
+    "알파벳": {
+      "Close": 345.71,
+      "ChangePct": 3.06,
+      "Change": 10.26
+    },
+    "메타": {
+      "Close": 665.6,
+      "ChangePct": 2.71,
+      "Change": 17.57
+    },
+    "테슬라": {
+      "Close": 358.97,
+      "ChangePct": -1.77,
+      "Change": -6.47
+    },
+    "러셀2000": {
+      "Close": 287.91,
+      "ChangePct": -0.34,
+      "Change": -0.98
+    },
+    "나스닥100ETF": {
+      "Close": 709.18,
+      "ChangePct": -0.8,
+      "Change": -5.7
+    },
+    "가치ETF": {
+      "Close": 222.89,
+      "ChangePct": -0.48,
+      "Change": -1.08
+    },
+    "닛케이225": {
+      "Close": 63492.99,
+      "ChangePct": -0.81,
+      "Change": -518.35
+    },
+    "항셍": {
+      "Close": 24917.6,
+      "ChangePct": 0.45,
+      "Change": 111.97
+    },
+    "상해종합": {
+      "Close": 3885.33,
+      "ChangePct": -0.07,
+      "Change": -2.78
+    },
+    "독일DAX": {
+      "Close": 25440.81,
+      "ChangePct": -0.5,
+      "Change": -127.75
+    },
+    "유로스톡스50": {
+      "Close": 6260.38,
+      "ChangePct": -1.02,
+      "Change": -64.75
+    },
+    "하이일드채권": {
+      "Close": 78.53,
+      "ChangePct": -0.09,
+      "Change": -0.07
+    },
+    "미장기채20Y+": {
+      "Close": 80.93,
+      "ChangePct": 0.07,
+      "Change": 0.06
+    },
+    "_yield_spread": 0.58,
+    "_market_regime": "보통",
+    "_sector_top_bottom": [
+      "커뮤니케이션(+2.19%)",
+      "기술(-1.81%)"
+    ],
+    "_growth_value_ratio": -0.32,
+    "_credit_stress": "안정",
+    "_mag7_avg": 0.23
+  },
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.48%, 나스닥 -0.56%로 하락 마감. 필라델피아 반도체지수 -5.63%. VIX 17.1 (보통 구간). 장단기 금리차 0.580%p (정상 범위). 원/달러 1,344.64원 (-0.26%, 원화 강세). 금 4,351.90달러 (-1.29%). 달러인덱스 99.46 (+0.34%). 섹터: 커뮤니케이션(+2.19%) 주도, 기술(-1.81%) 약세. QQQ-VTV 스프레드 -0.32%p → 가치주 우위. HYG -0.09% → 신용 스트레스 안정. Mag7 평균 +0.23% → 대형 기술주 강세. 아시아: 닛케이225 -0.81%, 항셍 +0.45%, 상해종합 -0.07%. 유럽: 독일DAX -0.50%, 유로스톡스50 -1.02%.",
+  "market_regime": "보통",
+  "yield_spread": 0.58,
+  "us_news": [
+    "[서울신문] [서울데이터랩]미국 증시, 기술주 약세에 일제 하락 마감…반도체 지수는 소폭 상승",
+    "[v.daum.net] 해외 큰손들, 美 국채보다 주식으로 몰린다",
+    "[톱스타뉴스] 미국증시 10년물 5%·유가 106달러에 하락…연준 앞두고 엔비디아는 반등",
+    "[chosun.com] 유가 109달러 육박·미국 국채 금리 5%…‘더블 쇼크’에 뉴욕증시 이틀째 하락",
+    "[g-enews.com] 외국인 자금, 美 국채보다 주식으로 몰린다",
+    "[뉴시스] 뉴욕증시, 국채금리·유가 상승에 하락 마감…나스닥 0.78%↓",
+    "[v.daum.net] 뉴욕증시, AI 속도조절론·유가 급등 겹악재…나스닥 1.2%↓",
+    "[연합뉴스] 美국채 금리·유가 상승에 뉴욕증시 하락…나스닥 0.6%↓",
+    "[아시아경제] [뉴욕증시]10년물 5% 돌파…나스닥 1%대 하락",
+    "[문화일보] [속보]‘AI 속도조절론’에 뉴욕증시 하락…나스닥 0.56%↓"
+  ],
+  "sectors": {
+    "기술": {
+      "Close": 184.28,
+      "ChangePct": -1.81
+    },
+    "금융": {
+      "Close": 57.03,
+      "ChangePct": -0.38
+    },
+    "에너지": {
+      "Close": 64.53,
+      "ChangePct": -0.94
+    },
+    "헬스케어": {
+      "Close": 167.75,
+      "ChangePct": 1.45
+    },
+    "산업재": {
+      "Close": 169.93,
+      "ChangePct": -1.42
+    },
+    "커뮤니케이션": {
+      "Close": 115.07,
+      "ChangePct": 2.19
+    },
+    "경기소비재": {
+      "Close": 112.85,
+      "ChangePct": -0.1
+    },
+    "필수소비재": {
+      "Close": 84.42,
+      "ChangePct": 1.25
+    },
+    "부동산": {
+      "Close": 43.12,
+      "ChangePct": -0.69
+    },
+    "유틸리티": {
+      "Close": 41.82,
+      "ChangePct": -1.34
+    },
+    "소재": {
+      "Close": 50.49,
+      "ChangePct": -0.9
+    }
+  },
+  "mega_caps": {
+    "엔비디아": {
+      "Close": 210.96,
+      "ChangePct": -3.36
+    },
+    "애플": {
+      "Close": 333.08,
+      "ChangePct": 0.24
+    },
+    "마이크로소프트": {
+      "Close": 505.41,
+      "ChangePct": 1.97
+    },
+    "아마존": {
+      "Close": 253.54,
+      "ChangePct": -1.26
+    },
+    "알파벳": {
+      "Close": 345.71,
+      "ChangePct": 3.06
+    },
+    "메타": {
+      "Close": 665.6,
+      "ChangePct": 2.71
+    },
+    "테슬라": {
+      "Close": 358.97,
+      "ChangePct": -1.77
+    }
+  },
+  "style_signals": {
+    "growth_value_ratio": -0.32,
+    "items": {
+      "러셀2000": {
+        "ChangePct": -0.34
+      },
+      "나스닥100ETF": {
+        "ChangePct": -0.8
+      },
+      "가치ETF": {
+        "ChangePct": -0.48
+      }
+    }
+  },
+  "asia_indices": {
+    "닛케이225": {
+      "Close": 63492.99,
+      "ChangePct": -0.81
+    },
+    "항셍": {
+      "Close": 24917.6,
+      "ChangePct": 0.45
+    },
+    "상해종합": {
+      "Close": 3885.33,
+      "ChangePct": -0.07
+    }
+  },
+  "europe_indices": {
+    "독일DAX": {
+      "Close": 25440.81,
+      "ChangePct": -0.5
+    },
+    "유로스톡스50": {
+      "Close": 6260.38,
+      "ChangePct": -1.02
+    }
+  },
+  "credit_signals": {
+    "stress": "안정",
+    "items": {
+      "하이일드채권": {
+        "ChangePct": -0.09
+      },
+      "미장기채20Y+": {
+        "ChangePct": 0.07
+      }
+    }
+  },
+  "econ_calendar": [
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "[미리보는 증시재료] FOMC 금리 결정 주목…14일 KRX 애프터마켓 개장",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[뉴스핌] [미리보는 증시재료] FOMC 금리 결정 주목…14일 KRX 애프터마켓 개장"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "유가 등 중동 악재에 눌린 코스피, 美 FOMC 금리결정 주시",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 유가 등 중동 악재에 눌린 코스피, 美 FOMC 금리결정 주시"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "3년 만의 미국 금리인상 가능성…연준 FOMC에 쏠린 눈",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[뉴스1] 3년 만의 미국 금리인상 가능성…연준 FOMC에 쏠린 눈"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[네이버 프리미엄콘텐츠] 다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "[외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] [외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "美 7월 CPI에 쏠린 눈…\"둔화 시 코스피 반등 계기될 수도\"",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美 7월 CPI에 쏠린 눈…\"둔화 시 코스피 반등 계기될 수도\""
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "전쟁에도 미국 고용은 '튼튼'...신규 실업수당 신청 청구 예상 하회",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[YTN] 전쟁에도 미국 고용은 '튼튼'...신규 실업수당 신청 청구 예상 하회"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[블로터] 美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "일본 GDP가 예상치를 밑돌고 미국 소매판매 부진이 부담으로 작용하며 달러/엔, 159.10선으로 하락",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[VT Markets] 일본 GDP가 예상치를 밑돌고 미국 소매판매 부진이 부담으로 작용하며 달러/엔, 159.10선으로 하락"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "time": "",
+      "event": "美 7월 소매판매 0.6%↓…14개월來 최대 낙폭",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[마켓인] 美 7월 소매판매 0.6%↓…14개월來 최대 낙폭"
+      ]
+    }
+  ],
+  "global_issues": [
+    {
+      "topic": "SpaceX IPO",
+      "category": "IPO",
+      "kr_impact": "SpaceX 지분 보유 VC·우주항공 부품주 직접 수혜",
+      "kr_stocks_positive": [
+        "미래에셋벤처투자",
+        "아주IB투자",
+        "한화에어로스페이스",
+        "쎄트렉아이",
+        "AP위성"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "SpaceX의 750억 달러 IPO 락업이 내부자 매도 서사를 복잡하게 만든다"
+      ]
+    },
+    {
+      "topic": "Fed 금리 인하",
+      "category": "통화정책",
+      "kr_impact": "금리 인하 → 성장주·부동산·리츠 수혜, 은행 순이자마진 축소",
+      "kr_stocks_positive": [
+        "카카오",
+        "네이버",
+        "NAVER",
+        "맥쿼리인프라",
+        "SK리츠"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주"
+      ],
+      "headlines": [
+        "“Fed 금리인상 확률 92%”… 한은도 ‘연내 추가인상’ 압박",
+        "미 연준 금리 인상 전망 92% … 트럼프는 인하 압박"
+      ]
+    },
+    {
+      "topic": "Fed 금리 동결/인상",
+      "category": "통화정책",
+      "kr_impact": "금리 인상·동결 장기화 → 은행주 수혜, 성장주·부동산 약세",
+      "kr_stocks_positive": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "kr_stocks_negative": [
+        "카카오",
+        "네이버",
+        "맥쿼리인프라"
+      ],
+      "headlines": [
+        "스탠다드차타드: 인플레이션 불확실성에 연준 금리 동결 예상"
+      ]
+    },
+    {
+      "topic": "AI 반도체 투자",
+      "category": "기술",
+      "kr_impact": "HBM·AI 가속기 수요 확대 → 반도체·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "리노공업",
+        "ISC"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "ICT R&D '2조원 시대'…피지컬AI·AI반도체 집중 투자",
+        "‘AI 속도 조절’ 한마디에…반도체 株 일제히 하락",
+        "AI 개발 속도 조절론에 미 국채금리 5%까지…반도체 투자 향방은"
+      ]
+    },
+    {
+      "topic": "일본 엔화 정책",
+      "category": "통화정책",
+      "kr_impact": "엔캐리 청산 → 외국인 매도 압력, 원화 약세 시 수출주 반사 수혜",
+      "kr_stocks_positive": [
+        "현대차",
+        "기아",
+        "삼성전자"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "신세계",
+        "호텔신라"
+      ],
+      "headlines": [
+        "[경제한방] 일본 금리인상 코앞…‘엔캐리 연쇄청산’ 오나?",
+        "일본 금리인상, 기폭제 되나⋯엔 캐리 청산 뇌관 ‘재깍재깍’",
+        "美 금리 인상시 엔화 반짝 강세 도루묵…\"달러당 157엔까지 떨어질 것\""
+      ]
+    },
+    {
+      "topic": "중국 경기부양",
+      "category": "재정정책",
+      "kr_impact": "중국 소비·인프라 확대 → 화학·철강·화장품 수혜",
+      "kr_stocks_positive": [
+        "아모레퍼시픽",
+        "코스맥스",
+        "포스코홀딩스",
+        "LG화학",
+        "효성첨단소재"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "9월이 中 경기 바닥 확인 시험대…추가 부양책 결정짓는 분수령될 듯"
+      ]
+    },
+    {
+      "topic": "유가 지정학 리스크",
+      "category": "지정학",
+      "kr_impact": "유가 급등 → 정유·방산 수혜, 항공·운송 피해",
+      "kr_stocks_positive": [
+        "SK이노베이션",
+        "S-Oil",
+        "한화에어로스페이스",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "제주항공",
+        "CJ대한통운"
+      ],
+      "headlines": [
+        "韓총리 \"중동 긴장에 물가부담 커져…불공정행위 살펴야\"",
+        "미- 오만 외무장관 통화, 중동 사태 악화와 긴장 해소에 대해 논의",
+        "美 “이란전 51조 사용…무기 재고 복구 최소 5년”"
+      ]
+    },
+    {
+      "topic": "글로벌 은행 리스크",
+      "category": "금융",
+      "kr_impact": "금융주 동반 하락, 안전자산(금·채권 ETF) 수혜",
+      "kr_stocks_positive": [
+        "KODEX 골드선물",
+        "TIGER 미국채10년선물"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "headlines": [
+        "美 10년물 국채금리 5.01%… 금융위기 직전 수준 급등",
+        "2007년 금융위기 넘었다…美 10년물 장중 5.03% 터치"
+      ]
+    },
+    {
+      "topic": "2차전지 공급망",
+      "category": "산업",
+      "kr_impact": "글로벌 EV 확산 → 배터리·소재·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠",
+        "포스코퓨처엠",
+        "엘앤에프"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "전고체 배터리 투자 훈풍… 코윈로보틱스, 2차전지 자동화 수주 모멘텀",
+        "대미 수주 기대감에 원전 ETF 수익률 상위권",
+        "“전기차 배터리 화재 잡는다”…신라대, 차세대 전고체전지 소재 개발"
+      ]
+    },
+    {
+      "topic": "로봇/자율주행",
+      "category": "기술",
+      "kr_impact": "로봇·자율주행 부품주 수혜",
+      "kr_stocks_positive": [
+        "삼성전자",
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "현대차",
+        "모트렉스"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "테슬라(TSLA) 머스크 \"인류 보편적 고소득, AI·로봇만이 해답\"",
+        "“테슬라 주가 스위치는 사이버캡 실적”⋯수익화가 분수령 [찐코노미]",
+        "[K-자율주행]모빌리티 3사, 자율주행 도전하는 이유"
+      ]
+    }
+  ],
+  "theme_connections": [
+    {
+      "trigger": "필라델피아반도체 -5.63%",
+      "theme": "반도체 약세",
+      "kr_sectors": [
+        "반도체"
+      ],
+      "kr_stocks": [
+        "삼성전자",
+        "SK하이닉스",
+        "한미반도체"
+      ],
+      "direction": "피해"
+    },
+    {
+      "trigger": "금 -1.29%",
+      "theme": "금 가격 하락",
+      "kr_sectors": [
+        "귀금속"
+      ],
+      "kr_stocks": [
+        "고려아연",
+        "풍산"
+      ],
+      "direction": "피해"
+    },
+    {
+      "trigger": "기술 -1.81%",
+      "theme": "미국 기술주 약세",
+      "kr_sectors": [
+        "IT/소프트웨어"
+      ],
+      "kr_stocks": [
+        "네이버",
+        "카카오",
+        "삼성SDS"
+      ],
+      "direction": "피해"
+    }
+  ],
+  "flow": {
+    "trade_date": "2026-09-15",
+    "kospi_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "kosdaq_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "foreign_top_buy": [],
+    "foreign_top_sell": [],
+    "institution_top_buy": []
+  },
+  "earnings": {},
+  "sentiment": {
+    "score": 48.1,
+    "label": "중립",
+    "components": {
+      "VIX": 71.7,
+      "시장_폭": 0.0,
+      "금리_스프레드": 54.0,
+      "신용_스프레드": 63.7,
+      "모멘텀": 50.0,
+      "RSI_분포": 50.0
+    },
+    "prev_score": null,
+    "change": null
+  }
+}
