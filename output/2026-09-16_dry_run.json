@@ -1,0 +1,498 @@
+{
+  "trade_date": "2026-09-16",
+  "macro": {
+    "S&P 500": {
+      "close": 7585.73,
+      "change_pct": -0.45,
+      "date": "2026-09-15"
+    },
+    "NASDAQ": {
+      "close": 25981.57,
+      "change_pct": -0.78,
+      "date": "2026-09-15"
+    },
+    "다우존스": {
+      "close": 52093.11,
+      "change_pct": -0.63,
+      "date": "2026-09-15"
+    },
+    "필라델피아반도체": {
+      "close": 498.85,
+      "change_pct": 0.29,
+      "date": "2026-09-15"
+    },
+    "달러인덱스": {
+      "close": 99.65,
+      "change_pct": 0.19,
+      "date": "2026-09-15"
+    },
+    "WTI유": {
+      "close": 105.83,
+      "change_pct": 4.38,
+      "date": "2026-09-15"
+    },
+    "금": {
+      "close": 4332.8,
+      "change_pct": -0.44,
+      "date": "2026-09-15"
+    },
+    "구리": {
+      "close": 6.37,
+      "change_pct": 0.63,
+      "date": "2026-09-15"
+    },
+    "천연가스": {
+      "close": 2.92,
+      "change_pct": 0.69,
+      "date": "2026-09-15"
+    },
+    "VIX": {
+      "close": 17.2,
+      "change_pct": 0.58,
+      "date": "2026-09-15"
+    },
+    "미국채10Y": {
+      "close": 5.0,
+      "change_pct": 0.81,
+      "date": "2026-09-15"
+    },
+    "미국채2Y": {
+      "close": 4.39,
+      "change_pct": 0.23,
+      "date": "2026-09-15"
+    },
+    "기술": {
+      "close": 183.74,
+      "change_pct": -0.29,
+      "date": "2026-09-15"
+    },
+    "금융": {
+      "close": 56.85,
+      "change_pct": -0.32,
+      "date": "2026-09-15"
+    },
+    "에너지": {
+      "close": 65.93,
+      "change_pct": 2.17,
+      "date": "2026-09-15"
+    },
+    "헬스케어": {
+      "close": 167.66,
+      "change_pct": -0.05,
+      "date": "2026-09-15"
+    },
+    "산업재": {
+      "close": 168.85,
+      "change_pct": -0.64,
+      "date": "2026-09-15"
+    },
+    "커뮤니케이션": {
+      "close": 114.03,
+      "change_pct": -0.9,
+      "date": "2026-09-15"
+    },
+    "경기소비재": {
+      "close": 110.88,
+      "change_pct": -1.75,
+      "date": "2026-09-15"
+    },
+    "필수소비재": {
+      "close": 83.73,
+      "change_pct": -0.82,
+      "date": "2026-09-15"
+    },
+    "부동산": {
+      "close": 43.07,
+      "change_pct": -0.12,
+      "date": "2026-09-15"
+    },
+    "유틸리티": {
+      "close": 41.32,
+      "change_pct": -1.2,
+      "date": "2026-09-15"
+    },
+    "소재": {
+      "close": 50.73,
+      "change_pct": 0.48,
+      "date": "2026-09-15"
+    },
+    "엔비디아": {
+      "close": 212.17,
+      "change_pct": 0.57,
+      "date": "2026-09-15"
+    },
+    "애플": {
+      "close": 331.34,
+      "change_pct": -0.52,
+      "date": "2026-09-15"
+    },
+    "마이크로소프트": {
+      "close": 497.12,
+      "change_pct": -1.64,
+      "date": "2026-09-15"
+    },
+    "아마존": {
+      "close": 248.42,
+      "change_pct": -2.02,
+      "date": "2026-09-15"
+    },
+    "알파벳": {
+      "close": 341.43,
+      "change_pct": -1.24,
+      "date": "2026-09-15"
+    },
+    "메타": {
+      "close": 670.24,
+      "change_pct": 0.7,
+      "date": "2026-09-15"
+    },
+    "테슬라": {
+      "close": 356.58,
+      "change_pct": -0.67,
+      "date": "2026-09-15"
+    },
+    "러셀2000": {
+      "close": 285.14,
+      "change_pct": -0.96,
+      "date": "2026-09-15"
+    },
+    "나스닥100ETF": {
+      "close": 704.54,
+      "change_pct": -0.65,
+      "date": "2026-09-15"
+    },
+    "가치ETF": {
+      "close": 222.7,
+      "change_pct": -0.09,
+      "date": "2026-09-15"
+    },
+    "닛케이225": {
+      "close": 63923.0,
+      "change_pct": 0.69,
+      "date": "2026-09-16"
+    },
+    "항셍": {
+      "close": 24667.24,
+      "change_pct": -1.0,
+      "date": "2026-09-15"
+    },
+    "상해종합": {
+      "close": 3864.28,
+      "change_pct": -0.54,
+      "date": "2026-09-15"
+    },
+    "독일DAX": {
+      "close": 25402.28,
+      "change_pct": -0.15,
+      "date": "2026-09-15"
+    },
+    "유로스톡스50": {
+      "close": 6236.5,
+      "change_pct": -0.38,
+      "date": "2026-09-15"
+    },
+    "하이일드채권": {
+      "close": 78.38,
+      "change_pct": -0.19,
+      "date": "2026-09-15"
+    },
+    "미장기채20Y+": {
+      "close": 80.71,
+      "change_pct": -0.27,
+      "date": "2026-09-15"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.61,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.45%, 나스닥 -0.78%로 하락 마감. 필라델피아 반도체지수 +0.29%. VIX 17.2 (보통 구간). 장단기 금리차 0.610%p (정상 범위). 금 4,332.80달러 (-0.44%). 달러인덱스 99.65 (+0.19%). 섹터: 에너지(+2.17%) 주도, 경기소비재(-1.75%) 약세. QQQ-VTV 스프레드 -0.56%p → 가치주 우위. HYG -0.19% → 신용 스트레스 안정. Mag7 평균 -0.69% → 대형 기술주 약세. 아시아: 닛케이225 +0.69%, 항셍 -1.00%, 상해종합 -0.54%. 유럽: 독일DAX -0.15%, 유로스톡스50 -0.38%.",
+  "market_breadth": {
+    "total_up": 1200,
+    "total_down": 1327,
+    "total_unchanged": 236,
+    "total": 2763,
+    "up_ratio": 43.4
+  },
+  "surges": [
+    {
+      "code": "088800",
+      "name": "에이스테크",
+      "market": "KOSDAQ",
+      "industry": "통신 및 방송 장비 제조업",
+      "move_type": "surge",
+      "close": 2450.0,
+      "change_pct": 29.97,
+      "relative_strength": 29.53,
+      "amount_eok": 25.93771756,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 에이스테크-통신장비 테마 상승세에 5.75% ↑",
+        "[특징주] 에이스테크, AI 인프라 투자 확산·방산 테마 맞물려 ‘상한가’",
+        "에이스테크 주가, 상한가... 무슨 회사길래?",
+        "[N2 증시 풍향계] AI 데이터센터發 광통신·통신장비·전선주 ‘불기둥’…빛샘전자·에이스테크·미투온 등 ‘상한가’",
+        "중동 긴장에 방산주 들썩… 에이스테크 상한가·카티스 18%↑"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 71.85,
+          "macd": 36.5883,
+          "macd_signal": -13.0275,
+          "macd_histogram": 49.6158,
+          "bb_upper": 2168.99,
+          "bb_middle": 1869.3,
+          "bb_lower": 1569.61,
+          "bb_position": "상단돌파",
+          "ma_5": 2028.6,
+          "ma_20": 1869.3,
+          "ma_60": 1858.32,
+          "ma_trend": "정배열",
+          "volume_ratio": 6.95,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 7.0배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 6,
+          "avg_return_1d": 9.54,
+          "avg_return_5d": 6.53,
+          "positive_rate_1d": 60.0,
+          "positive_rate_5d": 40.0
+        }
+      }
+    },
+    {
+      "code": "201490",
+      "name": "미투온",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 3840.0,
+      "change_pct": 29.95,
+      "relative_strength": 29.51,
+      "amount_eok": 75.4788333,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "카카오게임즈, 글로벌 캐주얼 게임 기업 미투온 인수(종합)",
+        "특징주, 미투온-웹툰 테마 상승세에 23.05% ↑",
+        "카카오게임즈, 미투온에 980억 베팅…적자 탈출 '시험대'",
+        "카카오게임즈, 980억원에 캐주얼 게임사 ‘미투온’ 인수",
+        "[특징주] '카카오게임즈에 피인수' 미투온 상한가(종합)"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 76.72,
+          "macd": 306.1944,
+          "macd_signal": 179.3236,
+          "macd_histogram": 126.8708,
+          "bb_upper": 3585.19,
+          "bb_middle": 2719.75,
+          "bb_lower": 1854.31,
+          "bb_position": "상단돌파",
+          "ma_5": 3265.0,
+          "ma_20": 2719.75,
+          "ma_60": 2280.57,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.63,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 7,
+          "avg_return_1d": 5.14,
+          "avg_return_5d": 25.35,
+          "positive_rate_1d": 57.1,
+          "positive_rate_5d": 66.7
+        }
+      }
+    },
+    {
+      "code": "049080",
+      "name": "기가레인",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 10990.0,
+      "change_pct": 29.91,
+      "relative_strength": 29.47,
+      "amount_eok": 286.7078882,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[장중수급포착] 기가레인, 외국인 5일 연속 순매수행진... 주가 +29.91%",
+        "기가레인 주가, 9월 16일 장중 10,990원 29.91% 상승",
+        "특징주, 기가레인-통신장비 테마 상승세에 6.33% ↑",
+        "5G株 다시 뜬다…에이스테크·기가레인 거침없는 하이킥",
+        "[주식마감] '카카오게임즈 피인수 효과' 미투온 상한가... 큐라티스, 엠에프씨, 기가레인 등 급등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 67.67,
+          "macd": 225.5284,
+          "macd_signal": -25.4183,
+          "macd_histogram": 250.9467,
+          "bb_upper": 9738.17,
+          "bb_middle": 8227.0,
+          "bb_lower": 6715.83,
+          "bb_position": "상단돌파",
+          "ma_5": 8996.0,
+          "ma_20": 8227.0,
+          "ma_60": 8172.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 4.12,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 4.1배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 10,
+          "avg_return_1d": 11.58,
+          "avg_return_5d": 49.87,
+          "positive_rate_1d": 60.0,
+          "positive_rate_5d": 80.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "001770",
+      "name": "SHD",
+      "market": "KOSPI",
+      "industry": "1차 철강 제조업",
+      "move_type": "plunge",
+      "close": 7140.0,
+      "change_pct": -27.14,
+      "relative_strength": -28.51,
+      "amount_eok": 54.63226245,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] SHD, 시총 100억 밑으로 뚝…상장폐지 우려에 6거래일 연속 급락",
+        "[특징주] ‘20억원 자사주 취득 ’ 소식에…SHD, 上 - 조선비즈",
+        "[급등락주 짚어보기] SHD·한국첨단소재·삼현 등 상한가…정보보안·양자통신 기대 급부상",
+        "[상한가 종목] SHD-아톤 이어 한컴위드-YTN 등 마감",
+        "SHD 주가, 상한가... 무슨 회사길래?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 39.75,
+          "macd": -122.5589,
+          "macd_signal": 737.6809,
+          "macd_histogram": -860.2397,
+          "bb_upper": 16869.65,
+          "bb_middle": 11914.0,
+          "bb_lower": 6958.35,
+          "bb_position": "하단근접",
+          "ma_5": 8846.0,
+          "ma_20": 11914.0,
+          "ma_60": 8627.33,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.12,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 거래량 5.1배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "061250",
+      "name": "화일약품",
+      "market": "KOSDAQ",
+      "industry": "의약품 제조업",
+      "move_type": "plunge",
+      "close": 7140.0,
+      "change_pct": -22.98,
+      "relative_strength": -23.42,
+      "amount_eok": 28.26839075,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "화일약품 경영권 750억에 거래…회사로 들어오는 자금은 200억",
+        "특징주, 화일약품-대마 테마 상승세에 7.85% ↑",
+        "화일약품, 100억원 유상증자…파마앤바이오 신기술조합에 제3자배정",
+        "화일약품 최대주주 파마앤바이오로 바뀐다…“경영권 750억원 인수”",
+        "화일약품, 100억원 규모 제3자배정 유상증자 결정"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 37.51,
+          "macd": -118.2574,
+          "macd_signal": -35.8559,
+          "macd_histogram": -82.4014,
+          "bb_upper": 9454.82,
+          "bb_middle": 8304.0,
+          "bb_lower": 7153.18,
+          "bb_position": "하단이탈",
+          "ma_5": 8050.0,
+          "ma_20": 8304.0,
+          "ma_60": 8447.33,
+          "ma_trend": "역배열",
+          "volume_ratio": 9.93,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 9.9배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "462860",
+      "name": "더즌",
+      "market": "KOSDAQ",
+      "industry": "전기 통신업",
+      "move_type": "plunge",
+      "close": 2540.0,
+      "change_pct": -19.11,
+      "relative_strength": -19.55,
+      "amount_eok": 100.1622362,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "美 ‘클래리티법’ 표결 부결에 코인株 “와르르”…더즌·헥토파이낸셜 15%대 급락",
+        "더즌 주가, 9월 15일 장중 3,235원 1.73% 상승",
+        "클래리티법 상원 문턱 못 넘자 스테이블코인 관련주 급락…더즌 17.93%·헥토파이낸셜 15.23%↓",
+        "더즌 투자분석 2026. 09. 15",
+        "같은 테마의 다른 게임과 보는 룰렛 더즌 마틴 공통점"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 43.16,
+          "macd": 182.69,
+          "macd_signal": 258.314,
+          "macd_histogram": -75.624,
+          "bb_upper": 3588.26,
+          "bb_middle": 3007.0,
+          "bb_lower": 2425.74,
+          "bb_position": "하단근접",
+          "ma_5": 2987.0,
+          "ma_20": 3007.0,
+          "ma_60": 2310.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 0.62,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
