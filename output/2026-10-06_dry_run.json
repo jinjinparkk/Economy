@@ -1,0 +1,475 @@
+{
+  "trade_date": "2026-10-06",
+  "macro": {
+    "S&P 500": {
+      "close": 7773.95,
+      "change_pct": 0.66,
+      "date": "2026-10-05"
+    },
+    "NASDAQ": {
+      "close": 27477.31,
+      "change_pct": 1.05,
+      "date": "2026-10-05"
+    },
+    "다우존스": {
+      "close": 51267.9,
+      "change_pct": 0.18,
+      "date": "2026-10-05"
+    },
+    "필라델피아반도체": {
+      "close": 589.51,
+      "change_pct": 0.1,
+      "date": "2026-10-05"
+    },
+    "달러인덱스": {
+      "close": 102.17,
+      "change_pct": 0.24,
+      "date": "2026-10-05"
+    },
+    "WTI유": {
+      "close": 89.43,
+      "change_pct": -1.84,
+      "date": "2026-10-05"
+    },
+    "금": {
+      "close": 4156.8,
+      "change_pct": -0.13,
+      "date": "2026-10-05"
+    },
+    "구리": {
+      "close": 6.59,
+      "change_pct": 1.54,
+      "date": "2026-10-05"
+    },
+    "천연가스": {
+      "close": 3.07,
+      "change_pct": 0.99,
+      "date": "2026-10-05"
+    },
+    "VIX": {
+      "close": 15.52,
+      "change_pct": 1.37,
+      "date": "2026-10-05"
+    },
+    "미국채10Y": {
+      "close": 5.31,
+      "change_pct": 0.57,
+      "date": "2026-10-05"
+    },
+    "미국채2Y": {
+      "close": 4.64,
+      "change_pct": 0.0,
+      "date": "2026-10-05"
+    },
+    "기술": {
+      "close": 200.93,
+      "change_pct": 0.56,
+      "date": "2026-10-05"
+    },
+    "금융": {
+      "close": 53.88,
+      "change_pct": 0.73,
+      "date": "2026-10-05"
+    },
+    "에너지": {
+      "close": 63.45,
+      "change_pct": 1.0,
+      "date": "2026-10-05"
+    },
+    "헬스케어": {
+      "close": 167.37,
+      "change_pct": 0.72,
+      "date": "2026-10-05"
+    },
+    "산업재": {
+      "close": 170.1,
+      "change_pct": 0.09,
+      "date": "2026-10-05"
+    },
+    "커뮤니케이션": {
+      "close": 111.61,
+      "change_pct": 1.17,
+      "date": "2026-10-05"
+    },
+    "경기소비재": {
+      "close": 110.42,
+      "change_pct": 0.35,
+      "date": "2026-10-05"
+    },
+    "필수소비재": {
+      "close": 81.04,
+      "change_pct": 0.63,
+      "date": "2026-10-05"
+    },
+    "부동산": {
+      "close": 40.67,
+      "change_pct": -0.34,
+      "date": "2026-10-05"
+    },
+    "유틸리티": {
+      "close": 39.97,
+      "change_pct": 0.35,
+      "date": "2026-10-05"
+    },
+    "소재": {
+      "close": 49.5,
+      "change_pct": 1.31,
+      "date": "2026-10-05"
+    },
+    "엔비디아": {
+      "close": 238.9,
+      "change_pct": 2.12,
+      "date": "2026-10-05"
+    },
+    "애플": {
+      "close": 332.89,
+      "change_pct": -0.24,
+      "date": "2026-10-05"
+    },
+    "마이크로소프트": {
+      "close": 525.18,
+      "change_pct": 1.48,
+      "date": "2026-10-05"
+    },
+    "아마존": {
+      "close": 251.4,
+      "change_pct": -0.05,
+      "date": "2026-10-05"
+    },
+    "알파벳": {
+      "close": 343.83,
+      "change_pct": 1.02,
+      "date": "2026-10-05"
+    },
+    "메타": {
+      "close": 741.9,
+      "change_pct": 1.9,
+      "date": "2026-10-05"
+    },
+    "테슬라": {
+      "close": 378.73,
+      "change_pct": 2.2,
+      "date": "2026-10-05"
+    },
+    "러셀2000": {
+      "close": 283.38,
+      "change_pct": 0.66,
+      "date": "2026-10-05"
+    },
+    "나스닥100ETF": {
+      "close": 756.2,
+      "change_pct": 0.88,
+      "date": "2026-10-05"
+    },
+    "가치ETF": {
+      "close": 217.93,
+      "change_pct": 0.32,
+      "date": "2026-10-05"
+    },
+    "닛케이225": {
+      "close": 70683.98,
+      "change_pct": 1.05,
+      "date": "2026-10-06"
+    },
+    "항셍": {
+      "close": 24040.34,
+      "change_pct": 0.28,
+      "date": "2026-10-05"
+    },
+    "상해종합": {
+      "close": 3842.2,
+      "change_pct": 0.31,
+      "date": "2026-09-30"
+    },
+    "독일DAX": {
+      "close": 25254.21,
+      "change_pct": 0.09,
+      "date": "2026-10-05"
+    },
+    "유로스톡스50": {
+      "close": 6242.14,
+      "change_pct": 0.06,
+      "date": "2026-10-05"
+    },
+    "하이일드채권": {
+      "close": 76.98,
+      "change_pct": 0.09,
+      "date": "2026-10-05"
+    },
+    "미장기채20Y+": {
+      "close": 77.11,
+      "change_pct": -0.48,
+      "date": "2026-10-05"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.67,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.66%, 나스닥 +1.05%로 상승 마감. 필라델피아 반도체지수 +0.10%. VIX 15.5 (보통 구간). 장단기 금리차 0.670%p (정상 범위). 금 4,156.80달러 (-0.13%). 달러인덱스 102.17 (+0.24%). 섹터: 소재(+1.31%) 주도, 부동산(-0.34%) 약세. QQQ-VTV 스프레드 +0.56%p → 성장주 우위. HYG +0.09% → 신용 스트레스 안정. Mag7 평균 +1.20% → 대형 기술주 강세. 아시아: 닛케이225 +1.05%, 항셍 +0.28%, 상해종합 +0.31%. 유럽: 독일DAX +0.09%, 유로스톡스50 +0.06%.",
+  "market_breadth": {
+    "total_up": 1437,
+    "total_down": 1106,
+    "total_unchanged": 223,
+    "total": 2766,
+    "up_ratio": 52.0
+  },
+  "surges": [
+    {
+      "code": "411080",
+      "name": "샌즈랩",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 8970.0,
+      "change_pct": 30.0,
+      "relative_strength": 30.0,
+      "amount_eok": 581.72029355,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[ET특징주]샌즈랩, 금융권 'AI 해킹' 공포에 상승세",
+        "‘AI 해킹 사태’ 보안주 폭등…라온시큐어·샌즈랩 30% 상한가",
+        "금융권 해킹 여파에 보안주 급등…샌즈랩 상한가",
+        "안랩 15%↑·샌즈랩·라온시큐어 상한가···금융권 AI 해킹에 보안주 급등",
+        "[특징주] AI 해킹에 보안주 불기둥…샌즈랩·라온시큐어 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 81.6,
+          "macd": 779.1815,
+          "macd_signal": 625.0622,
+          "macd_histogram": 154.1192,
+          "bb_upper": 8545.17,
+          "bb_middle": 6073.25,
+          "bb_lower": 3601.33,
+          "bb_position": "상단돌파",
+          "ma_5": 7124.0,
+          "ma_20": 6073.25,
+          "ma_60": 4655.75,
+          "ma_trend": "정배열",
+          "volume_ratio": 3.07,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 극과매수(단기 과열) / RSI 하락다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 3.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "200350",
+      "name": "아티스트스튜디오",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 4290.0,
+      "change_pct": 30.0,
+      "relative_strength": 30.0,
+      "amount_eok": 24.96118633,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "샌즈랩·아티스트스튜디오 상한가…라온시큐어도 30% 육박",
+        "아티스트스튜디오 상한가…콘텐츠 투자와 자금조달 공시 주목",
+        "아티스트스튜디오 투자분석 2026. 10. 03",
+        "[더벨]아티스트스튜디오 유상증자에 MBN 참여 - 머니투데이",
+        "'이정재·정우성 이사' 아티스트스튜디오, 유증으로 시총·콘텐츠 '일거양득'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 82.14,
+          "macd": 269.0248,
+          "macd_signal": 135.507,
+          "macd_histogram": 133.5179,
+          "bb_upper": 3595.86,
+          "bb_middle": 2739.25,
+          "bb_lower": 1882.64,
+          "bb_position": "상단돌파",
+          "ma_5": 3280.0,
+          "ma_20": 2739.25,
+          "ma_60": 2358.45,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.99,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "042510",
+      "name": "라온시큐어",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 14870.0,
+      "change_pct": 29.98,
+      "relative_strength": 29.98,
+      "amount_eok": 808.0122142,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 금융권 해킹 우려 확산에…보안株 급등·라온시큐어 21%↑",
+        "[장중수급포착] 라온시큐어, 외국인/기관 동시 순매수… 주가 +29.98%",
+        "\"318개팀 경연\"...라온시큐어, ‘2026 블록체인&AI 해커톤’ 성료",
+        "‘AI 해킹 사태’ 보안주 폭등…라온시큐어·샌즈랩 30% 상한가",
+        "금융권 연쇄 해킹에 보안주 테마 7% 급등 … 샌즈랩·라온시큐어 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 77.87,
+          "macd": 996.2765,
+          "macd_signal": 814.1721,
+          "macd_histogram": 182.1044,
+          "bb_upper": 13935.22,
+          "bb_middle": 10897.5,
+          "bb_lower": 7859.78,
+          "bb_position": "상단돌파",
+          "ma_5": 12058.0,
+          "ma_20": 10897.5,
+          "ma_60": 8897.5,
+          "ma_trend": "정배열",
+          "volume_ratio": 3.39,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 과매수 진입 / RSI 하락다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 3.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "0161M0",
+      "name": "네오사피엔스",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 13870.0,
+      "change_pct": -16.6,
+      "relative_strength": -16.6,
+      "amount_eok": 283.7071378,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[종목상담소 주식민원처리반 1부] '에스앤에스텍 vs 네오사피엔스' ... 다음주 승자는? - 머니투데이",
+        "[공모주 탐구] 네오사피엔스, 글로벌 톱티어 감성 보이스 AI로 주가 고공행진?",
+        "슬롯 무료 사이트 규칙 페이지를 찾는 경로",
+        "[특징주] 네오사피엔스, 상장 첫날 불기둥…장중 200%↑ - 조선비즈"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 16264.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    },
+    {
+      "code": "020120",
+      "name": "키다리스튜디오",
+      "market": "KOSPI",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 7140.0,
+      "change_pct": -13.87,
+      "relative_strength": -13.87,
+      "amount_eok": 83.38929295,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "키다리스튜디오, 웹툰업계 불황 속 글로벌 플랫폼 성장 지속…상반기 영업익 275% 증가 - 머니투데이",
+        "웹툰 밀고, 숏드 당기고…키다리스튜디오의 'IP 장사' [엔터코노미]",
+        "키다리스튜디오(020120)밀릴때마다 물량 모아둘 기회로 보이며 이후 전망 및 대응전략.",
+        "[단독] IMM PE, 키다리스튜디오 엑시트…3호 펀드 청산 가시화 [시그널]",
+        "[장중수급포착] 키다리스튜디오, 외국인 10일 연속 순매수행진... 주가 +5.79%"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 47.41,
+          "macd": 559.3859,
+          "macd_signal": 795.7226,
+          "macd_histogram": -236.3366,
+          "bb_upper": 9526.66,
+          "bb_middle": 8125.5,
+          "bb_lower": 6724.34,
+          "bb_position": "중립",
+          "ma_5": 8074.0,
+          "ma_20": 8125.5,
+          "ma_60": 5481.75,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.96,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "134580",
+      "name": "탑코미디어",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 2505.0,
+      "change_pct": -12.11,
+      "relative_strength": -12.11,
+      "amount_eok": 28.11109486,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[간판 바꾼 탑코미디어③] '200억 양수' 이어 '합병'까지…계열사 재편으로 대주주 지배력만 '탄탄'",
+        "탑코미디어 투자분석 2026. 10. 03",
+        "[클릭 e종목]\"탑코미디어, 웹툰 넘어 AI 캐릭터와 대화한다…'탑툰챗'이 바꾼 수익모델\"",
+        "탑코미디어, 2분기 순이익 흑자 전환…AI 콘텐츠 기업 전환 본격화",
+        "탑코미디어, '탑툰챗' 안착에 2분기 영업익률 23.7%…AI 콘텐츠기업 도약 - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 38.38,
+          "macd": 14.999,
+          "macd_signal": 199.9733,
+          "macd_histogram": -184.9744,
+          "bb_upper": 4223.67,
+          "bb_middle": 3430.5,
+          "bb_lower": 2637.33,
+          "bb_position": "하단이탈",
+          "ma_5": 2939.0,
+          "ma_20": 3430.5,
+          "ma_60": 2341.13,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.66,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
