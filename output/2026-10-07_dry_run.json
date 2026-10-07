@@ -1,0 +1,472 @@
+{
+  "trade_date": "2026-10-07",
+  "macro": {
+    "S&P 500": {
+      "close": 7818.93,
+      "change_pct": 0.58,
+      "date": "2026-10-06"
+    },
+    "NASDAQ": {
+      "close": 27599.79,
+      "change_pct": 0.45,
+      "date": "2026-10-06"
+    },
+    "다우존스": {
+      "close": 51521.28,
+      "change_pct": 0.49,
+      "date": "2026-10-06"
+    },
+    "필라델피아반도체": {
+      "close": 589.45,
+      "change_pct": -0.01,
+      "date": "2026-10-06"
+    },
+    "달러인덱스": {
+      "close": 101.83,
+      "change_pct": -0.33,
+      "date": "2026-10-06"
+    },
+    "WTI유": {
+      "close": 89.44,
+      "change_pct": 0.01,
+      "date": "2026-10-06"
+    },
+    "금": {
+      "close": 4187.1,
+      "change_pct": 0.73,
+      "date": "2026-10-06"
+    },
+    "구리": {
+      "close": 6.59,
+      "change_pct": 0.0,
+      "date": "2026-10-06"
+    },
+    "천연가스": {
+      "close": 3.11,
+      "change_pct": 1.3,
+      "date": "2026-10-06"
+    },
+    "VIX": {
+      "close": 15.01,
+      "change_pct": -3.29,
+      "date": "2026-10-06"
+    },
+    "미국채10Y": {
+      "close": 5.27,
+      "change_pct": -0.75,
+      "date": "2026-10-06"
+    },
+    "미국채2Y": {
+      "close": 4.65,
+      "change_pct": 0.22,
+      "date": "2026-10-06"
+    },
+    "기술": {
+      "close": 202.0,
+      "change_pct": 0.53,
+      "date": "2026-10-06"
+    },
+    "금융": {
+      "close": 54.01,
+      "change_pct": 0.24,
+      "date": "2026-10-06"
+    },
+    "에너지": {
+      "close": 63.75,
+      "change_pct": 0.47,
+      "date": "2026-10-06"
+    },
+    "헬스케어": {
+      "close": 167.09,
+      "change_pct": -0.17,
+      "date": "2026-10-06"
+    },
+    "산업재": {
+      "close": 171.58,
+      "change_pct": 0.87,
+      "date": "2026-10-06"
+    },
+    "커뮤니케이션": {
+      "close": 111.65,
+      "change_pct": 0.04,
+      "date": "2026-10-06"
+    },
+    "경기소비재": {
+      "close": 111.72,
+      "change_pct": 1.18,
+      "date": "2026-10-06"
+    },
+    "필수소비재": {
+      "close": 81.8,
+      "change_pct": 0.94,
+      "date": "2026-10-06"
+    },
+    "부동산": {
+      "close": 41.1,
+      "change_pct": 1.06,
+      "date": "2026-10-06"
+    },
+    "유틸리티": {
+      "close": 41.16,
+      "change_pct": 2.98,
+      "date": "2026-10-06"
+    },
+    "소재": {
+      "close": 49.73,
+      "change_pct": 0.46,
+      "date": "2026-10-06"
+    },
+    "엔비디아": {
+      "close": 239.24,
+      "change_pct": 0.14,
+      "date": "2026-10-06"
+    },
+    "애플": {
+      "close": 333.63,
+      "change_pct": 0.22,
+      "date": "2026-10-06"
+    },
+    "마이크로소프트": {
+      "close": 529.3,
+      "change_pct": 0.78,
+      "date": "2026-10-06"
+    },
+    "아마존": {
+      "close": 256.29,
+      "change_pct": 1.95,
+      "date": "2026-10-06"
+    },
+    "알파벳": {
+      "close": 344.59,
+      "change_pct": 0.22,
+      "date": "2026-10-06"
+    },
+    "메타": {
+      "close": 738.88,
+      "change_pct": -0.41,
+      "date": "2026-10-06"
+    },
+    "테슬라": {
+      "close": 380.68,
+      "change_pct": 0.51,
+      "date": "2026-10-06"
+    },
+    "러셀2000": {
+      "close": 281.34,
+      "change_pct": -0.72,
+      "date": "2026-10-06"
+    },
+    "나스닥100ETF": {
+      "close": 759.66,
+      "change_pct": 0.46,
+      "date": "2026-10-06"
+    },
+    "가치ETF": {
+      "close": 219.01,
+      "change_pct": 0.5,
+      "date": "2026-10-06"
+    },
+    "닛케이225": {
+      "close": 70035.71,
+      "change_pct": -0.92,
+      "date": "2026-10-07"
+    },
+    "항셍": {
+      "close": 24280.56,
+      "change_pct": 1.0,
+      "date": "2026-10-06"
+    },
+    "상해종합": {
+      "close": 3842.2,
+      "change_pct": 0.31,
+      "date": "2026-09-30"
+    },
+    "독일DAX": {
+      "close": 25449.19,
+      "change_pct": 0.77,
+      "date": "2026-10-06"
+    },
+    "유로스톡스50": {
+      "close": 6272.23,
+      "change_pct": 0.48,
+      "date": "2026-10-06"
+    },
+    "하이일드채권": {
+      "close": 77.27,
+      "change_pct": 0.38,
+      "date": "2026-10-06"
+    },
+    "미장기채20Y+": {
+      "close": 77.28,
+      "change_pct": 0.22,
+      "date": "2026-10-06"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.62,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.58%, 나스닥 +0.45%로 상승 마감. 필라델피아 반도체지수 -0.01%. VIX 15.0 (보통 구간). 장단기 금리차 0.620%p (정상 범위). 금 4,187.10달러 (+0.73%). 달러인덱스 101.83 (-0.33%). 섹터: 유틸리티(+2.98%) 주도, 헬스케어(-0.17%) 약세. QQQ-VTV 스프레드 -0.04%p → 가치주 우위. HYG +0.38% → 신용 스트레스 안정. Mag7 평균 +0.49% → 대형 기술주 강세. 아시아: 닛케이225 -0.92%, 항셍 +1.00%, 상해종합 +0.31%. 유럽: 독일DAX +0.77%, 유로스톡스50 +0.48%.",
+  "market_breadth": {
+    "total_up": 965,
+    "total_down": 1559,
+    "total_unchanged": 241,
+    "total": 2765,
+    "up_ratio": 34.9
+  },
+  "surges": [
+    {
+      "code": "084670",
+      "name": "동양고속",
+      "market": "KOSPI",
+      "industry": "",
+      "move_type": "surge",
+      "close": 29250.0,
+      "change_pct": 30.0,
+      "relative_strength": 30.0,
+      "amount_eok": 28.24259975,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "동양고속 천일고속 주가 장중 상한가, 고속터미널 재개발 수혜 기대감 반영",
+        "동양고속 주가, 상한가... 무슨 회사길래?",
+        "동양고속·천일고속 등 버스 관련주 강세...서울고터 재개발 속도",
+        "특징주, 동양고속-서울고속버스터미널 재개발 수혜 테마 상승세에 22.67% ↑",
+        "서울고속터미널 개발 기대에 동양·천일고속 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 70.15,
+          "macd": 145.4977,
+          "macd_signal": -188.7564,
+          "macd_histogram": 334.2542,
+          "bb_upper": 26720.53,
+          "bb_middle": 24172.5,
+          "bb_lower": 21624.47,
+          "bb_position": "상단돌파",
+          "ma_5": 24530.0,
+          "ma_20": 24172.5,
+          "ma_60": 24452.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 7.22,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 과매수 진입 / RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 7.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 15,
+          "avg_return_1d": 16.38,
+          "avg_return_5d": 55.27,
+          "positive_rate_1d": 60.0,
+          "positive_rate_5d": 66.7
+        }
+      }
+    },
+    {
+      "code": "000650",
+      "name": "천일고속",
+      "market": "KOSPI",
+      "industry": "",
+      "move_type": "surge",
+      "close": 180300.0,
+      "change_pct": 29.99,
+      "relative_strength": 29.99,
+      "amount_eok": 43.7368455,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "동양고속 천일고속 주가 장중 상한가, 고속터미널 재개발 수혜 기대감 반영",
+        "특징주, 천일고속-서울고속버스터미널 재개발 수혜 테마 상승세에 21.12% ↑",
+        "동양고속·천일고속 등 버스 관련주 강세...서울고터 재개발 속도",
+        "서울고속터미널 개발 기대에 동양·천일고속 상한가",
+        "[주식마감] ‘서울고속버스터미널 재개발 기대’ 동양고속·천일고속 상한가... 국제약품, 알파칩스, HLB바이오스텝 등 급등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 78.23,
+          "macd": 886.8618,
+          "macd_signal": -1728.3487,
+          "macd_histogram": 2615.2105,
+          "bb_upper": 161267.79,
+          "bb_middle": 144315.0,
+          "bb_lower": 127362.21,
+          "bb_position": "상단돌파",
+          "ma_5": 148580.0,
+          "ma_20": 144315.0,
+          "ma_60": 148445.0,
+          "ma_trend": "혼조",
+          "volume_ratio": 11.19,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 과매수 진입 / RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 11.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 14,
+          "avg_return_1d": 16.5,
+          "avg_return_5d": 72.94,
+          "positive_rate_1d": 69.2,
+          "positive_rate_5d": 69.2
+        }
+      }
+    },
+    {
+      "code": "278650",
+      "name": "HLB바이오스텝",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 4855.0,
+      "change_pct": 29.99,
+      "relative_strength": 29.99,
+      "amount_eok": 304.78694384,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "HLB바이오스텝 주가, 급등세... 왜?",
+        "HLB그룹주 엇갈린 흐름…HLB·HLB제약 약세, HLB바이오스텝은 19%대 급등",
+        "HLB바이오스텝, 10월 7일 상한가…4855원 마감",
+        "[상한가 종목] 동양고속-천일고속 이어 HLB바이오스텝 등 마감",
+        "[ET특징주] HLB, 간암 신약 제조시설 FDA 실사 종결… HLB바이오스텝 上"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 79.53,
+          "macd": 379.4929,
+          "macd_signal": 205.7717,
+          "macd_histogram": 173.7212,
+          "bb_upper": 4057.69,
+          "bb_middle": 2817.5,
+          "bb_lower": 1577.31,
+          "bb_position": "상단돌파",
+          "ma_5": 3552.0,
+          "ma_20": 2817.5,
+          "ma_60": 2373.85,
+          "ma_trend": "정배열",
+          "volume_ratio": 9.53,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / 거래량 9.5배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "087010",
+      "name": "펩트론",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 95100.0,
+      "change_pct": -27.18,
+      "relative_strength": -27.18,
+      "amount_eok": 1125.9619145,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "펩트론 \"릴리 본계약 없이 기술평가 종료\"…애프터마켓서 28% 급락",
+        "펩트론, 릴리와 스마트데포 기술평가 종료",
+        "펩트론, 릴리 기술평가 종료…\"후속 계약 미정, 협력 가능성 종료 아냐\"",
+        "펩트론 \"릴리와 기술평가기간 종료…후속협력 미정\"",
+        "펩트론, 릴리와 공동연구 종료에 주가 27%↓[Why 바이오]"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 27.87,
+          "macd": -11322.3523,
+          "macd_signal": -8109.2925,
+          "macd_histogram": -3213.0597,
+          "bb_upper": 168804.24,
+          "bb_middle": 141675.0,
+          "bb_lower": 114545.76,
+          "bb_position": "하단이탈",
+          "ma_5": 125900.0,
+          "ma_20": 141675.0,
+          "ma_60": 150935.0,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.04,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 6.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "468670",
+      "name": "브릴스",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 25100.0,
+      "change_pct": -17.43,
+      "relative_strength": -17.43,
+      "amount_eok": 721.785416,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "브릴스 주가, 10월 7일 애프터마켓 26,100원 14.14% 하락세 이어져",
+        "[10월 7일 고용24 채용정보] 코아아이티·천문·성우플러스·오토렉스·브릴스",
+        "코스닥 입성 브릴스, 송도에 ‘휴머노이드 센터’ 짓는다",
+        "브릴스, 코스닥 상장…AI 로봇 플랫폼 기업 도약",
+        "로봇 모듈화 솔루션 기업 브릴스, 코스닥 상장 첫날 150%대 급등 - 머니투데이"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "468530",
+      "name": "프로티나",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 42700.0,
+      "change_pct": -17.09,
+      "relative_strength": -17.09,
+      "amount_eok": 134.91557375,
+      "hints": [
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[KSMCB 2026]프로티나 윤태영 대표 “AI가 항체 쏟아내는 시대…관건은 ‘실험 검증’”",
+        "[리포트 브리핑]프로티나, 'AI biofoundry의 검증 파트너를 향해' Not Rated - 삼성증권",
+        "“AI가 후보물질 만들면 프로티나가 검증”…신약개발 병목 ‘웨트랩’ 정조준[인베스트 바이오]",
+        "\"프로티나, AI 바이오파운드리 서비스 진출…신약개발 병목 해결\"",
+        "프로티나, 美트위스트와 'AI 신약' 대규모 검증 MOU"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 54.28,
+          "macd": 5073.7134,
+          "macd_signal": 4339.7981,
+          "macd_histogram": 733.9153,
+          "bb_upper": 59117.42,
+          "bb_middle": 39067.5,
+          "bb_lower": 19017.58,
+          "bb_position": "중립",
+          "ma_5": 49640.0,
+          "ma_20": 39067.5,
+          "ma_60": 31535.33,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.02,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
