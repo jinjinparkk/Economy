@@ -1,0 +1,482 @@
+{
+  "trade_date": "2026-10-14",
+  "macro": {
+    "S&P 500": {
+      "close": 7805.45,
+      "change_pct": -0.02,
+      "date": "2026-10-13"
+    },
+    "NASDAQ": {
+      "close": 27204.38,
+      "change_pct": -0.15,
+      "date": "2026-10-13"
+    },
+    "다우존스": {
+      "close": 51670.1,
+      "change_pct": -0.35,
+      "date": "2026-10-13"
+    },
+    "필라델피아반도체": {
+      "close": 543.9,
+      "change_pct": -0.17,
+      "date": "2026-10-13"
+    },
+    "달러인덱스": {
+      "close": 102.18,
+      "change_pct": -0.39,
+      "date": "2026-10-13"
+    },
+    "WTI유": {
+      "close": 94.14,
+      "change_pct": 0.43,
+      "date": "2026-10-13"
+    },
+    "금": {
+      "close": 4177.3,
+      "change_pct": -0.32,
+      "date": "2026-10-13"
+    },
+    "구리": {
+      "close": 6.68,
+      "change_pct": -0.3,
+      "date": "2026-10-13"
+    },
+    "천연가스": {
+      "close": 3.28,
+      "change_pct": 3.47,
+      "date": "2026-10-13"
+    },
+    "VIX": {
+      "close": 15.27,
+      "change_pct": 0.39,
+      "date": "2026-10-13"
+    },
+    "미국채10Y": {
+      "close": 5.22,
+      "change_pct": -0.38,
+      "date": "2026-10-13"
+    },
+    "기술": {
+      "close": 196.28,
+      "change_pct": -0.04,
+      "date": "2026-10-13"
+    },
+    "금융": {
+      "close": 54.82,
+      "change_pct": -0.42,
+      "date": "2026-10-13"
+    },
+    "에너지": {
+      "close": 67.2,
+      "change_pct": 1.8,
+      "date": "2026-10-13"
+    },
+    "헬스케어": {
+      "close": 169.66,
+      "change_pct": -1.35,
+      "date": "2026-10-13"
+    },
+    "산업재": {
+      "close": 168.67,
+      "change_pct": -0.28,
+      "date": "2026-10-13"
+    },
+    "커뮤니케이션": {
+      "close": 112.28,
+      "change_pct": 0.74,
+      "date": "2026-10-13"
+    },
+    "경기소비재": {
+      "close": 112.36,
+      "change_pct": 0.08,
+      "date": "2026-10-13"
+    },
+    "필수소비재": {
+      "close": 84.19,
+      "change_pct": -0.26,
+      "date": "2026-10-13"
+    },
+    "부동산": {
+      "close": 41.83,
+      "change_pct": -0.21,
+      "date": "2026-10-13"
+    },
+    "유틸리티": {
+      "close": 41.87,
+      "change_pct": 0.58,
+      "date": "2026-10-13"
+    },
+    "소재": {
+      "close": 49.72,
+      "change_pct": 0.57,
+      "date": "2026-10-13"
+    },
+    "엔비디아": {
+      "close": 228.52,
+      "change_pct": 0.97,
+      "date": "2026-10-13"
+    },
+    "애플": {
+      "close": 341.27,
+      "change_pct": 0.09,
+      "date": "2026-10-13"
+    },
+    "마이크로소프트": {
+      "close": 543.45,
+      "change_pct": 0.43,
+      "date": "2026-10-13"
+    },
+    "아마존": {
+      "close": 258.58,
+      "change_pct": -0.37,
+      "date": "2026-10-13"
+    },
+    "알파벳": {
+      "close": 349.52,
+      "change_pct": 0.16,
+      "date": "2026-10-13"
+    },
+    "메타": {
+      "close": 762.5,
+      "change_pct": 2.63,
+      "date": "2026-10-13"
+    },
+    "테슬라": {
+      "close": 375.23,
+      "change_pct": -0.74,
+      "date": "2026-10-13"
+    },
+    "러셀2000": {
+      "close": 276.7,
+      "change_pct": -0.43,
+      "date": "2026-10-13"
+    },
+    "나스닥100ETF": {
+      "close": 743.57,
+      "change_pct": -0.33,
+      "date": "2026-10-13"
+    },
+    "가치ETF": {
+      "close": 220.67,
+      "change_pct": -0.34,
+      "date": "2026-10-13"
+    },
+    "닛케이225": {
+      "close": 67744.29,
+      "change_pct": -0.05,
+      "date": "2026-10-14"
+    },
+    "항셍": {
+      "close": 24345.22,
+      "change_pct": 0.3,
+      "date": "2026-10-13"
+    },
+    "상해종합": {
+      "close": 3800.86,
+      "change_pct": 0.1,
+      "date": "2026-10-13"
+    },
+    "독일DAX": {
+      "close": 25259.9,
+      "change_pct": -0.07,
+      "date": "2026-10-13"
+    },
+    "유로스톡스50": {
+      "close": 6167.01,
+      "change_pct": -0.55,
+      "date": "2026-10-13"
+    },
+    "하이일드채권": {
+      "close": 77.09,
+      "change_pct": -0.26,
+      "date": "2026-10-13"
+    },
+    "미장기채20Y+": {
+      "close": 78.37,
+      "change_pct": 0.41,
+      "date": "2026-10-13"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": null,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.02%, 나스닥 -0.15%로 하락 마감. 필라델피아 반도체지수 -0.17%. VIX 15.3 (보통 구간). 금 4,177.30달러 (-0.32%). 달러인덱스 102.18 (-0.39%). 섹터: 에너지(+1.80%) 주도, 헬스케어(-1.35%) 약세. QQQ-VTV 스프레드 +0.01%p → 성장주 우위. HYG -0.26% → 신용 스트레스 안정. Mag7 평균 +0.45% → 대형 기술주 강세. 아시아: 닛케이225 -0.05%, 항셍 +0.30%, 상해종합 +0.10%. 유럽: 독일DAX -0.07%, 유로스톡스50 -0.55%.",
+  "market_breadth": {
+    "total_up": 1348,
+    "total_down": 1186,
+    "total_unchanged": 227,
+    "total": 2761,
+    "up_ratio": 48.8
+  },
+  "surges": [
+    {
+      "code": "011330",
+      "name": "유니켐",
+      "market": "KOSPI",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "surge",
+      "close": 6370.0,
+      "change_pct": 30.0,
+      "relative_strength": 30.44,
+      "amount_eok": 86.479063,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[ET특징주] 유니켐, 로봇 기업 되나… 美 루미아 인수 기대감에 주가 上",
+        "[더벨]‘로봇 섹터’ 진입 본격화, 유니켐·루미아 시너지 재조명 - 머니투데이",
+        "이제 로봇기업? 유니켐, 루미아 인수 기대감에 상한가 직행",
+        "[특징주] 유니켐, 美 '루미아' 품고 로봇 신사업 본격화…상한가 직행",
+        "유니켐 상한가 6370원…피혁 본업과 재무구조 재평가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 83.98,
+          "macd": 218.3674,
+          "macd_signal": 14.5937,
+          "macd_histogram": 203.7738,
+          "bb_upper": 5428.45,
+          "bb_middle": 4365.75,
+          "bb_lower": 3303.05,
+          "bb_position": "상단돌파",
+          "ma_5": 5001.0,
+          "ma_20": 4365.75,
+          "ma_60": 4379.83,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.48,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.5배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "199730",
+      "name": "바이오인프라",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "surge",
+      "close": 1981.0,
+      "change_pct": 29.99,
+      "relative_strength": 31.56,
+      "amount_eok": 10.36593908,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "바이오인프라,'유앤인프라' 합병…유전독성불순물 분석사업 진출",
+        "바이오인프라, 유앤인프라 소규모합병 이사회 승인",
+        "[MK 골든크로스 돌파종목 : 진양산업(003780) & 바이오인프라(199730)]",
+        "바이오인프라 29.99% 급등…2분기 흑자전환 재조명",
+        "[주식마감] '서울고터 복합 개발' 기대감에 천일고속 상한가... 유니켐, 바이오인프라, 하이퍼코퍼레이션 등 급등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 74.0,
+          "macd": -7.4786,
+          "macd_signal": -156.0055,
+          "macd_histogram": 148.5269,
+          "bb_upper": 1626.72,
+          "bb_middle": 938.15,
+          "bb_lower": 249.58,
+          "bb_position": "상단돌파",
+          "ma_5": 1255.2,
+          "ma_20": 938.15,
+          "ma_60": 1414.37,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.81,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.8배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 6,
+          "avg_return_1d": 18.17,
+          "avg_return_5d": -26.23,
+          "positive_rate_1d": 80.0,
+          "positive_rate_5d": 0.0
+        }
+      }
+    },
+    {
+      "code": "377220",
+      "name": "프롬바이오",
+      "market": "KOSDAQ",
+      "industry": "기타 식품 제조업",
+      "move_type": "surge",
+      "close": 2455.0,
+      "change_pct": 29.96,
+      "relative_strength": 31.53,
+      "amount_eok": 51.54258348,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "[단독] ‘건기식 강자’ 프롬바이오, 경영권 매각 추진...‘탈모 신약’ 반전 안 통했다 - 조선비즈",
+        "프롬바이오, 마라톤의 전설 이봉주와 함께한 ‘보스웰리아로 다시 달린다’ 영상 공개",
+        "프롬바이오 29.96% 올라 2455원…적자 축소 여부 주목",
+        "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 51.35,
+          "macd": -238.6772,
+          "macd_signal": -233.0133,
+          "macd_histogram": -5.664,
+          "bb_upper": 3330.65,
+          "bb_middle": 2413.1,
+          "bb_lower": 1495.55,
+          "bb_position": "중립",
+          "ma_5": 2008.8,
+          "ma_20": 2413.1,
+          "ma_60": 2700.12,
+          "ma_trend": "역배열",
+          "volume_ratio": 13.16,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 13.2배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 1.71,
+          "avg_return_5d": -14.07,
+          "positive_rate_1d": 75.0,
+          "positive_rate_5d": 0.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "061090",
+      "name": "세나테크놀로지",
+      "market": "KOSDAQ",
+      "industry": "통신 및 방송 장비 제조업",
+      "move_type": "plunge",
+      "close": 33000.0,
+      "change_pct": -20.67,
+      "relative_strength": -19.1,
+      "amount_eok": 40.01984275,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "세나테크놀로지, 3Q 연결 영업이익 48억...전년비 10%↓",
+        "세나테크놀로지, 3분기 영업익 49억원…전분기 대비 73% 급감",
+        "[오늘의 증시일정] 프로티아ㆍ세나테크놀로지ㆍ신영와코루 등",
+        "테슬라 공장 뚫은 세나테크놀로지 ‘메시 통신’…AI 데이터센터로 영토 넓힌다",
+        "세나테크놀로지, 애프터마켓서 10%대 급등"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 33.93,
+          "macd": -16.6059,
+          "macd_signal": 21.2765,
+          "macd_histogram": -37.8824,
+          "bb_upper": 44503.86,
+          "bb_middle": 38815.0,
+          "bb_lower": 33126.14,
+          "bb_position": "하단이탈",
+          "ma_5": 40690.0,
+          "ma_20": 38815.0,
+          "ma_60": 41010.83,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.01,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 5.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "079650",
+      "name": "서산",
+      "market": "KOSDAQ",
+      "industry": "시멘트, 석회, 플라스터 및 그 제품 제조업",
+      "move_type": "plunge",
+      "close": 7300.0,
+      "change_pct": -16.86,
+      "relative_strength": -15.29,
+      "amount_eok": 938.93175365,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "서산시, 소상공인 특례보증 72억원 규모 추가 지원",
+        "충남신보-서산시-하나은행, 소상공인 특례보증 업무협약 체결",
+        "서산시·하나은행·충남신보, 소상공인 자금난 해소 협력",
+        "서산 고구마 '호풍미' 수확 본격화…재배면적 15㏊로 확대",
+        "서산 고구마 '호풍미' 본격 수확, 해미읍성축제에서 950만 원 판매 성과"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 57.25,
+          "macd": 270.8981,
+          "macd_signal": 138.8161,
+          "macd_histogram": 132.082,
+          "bb_upper": 7885.26,
+          "bb_middle": 6323.0,
+          "bb_lower": 4760.74,
+          "bb_position": "중립",
+          "ma_5": 6684.0,
+          "ma_20": 6323.0,
+          "ma_60": 5467.17,
+          "ma_trend": "정배열",
+          "volume_ratio": 5.39,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / 거래량 5.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "468530",
+      "name": "프로티나",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "plunge",
+      "close": 38450.0,
+      "change_pct": -13.69,
+      "relative_strength": -12.12,
+      "amount_eok": 81.494107,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "[종목 포커스] 프로티나, 美 트위스트와 AI 항체 검증 본계약으로 주가 재상승?",
+        "“AI 신약 10만개 중 진짜는?”…프로티나, 대규모 실험검증으로 후보물질 선별",
+        "프로티나, 설계 본격 사업화 위해 'ABX 바이오사이언시스'에 출자",
+        "[장중수급포착] 프로티나, 외국인/기관 동시 순매수… 주가 +3.91%",
+        "프로티나, 美트위스트와 'AI 신약' 대규모 검증 MOU"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 46.44,
+          "macd": 2894.4729,
+          "macd_signal": 3941.3583,
+          "macd_histogram": -1046.8854,
+          "bb_upper": 59231.6,
+          "bb_middle": 41735.0,
+          "bb_lower": 24238.4,
+          "bb_position": "중립",
+          "ma_5": 42460.0,
+          "ma_20": 41735.0,
+          "ma_60": 32768.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.21,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
