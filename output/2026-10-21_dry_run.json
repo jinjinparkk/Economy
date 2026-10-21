@@ -1,0 +1,455 @@
+{
+  "trade_date": "2026-10-21",
+  "macro": {
+    "S&P 500": {
+      "close": 7712.57,
+      "change_pct": 0.28,
+      "date": "2026-10-20"
+    },
+    "NASDAQ": {
+      "close": 26424.82,
+      "change_pct": -0.02,
+      "date": "2026-10-20"
+    },
+    "다우존스": {
+      "close": 52495.88,
+      "change_pct": 1.02,
+      "date": "2026-10-20"
+    },
+    "필라델피아반도체": {
+      "close": 500.01,
+      "change_pct": -0.38,
+      "date": "2026-10-20"
+    },
+    "달러인덱스": {
+      "close": 101.73,
+      "change_pct": -0.25,
+      "date": "2026-10-20"
+    },
+    "WTI유": {
+      "close": 101.79,
+      "change_pct": -1.8,
+      "date": "2026-10-20"
+    },
+    "금": {
+      "close": 4142.6,
+      "change_pct": -0.42,
+      "date": "2026-10-20"
+    },
+    "구리": {
+      "close": 6.57,
+      "change_pct": 0.46,
+      "date": "2026-10-20"
+    },
+    "천연가스": {
+      "close": 2.96,
+      "change_pct": -3.27,
+      "date": "2026-10-20"
+    },
+    "VIX": {
+      "close": 17.31,
+      "change_pct": -6.13,
+      "date": "2026-10-20"
+    },
+    "미국채10Y": {
+      "close": 5.12,
+      "change_pct": -0.39,
+      "date": "2026-10-20"
+    },
+    "기술": {
+      "close": 185.44,
+      "change_pct": -0.28,
+      "date": "2026-10-20"
+    },
+    "금융": {
+      "close": 55.72,
+      "change_pct": 1.2,
+      "date": "2026-10-20"
+    },
+    "에너지": {
+      "close": 67.97,
+      "change_pct": 0.25,
+      "date": "2026-10-20"
+    },
+    "헬스케어": {
+      "close": 179.82,
+      "change_pct": 2.37,
+      "date": "2026-10-20"
+    },
+    "산업재": {
+      "close": 166.8,
+      "change_pct": 0.07,
+      "date": "2026-10-20"
+    },
+    "커뮤니케이션": {
+      "close": 110.19,
+      "change_pct": 0.09,
+      "date": "2026-10-20"
+    },
+    "경기소비재": {
+      "close": 115.5,
+      "change_pct": 0.91,
+      "date": "2026-10-20"
+    },
+    "필수소비재": {
+      "close": 87.75,
+      "change_pct": 0.62,
+      "date": "2026-10-20"
+    },
+    "부동산": {
+      "close": 42.38,
+      "change_pct": 1.7,
+      "date": "2026-10-20"
+    },
+    "유틸리티": {
+      "close": 41.88,
+      "change_pct": 1.26,
+      "date": "2026-10-20"
+    },
+    "소재": {
+      "close": 51.23,
+      "change_pct": 0.55,
+      "date": "2026-10-20"
+    },
+    "엔비디아": {
+      "close": 216.47,
+      "change_pct": -0.29,
+      "date": "2026-10-20"
+    },
+    "애플": {
+      "close": 339.5,
+      "change_pct": -1.0,
+      "date": "2026-10-20"
+    },
+    "마이크로소프트": {
+      "close": 531.87,
+      "change_pct": -0.31,
+      "date": "2026-10-20"
+    },
+    "아마존": {
+      "close": 262.63,
+      "change_pct": 0.07,
+      "date": "2026-10-20"
+    },
+    "알파벳": {
+      "close": 336.4,
+      "change_pct": -1.11,
+      "date": "2026-10-20"
+    },
+    "메타": {
+      "close": 694.25,
+      "change_pct": -1.59,
+      "date": "2026-10-20"
+    },
+    "테슬라": {
+      "close": 373.71,
+      "change_pct": 1.54,
+      "date": "2026-10-20"
+    },
+    "러셀2000": {
+      "close": 275.78,
+      "change_pct": 1.66,
+      "date": "2026-10-20"
+    },
+    "나스닥100ETF": {
+      "close": 717.63,
+      "change_pct": -0.1,
+      "date": "2026-10-20"
+    },
+    "가치ETF": {
+      "close": 224.51,
+      "change_pct": 1.04,
+      "date": "2026-10-20"
+    },
+    "닛케이225": {
+      "close": 64621.24,
+      "change_pct": 0.85,
+      "date": "2026-10-21"
+    },
+    "항셍": {
+      "close": 23867.74,
+      "change_pct": -1.32,
+      "date": "2026-10-20"
+    },
+    "상해종합": {
+      "close": 3735.37,
+      "change_pct": 0.12,
+      "date": "2026-10-20"
+    },
+    "독일DAX": {
+      "close": 25304.42,
+      "change_pct": -0.06,
+      "date": "2026-10-20"
+    },
+    "유로스톡스50": {
+      "close": 6121.66,
+      "change_pct": -0.38,
+      "date": "2026-10-20"
+    },
+    "하이일드채권": {
+      "close": 76.83,
+      "change_pct": 0.0,
+      "date": "2026-10-20"
+    },
+    "미장기채20Y+": {
+      "close": 80.13,
+      "change_pct": 0.84,
+      "date": "2026-10-20"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": null,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.28%, 나스닥 -0.02%로 상승 마감. 필라델피아 반도체지수 -0.38%. VIX 17.3 (보통 구간). 금 4,142.60달러 (-0.42%). 달러인덱스 101.73 (-0.25%). 섹터: 헬스케어(+2.37%) 주도, 기술(-0.28%) 약세. QQQ-VTV 스프레드 -1.14%p → 가치주 우위. HYG +0.00% → 신용 스트레스 안정. Mag7 평균 -0.38% → 대형 기술주 약세. 아시아: 닛케이225 +0.85%, 항셍 -1.32%, 상해종합 +0.12%. 유럽: 독일DAX -0.06%, 유로스톡스50 -0.38%.",
+  "market_breadth": {
+    "total_up": 1400,
+    "total_down": 1122,
+    "total_unchanged": 240,
+    "total": 2762,
+    "up_ratio": 50.7
+  },
+  "surges": [
+    {
+      "code": "003010",
+      "name": "혜인",
+      "market": "KOSPI",
+      "industry": "기계장비 및 관련 물품 도매업",
+      "move_type": "surge",
+      "close": 10450.0,
+      "change_pct": 29.98,
+      "relative_strength": 26.69,
+      "amount_eok": 234.02454305,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "\"작년 매출 20% 규모 계약 따냈다\"...혜인, 장중 상한가 기록",
+        "[공시 Pick] 혜인, 464억원 규모 포항 AI데이터센터 수주에 상한가",
+        "용혜인 “부산 119구급 스마트시스템 이용률 1%, 전국 최하권”",
+        "혜인, 포항 AI 데이터센터에 463억원 비상발전기 공급"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 61.49,
+          "macd": -240.395,
+          "macd_signal": -303.6738,
+          "macd_histogram": 63.2788,
+          "bb_upper": 11242.61,
+          "bb_middle": 8817.0,
+          "bb_lower": 6391.39,
+          "bb_position": "중립",
+          "ma_5": 8072.0,
+          "ma_20": 8817.0,
+          "ma_60": 8382.75,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.99,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 거래량 5.0배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "0158S0",
+      "name": "엘리스",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 79900.0,
+      "change_pct": 29.92,
+      "relative_strength": 28.54,
+      "amount_eok": 1192.0440185,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "엘리스 상장 첫날 -32% 외신도 주목…“AI 투자 우려 증폭”",
+        "'한국판 코어위브' 엘리스 상장 첫날 급락하더니…하루 만에 상한가",
+        "한국의 작은 IPO가 월가를 흔들었다…엘리스 32% 폭락에 번진 ‘AI 의심’",
+        "엘리스그룹, AI 인프라 상장 랠리 가세...코어위브 악재 돌파할까",
+        "상장 첫 날 32% 급락한 엘리스, 하루 만에 급반등…상한가 기록"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "011370",
+      "name": "서한",
+      "market": "KOSDAQ",
+      "industry": "건물 건설업",
+      "move_type": "surge",
+      "close": 5040.0,
+      "change_pct": 29.9,
+      "relative_strength": 28.52,
+      "amount_eok": 117.05785573,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "서한, 서울 강남 1296억원 규모 AI 데이터센터 수주",
+        "서한, 1296억원 규모 공급계약 체결",
+        "예산군, 100세 어르신에 장수지팡이·대통령 축하 서한 전달",
+        "[속보] 서한, 1296억원 규모 대치동 데이터센터 신축공사 수주…지난해 매출액의 20.09%",
+        "서울 한복판 데이터센터 수주…전국구 기술력 입증한 서한"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 81.52,
+          "macd": 95.5698,
+          "macd_signal": -2.4121,
+          "macd_histogram": 97.9819,
+          "bb_upper": 4383.61,
+          "bb_middle": 3799.0,
+          "bb_lower": 3214.39,
+          "bb_position": "상단돌파",
+          "ma_5": 4041.0,
+          "ma_20": 3799.0,
+          "ma_60": 3827.83,
+          "ma_trend": "혼조",
+          "volume_ratio": 13.87,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 극과매수(단기 과열) / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 13.9배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "035620",
+      "name": "바른손이앤에이",
+      "market": "KOSDAQ",
+      "industry": "영화, 비디오물, 방송프로그램 제작 및 배급업",
+      "move_type": "plunge",
+      "close": 387.0,
+      "change_pct": -18.35,
+      "relative_strength": -19.73,
+      "amount_eok": 45.4115418,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "문양권 등, 바른손이앤에이 지분 38.06%로 확대",
+        "MBC씨앤아이, 케이타이거즈·바른손이앤에이와 ‘협력형 AI 드라마’ 공개",
+        "바른손이앤에이, 최대주주 문양권 측 주식등 보유 비율 2.25%p 증가",
+        "바른손이앤에이, 소수계좌 거래집중으로 투자주의종목 지정",
+        "바른손이앤에이, 1,000원 미달 5거래일 지속 땐 상폐 사유"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.16,
+          "macd": -35.5858,
+          "macd_signal": -12.7537,
+          "macd_histogram": -22.8321,
+          "bb_upper": 838.16,
+          "bb_middle": 658.2,
+          "bb_lower": 478.24,
+          "bb_position": "하단이탈",
+          "ma_5": 602.6,
+          "ma_20": 658.2,
+          "ma_60": 706.93,
+          "ma_trend": "역배열",
+          "volume_ratio": 13.34,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 13.3배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "012340",
+      "name": "뉴인텍",
+      "market": "KOSDAQ",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "plunge",
+      "close": 777.0,
+      "change_pct": -12.5,
+      "relative_strength": -13.88,
+      "amount_eok": 60.26190634,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "특징주, 뉴인텍-태양광에너지 테마 상승세에 10.02% ↑",
+        "뉴인텍, 주가급등으로 투자경고종목 지정",
+        "뉴인텍 주가 기호지세…수소에너지 관련주 매수세 확산",
+        "[특징주] 뉴인텍, 3거래일 연속 상한가…상폐 절차 유예에 관련株 강세",
+        "뉴인텍, 19일 하루 공매도 금지"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 60.88,
+          "macd": 69.3868,
+          "macd_signal": 13.4797,
+          "macd_histogram": 55.9072,
+          "bb_upper": 867.05,
+          "bb_middle": 522.45,
+          "bb_lower": 177.85,
+          "bb_position": "중립",
+          "ma_5": 799.8,
+          "ma_20": 522.45,
+          "ma_60": 620.82,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.65,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "199730",
+      "name": "바이오인프라",
+      "market": "KOSDAQ",
+      "industry": "자연과학 및 공학 연구개발업",
+      "move_type": "plunge",
+      "close": 2160.0,
+      "change_pct": -10.0,
+      "relative_strength": -11.38,
+      "amount_eok": 26.44828158,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "코스닥 상장사 바이오인프라, 인도네시아의 최대CRO ‘이퀼랩(Equilab)’과 사업 협력 협의",
+        "의료·바이오 인프라 개방형 실험실마저 수도권 쏠림",
+        "바이오인프라, 유앤인프라 합병안 이사회 승인",
+        "바이오인프라, 신규사업 본궤도…CRO 통합서비스 제공",
+        "매출 4억 원 자회사 품은 바이오인프라, 생동성 수주 굴곡 메울 수 있을까"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 65.56,
+          "macd": 312.3342,
+          "macd_signal": 124.3221,
+          "macd_histogram": 188.0121,
+          "bb_upper": 2793.25,
+          "bb_middle": 1283.5,
+          "bb_lower": -226.25,
+          "bb_position": "중립",
+          "ma_5": 2457.0,
+          "ma_20": 1283.5,
+          "ma_60": 1483.03,
+          "ma_trend": "혼조",
+          "volume_ratio": 1.91,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
