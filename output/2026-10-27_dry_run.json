@@ -1,0 +1,481 @@
+{
+  "trade_date": "2026-10-27",
+  "macro": {
+    "S&P 500": {
+      "close": 7676.77,
+      "change_pct": 0.7,
+      "date": "2026-10-26"
+    },
+    "NASDAQ": {
+      "close": 26169.38,
+      "change_pct": 0.82,
+      "date": "2026-10-26"
+    },
+    "다우존스": {
+      "close": 52361.58,
+      "change_pct": 0.28,
+      "date": "2026-10-26"
+    },
+    "필라델피아반도체": {
+      "close": 491.83,
+      "change_pct": 2.85,
+      "date": "2026-10-26"
+    },
+    "원/달러": {
+      "close": 1326.58,
+      "change_pct": 0.36,
+      "date": "2026-10-27"
+    },
+    "달러인덱스": {
+      "close": 101.96,
+      "change_pct": 0.15,
+      "date": "2026-10-26"
+    },
+    "WTI유": {
+      "close": 101.76,
+      "change_pct": -1.46,
+      "date": "2026-10-26"
+    },
+    "금": {
+      "close": 4038.4,
+      "change_pct": 0.76,
+      "date": "2026-10-26"
+    },
+    "구리": {
+      "close": 6.51,
+      "change_pct": 0.46,
+      "date": "2026-10-26"
+    },
+    "천연가스": {
+      "close": 2.6,
+      "change_pct": -1.52,
+      "date": "2026-10-26"
+    },
+    "VIX": {
+      "close": 18.39,
+      "change_pct": -5.45,
+      "date": "2026-10-26"
+    },
+    "미국채10Y": {
+      "close": 4.99,
+      "change_pct": 0.0,
+      "date": "2026-10-26"
+    },
+    "기술": {
+      "close": 186.32,
+      "change_pct": 1.69,
+      "date": "2026-10-26"
+    },
+    "금융": {
+      "close": 56.02,
+      "change_pct": 0.21,
+      "date": "2026-10-26"
+    },
+    "에너지": {
+      "close": 69.64,
+      "change_pct": 0.45,
+      "date": "2026-10-26"
+    },
+    "헬스케어": {
+      "close": 179.28,
+      "change_pct": 0.0,
+      "date": "2026-10-26"
+    },
+    "산업재": {
+      "close": 166.96,
+      "change_pct": 1.42,
+      "date": "2026-10-26"
+    },
+    "커뮤니케이션": {
+      "close": 103.85,
+      "change_pct": -1.57,
+      "date": "2026-10-26"
+    },
+    "경기소비재": {
+      "close": 114.26,
+      "change_pct": 1.03,
+      "date": "2026-10-26"
+    },
+    "필수소비재": {
+      "close": 87.96,
+      "change_pct": -0.34,
+      "date": "2026-10-26"
+    },
+    "부동산": {
+      "close": 42.8,
+      "change_pct": 0.54,
+      "date": "2026-10-26"
+    },
+    "유틸리티": {
+      "close": 42.55,
+      "change_pct": -0.02,
+      "date": "2026-10-26"
+    },
+    "소재": {
+      "close": 51.38,
+      "change_pct": 0.14,
+      "date": "2026-10-26"
+    },
+    "엔비디아": {
+      "close": 216.0,
+      "change_pct": 2.39,
+      "date": "2026-10-26"
+    },
+    "애플": {
+      "close": 343.91,
+      "change_pct": -1.1,
+      "date": "2026-10-26"
+    },
+    "마이크로소프트": {
+      "close": 532.6,
+      "change_pct": 1.54,
+      "date": "2026-10-26"
+    },
+    "아마존": {
+      "close": 249.09,
+      "change_pct": 0.44,
+      "date": "2026-10-26"
+    },
+    "알파벳": {
+      "close": 314.19,
+      "change_pct": -0.97,
+      "date": "2026-10-26"
+    },
+    "메타": {
+      "close": 630.56,
+      "change_pct": -1.88,
+      "date": "2026-10-26"
+    },
+    "테슬라": {
+      "close": 391.62,
+      "change_pct": 5.21,
+      "date": "2026-10-26"
+    },
+    "러셀2000": {
+      "close": 276.99,
+      "change_pct": 0.45,
+      "date": "2026-10-26"
+    },
+    "나스닥100ETF": {
+      "close": 712.2,
+      "change_pct": 1.11,
+      "date": "2026-10-26"
+    },
+    "가치ETF": {
+      "close": 226.24,
+      "change_pct": 0.53,
+      "date": "2026-10-26"
+    },
+    "닛케이225": {
+      "close": 63268.37,
+      "change_pct": 1.73,
+      "date": "2026-10-27"
+    },
+    "항셍": {
+      "close": 23211.81,
+      "change_pct": 0.51,
+      "date": "2026-10-26"
+    },
+    "상해종합": {
+      "close": 3697.52,
+      "change_pct": 0.19,
+      "date": "2026-10-26"
+    },
+    "독일DAX": {
+      "close": 25410.84,
+      "change_pct": 0.91,
+      "date": "2026-10-26"
+    },
+    "유로스톡스50": {
+      "close": 6116.23,
+      "change_pct": 0.79,
+      "date": "2026-10-26"
+    },
+    "하이일드채권": {
+      "close": 77.2,
+      "change_pct": 0.19,
+      "date": "2026-10-26"
+    },
+    "미장기채20Y+": {
+      "close": 81.68,
+      "change_pct": 0.42,
+      "date": "2026-10-26"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": null,
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.70%, 나스닥 +0.82%로 상승 마감. 필라델피아 반도체지수 +2.85%. VIX 18.4 (보통 구간). 원/달러 1,326.58원 (+0.36%, 원화 약세). 금 4,038.40달러 (+0.76%). 달러인덱스 101.96 (+0.15%). 섹터: 기술(+1.69%) 주도, 커뮤니케이션(-1.57%) 약세. QQQ-VTV 스프레드 +0.58%p → 성장주 우위. HYG +0.19% → 신용 스트레스 안정. Mag7 평균 +0.80% → 대형 기술주 강세. 아시아: 닛케이225 +1.73%, 항셍 +0.51%, 상해종합 +0.19%. 유럽: 독일DAX +0.91%, 유로스톡스50 +0.79%.",
+  "market_breadth": {
+    "total_up": 1782,
+    "total_down": 759,
+    "total_unchanged": 224,
+    "total": 2765,
+    "up_ratio": 64.4
+  },
+  "surges": [
+    {
+      "code": "179880",
+      "name": "멜콘",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 15830.0,
+      "change_pct": 29.97,
+      "relative_strength": 27.68,
+      "amount_eok": 421.5377262,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "멜콘 주가, 상한가... 무슨 회사길래?",
+        "[속보] 멜콘 주가, 오전장 상한가 직행",
+        "[특징주] 멜콘, 앤트로픽 IPO 추진에 AI 반도체 기대감…상한가 마감",
+        "[특징주] 멜콘, 앤트로픽發 투심 회복에 장중 上 기록",
+        "[마감분석] 멜콘 상한가 기록하며 1만5830원 마감 : 기업주식정보"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 13712.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    },
+    {
+      "code": "190510",
+      "name": "나무가",
+      "market": "KOSDAQ",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 17090.0,
+      "change_pct": 29.96,
+      "relative_strength": 27.67,
+      "amount_eok": 187.81516445,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[단독] 보스턴다이내믹스, 아틀라스 1만대분 부품 발주…나무가·씨티알 등 참여",
+        "현대차 '아틀라스' 공급망 공개에 관련주 급등…나무가·캠시스 30% 가까이 상승",
+        "[특징주] 현대차 로봇 공급망 기대…나무가, 애프터마켓 20% 급등",
+        "[특징주]나무가, 현대차 ‘아틀라스’ 카메라 공급망 합류 보도에 27.83% 상승",
+        "[급등락주 짚어보기] 아틀라스 공급망 윤곽에 나무가·캠시스 ‘상한가’⋯다보링크 下"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 63.78,
+          "macd": 52.6281,
+          "macd_signal": -76.0771,
+          "macd_histogram": 128.7052,
+          "bb_upper": 16860.83,
+          "bb_middle": 14985.5,
+          "bb_lower": 13110.17,
+          "bb_position": "상단돌파",
+          "ma_5": 14940.0,
+          "ma_20": 14985.5,
+          "ma_60": 14471.17,
+          "ma_trend": "혼조",
+          "volume_ratio": 7.36,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 7.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "0011A0",
+      "name": "액스비스",
+      "market": "KOSDAQ",
+      "industry": "기타 전기장비 제조업",
+      "move_type": "surge",
+      "close": 9650.0,
+      "change_pct": 29.88,
+      "relative_strength": 27.59,
+      "amount_eok": 214.97478435,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "액스비스 주가, 급등세... 왜?",
+        "'아틀라스' 중심에 현대모비스…액스비스가 주목받는 이유",
+        "[파워인터뷰] 액스비스 김명진 대표 \"글로벌 제조 혁신 이끈다···생산능력 200% 확대\"",
+        "액스비스 코스닥시장 신규 상장…9일부터 거래 개시",
+        "액스비스, 배터리 3사 공급 레이저 장비 기반 앞세워 반도체 장비 공동개발 추진"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 49.5,
+          "macd": -646.6173,
+          "macd_signal": -467.0666,
+          "macd_histogram": -179.5508,
+          "bb_upper": 12826.95,
+          "bb_middle": 9917.5,
+          "bb_lower": 7008.05,
+          "bb_position": "중립",
+          "ma_5": 8410.0,
+          "ma_20": 9917.5,
+          "ma_60": 9760.33,
+          "ma_trend": "혼조",
+          "volume_ratio": 7.85,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 데드크로스 진행 / 거래량 7.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "186230",
+      "name": "그린플러스",
+      "market": "KOSDAQ",
+      "industry": "1차 비철금속 제조업",
+      "move_type": "plunge",
+      "close": 3345.0,
+      "change_pct": -15.85,
+      "relative_strength": -18.14,
+      "amount_eok": 10.90049349,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "그린플러스, 12월 8일 임시주총 소집…사업목적 추가·이사선임 상정",
+        "그린플러스, 아리바이오홀딩스로 최대주주 변경 예정…230만주 103억5600만원에 양수도",
+        "[공시] JYP Ent·그린플러스·파이온엑스 '공매도 금지', 광진실업 '투자경고 지정예고' 등...24건",
+        "그린플러스, 유상증자·CB 발행 200억 조달…아리바이오홀딩스 최대주주 변경 '눈앞'",
+        "그린플러스, 채무상환자금 100억원 마련 위해 제3자배정 유상증자 결정"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 48.29,
+          "macd": 76.3038,
+          "macd_signal": 35.0213,
+          "macd_histogram": 41.2825,
+          "bb_upper": 3753.59,
+          "bb_middle": 3324.0,
+          "bb_lower": 2894.41,
+          "bb_position": "중립",
+          "ma_5": 3640.0,
+          "ma_20": 3324.0,
+          "ma_60": 3337.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.44,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 거래량 4.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "market": "KOSDAQ",
+      "industry": "의약품 제조업",
+      "move_type": "plunge",
+      "close": 39400.0,
+      "change_pct": -12.83,
+      "relative_strength": -15.12,
+      "amount_eok": 458.23290925,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "지투지바이오, 65% 급등 ‘평가계약’…中 파트너 측은 공시조차 안 했다 [김유림의 바이오핀셋]",
+        "中 기술협력 확대에 주가 고공행진 … 지투지바이오, 기술수출·수익화 시험대",
+        "노보 협력 기대 지투지바이오 급등…노을·퓨쳐켐 상한가[바이오맥짚기]",
+        "지투지바이오 주가, 10월 27일 39,150원 13.38% 하락세",
+        "'깜깜이' 기술평가 계약에 축배부터 드는 바이오주"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 51.0,
+          "macd": 1677.1525,
+          "macd_signal": 901.5913,
+          "macd_histogram": 775.5612,
+          "bb_upper": 49703.18,
+          "bb_middle": 39000.0,
+          "bb_lower": 28296.82,
+          "bb_position": "중립",
+          "ma_5": 43860.0,
+          "ma_20": 39000.0,
+          "ma_60": 37236.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.44,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 하락다이버전스 / MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "322000",
+      "name": "HD현대에너지솔루션",
+      "market": "KOSPI",
+      "industry": "반도체 제조업",
+      "move_type": "plunge",
+      "close": 84300.0,
+      "change_pct": -12.46,
+      "relative_strength": -15.55,
+      "amount_eok": 726.200759,
+      "hints": [
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] HD현대에너지솔루션, 3분기 실적 부진에 10%대 하락…목표가 줄하향",
+        "\"HD현대에너지솔루션, 환율 급락 타격…목표가↓\"[클릭 e종목]",
+        "'어닝 쇼크' HD현대에너지솔루션 이틀째 급락…증권가도 목표주가 줄하향",
+        "영업익 41% 미스에 목표가 줄하향…HD현대에너지솔루션 9%↓[이런국장 저런주식]",
+        "HD현대에너지솔루션, 환율로 원가 부담 '쑥'…목표가 '뚝'-DS - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 29.12,
+          "macd": -9384.2585,
+          "macd_signal": -4376.3031,
+          "macd_histogram": -5007.9554,
+          "bb_upper": 160536.09,
+          "bb_middle": 123890.0,
+          "bb_lower": 87243.91,
+          "bb_position": "하단이탈",
+          "ma_5": 99580.0,
+          "ma_20": 123890.0,
+          "ma_60": 126420.0,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.98,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
