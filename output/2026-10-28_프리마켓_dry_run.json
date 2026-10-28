@@ -1,0 +1,417 @@
+{
+  "trade_date": "2026-10-28",
+  "macro": {
+    "S&P 500": {
+      "Close": 7722.6,
+      "ChangePct": 0.6,
+      "Change": 45.83
+    },
+    "NASDAQ": {
+      "Close": 26477.81,
+      "ChangePct": 1.18,
+      "Change": 308.43
+    },
+    "다우존스": {
+      "Close": 52377.57,
+      "ChangePct": 0.03,
+      "Change": 15.99
+    },
+    "원/달러": {
+      "Close": 1324.77,
+      "ChangePct": 0.23,
+      "Change": 3.01
+    },
+    "달러인덱스": {
+      "Close": 102.38,
+      "ChangePct": 0.41,
+      "Change": 0.42
+    },
+    "WTI유": {
+      "Close": 100.08,
+      "ChangePct": -1.65,
+      "Change": -1.68
+    },
+    "금": {
+      "Close": 4075.5,
+      "ChangePct": 0.92,
+      "Change": 37.1
+    },
+    "구리": {
+      "Close": 6.66,
+      "ChangePct": 2.3,
+      "Change": 0.15
+    },
+    "천연가스": {
+      "Close": 3.06,
+      "ChangePct": 17.69,
+      "Change": 0.46
+    },
+    "VIX": {
+      "Close": 17.52,
+      "ChangePct": -4.73,
+      "Change": -0.87
+    },
+    "미국채10Y": {
+      "Close": 4.99,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "미국채2Y": {
+      "Close": 4.75,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "유로스톡스50": {
+      "Close": 6116.23,
+      "ChangePct": 0.79,
+      "Change": 48.01
+    },
+    "_yield_spread": 0.24,
+    "_market_regime": "보통",
+    "_sector_top_bottom": null,
+    "_growth_value_ratio": null,
+    "_credit_stress": null,
+    "_mag7_avg": null
+  },
+  "macro_narrative": "전일 미국 증시는 S&P500 +0.60%, 나스닥 +1.18%로 상승 마감. VIX 17.5 (보통 구간). 장단기 금리차 0.240%p (축소 — 긴축 우려 잔존). 원/달러 1,324.77원 (+0.23%, 원화 약세). 금 4,075.50달러 (+0.92%). 달러인덱스 102.38 (+0.41%). 유럽: 유로스톡스50 +0.79%.",
+  "market_regime": "보통",
+  "yield_spread": 0.24,
+  "us_news": [
+    "[공감신문] 미국 증시, AI와 반도체 강세로 기술주 상승세 지속",
+    "[아주경제] [美 중간선거 D-7] 미국증시 상승 공식 이어질까…변수는 AI·트럼프",
+    "[톱스타뉴스] 미국증시 장초반 동반 상승…유가 하락에 테슬라·엔비디아·SK하이닉스 강세",
+    "[톱스타뉴스] 미국증시 나스닥 1.18% 상승…앤트로픽 기대에 반도체 반등, 다우는 강보합",
+    "[톱스타뉴스] 미국증시 선물 상승…나스닥 반등, FOMC·빅테크 실적 시험대",
+    "[Chosunbiz] 기술주 투자심리 회복에 뉴욕증시 상승 마감… 나스닥 1.2% 올라",
+    "[서울경제] 뉴욕 증시, 이틀째 앤트로픽發 랠리...‘나스닥 이전’ GM 5.5% ↑ [데일리국제금융]",
+    "[여성신문] 뉴욕증시, 앤트로픽 효과 반도체 강세에 상승...나스닥 1.2%↑",
+    "[경향신문] 뉴욕증시, AI 투자 기대에 이틀째 상승···나스닥 1.18%↑",
+    "[중앙일보] 신고가 뒤 숨 고른 월가…Fed 회의록 주목 [10/7 G브닝]｜Global Money Club"
+  ],
+  "sectors": null,
+  "mega_caps": null,
+  "style_signals": null,
+  "asia_indices": null,
+  "europe_indices": {
+    "유로스톡스50": {
+      "Close": 6116.23,
+      "ChangePct": 0.79
+    }
+  },
+  "credit_signals": null,
+  "econ_calendar": [
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[블루밍비트] [한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "비트코인 1억700만 원대 횡보, 미국 FOMC 금리 결정 앞두고 숨 고르기",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[비즈니스포스트] 비트코인 1억700만 원대 횡보, 미국 FOMC 금리 결정 앞두고 숨 고르기"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "[외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] [외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "美 7월 CPI에 쏠린 눈…\"둔화 시 코스피 반등 계기될 수도\"",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美 7월 CPI에 쏠린 눈…\"둔화 시 코스피 반등 계기될 수도\""
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "美 7월 CPI 반등하나…고용 둔화 속 연준 금리 향방 주목",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[KB Think] 美 7월 CPI 반등하나…고용 둔화 속 연준 금리 향방 주목"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "다음주 한국·미국 주요 일정｜FOMC·GDP·PCE에 Microsoft·Alphabet·Amazon·Intel 실적까지",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[네이버 프리미엄콘텐츠] 다음주 한국·미국 주요 일정｜FOMC·GDP·PCE에 Microsoft·Alphabet·Amazon·Intel 실적까지"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[한국경제] 美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[블로터] 美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "미 주간 신규 실업수당 청구 19만4천건‥3개월만에 최저",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[MBC 뉴스] 미 주간 신규 실업수당 청구 19만4천건‥3개월만에 최저"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "time": "",
+      "event": "美 주간 신규 실업수당 청구 1만건 증가…전망 밑돌아",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美 주간 신규 실업수당 청구 1만건 증가…전망 밑돌아"
+      ]
+    }
+  ],
+  "global_issues": [
+    {
+      "topic": "Fed 금리 동결/인상",
+      "category": "통화정책",
+      "kr_impact": "금리 인상·동결 장기화 → 은행주 수혜, 성장주·부동산 약세",
+      "kr_stocks_positive": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "kr_stocks_negative": [
+        "카카오",
+        "네이버",
+        "맥쿼리인프라"
+      ],
+      "headlines": [
+        "美 국채금리 일제히 상승…연준 금리 동결 전망 속 연내 추가 인상 주목",
+        "\"연준, 금리 동결하겠지만 워시 발언에 추가 인상 신호 주목\"",
+        "[밤 사이 해외뉴스 영상] Fed '금리 동결' 전망에 사모펀드 3000억달러 빚 폭탄 경고"
+      ]
+    },
+    {
+      "topic": "AI 반도체 투자",
+      "category": "기술",
+      "kr_impact": "HBM·AI 가속기 수요 확대 → 반도체·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "리노공업",
+        "ISC"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "삼정KPMG \"AI 반도체, 투자 수익성 확보가 관건\"",
+        "[뉴욕증시] AI 반도체 수요 기대에 나스닥 1%대 상승…다우는 강보합",
+        "글로벌 반도체 시장 1.5조달러 전망…\"AI 투자 수익성 확보가 관건\""
+      ]
+    },
+    {
+      "topic": "일본 엔화 정책",
+      "category": "통화정책",
+      "kr_impact": "엔캐리 청산 → 외국인 매도 압력, 원화 약세 시 수출주 반사 수혜",
+      "kr_stocks_positive": [
+        "현대차",
+        "기아",
+        "삼성전자"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "신세계",
+        "호텔신라"
+      ],
+      "headlines": [
+        "CNBC 설문서 전원 \"BOJ, 금주 금리동결…12·1월 인상\""
+      ]
+    },
+    {
+      "topic": "유가 지정학 리스크",
+      "category": "지정학",
+      "kr_impact": "유가 급등 → 정유·방산 수혜, 항공·운송 피해",
+      "kr_stocks_positive": [
+        "SK이노베이션",
+        "S-Oil",
+        "한화에어로스페이스",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "제주항공",
+        "CJ대한통운"
+      ],
+      "headlines": [
+        "선거 직전 이란 공격 추진한 네타냐후…오늘 이스라엘 총선",
+        "IAEA “이란, 미 폭격 핵시설 복구 정황 없어”…안보리 보고"
+      ]
+    },
+    {
+      "topic": "미국 관세/IRA 정책",
+      "category": "정치",
+      "kr_impact": "IRA 수혜 축소 시 2차전지 피해, 관세 확대 시 방산주 수혜",
+      "kr_stocks_positive": [
+        "한화에어로스페이스",
+        "현대로템",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠"
+      ],
+      "headlines": [
+        "트럼프, 대캐나다 관세 부메랑…미국 내 알루미늄 가격 급등",
+        "[단독]“트럼프 대미투자 압박, 최악 경제정책중 하나… 관세보다 더 나빠”",
+        "\"물가 잡겠다며\" 트럼프 찍었는데...관세 부메랑, 러스트벨트 때렸다 - 머니투데이"
+      ]
+    },
+    {
+      "topic": "글로벌 은행 리스크",
+      "category": "금융",
+      "kr_impact": "금융주 동반 하락, 안전자산(금·채권 ETF) 수혜",
+      "kr_stocks_positive": [
+        "KODEX 골드선물",
+        "TIGER 미국채10년선물"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "headlines": [
+        "장발장은행, 벌금 못내 감옥행 위기 15명에 3천677만원 대출",
+        "5조8000억 부실채권 털었는데…상호금융 위기는 왜 끝나지 않나",
+        "\"AI 자금조달, 닷컴·금융위기와 닮았지만 다르다\""
+      ]
+    },
+    {
+      "topic": "2차전지 공급망",
+      "category": "산업",
+      "kr_impact": "글로벌 EV 확산 → 배터리·소재·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠",
+        "포스코퓨처엠",
+        "엘앤에프"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "장비·소재 나란히 수주 릴레이… 이차전지 ‘캐즘’ 끝 보인다",
+        "베노티앤알, 반도체사업부 신설 후 첫 수주…북미 배터리 생산시설 참여 - 머니투데이",
+        "베노티앤알, 글로벌 배터리 제조사향 美 생산시설 프로젝트 수주"
+      ]
+    },
+    {
+      "topic": "로봇/자율주행",
+      "category": "기술",
+      "kr_impact": "로봇·자율주행 부품주 수혜",
+      "kr_stocks_positive": [
+        "삼성전자",
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "현대차",
+        "모트렉스"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "현대차 테슬라 이어 토요타도 휴머노이드 개발 기류, 전기차 생산 승부 로봇에 달렸다",
+        "KB운용, 스페이스X·테슬라 동시 투자 ETF 주목…우주·로봇 성장성 겨냥",
+        "테슬라 사이버캡 생산·운행 현장 찾은 서울시⋯자율주행차 상용화 준비 본격화"
+      ]
+    }
+  ],
+  "theme_connections": [
+    {
+      "trigger": "구리 +2.30%",
+      "theme": "구리 가격 상승",
+      "kr_sectors": [
+        "비철금속"
+      ],
+      "kr_stocks": [
+        "고려아연",
+        "LS",
+        "풍산"
+      ],
+      "direction": "수혜"
+    }
+  ],
+  "flow": {
+    "trade_date": "2026-10-27",
+    "kospi_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "kosdaq_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "foreign_top_buy": [],
+    "foreign_top_sell": [],
+    "institution_top_buy": []
+  },
+  "earnings": {},
+  "sentiment": {
+    "score": 42.9,
+    "label": "중립",
+    "components": {
+      "VIX": 69.3,
+      "시장_폭": 0.0,
+      "금리_스프레드": 37.0,
+      "신용_스프레드": 50.0,
+      "모멘텀": 50.0,
+      "RSI_분포": 50.0
+    },
+    "prev_score": null,
+    "change": null
+  }
+}
