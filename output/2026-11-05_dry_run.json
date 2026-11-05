@@ -1,0 +1,455 @@
+{
+  "trade_date": "2026-11-05",
+  "macro": {
+    "S&P 500": {
+      "close": 7688.62,
+      "change_pct": 1.58,
+      "date": "2026-11-04"
+    },
+    "NASDAQ": {
+      "close": 25736.51,
+      "change_pct": 1.44,
+      "date": "2026-11-04"
+    },
+    "다우존스": {
+      "close": 53356.12,
+      "change_pct": 3.03,
+      "date": "2026-11-04"
+    },
+    "필라델피아반도체": {
+      "close": 450.41,
+      "change_pct": -3.14,
+      "date": "2026-11-04"
+    },
+    "원/달러": {
+      "close": 1348.58,
+      "change_pct": 0.42,
+      "date": "2026-11-05"
+    },
+    "달러인덱스": {
+      "close": 101.51,
+      "change_pct": -0.35,
+      "date": "2026-11-04"
+    },
+    "WTI유": {
+      "close": 88.12,
+      "change_pct": -8.29,
+      "date": "2026-11-04"
+    },
+    "금": {
+      "close": 4073.0,
+      "change_pct": 3.37,
+      "date": "2026-11-04"
+    },
+    "구리": {
+      "close": 6.4,
+      "change_pct": 0.31,
+      "date": "2026-11-04"
+    },
+    "천연가스": {
+      "close": 2.96,
+      "change_pct": 2.42,
+      "date": "2026-11-04"
+    },
+    "VIX": {
+      "close": 16.61,
+      "change_pct": -20.26,
+      "date": "2026-11-04"
+    },
+    "미국채10Y": {
+      "close": 4.89,
+      "change_pct": -1.21,
+      "date": "2026-11-04"
+    },
+    "미국채2Y": {
+      "close": 4.78,
+      "change_pct": 0.0,
+      "date": "2026-11-04"
+    },
+    "기술": {
+      "close": 176.5,
+      "change_pct": -0.01,
+      "date": "2026-11-04"
+    },
+    "금융": {
+      "close": 59.2,
+      "change_pct": 3.51,
+      "date": "2026-11-04"
+    },
+    "에너지": {
+      "close": 63.52,
+      "change_pct": -4.74,
+      "date": "2026-11-04"
+    },
+    "헬스케어": {
+      "close": 189.66,
+      "change_pct": 3.06,
+      "date": "2026-11-04"
+    },
+    "산업재": {
+      "close": 169.46,
+      "change_pct": -1.09,
+      "date": "2026-11-04"
+    },
+    "커뮤니케이션": {
+      "close": 104.96,
+      "change_pct": 3.47,
+      "date": "2026-11-04"
+    },
+    "경기소비재": {
+      "close": 122.33,
+      "change_pct": 4.26,
+      "date": "2026-11-04"
+    },
+    "필수소비재": {
+      "close": 91.94,
+      "change_pct": 3.36,
+      "date": "2026-11-04"
+    },
+    "부동산": {
+      "close": 45.12,
+      "change_pct": 3.32,
+      "date": "2026-11-04"
+    },
+    "유틸리티": {
+      "close": 43.61,
+      "change_pct": 0.44,
+      "date": "2026-11-04"
+    },
+    "소재": {
+      "close": 53.9,
+      "change_pct": 2.49,
+      "date": "2026-11-04"
+    },
+    "엔비디아": {
+      "close": 200.13,
+      "change_pct": -3.17,
+      "date": "2026-11-04"
+    },
+    "애플": {
+      "close": 349.51,
+      "change_pct": 5.31,
+      "date": "2026-11-04"
+    },
+    "마이크로소프트": {
+      "close": 555.8,
+      "change_pct": 6.68,
+      "date": "2026-11-04"
+    },
+    "아마존": {
+      "close": 266.03,
+      "change_pct": 6.12,
+      "date": "2026-11-04"
+    },
+    "알파벳": {
+      "close": 287.3,
+      "change_pct": 3.25,
+      "date": "2026-11-04"
+    },
+    "메타": {
+      "close": 630.0,
+      "change_pct": 1.44,
+      "date": "2026-11-04"
+    },
+    "테슬라": {
+      "close": 385.19,
+      "change_pct": -3.34,
+      "date": "2026-11-04"
+    },
+    "러셀2000": {
+      "close": 284.02,
+      "change_pct": 1.51,
+      "date": "2026-11-04"
+    },
+    "나스닥100ETF": {
+      "close": 691.95,
+      "change_pct": 0.97,
+      "date": "2026-11-04"
+    },
+    "가치ETF": {
+      "close": 230.98,
+      "change_pct": 1.5,
+      "date": "2026-11-04"
+    },
+    "닛케이225": {
+      "close": 61077.9,
+      "change_pct": -1.79,
+      "date": "2026-11-05"
+    },
+    "항셍": {
+      "close": 23919.5,
+      "change_pct": 1.67,
+      "date": "2026-11-04"
+    },
+    "상해종합": {
+      "close": 3686.17,
+      "change_pct": 2.16,
+      "date": "2026-11-04"
+    },
+    "독일DAX": {
+      "close": 26437.67,
+      "change_pct": 2.22,
+      "date": "2026-11-04"
+    },
+    "유로스톡스50": {
+      "close": 6265.71,
+      "change_pct": 1.97,
+      "date": "2026-11-04"
+    },
+    "하이일드채권": {
+      "close": 77.52,
+      "change_pct": 0.7,
+      "date": "2026-11-04"
+    },
+    "미장기채20Y+": {
+      "close": 81.76,
+      "change_pct": 0.8,
+      "date": "2026-11-04"
+    }
+  },
+  "market_regime": "보통",
+  "yield_spread": 0.11,
+  "macro_narrative": "전일 미국 증시는 S&P500 +1.58%, 나스닥 +1.44%로 상승 마감. 필라델피아 반도체지수 -3.14%. VIX 16.6 (보통 구간). 장단기 금리차 0.110%p (축소 — 긴축 우려 잔존). 원/달러 1,348.58원 (+0.42%, 원화 약세). 금 4,073.00달러 (+3.37%). 달러인덱스 101.51 (-0.35%). 섹터: 경기소비재(+4.26%) 주도, 에너지(-4.74%) 약세. QQQ-VTV 스프레드 -0.53%p → 가치주 우위. HYG +0.70% → 신용 스트레스 안정. Mag7 평균 +2.33% → 대형 기술주 강세. 아시아: 닛케이225 -1.79%, 항셍 +1.67%, 상해종합 +2.16%. 유럽: 독일DAX +2.22%, 유로스톡스50 +1.97%.",
+  "market_breadth": {
+    "total_up": 724,
+    "total_down": 1829,
+    "total_unchanged": 216,
+    "total": 2769,
+    "up_ratio": 26.1
+  },
+  "surges": [
+    {
+      "code": "0013Y0",
+      "name": "엠에스바이오",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "surge",
+      "close": 8060.0,
+      "change_pct": 30.0,
+      "relative_strength": 35.11,
+      "amount_eok": 871.90290055,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "상장 첫날 '따블' 달성…엠에스바이오 어떤 회사?",
+        "코스닥 거래상위 혼조… 엠에스바이오 98% 급등·SKAI 상한가",
+        "[특징주] 엠에스바이오, 코스닥 입성 첫날 공모가 대비 70%↑(종합)",
+        "[특징주] 엠에스바이오, 코스닥 입성 첫날 73% 급등",
+        "[ET특징주] 코스닥 입성한 엠에스바이오, 주가 126%↑"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 7296.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "004540",
+      "name": "깨끗한나라",
+      "market": "KOSPI",
+      "industry": "펄프, 종이 및 판지 제조업",
+      "move_type": "surge",
+      "close": 1554.0,
+      "change_pct": 29.93,
+      "relative_strength": 35.21,
+      "amount_eok": 91.54644452,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "깨끗한나라, 최현수 회장 단독대표 체제로…각자대표 3개월 만에 종료 - 머니투데이",
+        "[똑똑한리빙] 깨끗한나라, 한샘, 유한킴벌리, 퍼시스그룹",
+        "깨끗한나라, '고객 목소리'로 제품·서비스 바꾼다…소비자중심경영 강화",
+        "[특징주] 오너 3세 최현수 단독 대표 체제로…깨끗한나라 주가 26% 강세",
+        "부친 복귀 막히고 사위는 떠났다…'깨끗한나라'에 무슨 일이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 66.84,
+          "macd": 19.0644,
+          "macd_signal": -10.6385,
+          "macd_histogram": 29.7028,
+          "bb_upper": 1412.25,
+          "bb_middle": 1202.0,
+          "bb_lower": 991.75,
+          "bb_position": "상단돌파",
+          "ma_5": 1252.2,
+          "ma_20": 1202.0,
+          "ma_60": 1215.02,
+          "ma_trend": "혼조",
+          "volume_ratio": 9.73,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 9.7배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "020400",
+      "name": "대동금속",
+      "market": "KOSDAQ",
+      "industry": "금속 주조업",
+      "move_type": "surge",
+      "close": 3345.0,
+      "change_pct": 29.9,
+      "relative_strength": 35.01,
+      "amount_eok": 52.24330027,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 농기계 수출 확대 기대감에 관련株 '대동금속·대동기어' 30%↑",
+        "대동금속, 5거래일 새 60% 급등으로 투자경고종목 지정 예고",
+        "[주식마감] '알츠하이머 특허 확보' 아리바이오홀딩스 상한가… 깨끗한나라우, 케이엔알시스템, 대동금속 등 급등",
+        "[급등락주 짚어보기] 대동금속 사업 확장에 '上'…양 시장 하한가 無",
+        "'조단위 수주' 대동그룹株 장초반 강세 - 머니투데이"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 73.88,
+          "macd": -32.2726,
+          "macd_signal": -132.5637,
+          "macd_histogram": 100.2911,
+          "bb_upper": 2918.29,
+          "bb_middle": 2304.3,
+          "bb_lower": 1690.31,
+          "bb_position": "상단돌파",
+          "ma_5": 2370.2,
+          "ma_20": 2304.3,
+          "ma_60": 2662.43,
+          "ma_trend": "혼조",
+          "volume_ratio": 9.73,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 과매수 진입 / RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 9.7배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 6,
+          "avg_return_1d": 12.57,
+          "avg_return_5d": -1.5,
+          "positive_rate_1d": 80.0,
+          "positive_rate_5d": 50.0
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "0147B0",
+      "name": "래블업",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 10290.0,
+      "change_pct": -28.89,
+      "relative_strength": -23.78,
+      "amount_eok": 478.8537475,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "래블업, AI 추론 엔진 'MLxcel' AMD 지원 확대…멀티벤더 기술 강화",
+        "[래블업 IPO] 래블업 첫날 고점서 반토막…확약률 12%에 NH 독박 : 네이버 블로그",
+        "AI 인프라 기업 래블업, 코스닥 데뷔 첫날 주가 하락…공모가 대비 25%↓",
+        "래블업, 상장 첫날 급등 후 급락…AI 인프라주 '호된 신고식'",
+        "래블업, 상장 첫날 고점서 시총 2000억원 증발…공모가 대비 25% 급락"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "420610",
+      "name": "인텔리빅스",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "plunge",
+      "close": 12900.0,
+      "change_pct": -28.17,
+      "relative_strength": -23.06,
+      "amount_eok": 403.3672622,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 4,
+      "news_titles": [
+        "인텔리빅스, AI 안전관제 플랫폼 국정원 보안기능 확인서 획득",
+        "인텔리빅스, ‘GenAMS’ 국정원 보안기능 확인서 획득…공공시장 확대",
+        "인텔리빅스 장정훈 대표이사, 소유 주식 수량 87만5850주 보고…소유 지분율 7.73%",
+        "인텔리빅스 GenAMS, 영상정보 관리 저장제품 분야 국정원 보안기능 확인서 획득"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 20494.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    },
+    {
+      "code": "495910",
+      "name": "이에스티",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "plunge",
+      "close": 7550.0,
+      "change_pct": -23.66,
+      "relative_strength": -18.55,
+      "amount_eok": 531.90451695,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "이에스티, 코스닥 상장 첫날 33%대 상승 - 머니투데이",
+        "이에스티, 주주 에스브이아이씨55호신기술사업투자조합 측 주식등 보유 비율 9.56%p 증가…코스닥 신규 상장 따른 보고",
+        "[특징주] '코스닥 데뷔' 이에스티, 하락전환해 20%↓(종합)",
+        "[특징주] 이에스티, 코스닥 거래 첫날.. 31%대 '강세'",
+        "이에스티, 삼성·AMAT가 동시에 '찜했다'…'HBM·유리기판 난제 해결' 초격자 기술력 '주목'"
+      ],
+      "outlook": {}
+    }
+  ]
+}
