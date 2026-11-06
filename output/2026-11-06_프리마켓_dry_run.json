@@ -1,0 +1,464 @@
+{
+  "trade_date": "2026-11-06",
+  "macro": {
+    "S&P 500": {
+      "Close": 7353.73,
+      "ChangePct": -4.36,
+      "Change": -334.89
+    },
+    "NASDAQ": {
+      "Close": 24315.0,
+      "ChangePct": -5.52,
+      "Change": -1421.51
+    },
+    "다우존스": {
+      "Close": 51523.06,
+      "ChangePct": -3.44,
+      "Change": -1833.06
+    },
+    "원/달러": {
+      "Close": 1340.07,
+      "ChangePct": -0.21,
+      "Change": -2.83
+    },
+    "달러인덱스": {
+      "Close": 101.59,
+      "ChangePct": 0.08,
+      "Change": 0.08
+    },
+    "WTI유": {
+      "Close": 91.16,
+      "ChangePct": 3.45,
+      "Change": 3.04
+    },
+    "금": {
+      "Close": 4099.1,
+      "ChangePct": 0.64,
+      "Change": 26.1
+    },
+    "구리": {
+      "Close": 6.26,
+      "ChangePct": -2.19,
+      "Change": -0.14
+    },
+    "천연가스": {
+      "Close": 2.94,
+      "ChangePct": -0.68,
+      "Change": -0.02
+    },
+    "VIX": {
+      "Close": 28.18,
+      "ChangePct": 69.66,
+      "Change": 11.57
+    },
+    "미국채10Y": {
+      "Close": 4.84,
+      "ChangePct": -1.02,
+      "Change": -0.05
+    },
+    "미국채2Y": {
+      "Close": 4.78,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "유로스톡스50": {
+      "Close": 6265.71,
+      "ChangePct": 1.97,
+      "Change": 121.15
+    },
+    "_yield_spread": 0.06,
+    "_market_regime": "불안",
+    "_sector_top_bottom": null,
+    "_growth_value_ratio": null,
+    "_credit_stress": null,
+    "_mag7_avg": null
+  },
+  "macro_narrative": "전일 미국 증시는 S&P500 -4.36%, 나스닥 -5.52%로 하락 마감. VIX 28.2 (불안 구간). 장단기 금리차 0.060%p (축소 — 긴축 우려 잔존). 원/달러 1,340.07원 (-0.21%, 원화 강세). 금 4,099.10달러 (+0.64%). 달러인덱스 101.59 (+0.08%). 유럽: 유로스톡스50 +1.97%.",
+  "market_regime": "불안",
+  "yield_spread": 0.06,
+  "us_news": [
+    "[초이스경제] 미국증시 마감 49분 前...4대지수 · 반도체주 · AI기술주 '폭락'",
+    "[한국경제TV] 미국 증시, 데이터센터 규제 우려에 AI 투매로 급락…나스닥 5.52% 하락해 기술적 조정장 진입 - 와우넷 오늘장전략",
+    "[KB Think] [블루쓰나미 긴급진단]美상장 한국 ETF 13% 폭락…코스피 추가 급락 우려",
+    "[Investing.com 한국어] 유럽 증시, 미국 증시 하락에 상승분 반납",
+    "[스마트투데이] '블루웨이브' 환호 하룻만에...미국 증시, 폭락 쓰나미",
+    "[MBC 뉴스] [속보] 뉴욕증시, AI 기술주 투매에 급락‥나스닥 5.5%↓",
+    "[연합뉴스] AI 투자 우려에 뉴욕증시 털썩…인텔 29% 급락에 나스닥 2.9%↓(종합)",
+    "[연합뉴스] 뉴욕증시 급락 반전…나스닥 장중 4% 이상↓ 조정국면 진입",
+    "[Investing.com 한국어] 뉴욕증시, AI 규제 우려에 급락…나스닥 5.5%↓ By EBN",
+    "[뉴데일리] 뉴욕증시 AI주 투매에 나스닥 5.5% 폭락 … 코스피 반도체주 또 흔들리나"
+  ],
+  "sectors": null,
+  "mega_caps": null,
+  "style_signals": null,
+  "asia_indices": null,
+  "europe_indices": {
+    "유로스톡스50": {
+      "Close": 6265.71,
+      "ChangePct": 1.97
+    }
+  },
+  "credit_signals": null,
+  "econ_calendar": [
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "[오늘 주요 경제·암호화폐 일정] 美 10월 ADP 고용 변화 外",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[블루밍비트] [오늘 주요 경제·암호화폐 일정] 美 10월 ADP 고용 변화 外"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "워시 \"내년 금리 결정 FOMC는 7번만…내후년은 6번\"(종합)",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 워시 \"내년 금리 결정 FOMC는 7번만…내후년은 6번\"(종합)"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "워시 \"내년 기준금리 결정 FOMC는 7번만\"",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스TV] 워시 \"내년 기준금리 결정 FOMC는 7번만\""
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "뉴욕증시, FOMC 금리 결정 앞두고 상승 출발…반도체주 강세",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[KBS 뉴스] 뉴욕증시, FOMC 금리 결정 앞두고 상승 출발…반도체주 강세"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "6일 고용·10일 CPI·26일 금통위…11월 시장 일정 7건 점검",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[ISSUE ON (이슈온)] 6일 고용·10일 CPI·26일 금통위…11월 시장 일정 7건 점검"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "애플 실적·미국 고용지표 주목…10월 CPI는 10일 발표",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[비건뉴스] 애플 실적·미국 고용지표 주목…10월 CPI는 10일 발표"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "[외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] [외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[한국경제] 美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "美 소매판매 0.8% 증가 '예상 상회'…휘발유값 빼면 소비 둔화",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[이데일리] 美 소매판매 0.8% 증가 '예상 상회'…휘발유값 빼면 소비 둔화"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "time": "",
+      "event": "美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[블로터] 美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려"
+      ]
+    }
+  ],
+  "global_issues": [
+    {
+      "topic": "Fed 금리 인하",
+      "category": "통화정책",
+      "kr_impact": "금리 인하 → 성장주·부동산·리츠 수혜, 은행 순이자마진 축소",
+      "kr_stocks_positive": [
+        "카카오",
+        "네이버",
+        "NAVER",
+        "맥쿼리인프라",
+        "SK리츠"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주"
+      ],
+      "headlines": [
+        "골드만삭스 금리 인하 2026년 12월로 연기…비트코인 ETF는 7,460만 달러 순유입"
+      ]
+    },
+    {
+      "topic": "Fed 금리 동결/인상",
+      "category": "통화정책",
+      "kr_impact": "금리 인상·동결 장기화 → 은행주 수혜, 성장주·부동산 약세",
+      "kr_stocks_positive": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "kr_stocks_negative": [
+        "카카오",
+        "네이버",
+        "맥쿼리인프라"
+      ],
+      "headlines": [
+        "'금리동결 반대' 연준 위원 \"긴축 필요…작고 잦은 조정 선호\"",
+        "\"금리 더 자주 조금씩 올려야\"…美연준 커지는 매파 목소리 - 머니투데이"
+      ]
+    },
+    {
+      "topic": "미중 무역갈등",
+      "category": "무역",
+      "kr_impact": "반도체·디스플레이 수출주 타격, 내수주 상대 수혜",
+      "kr_stocks_positive": [
+        "이마트",
+        "CJ제일제당",
+        "오리온"
+      ],
+      "kr_stocks_negative": [
+        "삼성전자",
+        "SK하이닉스",
+        "LG디스플레이"
+      ],
+      "headlines": [
+        "미중 ‘300억달러 맞교환 관세 인하’…중국 “이행돼야 미국산 농산물 구매 확대”",
+        "중국 “미중 300억불 관세 동시인하 이행돼야 미국 농산물 수입확대”"
+      ]
+    },
+    {
+      "topic": "AI 반도체 투자",
+      "category": "기술",
+      "kr_impact": "HBM·AI 가속기 수요 확대 → 반도체·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "리노공업",
+        "ISC"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "블루쓰나미에 중대 기로에선 'AI반도체' 랠리…전문가들의 분석",
+        "‘선거 안도 랠리’ 하루 만에 끝났다…AI 투자 급브레이크 공포에 나스닥 5.5% 폭락",
+        "[초점] 美 의회 권력 교체…삼성·SK 'AI 반도체 방정식' 꼬이나"
+      ]
+    },
+    {
+      "topic": "일본 엔화 정책",
+      "category": "통화정책",
+      "kr_impact": "엔캐리 청산 → 외국인 매도 압력, 원화 약세 시 수출주 반사 수혜",
+      "kr_stocks_positive": [
+        "현대차",
+        "기아",
+        "삼성전자"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "신세계",
+        "호텔신라"
+      ],
+      "headlines": [
+        "\"BOJ, 12월 이후 금리인상 가속...2027년 말 2.25%\""
+      ]
+    },
+    {
+      "topic": "중국 경기부양",
+      "category": "재정정책",
+      "kr_impact": "중국 소비·인프라 확대 → 화학·철강·화장품 수혜",
+      "kr_stocks_positive": [
+        "아모레퍼시픽",
+        "코스맥스",
+        "포스코홀딩스",
+        "LG화학",
+        "효성첨단소재"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "[中 증시 마감] 증시부양책 위력에 이틀째 상승...태양광 섹터 강세"
+      ]
+    },
+    {
+      "topic": "유가 지정학 리스크",
+      "category": "지정학",
+      "kr_impact": "유가 급등 → 정유·방산 수혜, 항공·운송 피해",
+      "kr_stocks_positive": [
+        "SK이노베이션",
+        "S-Oil",
+        "한화에어로스페이스",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "제주항공",
+        "CJ대한통운"
+      ],
+      "headlines": [
+        "국제유가, 중동 해역 긴장에 상승…브렌트유 3.88%↑[상보]",
+        "중동 해상 긴장 고조에 국제유가 반등…브렌트유 배럴당 98달러 돌파",
+        "[美 중간선거] 밴스, 이란 종전·이스라엘 관계 변화 거론…트럼프와 거리 두나"
+      ]
+    },
+    {
+      "topic": "미국 관세/IRA 정책",
+      "category": "정치",
+      "kr_impact": "IRA 수혜 축소 시 2차전지 피해, 관세 확대 시 방산주 수혜",
+      "kr_stocks_positive": [
+        "한화에어로스페이스",
+        "현대로템",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠"
+      ],
+      "headlines": [
+        "트럼프, 선거참패 이틀 뒤 \"美에 공장 안 지으면 300%까지 관세\"",
+        "트럼프 참패에 관세 압박도 주춤?...한국 3,500억 달러 투자는?",
+        "트럼프, 선거참패 이틀 뒤 “美에 공장 안 지으면 300% 관세”"
+      ]
+    },
+    {
+      "topic": "글로벌 은행 리스크",
+      "category": "금융",
+      "kr_impact": "금융주 동반 하락, 안전자산(금·채권 ETF) 수혜",
+      "kr_stocks_positive": [
+        "KODEX 골드선물",
+        "TIGER 미국채10년선물"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "headlines": [
+        "“평생 모은 돈을 잃었다” “연금 지급하라”···파라과이 은행 부실 사태, 대통령 탄핵으로 번졌다"
+      ]
+    },
+    {
+      "topic": "로봇/자율주행",
+      "category": "기술",
+      "kr_impact": "로봇·자율주행 부품주 수혜",
+      "kr_stocks_positive": [
+        "삼성전자",
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "현대차",
+        "모트렉스"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "테슬라 옵티머스 100만대 생산 땐 TI 매출 5억달러 증가 전망"
+      ]
+    }
+  ],
+  "theme_connections": [
+    {
+      "trigger": "WTI유 +3.45%",
+      "theme": "유가 급등",
+      "kr_sectors": [
+        "정유/화학",
+        "해운"
+      ],
+      "kr_stocks": [
+        "SK이노베이션",
+        "S-Oil",
+        "HMM"
+      ],
+      "direction": "수혜"
+    },
+    {
+      "trigger": "VIX +69.66%",
+      "theme": "공포 지수 급등",
+      "kr_sectors": [
+        "인버스ETF",
+        "안전자산"
+      ],
+      "kr_stocks": [
+        "KODEX 인버스",
+        "TIGER 금은선물"
+      ],
+      "direction": "수혜"
+    }
+  ],
+  "flow": {
+    "trade_date": "2026-11-05",
+    "kospi_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "kosdaq_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "foreign_top_buy": [],
+    "foreign_top_sell": [],
+    "institution_top_buy": []
+  },
+  "earnings": {},
+  "sentiment": {
+    "score": 26.7,
+    "label": "공포",
+    "components": {
+      "VIX": 10.1,
+      "시장_폭": 0.0,
+      "금리_스프레드": 28.0,
+      "신용_스프레드": 50.0,
+      "모멘텀": 50.0,
+      "RSI_분포": 50.0
+    },
+    "prev_score": null,
+    "change": null
+  }
+}
