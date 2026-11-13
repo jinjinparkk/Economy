@@ -1,0 +1,442 @@
+{
+  "trade_date": "2026-11-13",
+  "macro": {
+    "S&P 500": {
+      "Close": 7592.4,
+      "ChangePct": -0.35,
+      "Change": -26.98
+    },
+    "NASDAQ": {
+      "Close": 25366.09,
+      "ChangePct": -0.39,
+      "Change": -100.1
+    },
+    "다우존스": {
+      "Close": 52297.09,
+      "ChangePct": -0.36,
+      "Change": -189.4
+    },
+    "원/달러": {
+      "Close": 1336.26,
+      "ChangePct": -0.42,
+      "Change": -5.65
+    },
+    "달러인덱스": {
+      "Close": 103.15,
+      "ChangePct": 0.23,
+      "Change": 0.24
+    },
+    "WTI유": {
+      "Close": 88.4,
+      "ChangePct": 2.16,
+      "Change": 1.87
+    },
+    "금": {
+      "Close": 3909.9,
+      "ChangePct": -2.26,
+      "Change": -90.6
+    },
+    "구리": {
+      "Close": 6.24,
+      "ChangePct": -0.48,
+      "Change": -0.03
+    },
+    "천연가스": {
+      "Close": 3.37,
+      "ChangePct": 4.98,
+      "Change": 0.16
+    },
+    "VIX": {
+      "Close": 18.7,
+      "ChangePct": 6.92,
+      "Change": 1.21
+    },
+    "미국채10Y": {
+      "Close": 5.1,
+      "ChangePct": 2.0,
+      "Change": 0.1
+    },
+    "미국채2Y": {
+      "Close": 4.78,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "유로스톡스50": {
+      "Close": 6393.39,
+      "ChangePct": 1.04,
+      "Change": 65.52
+    },
+    "_yield_spread": 0.32,
+    "_market_regime": "보통",
+    "_sector_top_bottom": null,
+    "_growth_value_ratio": null,
+    "_credit_stress": null,
+    "_mag7_avg": null
+  },
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.35%, 나스닥 -0.39%로 하락 마감. VIX 18.7 (보통 구간). 장단기 금리차 0.320%p (축소 — 긴축 우려 잔존). 원/달러 1,336.26원 (-0.42%, 원화 강세). 금 3,909.90달러 (-2.26%). 달러인덱스 103.15 (+0.23%). 유럽: 유로스톡스50 +1.04%.",
+  "market_regime": "보통",
+  "yield_spread": 0.32,
+  "us_news": [
+    "[서울신문] [서울데이터랩]미국 증시, 주요 지수 일제히 하락 마감…반도체 약세 속 변동성 확대",
+    "[뉴스인] 코스피 5500선 눈앞…미국 증시 하락에도 국내 증시 강한 반등",
+    "[비즈니스포스트] 하나증권 \"미국 증시 에너지주 강세, 에쓰오일 SK이노베이션 GS 주목\"",
+    "[전자신문] 젠슨 황 사임에 美 증시 하락…엔비디아 4.3% ↓",
+    "[자본시장뉴스] [미국증시] 젠슨 황 공백, 누가 웃고 누가 메우나",
+    "[매일경제 마켓] 코어위브 훈풍에 뉴욕증시 일제히 상승…나스닥 1.6%↑",
+    "[연합뉴스] 젠슨 황 퇴진·유가 급등에 뉴욕증시 하락…나스닥 0.4%↓",
+    "[뉴시스] 뉴욕증시, 젠슨황 사임·유가상승에 일제 하락 마감…나스닥 0.4%↓",
+    "[이투데이] 뉴욕증시, 젠슨 황 엔비디아 CEO 사임에 하락⋯나스닥 0.39%↓ [종합]",
+    "[Chosunbiz] 뉴욕증시, AI 투자 우려 완화에 혼조세…나스닥 1.3%↑"
+  ],
+  "sectors": null,
+  "mega_caps": null,
+  "style_signals": null,
+  "asia_indices": null,
+  "europe_indices": {
+    "유로스톡스50": {
+      "Close": 6393.39,
+      "ChangePct": 1.04
+    }
+  },
+  "credit_signals": null,
+  "econ_calendar": [
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "오늘의 외환시장: 미국 달러, 중간급 경제지표 발표와 FOMC 회의 앞두고 보합세 유지",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[www.tmgm.com] 오늘의 외환시장: 미국 달러, 중간급 경제지표 발표와 FOMC 회의 앞두고 보합세 유지"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "美연준, 내년 '금리 결정' FOMC는 7번만…10월엔 전략 논의 집중",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美연준, 내년 '금리 결정' FOMC는 7번만…10월엔 전략 논의 집중"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "연준, 내년 '금리 결정' FOMC 7차례 개최…10월엔 통화정책 전략만",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] 연준, 내년 '금리 결정' FOMC 7차례 개최…10월엔 통화정책 전략만"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "내년 FOMC 금리 결정 7회만⋯10월 빠진다",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[이투데이] 내년 FOMC 금리 결정 7회만⋯10월 빠진다"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "달러, 고용지표 발표 후 급등분 일부 반납…미국 CPI 앞두고 관망",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[Investing.com 한국어] 달러, 고용지표 발표 후 급등분 일부 반납…미국 CPI 앞두고 관망"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "[외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] [외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "[오늘 금시세] 금 한돈 66만6,713원 0.6% 상승…미국 고용 호조에 국제 금값 압박, CPI 분수령",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[톱스타뉴스] [오늘 금시세] 금 한돈 66만6,713원 0.6% 상승…미국 고용 호조에 국제 금값 압박, CPI 분수령"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "미국 주간 신규 실업수당 청구 20만 건…고용시장 안정세 지속",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[KBS 뉴스] 미국 주간 신규 실업수당 청구 20만 건…고용시장 안정세 지속"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "美 주간 신규 실업수당 청구 20만건…고용시장 안정세 지속",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美 주간 신규 실업수당 청구 20만건…고용시장 안정세 지속"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "time": "",
+      "event": "美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[한국경제] 美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아"
+      ]
+    }
+  ],
+  "global_issues": [
+    {
+      "topic": "SpaceX IPO",
+      "category": "IPO",
+      "kr_impact": "SpaceX 지분 보유 VC·우주항공 부품주 직접 수혜",
+      "kr_stocks_positive": [
+        "미래에셋벤처투자",
+        "아주IB투자",
+        "한화에어로스페이스",
+        "쎄트렉아이",
+        "AP위성"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "앤트로픽, 추수감사절 전 상장 승부수...\"돌아올 수 없는 지점 왔다\""
+      ]
+    },
+    {
+      "topic": "Fed 금리 동결/인상",
+      "category": "통화정책",
+      "kr_impact": "금리 인상·동결 장기화 → 은행주 수혜, 성장주·부동산 약세",
+      "kr_stocks_positive": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "kr_stocks_negative": [
+        "카카오",
+        "네이버",
+        "맥쿼리인프라"
+      ],
+      "headlines": [
+        "\"전투 경험 풍부한 연준, 매파가 주도권 잡고 금리 3번 올릴 것\""
+      ]
+    },
+    {
+      "topic": "AI 반도체 투자",
+      "category": "기술",
+      "kr_impact": "HBM·AI 가속기 수요 확대 → 반도체·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "리노공업",
+        "ISC"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "이 대통령, 충청권 392조원 메가프로젝트 본격화…AI·반도체 투자에 중소기업 참여 확대",
+        "최태원 ‘한일경제연대’ 실행 구상…에너지 공동조달·AI·반도체 함께 투자",
+        "엔비디아 투자 전망에 빨간불… 주요 금융사 목표주가 조정, AI 반도체 대장주 신뢰 흔들리나"
+      ]
+    },
+    {
+      "topic": "일본 엔화 정책",
+      "category": "통화정책",
+      "kr_impact": "엔캐리 청산 → 외국인 매도 압력, 원화 약세 시 수출주 반사 수혜",
+      "kr_stocks_positive": [
+        "현대차",
+        "기아",
+        "삼성전자"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "신세계",
+        "호텔신라"
+      ],
+      "headlines": [
+        "멈추지 않는 엔저... 엔화 또 달러당 160엔, 미일 금리 격차 확대 우려",
+        "日 국채금리, 전 구간 상승…10년물 7bp 넘게 올라 2.86%(상보)",
+        "미국 선거에 출렁인 엔화…지금 환전할까"
+      ]
+    },
+    {
+      "topic": "중국 경기부양",
+      "category": "재정정책",
+      "kr_impact": "중국 소비·인프라 확대 → 화학·철강·화장품 수혜",
+      "kr_stocks_positive": [
+        "아모레퍼시픽",
+        "코스맥스",
+        "포스코홀딩스",
+        "LG화학",
+        "효성첨단소재"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "\"새 부양책 대신 기존 정책에 총력\"… 中 인민은행, '점진적 추가 조치' 문구 삭제"
+      ]
+    },
+    {
+      "topic": "유가 지정학 리스크",
+      "category": "지정학",
+      "kr_impact": "유가 급등 → 정유·방산 수혜, 항공·운송 피해",
+      "kr_stocks_positive": [
+        "SK이노베이션",
+        "S-Oil",
+        "한화에어로스페이스",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "제주항공",
+        "CJ대한통운"
+      ],
+      "headlines": [
+        "환율, 1330원대 중반으로 올라…중동 긴장에 달러 강세 지속",
+        "중동 긴장에 강달러 압력 지속…원달러 환율 1330원대 중반",
+        "원·달러 NDF 4.9원 상승, 중동 지역 긴장 고조"
+      ]
+    },
+    {
+      "topic": "미국 관세/IRA 정책",
+      "category": "정치",
+      "kr_impact": "IRA 수혜 축소 시 2차전지 피해, 관세 확대 시 방산주 수혜",
+      "kr_stocks_positive": [
+        "한화에어로스페이스",
+        "현대로템",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠"
+      ],
+      "headlines": [
+        "선거 참패 후...\"관세 두 배 올리겠다\" 트럼프 엄포에도 잠잠한 세계",
+        "’美정부 지원’ 리튬아메리카, 트럼프 관세에 역풍…광산 공사비 1.2조 급증 By The Guru"
+      ]
+    },
+    {
+      "topic": "글로벌 은행 리스크",
+      "category": "금융",
+      "kr_impact": "금융주 동반 하락, 안전자산(금·채권 ETF) 수혜",
+      "kr_stocks_positive": [
+        "KODEX 골드선물",
+        "TIGER 미국채10년선물"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "headlines": [
+        "젠슨황 없는 'AI중앙은행' 엔비디아 최대위기…AI산업 대혼돈 예고(종합)",
+        "'AI의 중앙은행' 엔비디아 위기…젠슨황 퇴진, 5000억 자금줄 막나 - 머니투데이",
+        "젠슨 황 파문, 엔비디아 'AI 금융망' 흔드나…약정·보증 등 4000억달러 추산"
+      ]
+    },
+    {
+      "topic": "로봇/자율주행",
+      "category": "기술",
+      "kr_impact": "로봇·자율주행 부품주 수혜",
+      "kr_stocks_positive": [
+        "삼성전자",
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "현대차",
+        "모트렉스"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "테슬라 로보택시, 24시간 가동…일론 로봇 옵티머스 아카데미"
+      ]
+    }
+  ],
+  "theme_connections": [
+    {
+      "trigger": "WTI유 +2.16%",
+      "theme": "유가 급등",
+      "kr_sectors": [
+        "정유/화학",
+        "해운"
+      ],
+      "kr_stocks": [
+        "SK이노베이션",
+        "S-Oil",
+        "HMM"
+      ],
+      "direction": "수혜"
+    },
+    {
+      "trigger": "금 -2.26%",
+      "theme": "금 가격 하락",
+      "kr_sectors": [
+        "귀금속"
+      ],
+      "kr_stocks": [
+        "고려아연",
+        "풍산"
+      ],
+      "direction": "피해"
+    }
+  ],
+  "flow": {
+    "trade_date": "2026-11-12",
+    "kospi_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "kosdaq_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "foreign_top_buy": [],
+    "foreign_top_sell": [],
+    "institution_top_buy": []
+  },
+  "earnings": {},
+  "sentiment": {
+    "score": 41.9,
+    "label": "중립",
+    "components": {
+      "VIX": 62.8,
+      "시장_폭": 0.0,
+      "금리_스프레드": 41.0,
+      "신용_스프레드": 50.0,
+      "모멘텀": 50.0,
+      "RSI_분포": 50.0
+    },
+    "prev_score": null,
+    "change": null
+  }
+}
