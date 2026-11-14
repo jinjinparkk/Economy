@@ -1,0 +1,368 @@
+{
+  "trade_date": "2026-11-14",
+  "macro": {
+    "S&P 500": {
+      "Close": 7561.67,
+      "ChangePct": -0.4,
+      "Change": -30.73
+    },
+    "NASDAQ": {
+      "Close": 25136.27,
+      "ChangePct": -0.91,
+      "Change": -229.82
+    },
+    "다우존스": {
+      "Close": 52347.55,
+      "ChangePct": 0.1,
+      "Change": 50.46
+    },
+    "원/달러": {
+      "Close": 1333.78,
+      "ChangePct": -0.19,
+      "Change": -2.48
+    },
+    "달러인덱스": {
+      "Close": 103.41,
+      "ChangePct": 0.23,
+      "Change": 0.24
+    },
+    "WTI유": {
+      "Close": 88.92,
+      "ChangePct": 0.2,
+      "Change": 0.18
+    },
+    "금": {
+      "Close": 3887.6,
+      "ChangePct": 0.06,
+      "Change": 2.3
+    },
+    "구리": {
+      "Close": 6.06,
+      "ChangePct": -1.94,
+      "Change": -0.12
+    },
+    "천연가스": {
+      "Close": 3.24,
+      "ChangePct": -2.99,
+      "Change": -0.1
+    },
+    "VIX": {
+      "Close": 19.3,
+      "ChangePct": 3.21,
+      "Change": 0.6
+    },
+    "미국채10Y": {
+      "Close": 5.15,
+      "ChangePct": 0.98,
+      "Change": 0.05
+    },
+    "미국채2Y": {
+      "Close": 4.78,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "_yield_spread": 0.37,
+    "_market_regime": "보통",
+    "_sector_top_bottom": null,
+    "_growth_value_ratio": null,
+    "_credit_stress": null,
+    "_mag7_avg": null
+  },
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.40%, 나스닥 -0.91%로 하락 마감. VIX 19.3 (보통 구간). 장단기 금리차 0.370%p (축소 — 긴축 우려 잔존). 원/달러 1,333.78원 (-0.19%, 원화 강세). 금 3,887.60달러 (+0.06%). 달러인덱스 103.41 (+0.23%).",
+  "market_regime": "보통",
+  "yield_spread": 0.37,
+  "us_news": [
+    "[매일경제 마켓] 폭등할 때 지켜보다가 반토막 때 샀다...국민연금 3분기 3900억 지른 종목",
+    "[산경투데이] 엔비디아 8.5% 급락에도 서학개미 1천억 매수…빚투 손실 우려 확산",
+    "[파이낸셜포스트] K-뷰티, 미국 증시 새 투자 테마로…전용 ETF 상장",
+    "[YTN] 미국 증시 상승·유가 하락에 코스피 코스닥 반등",
+    "[연합뉴스TV] 국민연금 미국 주식 평가액 36억 달러 늘어…빅테크 강세",
+    "[연합뉴스] 예상 웃돈 물가에 뉴욕증시 일제히 하락…나스닥 0.7%↓",
+    "[KBS 뉴스] 젠슨 황 퇴진·유가 급등에 뉴욕증시 하락…나스닥 0.4%↓",
+    "[매일경제 마켓] 코어위브 훈풍에 뉴욕증시 일제히 상승…나스닥 1.6%↑",
+    "[이투데이] [속보] 뉴욕증시, 혼조⋯나스닥 0.91%↓",
+    "[뉴스투데이] 뉴욕증시 혼조 마감…다우 0.10%↑·나스닥 0.91%↓(1보)"
+  ],
+  "sectors": null,
+  "mega_caps": null,
+  "style_signals": null,
+  "asia_indices": null,
+  "europe_indices": null,
+  "credit_signals": null,
+  "econ_calendar": [
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "오늘의 외환시장: 미국 달러, 중간급 경제지표 발표와 FOMC 회의 앞두고 보합세 유지",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[www.tmgm.com] 오늘의 외환시장: 미국 달러, 중간급 경제지표 발표와 FOMC 회의 앞두고 보합세 유지"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "‘금리 결정’ FOMC는 7번만 한다… 美 연준, 내년 일정 발표",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[Chosunbiz] ‘금리 결정’ FOMC는 7번만 한다… 美 연준, 내년 일정 발표"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "연준, 내년 '금리 결정' FOMC 7차례 개최…10월엔 통화정책 전략만",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] 연준, 내년 '금리 결정' FOMC 7차례 개최…10월엔 통화정책 전략만"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "美연준, 내년 '금리 결정' FOMC는 7번만…10월엔 전략 논의 집중",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美연준, 내년 '금리 결정' FOMC는 7번만…10월엔 전략 논의 집중"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "예상 웃돈 미국 CPI·견조한 고용에 국채 금리 급등",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[Investing.com 한국어] 예상 웃돈 미국 CPI·견조한 고용에 국채 금리 급등"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "[외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] [외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "[오늘 금시세] 금 한돈 66만6,713원 0.6% 상승…미국 고용 호조에 국제 금값 압박, CPI 분수령",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[톱스타뉴스] [오늘 금시세] 금 한돈 66만6,713원 0.6% 상승…미국 고용 호조에 국제 금값 압박, CPI 분수령"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "미국 주간 신규 실업수당 청구 20만 건…고용시장 안정세 지속",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[KBS 뉴스] 미국 주간 신규 실업수당 청구 20만 건…고용시장 안정세 지속"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[한국경제] 美 8월 소매판매 전월比 1.2%↑…예상치 '훌쩍' 웃돌아"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "time": "",
+      "event": "美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[블로터] 美 7월 소매판매 9개월 만에 감소…3분기 성장 둔화 우려"
+      ]
+    }
+  ],
+  "global_issues": [
+    {
+      "topic": "AI 반도체 투자",
+      "category": "기술",
+      "kr_impact": "HBM·AI 가속기 수요 확대 → 반도체·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "리노공업",
+        "ISC"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "AMD, 하루 만에 10% 넘게 밀려… AI 반도체 투자 열기 급제동",
+        "美 증시, AI 투자 불확실성에 혼조…AMD 8.8%·브로드컴 4.8% 급락",
+        "코스피, 한달새 10% '뚝'…내주 '엔비디아·美中회담·연준' 주목"
+      ]
+    },
+    {
+      "topic": "일본 엔화 정책",
+      "category": "통화정책",
+      "kr_impact": "엔캐리 청산 → 외국인 매도 압력, 원화 약세 시 수출주 반사 수혜",
+      "kr_stocks_positive": [
+        "현대차",
+        "기아",
+        "삼성전자"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "신세계",
+        "호텔신라"
+      ],
+      "headlines": [
+        "아사다 일본은행 위원 “금리 인상 속도 신중해야”…개인소비 둔화 우려 By 알파경제 alphabiz"
+      ]
+    },
+    {
+      "topic": "유가 지정학 리스크",
+      "category": "지정학",
+      "kr_impact": "유가 급등 → 정유·방산 수혜, 항공·운송 피해",
+      "kr_stocks_positive": [
+        "SK이노베이션",
+        "S-Oil",
+        "한화에어로스페이스",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "제주항공",
+        "CJ대한통운"
+      ],
+      "headlines": [
+        "국제유가, 중동 긴장 주시하며 혼조⋯WTI 0.2%↓ [상보]",
+        "[오늘의증시] \"굿바이 젠슨 황\"에 코스피 하락...'중동 긴장'에 항공주 급락",
+        "코스피, 젠슨 황 사임·중동 긴장 속 하락 마감…반도체·한전 약세"
+      ]
+    },
+    {
+      "topic": "미국 관세/IRA 정책",
+      "category": "정치",
+      "kr_impact": "IRA 수혜 축소 시 2차전지 피해, 관세 확대 시 방산주 수혜",
+      "kr_stocks_positive": [
+        "한화에어로스페이스",
+        "현대로템",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠"
+      ],
+      "headlines": [
+        "캠벨 “트럼프 관세, 의회서 뒤집힐 수도…對中 기술빗장은 더 조인다”"
+      ]
+    },
+    {
+      "topic": "글로벌 은행 리스크",
+      "category": "금융",
+      "kr_impact": "금융주 동반 하락, 안전자산(금·채권 ETF) 수혜",
+      "kr_stocks_positive": [
+        "KODEX 골드선물",
+        "TIGER 미국채10년선물"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "headlines": [
+        "'AI의 중앙은행' 엔비디아 위기…젠슨황 퇴진, 5000억 자금줄 막나 - 머니투데이"
+      ]
+    },
+    {
+      "topic": "2차전지 공급망",
+      "category": "산업",
+      "kr_impact": "글로벌 EV 확산 → 배터리·소재·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠",
+        "포스코퓨처엠",
+        "엘앤에프"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "BMW, 미국 사우스캐롤라이나 배터리 공장 가동으로 전기차 생산 본격화",
+        "프리즈매틱 셀 케이스 시장 2035년 전망: 전기차 배터리 수요가 성장 견인",
+        "헝가리 中 배터리·완성차 공장, 현지 산업 육성 효과 無"
+      ]
+    },
+    {
+      "topic": "로봇/자율주행",
+      "category": "기술",
+      "kr_impact": "로봇·자율주행 부품주 수혜",
+      "kr_stocks_positive": [
+        "삼성전자",
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "현대차",
+        "모트렉스"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "\"美, 2030년 휴머노이드 로봇 생산 40만대 전망…관세부과 가능성\"",
+        "[기업] 현대차, 쏘카와 업무협약...자율주행 상용화 협력"
+      ]
+    }
+  ],
+  "theme_connections": null,
+  "flow": {
+    "trade_date": "2026-11-13",
+    "kospi_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "kosdaq_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "foreign_top_buy": [],
+    "foreign_top_sell": [],
+    "institution_top_buy": []
+  },
+  "earnings": {},
+  "sentiment": {
+    "score": 41.4,
+    "label": "중립",
+    "components": {
+      "VIX": 59.4,
+      "시장_폭": 0.0,
+      "금리_스프레드": 43.5,
+      "신용_스프레드": 50.0,
+      "모멘텀": 50.0,
+      "RSI_분포": 50.0
+    },
+    "prev_score": null,
+    "change": null
+  }
+}
