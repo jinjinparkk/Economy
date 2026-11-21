@@ -1,0 +1,427 @@
+{
+  "trade_date": "2026-11-21",
+  "macro": {
+    "S&P 500": {
+      "Close": 6910.39,
+      "ChangePct": -3.7,
+      "Change": -265.44
+    },
+    "NASDAQ": {
+      "Close": 22617.73,
+      "ChangePct": -5.28,
+      "Change": -1261.47
+    },
+    "다우존스": {
+      "Close": 48147.33,
+      "ChangePct": -1.93,
+      "Change": -949.73
+    },
+    "원/달러": {
+      "Close": 1334.79,
+      "ChangePct": 0.33,
+      "Change": 4.39
+    },
+    "달러인덱스": {
+      "Close": 103.84,
+      "ChangePct": -0.06,
+      "Change": -0.06
+    },
+    "WTI유": {
+      "Close": 83.62,
+      "ChangePct": 0.49,
+      "Change": 0.41
+    },
+    "금": {
+      "Close": 3539.0,
+      "ChangePct": -3.98,
+      "Change": -146.5
+    },
+    "구리": {
+      "Close": 5.47,
+      "ChangePct": -2.67,
+      "Change": -0.15
+    },
+    "천연가스": {
+      "Close": 3.79,
+      "ChangePct": 15.9,
+      "Change": 0.52
+    },
+    "VIX": {
+      "Close": 35.89,
+      "ChangePct": 26.2,
+      "Change": 7.45
+    },
+    "미국채10Y": {
+      "Close": 4.91,
+      "ChangePct": -2.77,
+      "Change": -0.14
+    },
+    "미국채2Y": {
+      "Close": 4.78,
+      "ChangePct": 0.0,
+      "Change": 0.0
+    },
+    "_yield_spread": 0.13,
+    "_market_regime": "공포",
+    "_sector_top_bottom": null,
+    "_growth_value_ratio": null,
+    "_credit_stress": null,
+    "_mag7_avg": null
+  },
+  "macro_narrative": "전일 미국 증시는 S&P500 -3.70%, 나스닥 -5.28%로 하락 마감. VIX 35.9 (공포 구간). 장단기 금리차 0.130%p (축소 — 긴축 우려 잔존). 원/달러 1,334.79원 (+0.33%, 원화 약세). 금 3,539.00달러 (-3.98%). 달러인덱스 103.84 (-0.06%).",
+  "market_regime": "공포",
+  "yield_spread": 0.13,
+  "us_news": [
+    "[진일보 | 전남일보] 엔비디아 14% 추락에 나스닥 5.3% 폭락…미국 증시 덮친 'AI 쇼크'",
+    "[뉴데일리] 나스닥 '준공황', 반도체지수 10% 폭락 … 韓 증시 '중대 위기'",
+    "[연합인포맥스] [뉴욕증시] 앤트로픽 상장은 매도 신호였나…2%대 급락 마감",
+    "[마켓인] 엔비디아 13% 폭락…7주 연속 하락, 금융위기 이후 최장",
+    "[기호일보] [11월 셋째 주 세계경제동향 브리핑] 코스피 4,800선 추락…나스닥 10% 폭락",
+    "[www.dt.co.kr] [속보] 엔비디아 14% 폭락… 뉴욕증시 기술주 매도에 나스닥 5.3% 떨어져",
+    "[Chosunbiz] 뉴욕증시, 하락 마감… 다우 5만선 붕괴·나스닥 2.25% 급락",
+    "[연합뉴스] 뉴욕증시, 앤트로픽 나스닥 상장 앞두고 상승 출발",
+    "[뉴시스] 뉴욕증시, AI주 약세 속 혼조 출발…나스닥 1.49%↓",
+    "[연합인포맥스] [뉴욕마켓워치] 나스닥, 코로나 이후 최악의 한주…증시 패닉 속 채권↑달러↓"
+  ],
+  "sectors": null,
+  "mega_caps": null,
+  "style_signals": null,
+  "asia_indices": null,
+  "europe_indices": null,
+  "credit_signals": null,
+  "econ_calendar": [
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "워시 “내년 기준금리 결정 FOMC 7번, 내후년은 6번···금리 결정 정치 고려 없어”",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[경향신문] 워시 “내년 기준금리 결정 FOMC 7번, 내후년은 6번···금리 결정 정치 고려 없어”"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "미국 FOMC 기준금리 결정 요약 · 2026.10.29.",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[네이버 프리미엄콘텐츠] 미국 FOMC 기준금리 결정 요약 · 2026.10.29."
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "달러, 고용지표 발표 후 급등분 일부 반납…미국 CPI 앞두고 관망",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[Investing.com 한국어] 달러, 고용지표 발표 후 급등분 일부 반납…미국 CPI 앞두고 관망"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "[외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합인포맥스] [외환-주간] 고용 서프라이즈도 버틴 1,350원…美 CPI로 시선 이동"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "美 7월 CPI에 쏠린 눈…\"둔화 시 코스피 반등 계기될 수도\"",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美 7월 CPI에 쏠린 눈…\"둔화 시 코스피 반등 계기될 수도\""
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "미국 주간 신규 실업청구 20만3천건…고용 안정세 지속",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스TV] 미국 주간 신규 실업청구 20만3천건…고용 안정세 지속"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "미국 주간 신규 실업 청구 20만 3천 건...고용 안정세 지속",
+      "importance": "상",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[YTN] 미국 주간 신규 실업 청구 20만 3천 건...고용 안정세 지속"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "美 10월 소매판매 0.2% 증가…자동차·가구 부진에 증가세 둔화",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[조선일보] 美 10월 소매판매 0.2% 증가…자동차·가구 부진에 증가세 둔화"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "美 10월 소매판매 0.2%↑…\"물가 상승에 소비 약화 징후\"",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[연합뉴스] 美 10월 소매판매 0.2%↑…\"물가 상승에 소비 약화 징후\""
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "time": "",
+      "event": "미국의 주간 실업수당 청구 건수가 소폭 증가했다",
+      "importance": "중",
+      "previous": "",
+      "consensus": "",
+      "headlines": [
+        "[TradingView] 미국의 주간 실업수당 청구 건수가 소폭 증가했다"
+      ]
+    }
+  ],
+  "global_issues": [
+    {
+      "topic": "SpaceX IPO",
+      "category": "IPO",
+      "kr_impact": "SpaceX 지분 보유 VC·우주항공 부품주 직접 수혜",
+      "kr_stocks_positive": [
+        "미래에셋벤처투자",
+        "아주IB투자",
+        "한화에어로스페이스",
+        "쎄트렉아이",
+        "AP위성"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "코웬 \"앤트로픽(ANT), 스페이스X(SPCX) 따라 상장 첫날 급등 후 추락 가능\""
+      ]
+    },
+    {
+      "topic": "미중 무역갈등",
+      "category": "무역",
+      "kr_impact": "반도체·디스플레이 수출주 타격, 내수주 상대 수혜",
+      "kr_stocks_positive": [
+        "이마트",
+        "CJ제일제당",
+        "오리온"
+      ],
+      "kr_stocks_negative": [
+        "삼성전자",
+        "SK하이닉스",
+        "LG디스플레이"
+      ],
+      "headlines": [
+        "美 과잉생산 조사 연내 마무리…한국산에 관세 더 붙나"
+      ]
+    },
+    {
+      "topic": "AI 반도체 투자",
+      "category": "기술",
+      "kr_impact": "HBM·AI 가속기 수요 확대 → 반도체·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "SK하이닉스",
+        "삼성전자",
+        "한미반도체",
+        "리노공업",
+        "ISC"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "AI·반도체가 끌어올린 벤처투자 12.6조…역대 최대실적 속 ‘쏠림 현상’",
+        "반도체가 이끈 수출 1조 달러...미래 생산기지 투자 속도",
+        "AI 열기 식자 美반도체주 시총 한 주 만에 2.3조달러 증발"
+      ]
+    },
+    {
+      "topic": "일본 엔화 정책",
+      "category": "통화정책",
+      "kr_impact": "엔캐리 청산 → 외국인 매도 압력, 원화 약세 시 수출주 반사 수혜",
+      "kr_stocks_positive": [
+        "현대차",
+        "기아",
+        "삼성전자"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "신세계",
+        "호텔신라"
+      ],
+      "headlines": [
+        "[월드 e 브리핑] 일본 10월 CPI 2.2% 상승…12월 금리 인상 가능성 확대"
+      ]
+    },
+    {
+      "topic": "유가 지정학 리스크",
+      "category": "지정학",
+      "kr_impact": "유가 급등 → 정유·방산 수혜, 항공·운송 피해",
+      "kr_stocks_positive": [
+        "SK이노베이션",
+        "S-Oil",
+        "한화에어로스페이스",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "대한항공",
+        "제주항공",
+        "CJ대한통운"
+      ],
+      "headlines": [
+        "중동 긴장 지속에 유가 소폭 상승…3주 연속 하락 마감 전망",
+        "\"한번 더 이란 공격\" 美 설득나선 네타냐후",
+        "서두르지 않겠다는 트럼프…\"미·이스라엘군은 이란 공격 채비\""
+      ]
+    },
+    {
+      "topic": "미국 관세/IRA 정책",
+      "category": "정치",
+      "kr_impact": "IRA 수혜 축소 시 2차전지 피해, 관세 확대 시 방산주 수혜",
+      "kr_stocks_positive": [
+        "한화에어로스페이스",
+        "현대로템",
+        "LIG넥스원"
+      ],
+      "kr_stocks_negative": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠"
+      ],
+      "headlines": [
+        "트럼프 추가 관세 위험, 전기기기서 차·부품으로···KIEP “투자 이행 기준 정해야”"
+      ]
+    },
+    {
+      "topic": "글로벌 은행 리스크",
+      "category": "금융",
+      "kr_impact": "금융주 동반 하락, 안전자산(금·채권 ETF) 수혜",
+      "kr_stocks_positive": [
+        "KODEX 골드선물",
+        "TIGER 미국채10년선물"
+      ],
+      "kr_stocks_negative": [
+        "KB금융",
+        "신한지주",
+        "하나금융지주",
+        "우리금융지주"
+      ],
+      "headlines": [
+        "엔비디아 7주간 46% 폭락…2008년 금융위기 이후 최악",
+        "튀르키예, 금융 스캔들과 고물가에 정치·경제적 위기 심화"
+      ]
+    },
+    {
+      "topic": "2차전지 공급망",
+      "category": "산업",
+      "kr_impact": "글로벌 EV 확산 → 배터리·소재·장비주 직접 수혜",
+      "kr_stocks_positive": [
+        "LG에너지솔루션",
+        "삼성SDI",
+        "에코프로비엠",
+        "포스코퓨처엠",
+        "엘앤에프"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "LG엔솔, 전기차 배터리를 ESS로…자원순환 성과에 국무총리 표창"
+      ]
+    },
+    {
+      "topic": "로봇/자율주행",
+      "category": "기술",
+      "kr_impact": "로봇·자율주행 부품주 수혜",
+      "kr_stocks_positive": [
+        "삼성전자",
+        "레인보우로보틱스",
+        "두산로보틱스",
+        "현대차",
+        "모트렉스"
+      ],
+      "kr_stocks_negative": [],
+      "headlines": [
+        "광주 자율주행차 첫 실증, 상용화로 이어가려면",
+        "국토부, 무인 자율주행 실증 3000대 확대 및 상용화 제도 정비 추진"
+      ]
+    }
+  ],
+  "theme_connections": [
+    {
+      "trigger": "금 -3.98%",
+      "theme": "금 가격 하락",
+      "kr_sectors": [
+        "귀금속"
+      ],
+      "kr_stocks": [
+        "고려아연",
+        "풍산"
+      ],
+      "direction": "피해"
+    },
+    {
+      "trigger": "VIX +26.20%",
+      "theme": "공포 지수 급등",
+      "kr_sectors": [
+        "인버스ETF",
+        "안전자산"
+      ],
+      "kr_stocks": [
+        "KODEX 인버스",
+        "TIGER 금은선물"
+      ],
+      "direction": "수혜"
+    }
+  ],
+  "flow": {
+    "trade_date": "2026-11-20",
+    "kospi_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "kosdaq_flow": {
+      "foreign_net": 0,
+      "institution_net": 0,
+      "individual_net": 0,
+      "foreign_consecutive": 0
+    },
+    "foreign_top_buy": [],
+    "foreign_top_sell": [],
+    "institution_top_buy": []
+  },
+  "earnings": {},
+  "sentiment": {
+    "score": 24.7,
+    "label": "공포",
+    "components": {
+      "VIX": 0.0,
+      "시장_폭": 0.0,
+      "금리_스프레드": 31.5,
+      "신용_스프레드": 50.0,
+      "모멘텀": 50.0,
+      "RSI_분포": 50.0
+    },
+    "prev_score": null,
+    "change": null
+  }
+}
