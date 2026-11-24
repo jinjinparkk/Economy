@@ -1,0 +1,470 @@
+{
+  "trade_date": "2026-11-24",
+  "macro": {
+    "S&P 500": {
+      "close": 7237.17,
+      "change_pct": 4.73,
+      "date": "2026-11-23"
+    },
+    "NASDAQ": {
+      "close": 24089.56,
+      "change_pct": 6.51,
+      "date": "2026-11-23"
+    },
+    "다우존스": {
+      "close": 49595.31,
+      "change_pct": 3.01,
+      "date": "2026-11-23"
+    },
+    "필라델피아반도체": {
+      "close": 140.22,
+      "change_pct": 13.63,
+      "date": "2026-11-23"
+    },
+    "원/달러": {
+      "close": 1343.03,
+      "change_pct": -0.1,
+      "date": "2026-11-24"
+    },
+    "달러인덱스": {
+      "close": 104.32,
+      "change_pct": 0.49,
+      "date": "2026-11-23"
+    },
+    "WTI유": {
+      "close": 80.17,
+      "change_pct": -4.54,
+      "date": "2026-11-23"
+    },
+    "금": {
+      "close": 3651.4,
+      "change_pct": 3.87,
+      "date": "2026-11-23"
+    },
+    "구리": {
+      "close": 5.63,
+      "change_pct": 2.74,
+      "date": "2026-11-23"
+    },
+    "천연가스": {
+      "close": 3.18,
+      "change_pct": -6.74,
+      "date": "2026-11-23"
+    },
+    "VIX": {
+      "close": 26.62,
+      "change_pct": -25.83,
+      "date": "2026-11-23"
+    },
+    "미국채10Y": {
+      "close": 4.92,
+      "change_pct": 0.2,
+      "date": "2026-11-23"
+    },
+    "미국채2Y": {
+      "close": 4.78,
+      "change_pct": 0.0,
+      "date": "2026-11-23"
+    },
+    "기술": {
+      "close": 162.38,
+      "change_pct": 8.97,
+      "date": "2026-11-23"
+    },
+    "금융": {
+      "close": 55.65,
+      "change_pct": 1.98,
+      "date": "2026-11-23"
+    },
+    "에너지": {
+      "close": 59.87,
+      "change_pct": -1.06,
+      "date": "2026-11-23"
+    },
+    "헬스케어": {
+      "close": 179.42,
+      "change_pct": 1.23,
+      "date": "2026-11-23"
+    },
+    "산업재": {
+      "close": 162.47,
+      "change_pct": 3.9,
+      "date": "2026-11-23"
+    },
+    "커뮤니케이션": {
+      "close": 103.6,
+      "change_pct": 3.57,
+      "date": "2026-11-23"
+    },
+    "경기소비재": {
+      "close": 116.93,
+      "change_pct": 3.97,
+      "date": "2026-11-23"
+    },
+    "필수소비재": {
+      "close": 90.38,
+      "change_pct": -0.09,
+      "date": "2026-11-23"
+    },
+    "부동산": {
+      "close": 42.9,
+      "change_pct": 1.04,
+      "date": "2026-11-23"
+    },
+    "유틸리티": {
+      "close": 43.32,
+      "change_pct": 1.48,
+      "date": "2026-11-23"
+    },
+    "소재": {
+      "close": 49.9,
+      "change_pct": 3.23,
+      "date": "2026-11-23"
+    },
+    "엔비디아": {
+      "close": 165.05,
+      "change_pct": 31.48,
+      "date": "2026-11-23"
+    },
+    "애플": {
+      "close": 349.08,
+      "change_pct": 1.9,
+      "date": "2026-11-23"
+    },
+    "마이크로소프트": {
+      "close": 492.5,
+      "change_pct": 1.65,
+      "date": "2026-11-23"
+    },
+    "아마존": {
+      "close": 255.39,
+      "change_pct": 3.47,
+      "date": "2026-11-23"
+    },
+    "알파벳": {
+      "close": 279.53,
+      "change_pct": 5.88,
+      "date": "2026-11-23"
+    },
+    "메타": {
+      "close": 597.6,
+      "change_pct": 6.55,
+      "date": "2026-11-23"
+    },
+    "테슬라": {
+      "close": 385.46,
+      "change_pct": 11.46,
+      "date": "2026-11-23"
+    },
+    "러셀2000": {
+      "close": 265.74,
+      "change_pct": 3.56,
+      "date": "2026-11-23"
+    },
+    "나스닥100ETF": {
+      "close": 651.03,
+      "change_pct": 7.0,
+      "date": "2026-11-23"
+    },
+    "가치ETF": {
+      "close": 218.87,
+      "change_pct": 2.17,
+      "date": "2026-11-23"
+    },
+    "닛케이225": {
+      "close": 56436.65,
+      "change_pct": -5.06,
+      "date": "2026-11-20"
+    },
+    "항셍": {
+      "close": 22383.74,
+      "change_pct": -0.12,
+      "date": "2026-11-23"
+    },
+    "상해종합": {
+      "close": 3538.95,
+      "change_pct": 0.15,
+      "date": "2026-11-23"
+    },
+    "독일DAX": {
+      "close": 25337.27,
+      "change_pct": 2.15,
+      "date": "2026-11-23"
+    },
+    "유로스톡스50": {
+      "close": 6074.47,
+      "change_pct": 2.23,
+      "date": "2026-11-23"
+    },
+    "하이일드채권": {
+      "close": 76.52,
+      "change_pct": 0.25,
+      "date": "2026-11-23"
+    },
+    "미장기채20Y+": {
+      "close": 81.69,
+      "change_pct": 0.29,
+      "date": "2026-11-23"
+    }
+  },
+  "market_regime": "불안",
+  "yield_spread": 0.14,
+  "macro_narrative": "전일 미국 증시는 S&P500 +4.73%, 나스닥 +6.51%로 상승 마감. 필라델피아 반도체지수 +13.63%. VIX 26.6 (불안 구간). 장단기 금리차 0.140%p (축소 — 긴축 우려 잔존). 원/달러 1,343.03원 (-0.10%, 원화 강세). 금 3,651.40달러 (+3.87%). 달러인덱스 104.32 (+0.49%). 섹터: 기술(+8.97%) 주도, 에너지(-1.06%) 약세. QQQ-VTV 스프레드 +4.83%p → 성장주 우위. HYG +0.25% → 신용 스트레스 안정. Mag7 평균 +8.91% → 대형 기술주 강세. 아시아: 닛케이225 -5.06%, 항셍 -0.12%, 상해종합 +0.15%. 유럽: 독일DAX +2.15%, 유로스톡스50 +2.23%.",
+  "market_breadth": {
+    "total_up": 2204,
+    "total_down": 394,
+    "total_unchanged": 174,
+    "total": 2772,
+    "up_ratio": 79.5
+  },
+  "surges": [
+    {
+      "code": "129920",
+      "name": "대성하이텍",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 5590.0,
+      "change_pct": 30.0,
+      "relative_strength": 25.21,
+      "amount_eok": 56.47749425,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "대성하이텍, 자율주행로봇 누적 제작 100대 돌파",
+        "스마트폰 접던 기술로 '로봇손' 만든다…대성하이텍, 新성장축 확보",
+        "대성하이텍, AMR 누적 제작 100대 돌파…휴머노이드 '로봇손' 사업 확대",
+        "대구 대성하이텍, 일본 기업 인수로 수출국 7곳서 25곳으로",
+        "대성하이텍에 쌓이는 일감…4분기 매출 성장 이어질까"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 54.8,
+          "macd": -423.4567,
+          "macd_signal": -511.3992,
+          "macd_histogram": 87.9425,
+          "bb_upper": 7006.77,
+          "bb_middle": 4972.5,
+          "bb_lower": 2938.23,
+          "bb_position": "중립",
+          "ma_5": 4644.0,
+          "ma_20": 4972.5,
+          "ma_60": 5747.92,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.42,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / 거래량 3.4배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "012860",
+      "name": "모베이스전자",
+      "market": "KOSDAQ",
+      "industry": "자동차 신품 부품 제조업",
+      "move_type": "surge",
+      "close": 2285.0,
+      "change_pct": 29.98,
+      "relative_strength": 25.19,
+      "amount_eok": 244.27342758,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 3,
+      "news_titles": [
+        "[마감분석] 모베이스전자 상한가 기록 2285원 장마감 : 기업주식정보",
+        "모베이스전자, 자동차 전장부품 기반 로보틱스 사업 확대",
+        "모베이스전자 상한가…거래량 1113만주로 확대"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 60.99,
+          "macd": -60.7465,
+          "macd_signal": -81.7247,
+          "macd_histogram": 20.9782,
+          "bb_upper": 2221.29,
+          "bb_middle": 1975.95,
+          "bb_lower": 1730.61,
+          "bb_position": "상단돌파",
+          "ma_5": 1916.2,
+          "ma_20": 1975.95,
+          "ma_60": 2168.73,
+          "ma_trend": "역배열",
+          "volume_ratio": 11.9,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 11.9배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 7,
+          "avg_return_1d": 8.25,
+          "avg_return_5d": 35.69,
+          "positive_rate_1d": 71.4,
+          "positive_rate_5d": 57.1
+        }
+      }
+    },
+    {
+      "code": "179530",
+      "name": "애드바이오텍",
+      "market": "KOSDAQ",
+      "industry": "의약품 제조업",
+      "move_type": "surge",
+      "close": 815.0,
+      "change_pct": 29.98,
+      "relative_strength": 25.19,
+      "amount_eok": 20.60071524,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "애드바이오텍, 바이오 넘어 K뷰티까지…중앙아시아 시장 공략 나선다",
+        "[더벨]애드바이오텍, 카자흐스탄 첫 화장품 공동구매 추진 - 머니투데이",
+        "애드바이오텍, 중앙아시아에 'K뷰티' 선보인다",
+        "[특징주] 애드바이오텍, 중앙아시아 K뷰티 진출 기대감에 상한가 마감",
+        "애드바이오텍, 4500만 팔로워를 고객으로…K뷰티 수익화 '시동'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 35.42,
+          "macd": -353.1175,
+          "macd_signal": -345.0607,
+          "macd_histogram": -8.0568,
+          "bb_upper": 2189.62,
+          "bb_middle": 1103.45,
+          "bb_lower": 17.28,
+          "bb_position": "중립",
+          "ma_5": 603.0,
+          "ma_20": 1103.45,
+          "ma_60": 1795.5,
+          "ma_trend": "역배열",
+          "volume_ratio": 2.38,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "498150",
+      "name": "엠비디",
+      "market": "KOSDAQ",
+      "industry": "의료용 기기 제조업",
+      "move_type": "plunge",
+      "close": 4220.0,
+      "change_pct": -39.71,
+      "relative_strength": -44.5,
+      "amount_eok": 1311.74874818,
+      "hints": [
+        "하한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "공모가 27% 낮췄는데…엠비디, 코스닥 입성 첫날 21%대 하락",
+        "[코스닥 새내기] 쭉쭉 쉬지 않고 내려간 ‘엠비디’",
+        "[특징주] 엠비디, 코스닥 입성 첫날 39% 급락 마감(종합)",
+        "엠비디, 코스닥 상장 첫날 40% 가까이 급락",
+        "엠비디, 코스닥 상장 첫날 8%대 하락"
+      ],
+      "outlook": {}
+    },
+    {
+      "code": "009140",
+      "name": "케이아이이",
+      "market": "KOSPI",
+      "industry": "전자부품 제조업",
+      "move_type": "plunge",
+      "close": 6700.0,
+      "change_pct": -22.72,
+      "relative_strength": -29.04,
+      "amount_eok": 14.11537945,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 케이아이이 주가, 증시 훈풍에도 21%대 '털썩'",
+        "케이아이오티 ‘라이프온’, 청주 가경동 독거노인 돌봄에 공급",
+        "주가 띄우기 전 지분부터 옮겼다…케이아이이 오너일가 '승계 포석'",
+        "케이아이이, 무상증자 결정…1주당 1주 배정",
+        "케이아이이, 주당 1.0주 무상증자 결정"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.1,
+          "macd": -445.626,
+          "macd_signal": -188.7916,
+          "macd_histogram": -256.8345,
+          "bb_upper": 11843.48,
+          "bb_middle": 9729.5,
+          "bb_lower": 7615.52,
+          "bb_position": "하단이탈",
+          "ma_5": 9082.0,
+          "ma_20": 9729.5,
+          "ma_60": 10508.0,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.95,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 7.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "119830",
+      "name": "아이텍",
+      "market": "KOSDAQ",
+      "industry": "그외 기타 전문, 과학 및 기술 서비스업",
+      "move_type": "plunge",
+      "close": 5600.0,
+      "change_pct": -18.49,
+      "relative_strength": -23.28,
+      "amount_eok": 30.34408135,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "한국은행·건협·동양아이텍 연탄 전달",
+        "아이텍 빅버튼 유선전화기, IK-200WH, 화이트, 1개",
+        "아이텍, 美·유럽 정전기 국제표준 동시취득…글로벌 반도체 테스트 수주 정조준 - 머니투데이",
+        "위세아이텍 “AI 에이전트로 공공분야 데이터 분석 보고 업무 혁신”",
+        "위세아이텍, 공공 데이터 분석에 AI 에이전트 적용 확대"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 40.65,
+          "macd": 164.7152,
+          "macd_signal": 173.8837,
+          "macd_histogram": -9.1685,
+          "bb_upper": 7606.16,
+          "bb_middle": 6275.0,
+          "bb_lower": 4943.84,
+          "bb_position": "중립",
+          "ma_5": 6764.0,
+          "ma_20": 6275.0,
+          "ma_60": 6273.0,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.37,
+          "obv_trend": "상승",
+          "rsi_divergence": "하락다이버전스",
+          "signal_summary": "RSI 하락다이버전스 / MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ]
+}
