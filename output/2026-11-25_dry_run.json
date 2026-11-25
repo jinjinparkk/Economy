@@ -1,0 +1,472 @@
+{
+  "trade_date": "2026-11-25",
+  "macro": {
+    "S&P 500": {
+      "close": 7201.09,
+      "change_pct": -0.5,
+      "date": "2026-11-24"
+    },
+    "NASDAQ": {
+      "close": 23733.54,
+      "change_pct": -1.48,
+      "date": "2026-11-24"
+    },
+    "다우존스": {
+      "close": 50018.7,
+      "change_pct": 0.85,
+      "date": "2026-11-24"
+    },
+    "필라델피아반도체": {
+      "close": 128.62,
+      "change_pct": -8.27,
+      "date": "2026-11-24"
+    },
+    "원/달러": {
+      "close": 1345.56,
+      "change_pct": 0.34,
+      "date": "2026-11-25"
+    },
+    "달러인덱스": {
+      "close": 103.81,
+      "change_pct": -0.49,
+      "date": "2026-11-24"
+    },
+    "WTI유": {
+      "close": 82.05,
+      "change_pct": 2.35,
+      "date": "2026-11-24"
+    },
+    "금": {
+      "close": 3561.9,
+      "change_pct": -2.45,
+      "date": "2026-11-24"
+    },
+    "구리": {
+      "close": 5.36,
+      "change_pct": -4.8,
+      "date": "2026-11-24"
+    },
+    "천연가스": {
+      "close": 3.32,
+      "change_pct": 4.4,
+      "date": "2026-11-24"
+    },
+    "VIX": {
+      "close": 26.36,
+      "change_pct": -0.98,
+      "date": "2026-11-24"
+    },
+    "미국채10Y": {
+      "close": 4.9,
+      "change_pct": -0.41,
+      "date": "2026-11-24"
+    },
+    "미국채2Y": {
+      "close": 4.78,
+      "change_pct": 0.0,
+      "date": "2026-11-24"
+    },
+    "기술": {
+      "close": 157.09,
+      "change_pct": -3.26,
+      "date": "2026-11-24"
+    },
+    "금융": {
+      "close": 56.11,
+      "change_pct": 0.83,
+      "date": "2026-11-24"
+    },
+    "에너지": {
+      "close": 60.45,
+      "change_pct": 0.97,
+      "date": "2026-11-24"
+    },
+    "헬스케어": {
+      "close": 184.72,
+      "change_pct": 2.95,
+      "date": "2026-11-24"
+    },
+    "산업재": {
+      "close": 161.61,
+      "change_pct": -0.53,
+      "date": "2026-11-24"
+    },
+    "커뮤니케이션": {
+      "close": 104.45,
+      "change_pct": 0.82,
+      "date": "2026-11-24"
+    },
+    "경기소비재": {
+      "close": 117.72,
+      "change_pct": 0.68,
+      "date": "2026-11-24"
+    },
+    "필수소비재": {
+      "close": 91.88,
+      "change_pct": 1.66,
+      "date": "2026-11-24"
+    },
+    "부동산": {
+      "close": 43.46,
+      "change_pct": 1.31,
+      "date": "2026-11-24"
+    },
+    "유틸리티": {
+      "close": 43.4,
+      "change_pct": 0.18,
+      "date": "2026-11-24"
+    },
+    "소재": {
+      "close": 50.17,
+      "change_pct": 0.54,
+      "date": "2026-11-24"
+    },
+    "엔비디아": {
+      "close": 155.38,
+      "change_pct": -5.86,
+      "date": "2026-11-24"
+    },
+    "애플": {
+      "close": 354.07,
+      "change_pct": 1.43,
+      "date": "2026-11-24"
+    },
+    "마이크로소프트": {
+      "close": 496.13,
+      "change_pct": 0.74,
+      "date": "2026-11-24"
+    },
+    "아마존": {
+      "close": 252.29,
+      "change_pct": -1.21,
+      "date": "2026-11-24"
+    },
+    "알파벳": {
+      "close": 276.58,
+      "change_pct": -1.06,
+      "date": "2026-11-24"
+    },
+    "메타": {
+      "close": 589.82,
+      "change_pct": -1.3,
+      "date": "2026-11-24"
+    },
+    "테슬라": {
+      "close": 384.68,
+      "change_pct": -0.2,
+      "date": "2026-11-24"
+    },
+    "러셀2000": {
+      "close": 267.14,
+      "change_pct": 0.53,
+      "date": "2026-11-24"
+    },
+    "나스닥100ETF": {
+      "close": 638.1,
+      "change_pct": -1.99,
+      "date": "2026-11-24"
+    },
+    "가치ETF": {
+      "close": 220.1,
+      "change_pct": 0.56,
+      "date": "2026-11-24"
+    },
+    "닛케이225": {
+      "close": 58644.63,
+      "change_pct": 3.91,
+      "date": "2026-11-24"
+    },
+    "항셍": {
+      "close": 22219.65,
+      "change_pct": -0.73,
+      "date": "2026-11-24"
+    },
+    "상해종합": {
+      "close": 3548.37,
+      "change_pct": 0.27,
+      "date": "2026-11-24"
+    },
+    "독일DAX": {
+      "close": 25017.81,
+      "change_pct": -1.26,
+      "date": "2026-11-24"
+    },
+    "유로스톡스50": {
+      "close": 6003.76,
+      "change_pct": -1.16,
+      "date": "2026-11-24"
+    },
+    "하이일드채권": {
+      "close": 76.43,
+      "change_pct": -0.12,
+      "date": "2026-11-24"
+    },
+    "미장기채20Y+": {
+      "close": 81.49,
+      "change_pct": -0.24,
+      "date": "2026-11-24"
+    }
+  },
+  "market_regime": "불안",
+  "yield_spread": 0.12,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.50%, 나스닥 -1.48%로 하락 마감. 필라델피아 반도체지수 -8.27%. VIX 26.4 (불안 구간). 장단기 금리차 0.120%p (축소 — 긴축 우려 잔존). 원/달러 1,345.56원 (+0.34%, 원화 약세). 금 3,561.90달러 (-2.45%). 달러인덱스 103.81 (-0.49%). 섹터: 헬스케어(+2.95%) 주도, 기술(-3.26%) 약세. QQQ-VTV 스프레드 -2.55%p → 가치주 우위. HYG -0.12% → 신용 스트레스 안정. Mag7 평균 -1.07% → 대형 기술주 약세. 아시아: 닛케이225 +3.91%, 항셍 -0.73%, 상해종합 +0.27%. 유럽: 독일DAX -1.26%, 유로스톡스50 -1.16%.",
+  "market_breadth": {
+    "total_up": 764,
+    "total_down": 1798,
+    "total_unchanged": 210,
+    "total": 2772,
+    "up_ratio": 27.6
+  },
+  "surges": [
+    {
+      "code": "009140",
+      "name": "케이아이이",
+      "market": "KOSPI",
+      "industry": "전자부품 제조업",
+      "move_type": "surge",
+      "close": 8800.0,
+      "change_pct": 29.99,
+      "relative_strength": 36.15,
+      "amount_eok": 19.1659002,
+      "hints": [
+        "상한가",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "말 앞선 정부 증시 방어책…실효성 우려",
+        "케이아이이 주가, 급등세... 어떤 회사길래?",
+        "케이아이이, 공매도 금지일 장중 8740원까지 상승",
+        "케이아이이, 주가 안정 위해 자사주 매입...최대 20억 원 규모",
+        "주가 띄우기 전 지분부터 옮겼다…케이아이이 오너일가 '승계 포석'"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 44.59,
+          "macd": -458.2972,
+          "macd_signal": -242.6927,
+          "macd_histogram": -215.6045,
+          "bb_upper": 11819.59,
+          "bb_middle": 9671.0,
+          "bb_lower": 7522.41,
+          "bb_position": "중립",
+          "ma_5": 8748.0,
+          "ma_20": 9671.0,
+          "ma_60": 10472.58,
+          "ma_trend": "역배열",
+          "volume_ratio": 5.46,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 5.5배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "048770",
+      "name": "TPC로보틱스",
+      "market": "KOSDAQ",
+      "industry": "일반 목적용 기계 제조업",
+      "move_type": "surge",
+      "close": 4465.0,
+      "change_pct": 29.99,
+      "relative_strength": 32.28,
+      "amount_eok": 36.42495715,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[상한가 종목] 깨끗한나라-안랩 이어 TPC로보틱스 등 마감",
+        "TPC로보틱스 29.99% 상승…종가 4465원",
+        "TPC로보틱스 4465원 장중 상한가 기록",
+        "코스닥 상승률 톱3, 안랩 등 나란히 29.9%대 급등",
+        "TPC로보틱스, 삼성 1차 액추에이터 뚫었다..\"가동률 101% 모터·액추에이터 매출 3~4배 기대\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 72.2,
+          "macd": 27.7423,
+          "macd_signal": -95.2786,
+          "macd_histogram": 123.0209,
+          "bb_upper": 3849.39,
+          "bb_middle": 3230.0,
+          "bb_lower": 2610.61,
+          "bb_position": "상단돌파",
+          "ma_5": 3475.0,
+          "ma_20": 3230.0,
+          "ma_60": 3629.17,
+          "ma_trend": "혼조",
+          "volume_ratio": 5.88,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 5.9배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 5,
+          "avg_return_1d": 8.47,
+          "avg_return_5d": -11.98,
+          "positive_rate_1d": 60.0,
+          "positive_rate_5d": 40.0
+        }
+      }
+    },
+    {
+      "code": "053800",
+      "name": "안랩",
+      "market": "KOSDAQ",
+      "industry": "소프트웨어 개발 및 공급업",
+      "move_type": "surge",
+      "close": 157900.0,
+      "change_pct": 29.96,
+      "relative_strength": 32.25,
+      "amount_eok": 2742.9512025,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "해킹에 보안주 또 들썩…안랩 52주 신고가 - 머니투데이",
+        "특징주, 안랩-정보보안 테마 상승세에 25.6% ↑",
+        "[제13회 대한민국 SW제품 품질대상] 우수상-안랩클라우드메이트 '시큐어브리지 v2.0'",
+        "더존비즈온-안랩 손잡았다…ERP 사이버보안 강화",
+        "더존비즈온, 안랩과 사이버 보안 강화 기술·사업 협력"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 73.38,
+          "macd": 10139.3794,
+          "macd_signal": 7758.7172,
+          "macd_histogram": 2380.6622,
+          "bb_upper": 137911.95,
+          "bb_middle": 112385.0,
+          "bb_lower": 86858.05,
+          "bb_position": "상단돌파",
+          "ma_5": 124080.0,
+          "ma_20": 112385.0,
+          "ma_60": 86431.67,
+          "ma_trend": "정배열",
+          "volume_ratio": 2.81,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "0162D0",
+      "name": "동원파츠",
+      "market": "KOSDAQ",
+      "industry": "특수 목적용 기계 제조업",
+      "move_type": "plunge",
+      "close": 16270.0,
+      "change_pct": -20.25,
+      "relative_strength": -17.96,
+      "amount_eok": 150.97997095,
+      "hints": [
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "'상장 준비' 동원파츠, 인천 7공장 착공...램리서치 물량 대비",
+        "동원파츠, 상장 첫날 장 초반 60%대 상승",
+        "동원파츠 FI 5곳, 조건은 같다…엑시트 셈법은 엇갈려",
+        "[특징주] 반도체 정밀부품 기업 ‘동원파츠’, 코스닥 입성 첫날 70% 급등",
+        "'반도체 부품 제조' 동원파츠 코스닥 신규상장…10일부터 거래"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 19504.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "348370",
+      "name": "엔켐",
+      "market": "KOSDAQ",
+      "industry": "기초 화학물질 제조업",
+      "move_type": "plunge",
+      "close": 9240.0,
+      "change_pct": -18.01,
+      "relative_strength": -15.72,
+      "amount_eok": 72.29740295,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "美 전직 의원단 방한…엔켐·체크가드 등 韓 기업 글로벌 전략 발표",
+        "엔켐, 美 나스닥 상장사 TGHL 오는 12월7일 합병 완료 추진",
+        "8일 완료 예정이었지만... 엔켐, 나스닥 상장사 TGHL과 합병기일 연기",
+        "\"물량보다 수익성\"…오정강號 엔켐, 전략전환 '승부수'",
+        "특징주, 엔켐-리튬 테마 상승세에 7.66% ↑"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.22,
+          "macd": -2286.8217,
+          "macd_signal": -1766.5935,
+          "macd_histogram": -520.2282,
+          "bb_upper": 19706.05,
+          "bb_middle": 14560.0,
+          "bb_lower": 9413.95,
+          "bb_position": "하단이탈",
+          "ma_5": 10504.0,
+          "ma_20": 14560.0,
+          "ma_60": 18639.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 3.75,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 이평선 역배열(하락추세) / 거래량 3.8배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "271160",
+      "name": "하나에어로",
+      "market": "KOSDAQ",
+      "industry": "항공기,우주선 및 부품 제조업",
+      "move_type": "plunge",
+      "close": 4000.0,
+      "change_pct": -17.7,
+      "relative_strength": -15.41,
+      "amount_eok": 56.4619067,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 하나에어로다이내믹스, 코스닥 상장 첫날 공모가 대비 73% 급등",
+        "하나에어로, KAI 훈련기 수리 물량 수주",
+        "하나에어로다이내믹스, KAI 인니 훈련기 수명연장 사업 수주",
+        "하나에어로다이내믹스, KAI KT-1B 수명연장 수주",
+        "[ET특징주] 하나에어로, 코스닥 상장 첫날 74% 상승"
+      ],
+      "outlook": {}
+    }
+  ]
+}
