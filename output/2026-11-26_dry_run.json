@@ -1,0 +1,479 @@
+{
+  "trade_date": "2026-11-26",
+  "macro": {
+    "S&P 500": {
+      "close": 7182.78,
+      "change_pct": -0.25,
+      "date": "2026-11-25"
+    },
+    "NASDAQ": {
+      "close": 23585.8,
+      "change_pct": -0.62,
+      "date": "2026-11-25"
+    },
+    "다우존스": {
+      "close": 50182.95,
+      "change_pct": 0.33,
+      "date": "2026-11-25"
+    },
+    "필라델피아반도체": {
+      "close": 127.98,
+      "change_pct": -0.5,
+      "date": "2026-11-25"
+    },
+    "원/달러": {
+      "close": 1343.45,
+      "change_pct": 0.06,
+      "date": "2026-11-26"
+    },
+    "달러인덱스": {
+      "close": 103.79,
+      "change_pct": 0.12,
+      "date": "2026-11-26"
+    },
+    "WTI유": {
+      "close": 84.6,
+      "change_pct": 1.1,
+      "date": "2026-11-26"
+    },
+    "금": {
+      "close": 3598.3,
+      "change_pct": 1.77,
+      "date": "2026-11-26"
+    },
+    "구리": {
+      "close": 5.44,
+      "change_pct": 2.06,
+      "date": "2026-11-26"
+    },
+    "천연가스": {
+      "close": 3.6,
+      "change_pct": 10.09,
+      "date": "2026-11-26"
+    },
+    "VIX": {
+      "close": 28.29,
+      "change_pct": 7.32,
+      "date": "2026-11-25"
+    },
+    "미국채10Y": {
+      "close": 4.85,
+      "change_pct": -1.02,
+      "date": "2026-11-25"
+    },
+    "미국채2Y": {
+      "close": 4.78,
+      "change_pct": 0.0,
+      "date": "2026-11-25"
+    },
+    "기술": {
+      "close": 155.79,
+      "change_pct": -0.83,
+      "date": "2026-11-25"
+    },
+    "금융": {
+      "close": 56.51,
+      "change_pct": 0.71,
+      "date": "2026-11-25"
+    },
+    "에너지": {
+      "close": 60.9,
+      "change_pct": 0.74,
+      "date": "2026-11-25"
+    },
+    "헬스케어": {
+      "close": 183.68,
+      "change_pct": -0.56,
+      "date": "2026-11-25"
+    },
+    "산업재": {
+      "close": 162.95,
+      "change_pct": 0.83,
+      "date": "2026-11-25"
+    },
+    "커뮤니케이션": {
+      "close": 105.38,
+      "change_pct": 0.89,
+      "date": "2026-11-25"
+    },
+    "경기소비재": {
+      "close": 117.49,
+      "change_pct": -0.2,
+      "date": "2026-11-25"
+    },
+    "필수소비재": {
+      "close": 92.3,
+      "change_pct": 0.46,
+      "date": "2026-11-25"
+    },
+    "부동산": {
+      "close": 43.86,
+      "change_pct": 0.92,
+      "date": "2026-11-25"
+    },
+    "유틸리티": {
+      "close": 43.61,
+      "change_pct": 0.48,
+      "date": "2026-11-25"
+    },
+    "소재": {
+      "close": 51.21,
+      "change_pct": 2.07,
+      "date": "2026-11-25"
+    },
+    "엔비디아": {
+      "close": 149.3,
+      "change_pct": -3.91,
+      "date": "2026-11-25"
+    },
+    "애플": {
+      "close": 355.58,
+      "change_pct": 0.43,
+      "date": "2026-11-25"
+    },
+    "마이크로소프트": {
+      "close": 489.93,
+      "change_pct": -1.25,
+      "date": "2026-11-25"
+    },
+    "아마존": {
+      "close": 244.43,
+      "change_pct": -3.12,
+      "date": "2026-11-25"
+    },
+    "알파벳": {
+      "close": 270.98,
+      "change_pct": -2.02,
+      "date": "2026-11-25"
+    },
+    "메타": {
+      "close": 609.89,
+      "change_pct": 3.4,
+      "date": "2026-11-25"
+    },
+    "테슬라": {
+      "close": 380.14,
+      "change_pct": -1.18,
+      "date": "2026-11-25"
+    },
+    "러셀2000": {
+      "close": 268.87,
+      "change_pct": 0.65,
+      "date": "2026-11-25"
+    },
+    "나스닥100ETF": {
+      "close": 633.93,
+      "change_pct": -0.65,
+      "date": "2026-11-25"
+    },
+    "가치ETF": {
+      "close": 221.04,
+      "change_pct": 0.43,
+      "date": "2026-11-25"
+    },
+    "닛케이225": {
+      "close": 57011.62,
+      "change_pct": -2.78,
+      "date": "2026-11-25"
+    },
+    "항셍": {
+      "close": 21966.01,
+      "change_pct": -1.14,
+      "date": "2026-11-25"
+    },
+    "상해종합": {
+      "close": 3476.47,
+      "change_pct": -2.03,
+      "date": "2026-11-25"
+    },
+    "독일DAX": {
+      "close": 24702.13,
+      "change_pct": -1.26,
+      "date": "2026-11-25"
+    },
+    "유로스톡스50": {
+      "close": 5894.46,
+      "change_pct": -1.82,
+      "date": "2026-11-25"
+    },
+    "하이일드채권": {
+      "close": 76.52,
+      "change_pct": 0.12,
+      "date": "2026-11-25"
+    },
+    "미장기채20Y+": {
+      "close": 82.24,
+      "change_pct": 0.92,
+      "date": "2026-11-25"
+    }
+  },
+  "market_regime": "불안",
+  "yield_spread": 0.07,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.25%, 나스닥 -0.62%로 하락 마감. 필라델피아 반도체지수 -0.50%. VIX 28.3 (불안 구간). 장단기 금리차 0.070%p (축소 — 긴축 우려 잔존). 원/달러 1,343.45원 (+0.06%, 원화 약세). 금 3,598.30달러 (+1.77%). 달러인덱스 103.79 (+0.12%). VIX 급등 + 금 강세 → 안전자산 선호(Risk-Off) 흐름. 섹터: 소재(+2.07%) 주도, 기술(-0.83%) 약세. QQQ-VTV 스프레드 -1.08%p → 가치주 우위. HYG +0.12% → 신용 스트레스 안정. Mag7 평균 -1.09% → 대형 기술주 약세. 아시아: 닛케이225 -2.78%, 항셍 -1.14%, 상해종합 -2.03%. 유럽: 독일DAX -1.26%, 유로스톡스50 -1.82%.",
+  "market_breadth": {
+    "total_up": 1298,
+    "total_down": 1237,
+    "total_unchanged": 237,
+    "total": 2772,
+    "up_ratio": 46.8
+  },
+  "surges": [
+    {
+      "code": "271160",
+      "name": "하나에어로",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 5200.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.33,
+      "amount_eok": 203.80000014,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[상한가 종목] 동양고속-나노팀 이어 하나에어로 등 마감",
+        "하나에어로, KAI 훈련기 수리 물량 수주",
+        "[특징주] 하나에어로다이내믹스, 코스닥 상장 첫날 공모가 대비 73% 급등",
+        "하나에어로, 스페이스X 우주 AI 데이터센터 위성 100만기 배치 승인…핵심 벤더와 2036년까지 독점 계약 주목",
+        "하나에어로 주가, 상한가... 이유는?"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": null,
+          "macd": null,
+          "macd_signal": null,
+          "macd_histogram": null,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "bb_position": null,
+          "ma_5": 4871.0,
+          "ma_20": null,
+          "ma_60": null,
+          "ma_trend": null,
+          "volume_ratio": null,
+          "obv_trend": null,
+          "rsi_divergence": null,
+          "signal_summary": "특이 시그널 없음"
+        }
+      }
+    },
+    {
+      "code": "250030",
+      "name": "진코스텍",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 10920.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.33,
+      "amount_eok": 131.0465701,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "진코스텍 주가, 상한가... 무슨 회사길래?",
+        "진코스텍, 코스닥 이전상장 한 달여…1만920원 상한가",
+        "진코스텍, 3분기 만에 작년 연간 실적 넘어…누적 매출 36.4%↑",
+        "진코스텍, 3분기 만에 지난해 실적 넘어…누적 영업익 56억원",
+        "[공모주달력]공모가 상단 확정, 멜콘·진코스텍 코스닥 입성"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 50.56,
+          "macd": -1770.5377,
+          "macd_signal": -2383.9837,
+          "macd_histogram": 613.4461,
+          "bb_upper": 10655.67,
+          "bb_middle": 8897.5,
+          "bb_lower": 7139.33,
+          "bb_position": "상단돌파",
+          "ma_5": 8560.0,
+          "ma_20": 8897.5,
+          "ma_60": 16797.67,
+          "ma_trend": "역배열",
+          "volume_ratio": 7.78,
+          "obv_trend": "상승",
+          "rsi_divergence": "상승다이버전스",
+          "signal_summary": "RSI 상승다이버전스 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 이평선 역배열(하락추세) / 거래량 7.8배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "355390",
+      "name": "크라우드웍스",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 585.0,
+      "change_pct": 30.0,
+      "relative_strength": 29.33,
+      "amount_eok": 40.8336768,
+      "hints": [
+        "상한가",
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "크라우드웍스 주가, 상한가... 이유는?",
+        "크라우드웍스, 최대주주 엑스알피제1호조합 보유주식 가압류",
+        "크라우드웍스 585원 상한가…최대주주 측 주식 가압류 공시",
+        "[특징주] 크라우드웍스, 불성실공시법인 지정 예고에 이틀 연속 30%↓",
+        "[특징주] 외국인 '크라우드웍스·휴림로봇', 기관 '삼성전자·롯데손해보험' 매수"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 25.96,
+          "macd": -209.0022,
+          "macd_signal": -131.7245,
+          "macd_histogram": -77.2778,
+          "bb_upper": 1703.42,
+          "bb_middle": 1093.35,
+          "bb_lower": 483.28,
+          "bb_position": "하단근접",
+          "ma_5": 584.4,
+          "ma_20": 1093.35,
+          "ma_60": 1297.62,
+          "ma_trend": "역배열",
+          "volume_ratio": 6.33,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 6.3배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "053350",
+      "name": "이니텍",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 4070.0,
+      "change_pct": -17.61,
+      "relative_strength": -18.28,
+      "amount_eok": 16.14035513,
+      "hints": [],
+      "news_count": 5,
+      "news_titles": [
+        "이니텍, '정보보호의 날' AI 특별관서 N2SF·제로트러스트 성과 공개 - 머니투데이",
+        "대한민국 대표 가치투자포털",
+        "이니텍, 증권예탁결제원 보안컨설팅 수주",
+        "이니텍, 공공·국방 분야서 통합 CNAPP 적용 확대…구축·운영 역량 확보",
+        "도로공사 망 지켰다…이니텍, 차세대 보안 모델 입증"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 26.68,
+          "macd": -156.5087,
+          "macd_signal": 71.1373,
+          "macd_histogram": -227.646,
+          "bb_upper": 6984.2,
+          "bb_middle": 5791.5,
+          "bb_lower": 4598.8,
+          "bb_position": "하단이탈",
+          "ma_5": 4954.0,
+          "ma_20": 5791.5,
+          "ma_60": 5108.25,
+          "ma_trend": "혼조",
+          "volume_ratio": 4.04,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매도 구간 / MACD 데드크로스 진행 / 볼린저 하단이탈(급락 과잉) / 거래량 4.0배 폭증 / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "199730",
+      "name": "바이오인프라",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 1547.0,
+      "change_pct": -14.06,
+      "relative_strength": -14.73,
+      "amount_eok": 15.12223231,
+      "hints": [
+        "거래량급증"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "동전주 반전 성공할까...바이오인프라·엑셀세라퓨틱스 투심 ‘오락가락’[바이오맥짚기]",
+        "바이오인프라 주가, 상한가... 왜?",
+        "바이오인프라 1687원 상한가 돌파 뒤 수급 과열 해부 - 자회사 흡수합병 완결과 임상 수주 회복 기대감의 만남",
+        "바이오인프라 1687원 상한가…CRO 수익성 회복이 관건",
+        "[특징주] 바이오인프라, 상폐 절차 유예에 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 51.15,
+          "macd": 26.9869,
+          "macd_signal": 5.3731,
+          "macd_histogram": 21.6138,
+          "bb_upper": 1861.83,
+          "bb_middle": 1429.4,
+          "bb_lower": 996.97,
+          "bb_position": "중립",
+          "ma_5": 1527.8,
+          "ma_20": 1429.4,
+          "ma_60": 1380.47,
+          "ma_trend": "정배열",
+          "volume_ratio": 1.68,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 정배열(상승추세) / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "174900",
+      "name": "앱클론",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 20100.0,
+      "change_pct": -13.55,
+      "relative_strength": -14.22,
+      "amount_eok": 126.39766035,
+      "hints": [
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "美 중국바이오 규제권고에 앱클론 13% 하락",
+        "[주식] 보로노이·알지노믹스·올릭스 두 자릿수 '급등'...앱클론은 14%↓",
+        "[바이오 마감 브리핑]신약주 강세 지속…보로노이 18%·올릭스 14% 상승",
+        "'보건산업 성과교류회', 제약바이오 \"살길은 해외 사업 뿐\"",
+        "[특징주] 앱클론, 장중 2만원선 하회"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 43.49,
+          "macd": 340.9222,
+          "macd_signal": 276.6771,
+          "macd_histogram": 64.245,
+          "bb_upper": 26547.51,
+          "bb_middle": 21092.0,
+          "bb_lower": 15636.49,
+          "bb_position": "중립",
+          "ma_5": 22750.0,
+          "ma_20": 21092.0,
+          "ma_60": 21834.17,
+          "ma_trend": "혼조",
+          "volume_ratio": 2.99,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / OBV 하락(자금 유출)"
+        }
+      }
+    }
+  ]
+}
