@@ -1,0 +1,506 @@
+{
+  "trade_date": "2026-11-27",
+  "macro": {
+    "S&P 500": {
+      "close": 7182.78,
+      "change_pct": -0.25,
+      "date": "2026-11-25"
+    },
+    "NASDAQ": {
+      "close": 23585.8,
+      "change_pct": -0.62,
+      "date": "2026-11-25"
+    },
+    "다우존스": {
+      "close": 50182.95,
+      "change_pct": 0.33,
+      "date": "2026-11-25"
+    },
+    "필라델피아반도체": {
+      "close": 127.98,
+      "change_pct": -0.5,
+      "date": "2026-11-25"
+    },
+    "원/달러": {
+      "close": 1333.26,
+      "change_pct": -0.72,
+      "date": "2026-11-27"
+    },
+    "달러인덱스": {
+      "close": 103.67,
+      "change_pct": -0.13,
+      "date": "2026-11-25"
+    },
+    "WTI유": {
+      "close": 83.68,
+      "change_pct": 1.99,
+      "date": "2026-11-25"
+    },
+    "금": {
+      "close": 3535.8,
+      "change_pct": -0.73,
+      "date": "2026-11-25"
+    },
+    "구리": {
+      "close": 5.33,
+      "change_pct": -0.56,
+      "date": "2026-11-25"
+    },
+    "천연가스": {
+      "close": 3.27,
+      "change_pct": -1.51,
+      "date": "2026-11-25"
+    },
+    "VIX": {
+      "close": 26.8,
+      "change_pct": -5.27,
+      "date": "2026-11-26"
+    },
+    "미국채10Y": {
+      "close": 4.85,
+      "change_pct": -1.02,
+      "date": "2026-11-25"
+    },
+    "미국채2Y": {
+      "close": 4.78,
+      "change_pct": 0.0,
+      "date": "2026-11-25"
+    },
+    "기술": {
+      "close": 155.79,
+      "change_pct": -0.83,
+      "date": "2026-11-25"
+    },
+    "금융": {
+      "close": 56.51,
+      "change_pct": 0.71,
+      "date": "2026-11-25"
+    },
+    "에너지": {
+      "close": 60.9,
+      "change_pct": 0.74,
+      "date": "2026-11-25"
+    },
+    "헬스케어": {
+      "close": 183.68,
+      "change_pct": -0.56,
+      "date": "2026-11-25"
+    },
+    "산업재": {
+      "close": 162.95,
+      "change_pct": 0.83,
+      "date": "2026-11-25"
+    },
+    "커뮤니케이션": {
+      "close": 105.38,
+      "change_pct": 0.89,
+      "date": "2026-11-25"
+    },
+    "경기소비재": {
+      "close": 117.49,
+      "change_pct": -0.2,
+      "date": "2026-11-25"
+    },
+    "필수소비재": {
+      "close": 92.3,
+      "change_pct": 0.46,
+      "date": "2026-11-25"
+    },
+    "부동산": {
+      "close": 43.86,
+      "change_pct": 0.92,
+      "date": "2026-11-25"
+    },
+    "유틸리티": {
+      "close": 43.61,
+      "change_pct": 0.48,
+      "date": "2026-11-25"
+    },
+    "소재": {
+      "close": 51.21,
+      "change_pct": 2.07,
+      "date": "2026-11-25"
+    },
+    "엔비디아": {
+      "close": 149.3,
+      "change_pct": -3.91,
+      "date": "2026-11-25"
+    },
+    "애플": {
+      "close": 355.58,
+      "change_pct": 0.43,
+      "date": "2026-11-25"
+    },
+    "마이크로소프트": {
+      "close": 489.93,
+      "change_pct": -1.25,
+      "date": "2026-11-25"
+    },
+    "아마존": {
+      "close": 244.43,
+      "change_pct": -3.12,
+      "date": "2026-11-25"
+    },
+    "알파벳": {
+      "close": 270.98,
+      "change_pct": -2.02,
+      "date": "2026-11-25"
+    },
+    "메타": {
+      "close": 609.89,
+      "change_pct": 3.4,
+      "date": "2026-11-25"
+    },
+    "테슬라": {
+      "close": 380.14,
+      "change_pct": -1.18,
+      "date": "2026-11-25"
+    },
+    "러셀2000": {
+      "close": 268.87,
+      "change_pct": 0.65,
+      "date": "2026-11-25"
+    },
+    "나스닥100ETF": {
+      "close": 633.93,
+      "change_pct": -0.65,
+      "date": "2026-11-25"
+    },
+    "가치ETF": {
+      "close": 221.04,
+      "change_pct": 0.43,
+      "date": "2026-11-25"
+    },
+    "닛케이225": {
+      "close": 57499.16,
+      "change_pct": 0.86,
+      "date": "2026-11-26"
+    },
+    "항셍": {
+      "close": 22226.88,
+      "change_pct": 1.19,
+      "date": "2026-11-26"
+    },
+    "상해종합": {
+      "close": 3476.88,
+      "change_pct": 0.01,
+      "date": "2026-11-26"
+    },
+    "독일DAX": {
+      "close": 25215.52,
+      "change_pct": 2.08,
+      "date": "2026-11-26"
+    },
+    "유로스톡스50": {
+      "close": 6014.74,
+      "change_pct": 2.04,
+      "date": "2026-11-26"
+    },
+    "하이일드채권": {
+      "close": 76.52,
+      "change_pct": 0.12,
+      "date": "2026-11-25"
+    },
+    "미장기채20Y+": {
+      "close": 82.24,
+      "change_pct": 0.92,
+      "date": "2026-11-25"
+    }
+  },
+  "market_regime": "불안",
+  "yield_spread": 0.07,
+  "macro_narrative": "전일 미국 증시는 S&P500 -0.25%, 나스닥 -0.62%로 하락 마감. 필라델피아 반도체지수 -0.50%. VIX 26.8 (불안 구간). 장단기 금리차 0.070%p (축소 — 긴축 우려 잔존). 원/달러 1,333.26원 (-0.72%, 원화 강세). 금 3,535.80달러 (-0.73%). 달러인덱스 103.67 (-0.13%). 섹터: 소재(+2.07%) 주도, 기술(-0.83%) 약세. QQQ-VTV 스프레드 -1.08%p → 가치주 우위. HYG +0.12% → 신용 스트레스 안정. Mag7 평균 -1.09% → 대형 기술주 약세. 아시아: 닛케이225 +0.86%, 항셍 +1.19%, 상해종합 +0.01%. 유럽: 독일DAX +2.08%, 유로스톡스50 +2.04%.",
+  "market_breadth": {
+    "total_up": 2311,
+    "total_down": 284,
+    "total_unchanged": 176,
+    "total": 2771,
+    "up_ratio": 83.4
+  },
+  "surges": [
+    {
+      "code": "115180",
+      "name": "큐리언트",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 15730.0,
+      "change_pct": 30.0,
+      "relative_strength": 21.98,
+      "amount_eok": 75.4765144,
+      "hints": [
+        "상한가"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "큐리언트, 706억원 유상증자 구주주 청약률 106.33% 기록 - 머니투데이",
+        "[특징주] 큐리언트, 유상증자 구주주 청약 물량 초과 달성에 상한가 마감",
+        "[숏폼] 큐리언트, 706억 유상증자 초과청약에 상한가",
+        "[바이오 마감 브리핑] 항암 신약주 급등…큐리언트 상한가·에이비엘 27%↑",
+        "큐리언트, 706억 유증 완료..\"파이프라인 수익화 집중\""
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 51.72,
+          "macd": -1507.9158,
+          "macd_signal": -1659.8367,
+          "macd_histogram": 151.9209,
+          "bb_upper": 17894.43,
+          "bb_middle": 14445.5,
+          "bb_lower": 10996.57,
+          "bb_position": "중립",
+          "ma_5": 12650.0,
+          "ma_20": 14445.5,
+          "ma_60": 18604.3,
+          "ma_trend": "역배열",
+          "volume_ratio": 1.58,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        }
+      }
+    },
+    {
+      "code": "439960",
+      "name": "코스모로보틱스",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 5720.0,
+      "change_pct": 30.0,
+      "relative_strength": 21.98,
+      "amount_eok": 351.36590874,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "코스모로보틱스 ‘35억 매출’ 의혹 수사…IPO 검증 책임 쟁점",
+        "[급등락주 짚어보기] 로봇株 무더기 상한가…코스모로보틱스·대성하이텍 등 12종목 ‘上’",
+        "[특징주] 코스모로보틱스, 휴머노이드 시장 성장 기대에 29%대 급등",
+        "내년 기대감에 로봇株 82개 중 78개 상승…코스모로보틱스 24%대↑ - 머니투데이",
+        "코스닥 4%대 상승...보안·로봇주 강세에 안랩 14%↑·코스모로보틱스 상한가"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 59.63,
+          "macd": -386.6383,
+          "macd_signal": -721.6371,
+          "macd_histogram": 334.9987,
+          "bb_upper": 5094.97,
+          "bb_middle": 4154.0,
+          "bb_lower": 3213.03,
+          "bb_position": "상단돌파",
+          "ma_5": 4704.0,
+          "ma_20": 4154.0,
+          "ma_60": 7190.5,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.78,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.8배 폭증 / OBV 상승(자금 유입)"
+        },
+        "pattern": {
+          "event_type": "상한가",
+          "sample_count": 9,
+          "avg_return_1d": 10.04,
+          "avg_return_5d": 9.29,
+          "positive_rate_1d": 62.5,
+          "positive_rate_5d": 57.1
+        }
+      }
+    },
+    {
+      "code": "381620",
+      "name": "제닉스로보틱스",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "surge",
+      "close": 8020.0,
+      "change_pct": 29.98,
+      "relative_strength": 21.96,
+      "amount_eok": 177.09431705,
+      "hints": [
+        "상한가",
+        "거래량급증",
+        "거래대금상위"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 제닉스로보틱스, 삼성전자·SK하이닉스 신규 팹 AMR 도입 확대 추진 소식에 상승세",
+        "2027~2028년 팹 가동 맞춰 로봇 수요 급증... 제닉스로보틱스 주가 '진천동지'",
+        "제닉스로보틱스 주가, 상한가... 무슨 회사길래?",
+        "삼성전자 로봇에 힘주자 관련주 줄줄이 급등…제닉스로보틱스 상한가",
+        "‘제닉스로보틱스’ 상한가…삼성 로봇 사업 확대에 투자심리 들썩…관련주 강세 : 금융"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 72.25,
+          "macd": 384.3626,
+          "macd_signal": 161.5566,
+          "macd_histogram": 222.806,
+          "bb_upper": 7174.66,
+          "bb_middle": 5645.0,
+          "bb_lower": 4115.34,
+          "bb_position": "상단돌파",
+          "ma_5": 6568.0,
+          "ma_20": 5645.0,
+          "ma_60": 5671.83,
+          "ma_trend": "혼조",
+          "volume_ratio": 3.07,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "RSI 과매수 진입 / MACD 골든크로스 진행 / 볼린저 상단돌파(과열) / 거래량 3.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    }
+  ],
+  "plunges": [
+    {
+      "code": "042110",
+      "name": "에스씨디",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 856.0,
+      "change_pct": -12.11,
+      "relative_strength": -20.13,
+      "amount_eok": 14.94424012,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "에스씨디, 관리종목 문턱서 주식병합…인도로 매출처 다변화 시동",
+        "에스씨디, 보통주 5주를 1주로 병합하는 임시주주총회 소집 결의",
+        "에스씨디, 보통주 5대1 병합 추진",
+        "대한민국 대표 가치투자포털",
+        "에스씨디, 인도에 에어컨용 부품 생산라인 시험 가동…12월부터 본격 양산"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 35.71,
+          "macd": -18.3751,
+          "macd_signal": -11.9935,
+          "macd_histogram": -6.3816,
+          "bb_upper": 1022.54,
+          "bb_middle": 927.15,
+          "bb_lower": 831.76,
+          "bb_position": "하단근접",
+          "ma_5": 921.0,
+          "ma_20": 927.15,
+          "ma_60": 985.5,
+          "ma_trend": "역배열",
+          "volume_ratio": 10.08,
+          "obv_trend": "상승",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / 거래량 10.1배 폭증 / OBV 상승(자금 유입)"
+        }
+      }
+    },
+    {
+      "code": "290690",
+      "name": "아리바이오홀딩스",
+      "market": "KOSDAQ",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 2230.0,
+      "change_pct": -7.66,
+      "relative_strength": -15.68,
+      "amount_eok": 62.03675319,
+      "hints": [
+        "거래량급증",
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "[특징주] 아리바이오 직상장 소식에…아리바이오홀딩스 6% 급락",
+        "아리바이오 \"코스피 직상장 추진…치매 신약 상업화 속도\"",
+        "코스피 노리는 아리바이오…7兆 판권 계약 분수령",
+        "[숏폼] 아리바이오, 3상 성과 이어 코스피 직상장 추진…관련주 강세",
+        "아리바이오, 코스피 직상장 추진…AR1001 성과 자신"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 38.59,
+          "macd": -250.2185,
+          "macd_signal": -139.4048,
+          "macd_histogram": -110.8137,
+          "bb_upper": 4166.75,
+          "bb_middle": 3043.25,
+          "bb_lower": 1919.75,
+          "bb_position": "중립",
+          "ma_5": 2279.0,
+          "ma_20": 3043.25,
+          "ma_60": 3294.83,
+          "ma_trend": "역배열",
+          "volume_ratio": 0.67,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 역배열(하락추세) / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "급락(5%+)",
+          "sample_count": 11,
+          "avg_return_1d": 3.76,
+          "avg_return_5d": 1.29,
+          "positive_rate_1d": 63.6,
+          "positive_rate_5d": 70.0
+        }
+      }
+    },
+    {
+      "code": "051630",
+      "name": "진양화학",
+      "market": "KOSPI",
+      "industry": "",
+      "move_type": "plunge",
+      "close": 4880.0,
+      "change_pct": -7.4,
+      "relative_strength": -11.56,
+      "amount_eok": 34.28380714,
+      "hints": [
+        "시장역행"
+      ],
+      "news_count": 5,
+      "news_titles": [
+        "진양화학, 10억원 규모 자사주 취득 완료",
+        "[특징주] 진양화학 주가, 갑작스런 급등세... 왜?",
+        "[공시] 진양화학 '거래정지 예고', M83·라온텍 등 18개 종목 '공매도 금지' 등...53건",
+        "[특징주] 진양화학, 약세장 속에서 ‘상한가’ 직행 눈길",
+        "진양화학, 2026년 3분기 실적 발표...매출 165억 원"
+      ],
+      "outlook": {
+        "technical": {
+          "rsi_14": 59.67,
+          "macd": 614.2381,
+          "macd_signal": 659.478,
+          "macd_histogram": -45.24,
+          "bb_upper": 5609.13,
+          "bb_middle": 4355.25,
+          "bb_lower": 3101.37,
+          "bb_position": "중립",
+          "ma_5": 4734.0,
+          "ma_20": 4355.25,
+          "ma_60": 2589.25,
+          "ma_trend": "정배열",
+          "volume_ratio": 0.65,
+          "obv_trend": "하락",
+          "rsi_divergence": null,
+          "signal_summary": "MACD 데드크로스 진행 / 이평선 정배열(상승추세) / OBV 하락(자금 유출)"
+        },
+        "pattern": {
+          "event_type": "급락(5%+)",
+          "sample_count": 7,
+          "avg_return_1d": -0.98,
+          "avg_return_5d": 6.52,
+          "positive_rate_1d": 33.3,
+          "positive_rate_5d": 66.7
+        }
+      }
+    }
+  ]
+}
